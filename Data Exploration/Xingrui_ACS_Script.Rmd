@@ -1,5 +1,9 @@
 ---
+<<<<<<< Updated upstream
 title: "Xingrui_IVRS_Script"
+=======
+title: "Xingrui_ACS_Script"
+>>>>>>> Stashed changes
 author: "Harun"
 date: '2022-06-08'
 output: html_document
@@ -9,22 +13,59 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+```{r}
+library(tidycensus)
+library(tidyverse)
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+var <- load_variables(2020, "acs5")
 ```
 
-## Including Plots
+```{r}
+# Employment Status by Disability Status and Type
 
-You can also embed plots, for example:
+variable <- c(Employed = "C18120_004",
+             Unemployed = "C18120_007")
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+Employment_Status <- get_acs(geography = "state",
+        variables = variable,
+        year = 2020,
+        state = "IA")
+
+ggplot(Employment_Status, aes(variable, weight = estimate)) +
+  geom_bar() +
+  labs(x = "Employment Status",
+       y = "Population Estimate") +
+  geom_errorbar(aes(ymin = estimate - moe,
+                    ymax = estimate + moe,
+                    width = 0.4)) +
+  geom_text(aes(y = estimate,
+                label = estimate,
+                vjust = 2))
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r}
+characteristic <- read_csv("./Data/S1810 DISABILITY CHARACTERISTICS.csv")
+# characteristic <- t(characteristic)
+characteristic <- as.data.frame(characteristic)
+
+# names(characteristic) <- characteristic[1, ]
+# characteristic <- characteristic[-1, ]
+
+# characteristic %>% select(6:14) %>%
+#   ggplot(aes(x = ,
+#              weight = "Iowa!!Percent with a disability!!Estimate")) +
+#   geom_bar()
+
+characteristic1 <- characteristic[6:14, ]
+
+ggplot(characteristic1, aes(x = `Label (Grouping)`, y = "Iowa!!Percent with a disability!!Estimate")) +
+  geom_bar()
+```
+
+```{r}
+var <- c(EMPLOYMENT_STATUS_BY_DISABILITY_STATUS = "C18120_001",
+         DETAILED_RACE = "C02003_001")
+
+Employment <- get_pums()
+```
+
