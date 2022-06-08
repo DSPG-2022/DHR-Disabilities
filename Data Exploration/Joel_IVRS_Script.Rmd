@@ -14,8 +14,70 @@ library(dplyr)
 
 # Read in data
 IVRS <- read.csv("Data/Closed_Iowa_Vocational_Rehabilitation_Cases.csv")
-
+IDB <- read.csv("Data/Successful_Employment_for_Blind_Iowans_by_Federal_Fiscal_Year.csv")
 ```
+
+## Number of Cases by Gender
+
+```{r Number of Cases each Year, echo=FALSE}
+gender.cases <- IVRS %>%
+  count(Gender, name = "Total.Cases") %>%
+  group_by(Gender)
+  
+
+ggplot(data = gender.cases, aes(x = Gender, y = Total.Cases)) +
+  geom_bar(fill = "orange", stat = "identity") +
+  geom_text(aes(label=Total.Cases), vjust=-0.5) +
+  xlab("Gender") +
+  ylab("Number of Cases")
+```
+
+## Number of Cases by Age at Start
+
+```{r Number of Cases each Year, echo=FALSE}
+age.start.cases <- IVRS %>%
+  count(Age.at.Application, name = "Total.Cases") %>%
+  group_by(Age.at.Application)
+
+ggplot(data = age.start.cases, aes(x = as.factor(Age.at.Application), y = Total.Cases)) +
+  geom_bar(fill = "orange", stat = "identity") +
+  xlab("Age at Start of Application") +
+  ylab("Number of Cases")
+```
+
+(Unhelpful visually, hard to tell which age each bar is and when you set it to a factor the x labels are too crowded)
+
+Sorted table shows ages with highest number of cases.
+
+```{r}
+age.start.cases %>% arrange(desc(Total.Cases))
+```
+
+## Number of Cases by Age at Closure
+
+```{r Number of Cases each Year, echo=FALSE}
+age.closure.cases <- IVRS %>%
+  count(Age.at.Closure, name = "Total.Cases") %>%
+  group_by(Age.at.Closure)
+  
+
+ggplot(data = age.closure.cases, aes(x = Age.at.Closure, y = Total.Cases)) +
+  geom_bar(fill = "orange", stat = "identity") +
+  xlab("Age at Closure of Application") +
+  ylab("Number of Cases")
+```
+
+(Unhelpful visually, hard to tell which age each bar is and when you set it to a factor the x labels are too crowded)
+
+Sorted table shows ages with highest number of cases.
+
+```{r}
+age.closure.cases %>% arrange(desc(Total.Cases))
+```
+
+
+
+
 
 ## Number of Cases each Year
 
@@ -27,6 +89,7 @@ yearly.cases <- IVRS %>%
 
 ggplot(data = yearly.cases, aes(x = Federal.Fiscal.Year, y = Total.Cases)) +
   geom_bar(fill = "orange", stat = "identity") +
+  geom_text(aes(label=Total.Cases), vjust=-0.5) +
   xlab("Year") +
   ylab("Number of Cases")
 ```
@@ -64,6 +127,7 @@ office.cases <- IVRS %>%
 
 ggplot(data = office.cases, aes(x = Office.Area, y = Total.Cases)) +
   geom_bar(fill = "orange", stat = "identity") +
+  geom_text(aes(label=Total.Cases), vjust=0) +
   xlab("Office") +
   ylab("Number of Cases") +
   theme(axis.text.x = element_text(angle = 45))
