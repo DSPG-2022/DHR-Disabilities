@@ -170,7 +170,7 @@ disability.groups <- IVRS %>%
 disability.groups$Disability.Category <- factor(disability.groups$Disability.Category, levels=c("MSD", "SD", "Other"))
 
 # plot data
-ggplot(data = disability.categories, aes(x = Disability.Category, y = Total.Cases)) +
+ggplot(data = disability.groups, aes(x = Disability.Category, y = Total.Cases)) +
   geom_bar(fill = "orange", stat = "identity") +
   xlab("Disability Category") +
   ylab("Number of Cases")
@@ -205,7 +205,7 @@ This section looks at both group and type of disability.
 
 We can see that those with a cognitive disability had the most number of closed cases among all groups and those having a psychosocial mental disability being second as was found in the last graph.
 
-```{r Disability Type, echo=FALSE}
+```{r Disability Category by Type, echo=FALSE}
 # get number of cases by disability type 
 disability.category.types <- IVRS %>%
   group_by(Disability.Category, Disability.Type) %>%
