@@ -24,7 +24,9 @@ View(pums_var_2020)
 pums_var_2020 <- pums_variables %>% filter(year == 2020, survey == "acs5")
 View(pums_var_2020)
 
-x = c(insurance_65_above = "HINS3", insurance= "HINS4")
+x = insurance_65_above = "HINS3"
+
+y = insurance_low_income= "HINS4"
 
 vt_pums <- get_pums(
   variables = x,
