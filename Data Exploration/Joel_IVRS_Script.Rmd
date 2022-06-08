@@ -7,24 +7,66 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+# Libraries
+library(ggplot2)
+library(dplyr)
+
+# Read in data
+IVRS <- read.csv("Data/Closed_Iowa_Vocational_Rehabilitation_Cases.csv")
+
 ```
 
-## R Markdown
+## Number of Cases each Year
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+```{r Number of Cases each Year, echo=FALSE}
+yearly.cases <- IVRS %>%
+  count(Federal.Fiscal.Year, name = "Total.Cases") %>%
+  group_by(Federal.Fiscal.Year)
+  
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+ggplot(data = yearly.cases, aes(x = Federal.Fiscal.Year, y = Total.Cases)) +
+  geom_bar(fill = "orange", stat = "identity") +
+  xlab("Year") +
+  ylab("Number of Cases")
 ```
 
-## Including Plots
+## Cases by Client County
 
-You can also embed plots, for example:
+```{r Cases by Client County, echo=FALSE}
+county.cases <- IVRS %>%
+  count(Client.County, name = "Total.Cases") %>%
+  group_by(Client.County)
+  
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+ggplot(data = county.cases, aes(x = Client.County, y = Total.Cases)) +
+  geom_bar(fill = "orange", stat = "identity") +
+  xlab("County") +
+  ylab("Number of Cases") +
+  theme(axis.text.x = element_text(angle = 90))
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+(Unhelpful visually, to many counties)
+
+Sorted table shows counties with highest number of cases.
+
+```{r}
+county.cases %>% arrange(desc(Total.Cases))
+```
+
+
+# Cases by Office Area
+```{r Number of Cases each Year, echo=FALSE}
+office.cases <- IVRS %>%
+  count(Office.Area, name = "Total.Cases") %>%
+  group_by(Office.Area)
+  
+
+ggplot(data = office.cases, aes(x = Office.Area, y = Total.Cases)) +
+  geom_bar(fill = "orange", stat = "identity") +
+  xlab("Office") +
+  ylab("Number of Cases") +
+  theme(axis.text.x = element_text(angle = 45))
+```
+
+
