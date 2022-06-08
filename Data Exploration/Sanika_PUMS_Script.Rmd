@@ -24,7 +24,7 @@ X = pums_var_2020 %>%
 View(X)
 
 vt_pums <- get_pums(
-  variables = ("FES", "HINS4"),
+  variables = c("FES", "HINS4"),
   state = "IA",
   survey = "acs5",
   year = 2020
