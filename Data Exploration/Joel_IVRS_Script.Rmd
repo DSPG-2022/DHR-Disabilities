@@ -7,24 +7,130 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+# Libraries
+library(ggplot2)
+library(dplyr)
+
+# Read in data
+IVRS <- read.csv("Data/Closed_Iowa_Vocational_Rehabilitation_Cases.csv")
+IDB <- read.csv("Data/Successful_Employment_for_Blind_Iowans_by_Federal_Fiscal_Year.csv")
 ```
 
-## R Markdown
+## Number of Cases by Gender
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+```{r Number of Cases each Year, echo=FALSE}
+gender.cases <- IVRS %>%
+  count(Gender, name = "Total.Cases") %>%
+  group_by(Gender)
+  
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+ggplot(data = gender.cases, aes(x = Gender, y = Total.Cases)) +
+  geom_bar(fill = "orange", stat = "identity") +
+  geom_text(aes(label=Total.Cases), vjust=-0.5) +
+  xlab("Gender") +
+  ylab("Number of Cases")
 ```
 
-## Including Plots
+## Number of Cases by Age at Start
 
-You can also embed plots, for example:
+```{r Number of Cases each Year, echo=FALSE}
+age.start.cases <- IVRS %>%
+  count(Age.at.Application, name = "Total.Cases") %>%
+  group_by(Age.at.Application)
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+ggplot(data = age.start.cases, aes(x = as.factor(Age.at.Application), y = Total.Cases)) +
+  geom_bar(fill = "orange", stat = "identity") +
+  xlab("Age at Start of Application") +
+  ylab("Number of Cases")
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+(Unhelpful visually, hard to tell which age each bar is and when you set it to a factor the x labels are too crowded)
+
+Sorted table shows ages with highest number of cases.
+
+```{r}
+age.start.cases %>% arrange(desc(Total.Cases))
+```
+
+## Number of Cases by Age at Closure
+
+```{r Number of Cases each Year, echo=FALSE}
+age.closure.cases <- IVRS %>%
+  count(Age.at.Closure, name = "Total.Cases") %>%
+  group_by(Age.at.Closure)
+  
+
+ggplot(data = age.closure.cases, aes(x = Age.at.Closure, y = Total.Cases)) +
+  geom_bar(fill = "orange", stat = "identity") +
+  xlab("Age at Closure of Application") +
+  ylab("Number of Cases")
+```
+
+(Unhelpful visually, hard to tell which age each bar is and when you set it to a factor the x labels are too crowded)
+
+Sorted table shows ages with highest number of cases.
+
+```{r}
+age.closure.cases %>% arrange(desc(Total.Cases))
+```
+
+
+
+
+
+## Number of Cases each Year
+
+```{r Number of Cases each Year, echo=FALSE}
+yearly.cases <- IVRS %>%
+  count(Federal.Fiscal.Year, name = "Total.Cases") %>%
+  group_by(Federal.Fiscal.Year)
+  
+
+ggplot(data = yearly.cases, aes(x = Federal.Fiscal.Year, y = Total.Cases)) +
+  geom_bar(fill = "orange", stat = "identity") +
+  geom_text(aes(label=Total.Cases), vjust=-0.5) +
+  xlab("Year") +
+  ylab("Number of Cases")
+```
+
+## Cases by Client County
+
+```{r Cases by Client County, echo=FALSE}
+county.cases <- IVRS %>%
+  count(Client.County, name = "Total.Cases") %>%
+  group_by(Client.County)
+  
+
+ggplot(data = county.cases, aes(x = Client.County, y = Total.Cases)) +
+  geom_bar(fill = "orange", stat = "identity") +
+  xlab("County") +
+  ylab("Number of Cases") +
+  theme(axis.text.x = element_text(angle = 90))
+```
+
+(Unhelpful visually, to many counties)
+
+Sorted table shows counties with highest number of cases.
+
+```{r}
+county.cases %>% arrange(desc(Total.Cases))
+```
+
+
+# Cases by Office Area
+```{r Number of Cases each Year, echo=FALSE}
+office.cases <- IVRS %>%
+  count(Office.Area, name = "Total.Cases") %>%
+  group_by(Office.Area)
+  
+
+ggplot(data = office.cases, aes(x = Office.Area, y = Total.Cases)) +
+  geom_bar(fill = "orange", stat = "identity") +
+  geom_text(aes(label=Total.Cases), vjust=0) +
+  xlab("Office") +
+  ylab("Number of Cases") +
+  theme(axis.text.x = element_text(angle = 45))
+```
+
+
