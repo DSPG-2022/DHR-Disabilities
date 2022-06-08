@@ -40,5 +40,30 @@ all_disabilities_health_2020 <- all_disabilities_2020 %>%
 write.csv(all_disabilities_2020, "AllDisabilityTables2020.csv")
 ```
 
+```{r Testing to create a table with CrossTabs}
+
+pums_var_2020 <- pums_variables %>% filter(year == 2020, survey == "acs5")
+
+pums_var_2020_disability <- pums_var_2020 %>%
+  distinct(var_code, var_label, data_type, level) %>% 
+  filter(level == "person", grepl("difficulty",var_label))
+
+ia_pums_recoded <- get_pums(
+  variables = c("PUMA", "SEX", "AGEP", "SCHL", "DEAR", "DEYE", "DOUT"),
+  state = "19",
+  survey = "acs5",
+  year = 2020,
+  recode = TRUE
+  )
+
+dout_yes <- ia_pums_recoded %>%
+  filter(grepl("Yes",DOUT_label))
+
+
+ggplot(dout_yes, aes(x = "SEX_label", y = "DOUT_label")) + 
+  geom_bar()
+```
+
+
 
 
