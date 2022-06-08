@@ -24,14 +24,23 @@ X = pums_var_2020 %>%
 View(X)
 
 vt_pums <- get_pums(
-  variables = "AVAILBLE",
+  variables = ("FES", "HINS4"),
   state = "IA",
   survey = "acs5",
   year = 2020
   )
-View(vt_pums)
+vt_pums
 
 ```
+
+```{r}
+pums_var_2020_empstat <- pums_var_2020 %>%
+  filter(grepl("employment",var_label))
+
+pums_var_2020_disability <- pums_var_2020 %>%
+  filter(grepl("disability",var_label))
+```
+
 
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
