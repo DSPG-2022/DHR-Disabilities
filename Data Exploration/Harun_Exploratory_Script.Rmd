@@ -1,0 +1,44 @@
+---
+title: "Harun_Explore_Script"
+author: "Harun"
+date: '2022-06-08'
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r Libraries, include = FALSE}
+library(tidycensus)
+library(sf)
+library(tidyverse)
+
+
+census_api_key("f455269d8b80b427e28a1574cf5bb617a086fa46", install - TRUE)
+```
+
+```{r Checking Tables for Information on Disability}
+all_variables_2020 <- load_variables("2020", "acs5", cache = TRUE)
+all_variables_2019 <- load_variables("2019", "acs5", cache = TRUE)
+all_variables_2018 <- load_variables("2018", "acs5", cache = TRUE)
+
+all_disabilities_2020 <- all_variables_2020 %>%
+  filter(grepl("disability",label))
+  
+all_disabilities_2020 %>%
+  select(name, label, concept)
+```
+
+```{r Searching for tables using grepl - examples}
+all_disabilities_income_2020 <- all_disabilities_2020 %>%
+  filter(grepl("INCOME",concept))
+
+all_disabilities_health_2020 <- all_disabilities_2020 %>%
+  filter(grepl("HEALTH",concept))
+```
+
+```{r Writing file to CSV}
+write.csv(all_disabilities_2020, "AllDisabilityTables2020.csv")
+```
+
+
+
