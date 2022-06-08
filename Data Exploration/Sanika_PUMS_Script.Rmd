@@ -15,32 +15,33 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidycensus)
 library(tidyverse)
 library(dplyr)
+library(ggplot2)
+pums_var_2020 <- pums_variables %>% filter(year == 2019, survey == "acs1")
+View(pums_var_2020)
+
+
 
 pums_var_2020 <- pums_variables %>% filter(year == 2020, survey == "acs5")
 View(pums_var_2020)
 
-X = pums_var_2020 %>% 
-  filter(var_code == "DIS")
-View(X)
+x = c(insurance_65_above = "HINS3", insurance= "HINS4")
 
 vt_pums <- get_pums(
-  variables = c("FES", "HINS4"),
+  variables = x,
   state = "IA",
   survey = "acs5",
   year = 2020
   )
-vt_pums
+View(vt_pums)
 
+vt_pums_new <- pums_var_2020 %>% filter(val_label== c("Civilian employed, at work", "Unemployed"))
+View(vt_pums_new)
+
+ggplot(vt_pums, aes(x))+
+  geom_histogram()+
+  labs(x= "Insurance",
+       y= "pop")
 ```
-
-```{r}
-pums_var_2020_empstat <- pums_var_2020 %>%
-  filter(grepl("employment",var_label))
-
-pums_var_2020_disability <- pums_var_2020 %>%
-  filter(grepl("disability",var_label))
-```
-
 
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
