@@ -29,6 +29,9 @@ all_disabilities_2020 %>%
 ```
 
 ```{r Searching for tables using grepl - examples}
+all_disabilities_difficulty_2020 <- all_variables_2020 %>%
+  filter(grepl("DIFFICULTY",concept))
+
 all_disabilities_income_2020 <- all_disabilities_2020 %>%
   filter(grepl("INCOME",concept))
 
