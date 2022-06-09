@@ -39,7 +39,6 @@ View(vt_pums)
 vt_pums_new <- pums_var_2020 %>% filter(val_label== c("Civilian employed, at work", "Unemployed"))
 View(vt_pums_new)
 
-#comparing medicaid income for disabled people of age 65+ vs low income people
 ggplot(vt_pums, aes(x))+
   geom_histogram()+
   labs(x= "Insurance",
