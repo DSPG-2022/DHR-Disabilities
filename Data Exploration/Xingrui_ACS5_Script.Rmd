@@ -2,7 +2,9 @@
 title: "Xingrui_ACS5_Script"
 author: "Xingrui"
 date: '2022-06-08'
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -12,55 +14,193 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(tidycensus)
 library(tidyverse)
+library(sf)
 
 var <- load_variables(2020, "acs5")
 ```
 
+People with disabilities in Iowa are more common at ages 35 and older than at younger ages. One guess is that more people's disabilities are acquired.  
 ```{r}
-# Employment Status by Disability Status and Type
+MaleAge <- c("Under 5 years" = "B18101_004", "5 to 17 years" = "B18101_007", "18 to 34 years" = "B18101_010", "35 to 64 years" = "B18101_013", "65 to 74 years" = "B18101_016", "75 years and over" = "B18101_019")
+FemaleAge <- c("Under 5 years" = "B18101_023", "5 to 17 years" = "B18101_026", "18 to 34 years" = "B18101_029", "35 to 64 years" = "B18101_032", "65 to 74 years" = "B18101_035", "75 years and over" = "B18101_038")
 
-variable <- c(Employed = "C18120_004",
-             Unemployed = "C18120_007")
+AgeMale <- get_acs(geography = "state",
+        variables = MaleAge,
+        year = 2020,
+        state = "IA")
+AgeMale$sex <- "Male"
 
-Employment_Status <- get_acs(geography = "state",
-        variables = variable,
+AgeFemale <- get_acs(geography = "state",
+        variables = FemaleAge,
+        year = 2020,
+        state = "IA")
+AgeFemale$sex <- "Female"
+
+Age <- full_join(AgeMale, AgeFemale)
+
+Age %>% mutate(population = ifelse(sex == "Male", estimate * -1, estimate * 1)) %>%
+  ggplot(aes(x = variable,
+             y = population,
+             fill = sex)) +
+  coord_flip() +
+  geom_bar(stat = "identity") +
+  labs(title = "Age of Persons With Disabilities by Sex",
+       subtitle = "2016 - 2020 American Community Survey",
+       x = "Age",
+       y = "Absolute Value of Population by Sex")
+```
+
+Among all disabled people, American Indian and Alaska Native alone account for the largest proportion (16.8%), and Asian alone account for the least (5.7%).  
+```{r}
+race <- data.frame(Race = c("White alone", "Black or African American alone", "American Indian and Alaska Native alone", "Asian alone", "Native Hawaiian and Other Pacific Islander alone", "Some other race alone", "Two or more races", "White alone, not Hispanic or Latino", "Hispanic or Latino (of any race)"),
+          Percent = c(12.1, 10.0, 16.8, 5.7, 9.9, 7.7, 10.1, 12.4, 7.3))
+
+ggplot(race, aes(x = "", y = Percent, fill = Race)) +
+  geom_bar(stat = "identity") +
+  coord_polar("y", start = 0) +
+  labs(title = "Percentage of the Population With Disabilities by Race",
+       subtitle = "2016 - 2020 American Community Survey") +
+  geom_text(aes(label = paste0(Percent, "%")),
+            position = position_stack(vjust = 0.5)) +
+  theme_void()
+```
+
+Disability types did not show significant differences in gender. Hearing and visioning difficulties are difficulties for most disabled persons.  
+```{r}
+difficultyMale <- c(Vision = "B18103_002", "Self-care" = "B18106_002", "Independent living" = "B18107_002", Hearing = "B18102_002", Cognitive = "B18104_002", Ambulatory = "B18105_002")
+
+difficultyFemale <- c(Vision = "B18103_021", "Self-care" = "B18106_018", "Independent living" = "B18107_015", Hearing = "B18102_021", Cognitive = "B18104_018", Ambulatory = "B18105_018")
+
+Difficulty <- get_acs(geography = "state",
+                      variables = c(Male = difficultyMale,
+                                    Female = difficultyFemale),
+                      year = 2020,
+                      state = "IA")
+
+Difficulty$Sex <- rep(c("Male", "Female"), 6)
+
+ggplot(Difficulty, aes(x = variable, y = estimate, fill = Sex)) +
+  geom_bar(position="stack", stat="identity") +
+  labs(title = "Disabled Population by Type of Disability",
+       subtitle = "2016 - 2020 American Community Survey") +
+  theme(axis.text.x = element_text(angle = 90))
+```
+
+The majority of disabled persons in the labor force are employed.  
+```{r}
+EMPLOYMENT <- c(Employed = "C18120_004", Unemployed = "C18120_007")
+
+Employment <- get_acs(geography = "state",
+        variables = EMPLOYMENT,
         year = 2020,
         state = "IA")
 
-ggplot(Employment_Status, aes(variable, weight = estimate)) +
+ggplot(Employment, aes(variable, weight = estimate)) +
   geom_bar() +
   labs(x = "Employment Status",
-       y = "Population Estimate") +
+       y = "Population",
+       title = "Disabled Population in the Labor Force by Employment Status",
+       subtitle = "2016 - 2020 American Community Survey") +
   geom_errorbar(aes(ymin = estimate - moe,
                     ymax = estimate + moe,
-                    width = 0.4)) +
+                    width = 0.5,
+                    color = "Margin of Error")) +
   geom_text(aes(y = estimate,
                 label = estimate,
-                vjust = 2))
+                vjust = 2,
+                color = "ACS Estimate"))
+```
+
+The employment rate of disabled persons in most counties is 80% and above, with a few outlier counties.  
+```{r}
+Employed <- get_acs(geography = "county",
+                    variables = "C18120_004",
+                    year = 2020,
+                    state = "IA",
+                    geometry = TRUE)
+
+Unemployed <- get_acs(geography = "county",
+                    variables = "C18120_007",
+                    year = 2020,
+                    state = "IA",
+                    geometry = TRUE)
+
+Employment1 <- st_intersection(Employed, Unemployed)
+
+Employment1$percentage <- Employment1$estimate / (Employment1$estimate + Employment1$estimate.1) * 100
+
+ggplot(Employment1, aes(fill = percentage)) +
+  geom_sf()  +
+  theme_minimal() +
+  coord_sf(datum = NA) +
+  scale_fill_continuous(type = "viridis", direction = -1) +
+  labs(title = "Employment Rate of Persons With Disabilities in the Labor Force",
+       subtitle = "2016 - 2020 American Community Survey")
+```
+
+People with disabilities tend to earn about 30% less than the median earnings of non-disabled people, and women in the disabled group tend to earn about 50% less than the median earnings of men.  
+```{r}
+Sex <- c("Disabled Male" = "B18140_003", "Disabled Female" = "B18140_004",
+         "Nondisabled Male" = "B18140_006", "Nondisabled Female" = "B18140_007")
+
+MedEarningBySex <- get_acs(geography = "state",
+        variables = Sex,
+        year = 2020,
+        state = "IA")
+
+MedEarningBySex$sex <- rep(c("Male", "Female"), 2)
+
+ggplot(MedEarningBySex, aes(x = sex, y = estimate, fill = variable)) +
+  geom_bar(position="dodge", stat="identity") +
+  labs(title = "Median Earning by Sex and Disability Status",
+       subtitle = "2016 - 2020 American Community Survey",
+       x = "Sex by Disability Status",
+       y = "Median Earnings")
+```
+
+A ratio of income to poverty below 1 is considered to be in poverty. The proportion of people with disabilities living in poverty varies from 10% to 30% in each Iowa county.  
+```{r}
+ratio <- c("Under .50" = "C18131_003", ".50 to .99" = "C18131_006")
+
+Ratio <- get_acs(geography = "county",
+                 variables = ratio,
+                 year = 2020,
+                 state = "IA")
+
+Ratio <- aggregate(estimate ~ NAME, data = Ratio, FUN = sum)
+
+AgeMale <- get_acs(geography = "county",
+        variables = MaleAge,
+        year = 2020,
+        state = "IA")
+
+AgeFemale <- get_acs(geography = "county",
+        variables = FemaleAge,
+        year = 2020,
+        state = "IA")
+
+Age <- full_join(AgeMale, AgeFemale)
+
+OverallPop <- aggregate(estimate ~ NAME, data = Age, FUN = sum)
+
+Employment1$Proportion <- Ratio$estimate / OverallPop$estimate
+
+ggplot(Employment1, aes(fill = Proportion)) +
+  geom_sf()  +
+  theme_minimal() +
+  coord_sf(datum = NA) +
+  scale_fill_continuous(type = "viridis") +
+  labs(title = "Proportion of the Population Living in Poverty Among All Disabled People",
+       subtitle = "2016 - 2020 American Community Survey")
 ```
 
 ```{r}
-characteristic <- read_csv("./Data/S1810 DISABILITY CHARACTERISTICS.csv")
-# characteristic <- t(characteristic)
-characteristic <- as.data.frame(characteristic)
+WorkExperience <- c("Full-time" = "C18121_003", "Less than full-time" = "C18121_006", "Did not work" = "C18121_009")
 
-# names(characteristic) <- characteristic[1, ]
-# characteristic <- characteristic[-1, ]
+experience <- get_acs(geography = "county",
+        variables = WorkExperience,
+        year = 2020,
+        state = "IA")
 
-# characteristic %>% select(6:14) %>%
-#   ggplot(aes(x = ,
-#              weight = "Iowa!!Percent with a disability!!Estimate")) +
-#   geom_bar()
-
-characteristic1 <- characteristic[6:14, ]
-
-ggplot(characteristic1, aes(x = `Label (Grouping)`, y = "Iowa!!Percent with a disability!!Estimate")) +
-  geom_bar()
-```
-
-```{r}
-var <- c(EMPLOYMENT_STATUS_BY_DISABILITY_STATUS = "C18120_001",
-         DETAILED_RACE = "C02003_001")
-
-Employment <- get_pums()
+experience
 ```
