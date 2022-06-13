@@ -1,0 +1,227 @@
+,name,label,concept,geography
+1,B18102_001,Estimate!!Total:,SEX BY AGE BY HEARING DIFFICULTY,tract
+2,B18102_002,Estimate!!Total:!!Male:,SEX BY AGE BY HEARING DIFFICULTY,tract
+3,B18102_003,Estimate!!Total:!!Male:!!Under 5 years:,SEX BY AGE BY HEARING DIFFICULTY,tract
+4,B18102_004,Estimate!!Total:!!Male:!!Under 5 years:!!With a hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+5,B18102_005,Estimate!!Total:!!Male:!!Under 5 years:!!No hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+6,B18102_006,Estimate!!Total:!!Male:!!5 to 17 years:,SEX BY AGE BY HEARING DIFFICULTY,tract
+7,B18102_007,Estimate!!Total:!!Male:!!5 to 17 years:!!With a hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+8,B18102_008,Estimate!!Total:!!Male:!!5 to 17 years:!!No hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+9,B18102_009,Estimate!!Total:!!Male:!!18 to 34 years:,SEX BY AGE BY HEARING DIFFICULTY,tract
+10,B18102_010,Estimate!!Total:!!Male:!!18 to 34 years:!!With a hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+11,B18102_011,Estimate!!Total:!!Male:!!18 to 34 years:!!No hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+12,B18102_012,Estimate!!Total:!!Male:!!35 to 64 years:,SEX BY AGE BY HEARING DIFFICULTY,tract
+13,B18102_013,Estimate!!Total:!!Male:!!35 to 64 years:!!With a hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+14,B18102_014,Estimate!!Total:!!Male:!!35 to 64 years:!!No hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+15,B18102_015,Estimate!!Total:!!Male:!!65 to 74 years:,SEX BY AGE BY HEARING DIFFICULTY,tract
+16,B18102_016,Estimate!!Total:!!Male:!!65 to 74 years:!!With a hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+17,B18102_017,Estimate!!Total:!!Male:!!65 to 74 years:!!No hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+18,B18102_018,Estimate!!Total:!!Male:!!75 years and over:,SEX BY AGE BY HEARING DIFFICULTY,tract
+19,B18102_019,Estimate!!Total:!!Male:!!75 years and over:!!With a hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+20,B18102_020,Estimate!!Total:!!Male:!!75 years and over:!!No hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+21,B18102_021,Estimate!!Total:!!Female:,SEX BY AGE BY HEARING DIFFICULTY,tract
+22,B18102_022,Estimate!!Total:!!Female:!!Under 5 years:,SEX BY AGE BY HEARING DIFFICULTY,tract
+23,B18102_023,Estimate!!Total:!!Female:!!Under 5 years:!!With a hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+24,B18102_024,Estimate!!Total:!!Female:!!Under 5 years:!!No hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+25,B18102_025,Estimate!!Total:!!Female:!!5 to 17 years:,SEX BY AGE BY HEARING DIFFICULTY,tract
+26,B18102_026,Estimate!!Total:!!Female:!!5 to 17 years:!!With a hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+27,B18102_027,Estimate!!Total:!!Female:!!5 to 17 years:!!No hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+28,B18102_028,Estimate!!Total:!!Female:!!18 to 34 years:,SEX BY AGE BY HEARING DIFFICULTY,tract
+29,B18102_029,Estimate!!Total:!!Female:!!18 to 34 years:!!With a hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+30,B18102_030,Estimate!!Total:!!Female:!!18 to 34 years:!!No hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+31,B18102_031,Estimate!!Total:!!Female:!!35 to 64 years:,SEX BY AGE BY HEARING DIFFICULTY,tract
+32,B18102_032,Estimate!!Total:!!Female:!!35 to 64 years:!!With a hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+33,B18102_033,Estimate!!Total:!!Female:!!35 to 64 years:!!No hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+34,B18102_034,Estimate!!Total:!!Female:!!65 to 74 years:,SEX BY AGE BY HEARING DIFFICULTY,tract
+35,B18102_035,Estimate!!Total:!!Female:!!65 to 74 years:!!With a hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+36,B18102_036,Estimate!!Total:!!Female:!!65 to 74 years:!!No hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+37,B18102_037,Estimate!!Total:!!Female:!!75 years and over:,SEX BY AGE BY HEARING DIFFICULTY,tract
+38,B18102_038,Estimate!!Total:!!Female:!!75 years and over:!!With a hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+39,B18102_039,Estimate!!Total:!!Female:!!75 years and over:!!No hearing difficulty,SEX BY AGE BY HEARING DIFFICULTY,tract
+40,B18103_001,Estimate!!Total:,SEX BY AGE BY VISION DIFFICULTY,tract
+41,B18103_002,Estimate!!Total:!!Male:,SEX BY AGE BY VISION DIFFICULTY,tract
+42,B18103_003,Estimate!!Total:!!Male:!!Under 5 years:,SEX BY AGE BY VISION DIFFICULTY,tract
+43,B18103_004,Estimate!!Total:!!Male:!!Under 5 years:!!With a vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+44,B18103_005,Estimate!!Total:!!Male:!!Under 5 years:!!No vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+45,B18103_006,Estimate!!Total:!!Male:!!5 to 17 years:,SEX BY AGE BY VISION DIFFICULTY,tract
+46,B18103_007,Estimate!!Total:!!Male:!!5 to 17 years:!!With a vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+47,B18103_008,Estimate!!Total:!!Male:!!5 to 17 years:!!No vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+48,B18103_009,Estimate!!Total:!!Male:!!18 to 34 years:,SEX BY AGE BY VISION DIFFICULTY,tract
+49,B18103_010,Estimate!!Total:!!Male:!!18 to 34 years:!!With a vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+50,B18103_011,Estimate!!Total:!!Male:!!18 to 34 years:!!No vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+51,B18103_012,Estimate!!Total:!!Male:!!35 to 64 years:,SEX BY AGE BY VISION DIFFICULTY,tract
+52,B18103_013,Estimate!!Total:!!Male:!!35 to 64 years:!!With a vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+53,B18103_014,Estimate!!Total:!!Male:!!35 to 64 years:!!No vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+54,B18103_015,Estimate!!Total:!!Male:!!65 to 74 years:,SEX BY AGE BY VISION DIFFICULTY,tract
+55,B18103_016,Estimate!!Total:!!Male:!!65 to 74 years:!!With a vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+56,B18103_017,Estimate!!Total:!!Male:!!65 to 74 years:!!No vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+57,B18103_018,Estimate!!Total:!!Male:!!75 years and over:,SEX BY AGE BY VISION DIFFICULTY,tract
+58,B18103_019,Estimate!!Total:!!Male:!!75 years and over:!!With a vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+59,B18103_020,Estimate!!Total:!!Male:!!75 years and over:!!No vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+60,B18103_021,Estimate!!Total:!!Female:,SEX BY AGE BY VISION DIFFICULTY,tract
+61,B18103_022,Estimate!!Total:!!Female:!!Under 5 years:,SEX BY AGE BY VISION DIFFICULTY,tract
+62,B18103_023,Estimate!!Total:!!Female:!!Under 5 years:!!With a vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+63,B18103_024,Estimate!!Total:!!Female:!!Under 5 years:!!No vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+64,B18103_025,Estimate!!Total:!!Female:!!5 to 17 years:,SEX BY AGE BY VISION DIFFICULTY,tract
+65,B18103_026,Estimate!!Total:!!Female:!!5 to 17 years:!!With a vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+66,B18103_027,Estimate!!Total:!!Female:!!5 to 17 years:!!No vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+67,B18103_028,Estimate!!Total:!!Female:!!18 to 34 years:,SEX BY AGE BY VISION DIFFICULTY,tract
+68,B18103_029,Estimate!!Total:!!Female:!!18 to 34 years:!!With a vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+69,B18103_030,Estimate!!Total:!!Female:!!18 to 34 years:!!No vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+70,B18103_031,Estimate!!Total:!!Female:!!35 to 64 years:,SEX BY AGE BY VISION DIFFICULTY,tract
+71,B18103_032,Estimate!!Total:!!Female:!!35 to 64 years:!!With a vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+72,B18103_033,Estimate!!Total:!!Female:!!35 to 64 years:!!No vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+73,B18103_034,Estimate!!Total:!!Female:!!65 to 74 years:,SEX BY AGE BY VISION DIFFICULTY,tract
+74,B18103_035,Estimate!!Total:!!Female:!!65 to 74 years:!!With a vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+75,B18103_036,Estimate!!Total:!!Female:!!65 to 74 years:!!No vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+76,B18103_037,Estimate!!Total:!!Female:!!75 years and over:,SEX BY AGE BY VISION DIFFICULTY,tract
+77,B18103_038,Estimate!!Total:!!Female:!!75 years and over:!!With a vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+78,B18103_039,Estimate!!Total:!!Female:!!75 years and over:!!No vision difficulty,SEX BY AGE BY VISION DIFFICULTY,tract
+79,B18104_001,Estimate!!Total:,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+80,B18104_002,Estimate!!Total:!!Male:,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+81,B18104_003,Estimate!!Total:!!Male:!!5 to 17 years:,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+82,B18104_004,Estimate!!Total:!!Male:!!5 to 17 years:!!With a cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+83,B18104_005,Estimate!!Total:!!Male:!!5 to 17 years:!!No cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+84,B18104_006,Estimate!!Total:!!Male:!!18 to 34 years:,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+85,B18104_007,Estimate!!Total:!!Male:!!18 to 34 years:!!With a cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+86,B18104_008,Estimate!!Total:!!Male:!!18 to 34 years:!!No cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+87,B18104_009,Estimate!!Total:!!Male:!!35 to 64 years:,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+88,B18104_010,Estimate!!Total:!!Male:!!35 to 64 years:!!With a cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+89,B18104_011,Estimate!!Total:!!Male:!!35 to 64 years:!!No cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+90,B18104_012,Estimate!!Total:!!Male:!!65 to 74 years:,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+91,B18104_013,Estimate!!Total:!!Male:!!65 to 74 years:!!With a cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+92,B18104_014,Estimate!!Total:!!Male:!!65 to 74 years:!!No cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+93,B18104_015,Estimate!!Total:!!Male:!!75 years and over:,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+94,B18104_016,Estimate!!Total:!!Male:!!75 years and over:!!With a cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+95,B18104_017,Estimate!!Total:!!Male:!!75 years and over:!!No cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+96,B18104_018,Estimate!!Total:!!Female:,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+97,B18104_019,Estimate!!Total:!!Female:!!5 to 17 years:,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+98,B18104_020,Estimate!!Total:!!Female:!!5 to 17 years:!!With a cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+99,B18104_021,Estimate!!Total:!!Female:!!5 to 17 years:!!No cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+100,B18104_022,Estimate!!Total:!!Female:!!18 to 34 years:,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+101,B18104_023,Estimate!!Total:!!Female:!!18 to 34 years:!!With a cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+102,B18104_024,Estimate!!Total:!!Female:!!18 to 34 years:!!No cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+103,B18104_025,Estimate!!Total:!!Female:!!35 to 64 years:,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+104,B18104_026,Estimate!!Total:!!Female:!!35 to 64 years:!!With a cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+105,B18104_027,Estimate!!Total:!!Female:!!35 to 64 years:!!No cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+106,B18104_028,Estimate!!Total:!!Female:!!65 to 74 years:,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+107,B18104_029,Estimate!!Total:!!Female:!!65 to 74 years:!!With a cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+108,B18104_030,Estimate!!Total:!!Female:!!65 to 74 years:!!No cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+109,B18104_031,Estimate!!Total:!!Female:!!75 years and over:,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+110,B18104_032,Estimate!!Total:!!Female:!!75 years and over:!!With a cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+111,B18104_033,Estimate!!Total:!!Female:!!75 years and over:!!No cognitive difficulty,SEX BY AGE BY COGNITIVE DIFFICULTY,tract
+112,B18105_001,Estimate!!Total:,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+113,B18105_002,Estimate!!Total:!!Male:,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+114,B18105_003,Estimate!!Total:!!Male:!!5 to 17 years:,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+115,B18105_004,Estimate!!Total:!!Male:!!5 to 17 years:!!With an ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+116,B18105_005,Estimate!!Total:!!Male:!!5 to 17 years:!!No ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+117,B18105_006,Estimate!!Total:!!Male:!!18 to 34 years:,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+118,B18105_007,Estimate!!Total:!!Male:!!18 to 34 years:!!With an ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+119,B18105_008,Estimate!!Total:!!Male:!!18 to 34 years:!!No ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+120,B18105_009,Estimate!!Total:!!Male:!!35 to 64 years:,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+121,B18105_010,Estimate!!Total:!!Male:!!35 to 64 years:!!With an ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+122,B18105_011,Estimate!!Total:!!Male:!!35 to 64 years:!!No ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+123,B18105_012,Estimate!!Total:!!Male:!!65 to 74 years:,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+124,B18105_013,Estimate!!Total:!!Male:!!65 to 74 years:!!With an ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+125,B18105_014,Estimate!!Total:!!Male:!!65 to 74 years:!!No ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+126,B18105_015,Estimate!!Total:!!Male:!!75 years and over:,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+127,B18105_016,Estimate!!Total:!!Male:!!75 years and over:!!With an ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+128,B18105_017,Estimate!!Total:!!Male:!!75 years and over:!!No ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+129,B18105_018,Estimate!!Total:!!Female:,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+130,B18105_019,Estimate!!Total:!!Female:!!5 to 17 years:,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+131,B18105_020,Estimate!!Total:!!Female:!!5 to 17 years:!!With an ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+132,B18105_021,Estimate!!Total:!!Female:!!5 to 17 years:!!No ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+133,B18105_022,Estimate!!Total:!!Female:!!18 to 34 years:,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+134,B18105_023,Estimate!!Total:!!Female:!!18 to 34 years:!!With an ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+135,B18105_024,Estimate!!Total:!!Female:!!18 to 34 years:!!No ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+136,B18105_025,Estimate!!Total:!!Female:!!35 to 64 years:,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+137,B18105_026,Estimate!!Total:!!Female:!!35 to 64 years:!!With an ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+138,B18105_027,Estimate!!Total:!!Female:!!35 to 64 years:!!No ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+139,B18105_028,Estimate!!Total:!!Female:!!65 to 74 years:,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+140,B18105_029,Estimate!!Total:!!Female:!!65 to 74 years:!!With an ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+141,B18105_030,Estimate!!Total:!!Female:!!65 to 74 years:!!No ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+142,B18105_031,Estimate!!Total:!!Female:!!75 years and over:,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+143,B18105_032,Estimate!!Total:!!Female:!!75 years and over:!!With an ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+144,B18105_033,Estimate!!Total:!!Female:!!75 years and over:!!No ambulatory difficulty,SEX BY AGE BY AMBULATORY DIFFICULTY,tract
+145,B18106_001,Estimate!!Total:,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+146,B18106_002,Estimate!!Total:!!Male:,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+147,B18106_003,Estimate!!Total:!!Male:!!5 to 17 years:,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+148,B18106_004,Estimate!!Total:!!Male:!!5 to 17 years:!!With a self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+149,B18106_005,Estimate!!Total:!!Male:!!5 to 17 years:!!No self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+150,B18106_006,Estimate!!Total:!!Male:!!18 to 34 years:,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+151,B18106_007,Estimate!!Total:!!Male:!!18 to 34 years:!!With a self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+152,B18106_008,Estimate!!Total:!!Male:!!18 to 34 years:!!No self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+153,B18106_009,Estimate!!Total:!!Male:!!35 to 64 years:,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+154,B18106_010,Estimate!!Total:!!Male:!!35 to 64 years:!!With a self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+155,B18106_011,Estimate!!Total:!!Male:!!35 to 64 years:!!No self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+156,B18106_012,Estimate!!Total:!!Male:!!65 to 74 years:,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+157,B18106_013,Estimate!!Total:!!Male:!!65 to 74 years:!!With a self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+158,B18106_014,Estimate!!Total:!!Male:!!65 to 74 years:!!No self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+159,B18106_015,Estimate!!Total:!!Male:!!75 years and over:,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+160,B18106_016,Estimate!!Total:!!Male:!!75 years and over:!!With a self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+161,B18106_017,Estimate!!Total:!!Male:!!75 years and over:!!No self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+162,B18106_018,Estimate!!Total:!!Female:,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+163,B18106_019,Estimate!!Total:!!Female:!!5 to 17 years:,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+164,B18106_020,Estimate!!Total:!!Female:!!5 to 17 years:!!With a self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+165,B18106_021,Estimate!!Total:!!Female:!!5 to 17 years:!!No self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+166,B18106_022,Estimate!!Total:!!Female:!!18 to 34 years:,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+167,B18106_023,Estimate!!Total:!!Female:!!18 to 34 years:!!With a self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+168,B18106_024,Estimate!!Total:!!Female:!!18 to 34 years:!!No self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+169,B18106_025,Estimate!!Total:!!Female:!!35 to 64 years:,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+170,B18106_026,Estimate!!Total:!!Female:!!35 to 64 years:!!With a self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+171,B18106_027,Estimate!!Total:!!Female:!!35 to 64 years:!!No self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+172,B18106_028,Estimate!!Total:!!Female:!!65 to 74 years:,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+173,B18106_029,Estimate!!Total:!!Female:!!65 to 74 years:!!With a self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+174,B18106_030,Estimate!!Total:!!Female:!!65 to 74 years:!!No self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+175,B18106_031,Estimate!!Total:!!Female:!!75 years and over:,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+176,B18106_032,Estimate!!Total:!!Female:!!75 years and over:!!With a self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+177,B18106_033,Estimate!!Total:!!Female:!!75 years and over:!!No self-care difficulty,SEX BY AGE BY SELF-CARE DIFFICULTY,tract
+178,B18107_001,Estimate!!Total:,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+179,B18107_002,Estimate!!Total:!!Male:,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+180,B18107_003,Estimate!!Total:!!Male:!!18 to 34 years:,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+181,B18107_004,Estimate!!Total:!!Male:!!18 to 34 years:!!With an independent living difficulty,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+182,B18107_005,Estimate!!Total:!!Male:!!18 to 34 years:!!No independent living difficulty,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+183,B18107_006,Estimate!!Total:!!Male:!!35 to 64 years:,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+184,B18107_007,Estimate!!Total:!!Male:!!35 to 64 years:!!With an independent living difficulty,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+185,B18107_008,Estimate!!Total:!!Male:!!35 to 64 years:!!No independent living difficulty,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+186,B18107_009,Estimate!!Total:!!Male:!!65 to 74 years:,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+187,B18107_010,Estimate!!Total:!!Male:!!65 to 74 years:!!With an independent living difficulty,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+188,B18107_011,Estimate!!Total:!!Male:!!65 to 74 years:!!No independent living difficulty,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+189,B18107_012,Estimate!!Total:!!Male:!!75 years and over:,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+190,B18107_013,Estimate!!Total:!!Male:!!75 years and over:!!With an independent living difficulty,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+191,B18107_014,Estimate!!Total:!!Male:!!75 years and over:!!No independent living difficulty,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+192,B18107_015,Estimate!!Total:!!Female:,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+193,B18107_016,Estimate!!Total:!!Female:!!18 to 34 years:,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+194,B18107_017,Estimate!!Total:!!Female:!!18 to 34 years:!!With an independent living difficulty,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+195,B18107_018,Estimate!!Total:!!Female:!!18 to 34 years:!!No independent living difficulty,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+196,B18107_019,Estimate!!Total:!!Female:!!35 to 64 years:,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+197,B18107_020,Estimate!!Total:!!Female:!!35 to 64 years:!!With an independent living difficulty,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+198,B18107_021,Estimate!!Total:!!Female:!!35 to 64 years:!!No independent living difficulty,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+199,B18107_022,Estimate!!Total:!!Female:!!65 to 74 years:,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+200,B18107_023,Estimate!!Total:!!Female:!!65 to 74 years:!!With an independent living difficulty,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+201,B18107_024,Estimate!!Total:!!Female:!!65 to 74 years:!!No independent living difficulty,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+202,B18107_025,Estimate!!Total:!!Female:!!75 years and over:,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+203,B18107_026,Estimate!!Total:!!Female:!!75 years and over:!!With an independent living difficulty,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+204,B18107_027,Estimate!!Total:!!Female:!!75 years and over:!!No independent living difficulty,SEX BY AGE BY INDEPENDENT LIVING DIFFICULTY,tract
+205,B99182_001,Estimate!!Total:,ALLOCATION OF HEARING DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION,tract
+206,B99182_002,Estimate!!Total:!!Allocated,ALLOCATION OF HEARING DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION,tract
+207,B99182_003,Estimate!!Total:!!Not allocated,ALLOCATION OF HEARING DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION,tract
+208,B99183_001,Estimate!!Total:,ALLOCATION OF VISION DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION,tract
+209,B99183_002,Estimate!!Total:!!Allocated,ALLOCATION OF VISION DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION,tract
+210,B99183_003,Estimate!!Total:!!Not allocated,ALLOCATION OF VISION DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION,tract
+211,B99184_001,Estimate!!Total:,ALLOCATION OF COGNITIVE DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER,tract
+212,B99184_002,Estimate!!Total:!!Allocated,ALLOCATION OF COGNITIVE DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER,tract
+213,B99184_003,Estimate!!Total:!!Not allocated,ALLOCATION OF COGNITIVE DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER,tract
+214,B99185_001,Estimate!!Total:,ALLOCATION OF AMBULATORY DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER,tract
+215,B99185_002,Estimate!!Total:!!Allocated,ALLOCATION OF AMBULATORY DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER,tract
+216,B99185_003,Estimate!!Total:!!Not allocated,ALLOCATION OF AMBULATORY DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER,tract
+217,B99186_001,Estimate!!Total:,ALLOCATION OF SELF-CARE DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER,tract
+218,B99186_002,Estimate!!Total:!!Allocated,ALLOCATION OF SELF-CARE DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER,tract
+219,B99186_003,Estimate!!Total:!!Not allocated,ALLOCATION OF SELF-CARE DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 5 YEARS AND OVER,tract
+220,B99187_001,Estimate!!Total:,AGE BY ALLOCATION OF INDEPENDENT LIVING DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 15 YEARS AND OVER,tract
+221,B99187_002,Estimate!!Total:!!15 to 17 years:,AGE BY ALLOCATION OF INDEPENDENT LIVING DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 15 YEARS AND OVER,tract
+222,B99187_003,Estimate!!Total:!!15 to 17 years:!!Allocated,AGE BY ALLOCATION OF INDEPENDENT LIVING DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 15 YEARS AND OVER,tract
+223,B99187_004,Estimate!!Total:!!15 to 17 years:!!Not allocated,AGE BY ALLOCATION OF INDEPENDENT LIVING DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 15 YEARS AND OVER,tract
+224,B99187_005,Estimate!!Total:!!18 years and over:,AGE BY ALLOCATION OF INDEPENDENT LIVING DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 15 YEARS AND OVER,tract
+225,B99187_006,Estimate!!Total:!!18 years and over:!!Allocated,AGE BY ALLOCATION OF INDEPENDENT LIVING DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 15 YEARS AND OVER,tract
+226,B99187_007,Estimate!!Total:!!18 years and over:!!Not allocated,AGE BY ALLOCATION OF INDEPENDENT LIVING DIFFICULTY FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 15 YEARS AND OVER,tract

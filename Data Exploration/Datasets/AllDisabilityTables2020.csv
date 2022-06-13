@@ -1,0 +1,354 @@
+,name,label,concept,geography
+1,B10052_002,Estimate!!Total:!!With any disability:,DISABILITY STATUS OF GRANDPARENTS LIVING WITH OWN GRANDCHILDREN UNDER 18 YEARS BY RESPONSIBILITY FOR OWN GRANDCHILDREN AND AGE OF GRANDPARENT,tract
+2,B10052_003,Estimate!!Total:!!With any disability:!!Grandparent responsible for own grandchildren under 18 years:,DISABILITY STATUS OF GRANDPARENTS LIVING WITH OWN GRANDCHILDREN UNDER 18 YEARS BY RESPONSIBILITY FOR OWN GRANDCHILDREN AND AGE OF GRANDPARENT,tract
+3,B10052_004,Estimate!!Total:!!With any disability:!!Grandparent responsible for own grandchildren under 18 years:!!30 to 59 years,DISABILITY STATUS OF GRANDPARENTS LIVING WITH OWN GRANDCHILDREN UNDER 18 YEARS BY RESPONSIBILITY FOR OWN GRANDCHILDREN AND AGE OF GRANDPARENT,tract
+4,B10052_005,Estimate!!Total:!!With any disability:!!Grandparent responsible for own grandchildren under 18 years:!!60 years and over,DISABILITY STATUS OF GRANDPARENTS LIVING WITH OWN GRANDCHILDREN UNDER 18 YEARS BY RESPONSIBILITY FOR OWN GRANDCHILDREN AND AGE OF GRANDPARENT,tract
+5,B10052_006,Estimate!!Total:!!With any disability:!!Grandparent not responsible for own grandchildren under 18 years,DISABILITY STATUS OF GRANDPARENTS LIVING WITH OWN GRANDCHILDREN UNDER 18 YEARS BY RESPONSIBILITY FOR OWN GRANDCHILDREN AND AGE OF GRANDPARENT,tract
+6,B10052_007,Estimate!!Total:!!No disability:,DISABILITY STATUS OF GRANDPARENTS LIVING WITH OWN GRANDCHILDREN UNDER 18 YEARS BY RESPONSIBILITY FOR OWN GRANDCHILDREN AND AGE OF GRANDPARENT,tract
+7,B10052_008,Estimate!!Total:!!No disability:!!Grandparent responsible for own grandchildren under 18 years:,DISABILITY STATUS OF GRANDPARENTS LIVING WITH OWN GRANDCHILDREN UNDER 18 YEARS BY RESPONSIBILITY FOR OWN GRANDCHILDREN AND AGE OF GRANDPARENT,tract
+8,B10052_009,Estimate!!Total:!!No disability:!!Grandparent responsible for own grandchildren under 18 years:!!30 to 59 years,DISABILITY STATUS OF GRANDPARENTS LIVING WITH OWN GRANDCHILDREN UNDER 18 YEARS BY RESPONSIBILITY FOR OWN GRANDCHILDREN AND AGE OF GRANDPARENT,tract
+9,B10052_010,Estimate!!Total:!!No disability:!!Grandparent responsible for own grandchildren under 18 years:!!60 years and over,DISABILITY STATUS OF GRANDPARENTS LIVING WITH OWN GRANDCHILDREN UNDER 18 YEARS BY RESPONSIBILITY FOR OWN GRANDCHILDREN AND AGE OF GRANDPARENT,tract
+10,B10052_011,Estimate!!Total:!!No disability:!!Grandparent not responsible for own grandchildren under 18 years,DISABILITY STATUS OF GRANDPARENTS LIVING WITH OWN GRANDCHILDREN UNDER 18 YEARS BY RESPONSIBILITY FOR OWN GRANDCHILDREN AND AGE OF GRANDPARENT,tract
+11,B18101_004,Estimate!!Total:!!Male:!!Under 5 years:!!With a disability,SEX BY AGE BY DISABILITY STATUS,tract
+12,B18101_005,Estimate!!Total:!!Male:!!Under 5 years:!!No disability,SEX BY AGE BY DISABILITY STATUS,tract
+13,B18101_007,Estimate!!Total:!!Male:!!5 to 17 years:!!With a disability,SEX BY AGE BY DISABILITY STATUS,tract
+14,B18101_008,Estimate!!Total:!!Male:!!5 to 17 years:!!No disability,SEX BY AGE BY DISABILITY STATUS,tract
+15,B18101_010,Estimate!!Total:!!Male:!!18 to 34 years:!!With a disability,SEX BY AGE BY DISABILITY STATUS,tract
+16,B18101_011,Estimate!!Total:!!Male:!!18 to 34 years:!!No disability,SEX BY AGE BY DISABILITY STATUS,tract
+17,B18101_013,Estimate!!Total:!!Male:!!35 to 64 years:!!With a disability,SEX BY AGE BY DISABILITY STATUS,tract
+18,B18101_014,Estimate!!Total:!!Male:!!35 to 64 years:!!No disability,SEX BY AGE BY DISABILITY STATUS,tract
+19,B18101_016,Estimate!!Total:!!Male:!!65 to 74 years:!!With a disability,SEX BY AGE BY DISABILITY STATUS,tract
+20,B18101_017,Estimate!!Total:!!Male:!!65 to 74 years:!!No disability,SEX BY AGE BY DISABILITY STATUS,tract
+21,B18101_019,Estimate!!Total:!!Male:!!75 years and over:!!With a disability,SEX BY AGE BY DISABILITY STATUS,tract
+22,B18101_020,Estimate!!Total:!!Male:!!75 years and over:!!No disability,SEX BY AGE BY DISABILITY STATUS,tract
+23,B18101_023,Estimate!!Total:!!Female:!!Under 5 years:!!With a disability,SEX BY AGE BY DISABILITY STATUS,tract
+24,B18101_024,Estimate!!Total:!!Female:!!Under 5 years:!!No disability,SEX BY AGE BY DISABILITY STATUS,tract
+25,B18101_026,Estimate!!Total:!!Female:!!5 to 17 years:!!With a disability,SEX BY AGE BY DISABILITY STATUS,tract
+26,B18101_027,Estimate!!Total:!!Female:!!5 to 17 years:!!No disability,SEX BY AGE BY DISABILITY STATUS,tract
+27,B18101_029,Estimate!!Total:!!Female:!!18 to 34 years:!!With a disability,SEX BY AGE BY DISABILITY STATUS,tract
+28,B18101_030,Estimate!!Total:!!Female:!!18 to 34 years:!!No disability,SEX BY AGE BY DISABILITY STATUS,tract
+29,B18101_032,Estimate!!Total:!!Female:!!35 to 64 years:!!With a disability,SEX BY AGE BY DISABILITY STATUS,tract
+30,B18101_033,Estimate!!Total:!!Female:!!35 to 64 years:!!No disability,SEX BY AGE BY DISABILITY STATUS,tract
+31,B18101_035,Estimate!!Total:!!Female:!!65 to 74 years:!!With a disability,SEX BY AGE BY DISABILITY STATUS,tract
+32,B18101_036,Estimate!!Total:!!Female:!!65 to 74 years:!!No disability,SEX BY AGE BY DISABILITY STATUS,tract
+33,B18101_038,Estimate!!Total:!!Female:!!75 years and over:!!With a disability,SEX BY AGE BY DISABILITY STATUS,tract
+34,B18101_039,Estimate!!Total:!!Female:!!75 years and over:!!No disability,SEX BY AGE BY DISABILITY STATUS,tract
+35,B18101A_003,Estimate!!Total:!!Under 18 years:!!With a disability,AGE BY DISABILITY STATUS (WHITE ALONE),tract
+36,B18101A_004,Estimate!!Total:!!Under 18 years:!!No disability,AGE BY DISABILITY STATUS (WHITE ALONE),tract
+37,B18101A_006,Estimate!!Total:!!18 to 64 years:!!With a disability,AGE BY DISABILITY STATUS (WHITE ALONE),tract
+38,B18101A_007,Estimate!!Total:!!18 to 64 years:!!No disability,AGE BY DISABILITY STATUS (WHITE ALONE),tract
+39,B18101A_009,Estimate!!Total:!!65 years and over:!!With a disability,AGE BY DISABILITY STATUS (WHITE ALONE),tract
+40,B18101A_010,Estimate!!Total:!!65 years and over:!!No disability,AGE BY DISABILITY STATUS (WHITE ALONE),tract
+41,B18101B_003,Estimate!!Total:!!Under 18 years:!!With a disability,AGE BY DISABILITY STATUS (BLACK OR AFRICAN AMERICAN ALONE),tract
+42,B18101B_004,Estimate!!Total:!!Under 18 years:!!No disability,AGE BY DISABILITY STATUS (BLACK OR AFRICAN AMERICAN ALONE),tract
+43,B18101B_006,Estimate!!Total:!!18 to 64 years:!!With a disability,AGE BY DISABILITY STATUS (BLACK OR AFRICAN AMERICAN ALONE),tract
+44,B18101B_007,Estimate!!Total:!!18 to 64 years:!!No disability,AGE BY DISABILITY STATUS (BLACK OR AFRICAN AMERICAN ALONE),tract
+45,B18101B_009,Estimate!!Total:!!65 years and over:!!With a disability,AGE BY DISABILITY STATUS (BLACK OR AFRICAN AMERICAN ALONE),tract
+46,B18101B_010,Estimate!!Total:!!65 years and over:!!No disability,AGE BY DISABILITY STATUS (BLACK OR AFRICAN AMERICAN ALONE),tract
+47,B18101C_003,Estimate!!Total:!!Under 18 years:!!With a disability,AGE BY DISABILITY STATUS (AMERICAN INDIAN AND ALASKA NATIVE ALONE),tract
+48,B18101C_004,Estimate!!Total:!!Under 18 years:!!No disability,AGE BY DISABILITY STATUS (AMERICAN INDIAN AND ALASKA NATIVE ALONE),tract
+49,B18101C_006,Estimate!!Total:!!18 to 64 years:!!With a disability,AGE BY DISABILITY STATUS (AMERICAN INDIAN AND ALASKA NATIVE ALONE),tract
+50,B18101C_007,Estimate!!Total:!!18 to 64 years:!!No disability,AGE BY DISABILITY STATUS (AMERICAN INDIAN AND ALASKA NATIVE ALONE),tract
+51,B18101C_009,Estimate!!Total:!!65 years and over:!!With a disability,AGE BY DISABILITY STATUS (AMERICAN INDIAN AND ALASKA NATIVE ALONE),tract
+52,B18101C_010,Estimate!!Total:!!65 years and over:!!No disability,AGE BY DISABILITY STATUS (AMERICAN INDIAN AND ALASKA NATIVE ALONE),tract
+53,B18101D_003,Estimate!!Total:!!Under 18 years:!!With a disability,AGE BY DISABILITY STATUS (ASIAN ALONE),tract
+54,B18101D_004,Estimate!!Total:!!Under 18 years:!!No disability,AGE BY DISABILITY STATUS (ASIAN ALONE),tract
+55,B18101D_006,Estimate!!Total:!!18 to 64 years:!!With a disability,AGE BY DISABILITY STATUS (ASIAN ALONE),tract
+56,B18101D_007,Estimate!!Total:!!18 to 64 years:!!No disability,AGE BY DISABILITY STATUS (ASIAN ALONE),tract
+57,B18101D_009,Estimate!!Total:!!65 years and over:!!With a disability,AGE BY DISABILITY STATUS (ASIAN ALONE),tract
+58,B18101D_010,Estimate!!Total:!!65 years and over:!!No disability,AGE BY DISABILITY STATUS (ASIAN ALONE),tract
+59,B18101E_003,Estimate!!Total:!!Under 18 years:!!With a disability,AGE BY DISABILITY STATUS (NATIVE HAWAIIAN AND OTHER PACIFIC ISLANDER ALONE),tract
+60,B18101E_004,Estimate!!Total:!!Under 18 years:!!No disability,AGE BY DISABILITY STATUS (NATIVE HAWAIIAN AND OTHER PACIFIC ISLANDER ALONE),tract
+61,B18101E_006,Estimate!!Total:!!18 to 64 years:!!With a disability,AGE BY DISABILITY STATUS (NATIVE HAWAIIAN AND OTHER PACIFIC ISLANDER ALONE),tract
+62,B18101E_007,Estimate!!Total:!!18 to 64 years:!!No disability,AGE BY DISABILITY STATUS (NATIVE HAWAIIAN AND OTHER PACIFIC ISLANDER ALONE),tract
+63,B18101E_009,Estimate!!Total:!!65 years and over:!!With a disability,AGE BY DISABILITY STATUS (NATIVE HAWAIIAN AND OTHER PACIFIC ISLANDER ALONE),tract
+64,B18101E_010,Estimate!!Total:!!65 years and over:!!No disability,AGE BY DISABILITY STATUS (NATIVE HAWAIIAN AND OTHER PACIFIC ISLANDER ALONE),tract
+65,B18101F_003,Estimate!!Total:!!Under 18 years:!!With a disability,AGE BY DISABILITY STATUS (SOME OTHER RACE ALONE),tract
+66,B18101F_004,Estimate!!Total:!!Under 18 years:!!No disability,AGE BY DISABILITY STATUS (SOME OTHER RACE ALONE),tract
+67,B18101F_006,Estimate!!Total:!!18 to 64 years:!!With a disability,AGE BY DISABILITY STATUS (SOME OTHER RACE ALONE),tract
+68,B18101F_007,Estimate!!Total:!!18 to 64 years:!!No disability,AGE BY DISABILITY STATUS (SOME OTHER RACE ALONE),tract
+69,B18101F_009,Estimate!!Total:!!65 years and over:!!With a disability,AGE BY DISABILITY STATUS (SOME OTHER RACE ALONE),tract
+70,B18101F_010,Estimate!!Total:!!65 years and over:!!No disability,AGE BY DISABILITY STATUS (SOME OTHER RACE ALONE),tract
+71,B18101G_003,Estimate!!Total:!!Under 18 years:!!With a disability,AGE BY DISABILITY STATUS (TWO OR MORE RACES),tract
+72,B18101G_004,Estimate!!Total:!!Under 18 years:!!No disability,AGE BY DISABILITY STATUS (TWO OR MORE RACES),tract
+73,B18101G_006,Estimate!!Total:!!18 to 64 years:!!With a disability,AGE BY DISABILITY STATUS (TWO OR MORE RACES),tract
+74,B18101G_007,Estimate!!Total:!!18 to 64 years:!!No disability,AGE BY DISABILITY STATUS (TWO OR MORE RACES),tract
+75,B18101G_009,Estimate!!Total:!!65 years and over:!!With a disability,AGE BY DISABILITY STATUS (TWO OR MORE RACES),tract
+76,B18101G_010,Estimate!!Total:!!65 years and over:!!No disability,AGE BY DISABILITY STATUS (TWO OR MORE RACES),tract
+77,B18101H_003,Estimate!!Total:!!Under 18 years:!!With a disability,"AGE BY DISABILITY STATUS (WHITE ALONE, NOT HISPANIC OR LATINO)",tract
+78,B18101H_004,Estimate!!Total:!!Under 18 years:!!No disability,"AGE BY DISABILITY STATUS (WHITE ALONE, NOT HISPANIC OR LATINO)",tract
+79,B18101H_006,Estimate!!Total:!!18 to 64 years:!!With a disability,"AGE BY DISABILITY STATUS (WHITE ALONE, NOT HISPANIC OR LATINO)",tract
+80,B18101H_007,Estimate!!Total:!!18 to 64 years:!!No disability,"AGE BY DISABILITY STATUS (WHITE ALONE, NOT HISPANIC OR LATINO)",tract
+81,B18101H_009,Estimate!!Total:!!65 years and over:!!With a disability,"AGE BY DISABILITY STATUS (WHITE ALONE, NOT HISPANIC OR LATINO)",tract
+82,B18101H_010,Estimate!!Total:!!65 years and over:!!No disability,"AGE BY DISABILITY STATUS (WHITE ALONE, NOT HISPANIC OR LATINO)",tract
+83,B18101I_003,Estimate!!Total:!!Under 18 years:!!With a disability,AGE BY DISABILITY STATUS (HISPANIC OR LATINO),tract
+84,B18101I_004,Estimate!!Total:!!Under 18 years:!!No disability,AGE BY DISABILITY STATUS (HISPANIC OR LATINO),tract
+85,B18101I_006,Estimate!!Total:!!18 to 64 years:!!With a disability,AGE BY DISABILITY STATUS (HISPANIC OR LATINO),tract
+86,B18101I_007,Estimate!!Total:!!18 to 64 years:!!No disability,AGE BY DISABILITY STATUS (HISPANIC OR LATINO),tract
+87,B18101I_009,Estimate!!Total:!!65 years and over:!!With a disability,AGE BY DISABILITY STATUS (HISPANIC OR LATINO),tract
+88,B18101I_010,Estimate!!Total:!!65 years and over:!!No disability,AGE BY DISABILITY STATUS (HISPANIC OR LATINO),tract
+89,B18135_003,Estimate!!Total:!!Under 19 years:!!With a disability:,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+90,B18135_004,Estimate!!Total:!!Under 19 years:!!With a disability:!!With health insurance coverage:,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+91,B18135_005,Estimate!!Total:!!Under 19 years:!!With a disability:!!With health insurance coverage:!!With private health insurance coverage,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+92,B18135_006,Estimate!!Total:!!Under 19 years:!!With a disability:!!With health insurance coverage:!!With public health coverage,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+93,B18135_007,Estimate!!Total:!!Under 19 years:!!With a disability:!!No health insurance coverage,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+94,B18135_008,Estimate!!Total:!!Under 19 years:!!No disability:,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+95,B18135_009,Estimate!!Total:!!Under 19 years:!!No disability:!!With health insurance coverage:,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+96,B18135_010,Estimate!!Total:!!Under 19 years:!!No disability:!!With health insurance coverage:!!With private health insurance coverage,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+97,B18135_011,Estimate!!Total:!!Under 19 years:!!No disability:!!With health insurance coverage:!!With public health coverage,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+98,B18135_012,Estimate!!Total:!!Under 19 years:!!No disability:!!No health insurance coverage,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+99,B18135_014,Estimate!!Total:!!19 to 64 years:!!With a disability:,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+100,B18135_015,Estimate!!Total:!!19 to 64 years:!!With a disability:!!With health insurance coverage:,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+101,B18135_016,Estimate!!Total:!!19 to 64 years:!!With a disability:!!With health insurance coverage:!!With private health insurance coverage,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+102,B18135_017,Estimate!!Total:!!19 to 64 years:!!With a disability:!!With health insurance coverage:!!With public health coverage,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+103,B18135_018,Estimate!!Total:!!19 to 64 years:!!With a disability:!!No health insurance coverage,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+104,B18135_019,Estimate!!Total:!!19 to 64 years:!!No disability:,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+105,B18135_020,Estimate!!Total:!!19 to 64 years:!!No disability:!!With health insurance coverage:,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+106,B18135_021,Estimate!!Total:!!19 to 64 years:!!No disability:!!With health insurance coverage:!!With private health insurance coverage,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+107,B18135_022,Estimate!!Total:!!19 to 64 years:!!No disability:!!With health insurance coverage:!!With public health coverage,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+108,B18135_023,Estimate!!Total:!!19 to 64 years:!!No disability:!!No health insurance coverage,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+109,B18135_025,Estimate!!Total:!!65 years and over:!!With a disability:,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+110,B18135_026,Estimate!!Total:!!65 years and over:!!With a disability:!!With health insurance coverage:,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+111,B18135_027,Estimate!!Total:!!65 years and over:!!With a disability:!!With health insurance coverage:!!With private health insurance coverage,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+112,B18135_028,Estimate!!Total:!!65 years and over:!!With a disability:!!With health insurance coverage:!!With public health coverage,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+113,B18135_029,Estimate!!Total:!!65 years and over:!!With a disability:!!No health insurance coverage,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+114,B18135_030,Estimate!!Total:!!65 years and over:!!No disability:,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+115,B18135_031,Estimate!!Total:!!65 years and over:!!No disability:!!With health insurance coverage:,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+116,B18135_032,Estimate!!Total:!!65 years and over:!!No disability:!!With health insurance coverage:!!With private health insurance coverage,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+117,B18135_033,Estimate!!Total:!!65 years and over:!!No disability:!!With health insurance coverage:!!With public health coverage,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+118,B18135_034,Estimate!!Total:!!65 years and over:!!No disability:!!No health insurance coverage,AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS,tract
+119,B18140_002,Estimate!!Total:!!With a disability:,MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY DISABILITY STATUS BY SEX FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 16 YEARS AND OVER WITH EARNINGS,tract
+120,B18140_003,Estimate!!Total:!!With a disability:!!Male,MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY DISABILITY STATUS BY SEX FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 16 YEARS AND OVER WITH EARNINGS,tract
+121,B18140_004,Estimate!!Total:!!With a disability:!!Female,MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY DISABILITY STATUS BY SEX FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 16 YEARS AND OVER WITH EARNINGS,tract
+122,B18140_005,Estimate!!Total:!!No disability:,MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY DISABILITY STATUS BY SEX FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 16 YEARS AND OVER WITH EARNINGS,tract
+123,B18140_006,Estimate!!Total:!!No disability:!!Male,MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY DISABILITY STATUS BY SEX FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 16 YEARS AND OVER WITH EARNINGS,tract
+124,B18140_007,Estimate!!Total:!!No disability:!!Female,MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2020 INFLATION-ADJUSTED DOLLARS) BY DISABILITY STATUS BY SEX FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION 16 YEARS AND OVER WITH EARNINGS,tract
+125,B21100_002,Estimate!!Total:!!Has no service-connected disability rating,SERVICE-CONNECTED DISABILITY-RATING STATUS AND RATINGS FOR CIVILIAN VETERANS 18 YEARS AND OVER,tract
+126,B21100_003,Estimate!!Total:!!Has a service-connected disability rating:,SERVICE-CONNECTED DISABILITY-RATING STATUS AND RATINGS FOR CIVILIAN VETERANS 18 YEARS AND OVER,tract
+127,B21100_004,Estimate!!Total:!!Has a service-connected disability rating:!!0 percent,SERVICE-CONNECTED DISABILITY-RATING STATUS AND RATINGS FOR CIVILIAN VETERANS 18 YEARS AND OVER,tract
+128,B21100_005,Estimate!!Total:!!Has a service-connected disability rating:!!10 or 20 percent,SERVICE-CONNECTED DISABILITY-RATING STATUS AND RATINGS FOR CIVILIAN VETERANS 18 YEARS AND OVER,tract
+129,B21100_006,Estimate!!Total:!!Has a service-connected disability rating:!!30 or 40 percent,SERVICE-CONNECTED DISABILITY-RATING STATUS AND RATINGS FOR CIVILIAN VETERANS 18 YEARS AND OVER,tract
+130,B21100_007,Estimate!!Total:!!Has a service-connected disability rating:!!50 or 60 percent,SERVICE-CONNECTED DISABILITY-RATING STATUS AND RATINGS FOR CIVILIAN VETERANS 18 YEARS AND OVER,tract
+131,B21100_008,Estimate!!Total:!!Has a service-connected disability rating:!!70 percent or higher,SERVICE-CONNECTED DISABILITY-RATING STATUS AND RATINGS FOR CIVILIAN VETERANS 18 YEARS AND OVER,tract
+132,B21100_009,Estimate!!Total:!!Has a service-connected disability rating:!!Rating not reported,SERVICE-CONNECTED DISABILITY-RATING STATUS AND RATINGS FOR CIVILIAN VETERANS 18 YEARS AND OVER,tract
+133,B22010_003,Estimate!!Total:!!Household received Food Stamps/SNAP in the past 12 months:!!Households with 1 or more persons with a disability,RECEIPT OF FOOD STAMPS/SNAP IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR HOUSEHOLDS,block group
+134,B22010_004,Estimate!!Total:!!Household received Food Stamps/SNAP in the past 12 months:!!Households with no persons with a disability,RECEIPT OF FOOD STAMPS/SNAP IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR HOUSEHOLDS,block group
+135,B22010_006,Estimate!!Total:!!Household did not receive Food Stamps/SNAP in the past 12 months:!!Households with 1 or more persons with a disability,RECEIPT OF FOOD STAMPS/SNAP IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR HOUSEHOLDS,block group
+136,B22010_007,Estimate!!Total:!!Household did not receive Food Stamps/SNAP in the past 12 months:!!Households with no persons with a disability,RECEIPT OF FOOD STAMPS/SNAP IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR HOUSEHOLDS,block group
+137,B23024_003,Estimate!!Total:!!Income in the past 12 months below poverty level:!!With a disability:,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+138,B23024_004,Estimate!!Total:!!Income in the past 12 months below poverty level:!!With a disability:!!In labor force:,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+139,B23024_005,Estimate!!Total:!!Income in the past 12 months below poverty level:!!With a disability:!!In labor force:!!In Armed Forces,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+140,B23024_006,Estimate!!Total:!!Income in the past 12 months below poverty level:!!With a disability:!!In labor force:!!Civilian:,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+141,B23024_007,Estimate!!Total:!!Income in the past 12 months below poverty level:!!With a disability:!!In labor force:!!Civilian:!!Employed,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+142,B23024_008,Estimate!!Total:!!Income in the past 12 months below poverty level:!!With a disability:!!In labor force:!!Civilian:!!Unemployed,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+143,B23024_009,Estimate!!Total:!!Income in the past 12 months below poverty level:!!With a disability:!!Not in labor force,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+144,B23024_010,Estimate!!Total:!!Income in the past 12 months below poverty level:!!No disability:,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+145,B23024_011,Estimate!!Total:!!Income in the past 12 months below poverty level:!!No disability:!!In labor force:,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+146,B23024_012,Estimate!!Total:!!Income in the past 12 months below poverty level:!!No disability:!!In labor force:!!In Armed Forces,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+147,B23024_013,Estimate!!Total:!!Income in the past 12 months below poverty level:!!No disability:!!In labor force:!!Civilian:,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+148,B23024_014,Estimate!!Total:!!Income in the past 12 months below poverty level:!!No disability:!!In labor force:!!Civilian:!!Employed,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+149,B23024_015,Estimate!!Total:!!Income in the past 12 months below poverty level:!!No disability:!!In labor force:!!Civilian:!!Unemployed,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+150,B23024_016,Estimate!!Total:!!Income in the past 12 months below poverty level:!!No disability:!!Not in labor force,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+151,B23024_018,Estimate!!Total:!!Income in the past 12 months at or above poverty level:!!With a disability:,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+152,B23024_019,Estimate!!Total:!!Income in the past 12 months at or above poverty level:!!With a disability:!!In labor force:,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+153,B23024_020,Estimate!!Total:!!Income in the past 12 months at or above poverty level:!!With a disability:!!In labor force:!!In Armed Forces,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+154,B23024_021,Estimate!!Total:!!Income in the past 12 months at or above poverty level:!!With a disability:!!In labor force:!!Civilian:,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+155,B23024_022,Estimate!!Total:!!Income in the past 12 months at or above poverty level:!!With a disability:!!In labor force:!!Civilian:!!Employed,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+156,B23024_023,Estimate!!Total:!!Income in the past 12 months at or above poverty level:!!With a disability:!!In labor force:!!Civilian:!!Unemployed,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+157,B23024_024,Estimate!!Total:!!Income in the past 12 months at or above poverty level:!!With a disability:!!Not in labor force,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+158,B23024_025,Estimate!!Total:!!Income in the past 12 months at or above poverty level:!!No disability:,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+159,B23024_026,Estimate!!Total:!!Income in the past 12 months at or above poverty level:!!No disability:!!In labor force:,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+160,B23024_027,Estimate!!Total:!!Income in the past 12 months at or above poverty level:!!No disability:!!In labor force:!!In Armed Forces,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+161,B23024_028,Estimate!!Total:!!Income in the past 12 months at or above poverty level:!!No disability:!!In labor force:!!Civilian:,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+162,B23024_029,Estimate!!Total:!!Income in the past 12 months at or above poverty level:!!No disability:!!In labor force:!!Civilian:!!Employed,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+163,B23024_030,Estimate!!Total:!!Income in the past 12 months at or above poverty level:!!No disability:!!In labor force:!!Civilian:!!Unemployed,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+164,B23024_031,Estimate!!Total:!!Income in the past 12 months at or above poverty level:!!No disability:!!Not in labor force,POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS BY EMPLOYMENT STATUS FOR THE POPULATION 20 TO 64 YEARS,block group
+165,B26108_002,Estimate!!Total:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+166,B26108_003,Estimate!!Total:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+167,B26108_005,Estimate!!Total:!!Population under 18 years:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+168,B26108_006,Estimate!!Total:!!Population under 18 years:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+169,B26108_008,Estimate!!Total:!!Population 18 to 64 years:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+170,B26108_009,Estimate!!Total:!!Population 18 to 64 years:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+171,B26108_011,Estimate!!Total:!!Population 65 years and over:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+172,B26108_012,Estimate!!Total:!!Population 65 years and over:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+173,B26108_014,Estimate!!Total:!!Group quarters population:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+174,B26108_015,Estimate!!Total:!!Group quarters population:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+175,B26108_017,Estimate!!Total:!!Group quarters population:!!Population under 18 years:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+176,B26108_018,Estimate!!Total:!!Group quarters population:!!Population under 18 years:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+177,B26108_020,Estimate!!Total:!!Group quarters population:!!Population 18 to 64 years:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+178,B26108_021,Estimate!!Total:!!Group quarters population:!!Population 18 to 64 years:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+179,B26108_023,Estimate!!Total:!!Group quarters population:!!Population 65 years and over:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+180,B26108_024,Estimate!!Total:!!Group quarters population:!!Population 65 years and over:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+181,B26108_026,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+182,B26108_027,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+183,B26108_029,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Population under 18 years:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+184,B26108_030,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Population under 18 years:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+185,B26108_032,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Population 18 to 64 years:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+186,B26108_033,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Population 18 to 64 years:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+187,B26108_035,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Population 65 years and over:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+188,B26108_036,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Population 65 years and over:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+189,B26108_038,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Adult correctional facilities:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+190,B26108_039,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Adult correctional facilities:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+191,B26108_041,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Adult correctional facilities:!!Population under 18 years:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+192,B26108_042,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Adult correctional facilities:!!Population under 18 years:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+193,B26108_044,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Adult correctional facilities:!!Population 18 to 64 years:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+194,B26108_045,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Adult correctional facilities:!!Population 18 to 64 years:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+195,B26108_047,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Adult correctional facilities:!!Population 65 years and over:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+196,B26108_048,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Adult correctional facilities:!!Population 65 years and over:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+197,B26108_050,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Nursing facilities/skilled nursing facilities:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+198,B26108_051,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Nursing facilities/skilled nursing facilities:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+199,B26108_053,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Nursing facilities/skilled nursing facilities:!!Population 18 to 64 years:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+200,B26108_054,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Nursing facilities/skilled nursing facilities:!!Population 18 to 64 years:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+201,B26108_056,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Nursing facilities/skilled nursing facilities:!!Population 65 years and over:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+202,B26108_057,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Nursing facilities/skilled nursing facilities:!!Population 65 years and over:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+203,B26108_059,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+204,B26108_060,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+205,B26108_062,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Population under 18 years:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+206,B26108_063,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Population under 18 years:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+207,B26108_065,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Population 18 to 64 years:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+208,B26108_066,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Population 18 to 64 years:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+209,B26108_068,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Population 65 years and over:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+210,B26108_069,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Population 65 years and over:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+211,B26108_071,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!College/university student housing:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+212,B26108_072,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!College/university student housing:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+213,B26108_074,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!College/university student housing:!!Population under 18 years:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+214,B26108_075,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!College/university student housing:!!Population under 18 years:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+215,B26108_077,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!College/university student housing:!!Population 18 to 64 years:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+216,B26108_078,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!College/university student housing:!!Population 18 to 64 years:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+217,B26108_080,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!College/university student housing:!!Population 65 years:!!With a disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+218,B26108_081,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!College/university student housing:!!Population 65 years:!!No disability,GROUP QUARTERS TYPE (3 TYPES) BY AGE BY DISABILITY STATUS,state
+219,B26208_002,Estimate!!Total:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+220,B26208_003,Estimate!!Total:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+221,B26208_005,Estimate!!Total:!!Population under 18 years:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+222,B26208_006,Estimate!!Total:!!Population under 18 years:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+223,B26208_008,Estimate!!Total:!!Population 18 to 64 years:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+224,B26208_009,Estimate!!Total:!!Population 18 to 64 years:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+225,B26208_011,Estimate!!Total:!!Population 65 years and over:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+226,B26208_012,Estimate!!Total:!!Population 65 years and over:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+227,B26208_014,Estimate!!Total:!!Group quarters population:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+228,B26208_015,Estimate!!Total:!!Group quarters population:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+229,B26208_017,Estimate!!Total:!!Group quarters population:!!Population under 18 years:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+230,B26208_018,Estimate!!Total:!!Group quarters population:!!Population under 18 years:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+231,B26208_020,Estimate!!Total:!!Group quarters population:!!Population 18 to 64 years:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+232,B26208_021,Estimate!!Total:!!Group quarters population:!!Population 18 to 64 years:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+233,B26208_023,Estimate!!Total:!!Group quarters population:!!Population 65 years and over:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+234,B26208_024,Estimate!!Total:!!Group quarters population:!!Population 65 years and over:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+235,B26208_026,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+236,B26208_027,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+237,B26208_029,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Population under 18 years:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+238,B26208_030,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Population under 18 years:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+239,B26208_032,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Population 18 to 64 years:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+240,B26208_033,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Population 18 to 64 years:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+241,B26208_035,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Population 65 years and over:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+242,B26208_036,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Population 65 years and over:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+243,B26208_038,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Adult correctional facilities:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+244,B26208_039,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Adult correctional facilities:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+245,B26208_041,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Adult correctional facilities:!!Population under 18 years:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+246,B26208_042,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Adult correctional facilities:!!Population under 18 years:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+247,B26208_044,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Adult correctional facilities:!!Population 18 to 64 years:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+248,B26208_045,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Adult correctional facilities:!!Population 18 to 64 years:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+249,B26208_047,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Adult correctional facilities:!!Population 65 years and over:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+250,B26208_048,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Adult correctional facilities:!!Population 65 years and over:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+251,B26208_050,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Nursing facilities/skilled nursing facilities:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+252,B26208_051,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Nursing facilities/skilled nursing facilities:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+253,B26208_053,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Nursing facilities/skilled nursing facilities:!!Population 18 to 64 years:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+254,B26208_054,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Nursing facilities/skilled nursing facilities:!!Population 18 to 64 years:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+255,B26208_056,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Nursing facilities/skilled nursing facilities:!!Population 65 years and over:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+256,B26208_057,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Nursing facilities/skilled nursing facilities:!!Population 65 years and over:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+257,B26208_059,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Juvenile facilities:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+258,B26208_060,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Juvenile facilities:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+259,B26208_062,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Juvenile facilities:!!Population under 18 years:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+260,B26208_063,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Juvenile facilities:!!Population under 18 years:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+261,B26208_065,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Juvenile facilities:!!Population 18 to 64 years:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+262,B26208_066,Estimate!!Total:!!Group quarters population:!!Institutionalized group quarters population:!!Juvenile facilities:!!Population 18 to 64 years:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+263,B26208_068,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+264,B26208_069,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+265,B26208_071,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Population under 18 years:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+266,B26208_072,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Population under 18 years:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+267,B26208_074,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Population 18 to 64 years:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+268,B26208_075,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Population 18 to 64 years:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+269,B26208_077,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Population 65 years and over:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+270,B26208_078,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Population 65 years and over:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+271,B26208_080,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!College/university student housing:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+272,B26208_081,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!College/university student housing:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+273,B26208_083,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!College/university student housing:!!Population under 18 years:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+274,B26208_084,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!College/university student housing:!!Population under 18 years:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+275,B26208_086,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!College/university student housing:!!Population 18 to 64 years:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+276,B26208_087,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!College/university student housing:!!Population 18 to 64 years:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+277,B26208_089,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!College/university student housing:!!Population 65 years and over:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+278,B26208_090,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!College/university student housing:!!Population 65 years and over:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+279,B26208_092,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Military quarters/military ships:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+280,B26208_093,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Military quarters/military ships:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+281,B26208_095,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Military quarters/military ships:!!Population under 18 years:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+282,B26208_096,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Military quarters/military ships:!!Population under 18 years:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+283,B26208_098,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Military quarters/military ships:!!Population 18 to 64 years:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+284,B26208_099,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Military quarters/military ships:!!Population 18 to 64 years:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+285,B26208_101,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Military quarters/military ships:!!Population 65 years and over:!!With a disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+286,B26208_102,Estimate!!Total:!!Group quarters population:!!Noninstitutionalized group quarters population:!!Military quarters/military ships:!!Population 65 years and over:!!No disability,GROUP QUARTERS TYPE (5 TYPES) BY AGE BY DISABILITY STATUS,us
+287,B99181_002,Estimate!!Total:!!One or more disability items allocated,ALLOCATION OF DISABILITY ITEMS FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION,tract
+288,B99181_003,Estimate!!Total:!!No disability items allocated,ALLOCATION OF DISABILITY ITEMS FOR THE CIVILIAN NONINSTITUTIONALIZED POPULATION,tract
+289,C18108_003,Estimate!!Total:!!Under 18 years:!!With one type of disability,AGE BY NUMBER OF DISABILITIES,tract
+290,C18108_004,Estimate!!Total:!!Under 18 years:!!With two or more types of disability,AGE BY NUMBER OF DISABILITIES,tract
+291,C18108_005,Estimate!!Total:!!Under 18 years:!!No disability,AGE BY NUMBER OF DISABILITIES,tract
+292,C18108_007,Estimate!!Total:!!18 to 64 years:!!With one type of disability,AGE BY NUMBER OF DISABILITIES,tract
+293,C18108_008,Estimate!!Total:!!18 to 64 years:!!With two or more types of disability,AGE BY NUMBER OF DISABILITIES,tract
+294,C18108_009,Estimate!!Total:!!18 to 64 years:!!No disability,AGE BY NUMBER OF DISABILITIES,tract
+295,C18108_011,Estimate!!Total:!!65 years and over:!!With one type of disability,AGE BY NUMBER OF DISABILITIES,tract
+296,C18108_012,Estimate!!Total:!!65 years and over:!!With two or more types of disability,AGE BY NUMBER OF DISABILITIES,tract
+297,C18108_013,Estimate!!Total:!!65 years and over:!!No disability,AGE BY NUMBER OF DISABILITIES,tract
+298,C18120_004,Estimate!!Total:!!In the labor force:!!Employed:!!With a disability,EMPLOYMENT STATUS BY DISABILITY STATUS,tract
+299,C18120_005,Estimate!!Total:!!In the labor force:!!Employed:!!No disability,EMPLOYMENT STATUS BY DISABILITY STATUS,tract
+300,C18120_007,Estimate!!Total:!!In the labor force:!!Unemployed:!!With a disability,EMPLOYMENT STATUS BY DISABILITY STATUS,tract
+301,C18120_008,Estimate!!Total:!!In the labor force:!!Unemployed:!!No disability,EMPLOYMENT STATUS BY DISABILITY STATUS,tract
+302,C18120_010,Estimate!!Total:!!Not in labor force:!!With a disability,EMPLOYMENT STATUS BY DISABILITY STATUS,tract
+303,C18120_011,Estimate!!Total:!!Not in labor force:!!No disability,EMPLOYMENT STATUS BY DISABILITY STATUS,tract
+304,C18121_003,"Estimate!!Total:!!Worked full-time, year round:!!With a disability",WORK EXPERIENCE BY DISABILITY STATUS,tract
+305,C18121_004,"Estimate!!Total:!!Worked full-time, year round:!!No disability",WORK EXPERIENCE BY DISABILITY STATUS,tract
+306,C18121_006,"Estimate!!Total:!!Worked less than full-time, year round:!!With a disability",WORK EXPERIENCE BY DISABILITY STATUS,tract
+307,C18121_007,"Estimate!!Total:!!Worked less than full-time, year round:!!No disability",WORK EXPERIENCE BY DISABILITY STATUS,tract
+308,C18121_009,Estimate!!Total:!!Did not work:!!With a disability,WORK EXPERIENCE BY DISABILITY STATUS,tract
+309,C18121_010,Estimate!!Total:!!Did not work:!!No disability,WORK EXPERIENCE BY DISABILITY STATUS,tract
+310,C18130_003,Estimate!!Total:!!Under 18 years:!!With a disability:,AGE BY DISABILITY STATUS BY POVERTY STATUS,tract
+311,C18130_004,Estimate!!Total:!!Under 18 years:!!With a disability:!!Income in the past 12-months below poverty level,AGE BY DISABILITY STATUS BY POVERTY STATUS,tract
+312,C18130_005,Estimate!!Total:!!Under 18 years:!!With a disability:!!Income in the past 12-months at or above poverty level,AGE BY DISABILITY STATUS BY POVERTY STATUS,tract
+313,C18130_006,Estimate!!Total:!!Under 18 years:!!No disability:,AGE BY DISABILITY STATUS BY POVERTY STATUS,tract
+314,C18130_007,Estimate!!Total:!!Under 18 years:!!No disability:!!Income in the past 12-months below poverty level,AGE BY DISABILITY STATUS BY POVERTY STATUS,tract
+315,C18130_008,Estimate!!Total:!!Under 18 years:!!No disability:!!Income in the past 12-months at or above poverty level,AGE BY DISABILITY STATUS BY POVERTY STATUS,tract
+316,C18130_010,Estimate!!Total:!!18 to 64 years:!!With a disability:,AGE BY DISABILITY STATUS BY POVERTY STATUS,tract
+317,C18130_011,Estimate!!Total:!!18 to 64 years:!!With a disability:!!Income in the past 12-months below poverty level,AGE BY DISABILITY STATUS BY POVERTY STATUS,tract
+318,C18130_012,Estimate!!Total:!!18 to 64 years:!!With a disability:!!Income in the past 12-months at or above poverty level,AGE BY DISABILITY STATUS BY POVERTY STATUS,tract
+319,C18130_013,Estimate!!Total:!!18 to 64 years:!!No disability:,AGE BY DISABILITY STATUS BY POVERTY STATUS,tract
+320,C18130_014,Estimate!!Total:!!18 to 64 years:!!No disability:!!Income in the past 12-months below poverty level,AGE BY DISABILITY STATUS BY POVERTY STATUS,tract
+321,C18130_015,Estimate!!Total:!!18 to 64 years:!!No disability:!!Income in the past 12-months at or above poverty level,AGE BY DISABILITY STATUS BY POVERTY STATUS,tract
+322,C18130_017,Estimate!!Total:!!65 years and over:!!With a disability:,AGE BY DISABILITY STATUS BY POVERTY STATUS,tract
+323,C18130_018,Estimate!!Total:!!65 years and over:!!With a disability:!!Income in the past 12-months below poverty level,AGE BY DISABILITY STATUS BY POVERTY STATUS,tract
+324,C18130_019,Estimate!!Total:!!65 years and over:!!With a disability:!!Income in the past 12-months at or above poverty level,AGE BY DISABILITY STATUS BY POVERTY STATUS,tract
+325,C18130_020,Estimate!!Total:!!65 years and over:!!No disability:,AGE BY DISABILITY STATUS BY POVERTY STATUS,tract
+326,C18130_021,Estimate!!Total:!!65 years and over:!!No disability:!!Income in the past 12-months below poverty level,AGE BY DISABILITY STATUS BY POVERTY STATUS,tract
+327,C18130_022,Estimate!!Total:!!65 years and over:!!No disability:!!Income in the past 12-months at or above poverty level,AGE BY DISABILITY STATUS BY POVERTY STATUS,tract
+328,C18131_003,Estimate!!Total:!!Under .50:!!With a disability,RATIO OF INCOME TO POVERTY LEVEL IN THE PAST 12 MONTHS BY DISABILITY STATUS,tract
+329,C18131_004,Estimate!!Total:!!Under .50:!!No disability,RATIO OF INCOME TO POVERTY LEVEL IN THE PAST 12 MONTHS BY DISABILITY STATUS,tract
+330,C18131_006,Estimate!!Total:!!.50 to .99:!!With a disability,RATIO OF INCOME TO POVERTY LEVEL IN THE PAST 12 MONTHS BY DISABILITY STATUS,tract
+331,C18131_007,Estimate!!Total:!!.50 to .99:!!No disability,RATIO OF INCOME TO POVERTY LEVEL IN THE PAST 12 MONTHS BY DISABILITY STATUS,tract
+332,C18131_009,Estimate!!Total:!!1.00 to 1.49:!!With a disability,RATIO OF INCOME TO POVERTY LEVEL IN THE PAST 12 MONTHS BY DISABILITY STATUS,tract
+333,C18131_010,Estimate!!Total:!!1.00 to 1.49:!!No disability,RATIO OF INCOME TO POVERTY LEVEL IN THE PAST 12 MONTHS BY DISABILITY STATUS,tract
+334,C18131_012,Estimate!!Total:!!1.50 to 1.99:!!With a disability,RATIO OF INCOME TO POVERTY LEVEL IN THE PAST 12 MONTHS BY DISABILITY STATUS,tract
+335,C18131_013,Estimate!!Total:!!1.50 to 1.99:!!No disability,RATIO OF INCOME TO POVERTY LEVEL IN THE PAST 12 MONTHS BY DISABILITY STATUS,tract
+336,C18131_015,Estimate!!Total:!!2.00 and over:!!With a disability,RATIO OF INCOME TO POVERTY LEVEL IN THE PAST 12 MONTHS BY DISABILITY STATUS,tract
+337,C18131_016,Estimate!!Total:!!2.00 and over:!!No disability,RATIO OF INCOME TO POVERTY LEVEL IN THE PAST 12 MONTHS BY DISABILITY STATUS,tract
+338,C21007_005,Estimate!!Total:!!18 to 64 years:!!Veteran:!!Income in the past 12 months below poverty level:!!With a disability,AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER,block group
+339,C21007_006,Estimate!!Total:!!18 to 64 years:!!Veteran:!!Income in the past 12 months below poverty level:!!No disability,AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER,block group
+340,C21007_008,Estimate!!Total:!!18 to 64 years:!!Veteran:!!Income in the past 12 months at or above poverty level:!!With a disability,AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER,block group
+341,C21007_009,Estimate!!Total:!!18 to 64 years:!!Veteran:!!Income in the past 12 months at or above poverty level:!!No disability,AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER,block group
+342,C21007_012,Estimate!!Total:!!18 to 64 years:!!Nonveteran:!!Income in the past 12 months below poverty level:!!With a disability,AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER,block group
+343,C21007_013,Estimate!!Total:!!18 to 64 years:!!Nonveteran:!!Income in the past 12 months below poverty level:!!No disability,AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER,block group
+344,C21007_015,Estimate!!Total:!!18 to 64 years:!!Nonveteran:!!Income in the past 12 months at or above poverty level:!!With a disability,AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER,block group
+345,C21007_016,Estimate!!Total:!!18 to 64 years:!!Nonveteran:!!Income in the past 12 months at or above poverty level:!!No disability,AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER,block group
+346,C21007_020,Estimate!!Total:!!65 years and over:!!Veteran:!!Income in the past 12 months below poverty level:!!With a disability,AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER,block group
+347,C21007_021,Estimate!!Total:!!65 years and over:!!Veteran:!!Income in the past 12 months below poverty level:!!No disability,AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER,block group
+348,C21007_023,Estimate!!Total:!!65 years and over:!!Veteran:!!Income in the past 12 months at or above poverty level:!!With a disability,AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER,block group
+349,C21007_024,Estimate!!Total:!!65 years and over:!!Veteran:!!Income in the past 12 months at or above poverty level:!!No disability,AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER,block group
+350,C21007_027,Estimate!!Total:!!65 years and over:!!Nonveteran:!!Income in the past 12 months below poverty level:!!With a disability,AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER,block group
+351,C21007_028,Estimate!!Total:!!65 years and over:!!Nonveteran:!!Income in the past 12 months below poverty level:!!No disability,AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER,block group
+352,C21007_030,Estimate!!Total:!!65 years and over:!!Nonveteran:!!Income in the past 12 months at or above poverty level:!!With a disability,AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER,block group
+353,C21007_031,Estimate!!Total:!!65 years and over:!!Nonveteran:!!Income in the past 12 months at or above poverty level:!!No disability,AGE BY VETERAN STATUS BY POVERTY STATUS IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR THE CIVILIAN POPULATION 18 YEARS AND OVER,block group
