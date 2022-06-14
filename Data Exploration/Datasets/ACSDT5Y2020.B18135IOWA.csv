@@ -1,0 +1,35 @@
+﻿Label (Grouping),Iowa!!Estimate,Iowa!!Margin of Error
+Total:,"3,106,492",378
+    Under 19 years:,"770,491","1,373"
+        With a disability:,"31,501","1,448"
+            With health insurance coverage:,"30,818","1,447"
+                With private health insurance coverage,"14,973",988
+                With public health coverage,"20,251","1,045"
+            No health insurance coverage,683,168
+        No disability:,"738,990","2,073"
+            With health insurance coverage:,"718,383","2,503"
+                With private health insurance coverage,"504,957","4,011"
+                With public health coverage,"256,139","4,198"
+            No health insurance coverage,"20,607","1,339"
+    19 to 64 years:,"1,821,025","1,551"
+        With a disability:,"174,860","3,297"
+            With health insurance coverage:,"165,495","3,110"
+                With private health insurance coverage,"86,544","1,895"
+                With public health coverage,"99,721","2,417"
+            No health insurance coverage,"9,365",843
+        No disability:,"1,646,165","3,486"
+            With health insurance coverage:,"1,532,865","4,779"
+                With private health insurance coverage,"1,368,276","6,002"
+                With public health coverage,"214,282","3,767"
+            No health insurance coverage,"113,300","3,605"
+    65 years and over:,"514,976",646
+        With a disability:,"159,517","2,157"
+            With health insurance coverage:,"158,954","2,138"
+                With private health insurance coverage,"102,066","1,764"
+                With public health coverage,"157,679","2,156"
+            No health insurance coverage,563,186
+        No disability:,"355,459","2,239"
+            With health insurance coverage:,"354,344","2,232"
+                With private health insurance coverage,"243,018","2,339"
+                With public health coverage,"344,317","2,282"
+            No health insurance coverage,"1,115",237
