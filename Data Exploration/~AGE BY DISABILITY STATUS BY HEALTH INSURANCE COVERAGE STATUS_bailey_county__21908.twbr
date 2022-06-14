@@ -1,0 +1,2367 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.22.0325.1155                               -->
+<workbook source-build='2021.2.10 (20212.22.0325.1155)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Data (B18135 AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS)' inline='true' name='federated.10uip8q1k5h72816sncvd11lno42' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ACSDT5Y2020.B18135county' name='textscan.1i39yd314dyfb110oqua305pyv06'>
+            <connection class='textscan' directory='C:/Users/bahanson/Documents/GitHub/DHR-Disabilities/Data Exploration/Datasets' filename='ACSDT5Y2020.B18135county.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746' name='textscan.1d5jaq202ic7jj1dopw4q05btigu'>
+            <connection class='textscan' directory='C:/Users/bahanson/Documents/GitHub/DHR-Disabilities/Data Exploration/Datasets' filename='ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1d5jaq202ic7jj1dopw4q05btigu' name='ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv' table='[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='B18135_001E' ordinal='0' />
+            <column datatype='integer' name='B18135_001M' ordinal='1' />
+            <column datatype='integer' name='B18135_002E' ordinal='2' />
+            <column datatype='integer' name='B18135_002M' ordinal='3' />
+            <column datatype='integer' name='B18135_003E' ordinal='4' />
+            <column datatype='integer' name='B18135_003M' ordinal='5' />
+            <column datatype='integer' name='B18135_004E' ordinal='6' />
+            <column datatype='integer' name='B18135_004M' ordinal='7' />
+            <column datatype='integer' name='B18135_005E' ordinal='8' />
+            <column datatype='integer' name='B18135_005M' ordinal='9' />
+            <column datatype='integer' name='B18135_006E' ordinal='10' />
+            <column datatype='integer' name='B18135_006M' ordinal='11' />
+            <column datatype='integer' name='B18135_007E' ordinal='12' />
+            <column datatype='integer' name='B18135_007M' ordinal='13' />
+            <column datatype='integer' name='B18135_008E' ordinal='14' />
+            <column datatype='integer' name='B18135_008M' ordinal='15' />
+            <column datatype='integer' name='B18135_009E' ordinal='16' />
+            <column datatype='integer' name='B18135_009M' ordinal='17' />
+            <column datatype='integer' name='B18135_010E' ordinal='18' />
+            <column datatype='integer' name='B18135_010M' ordinal='19' />
+            <column datatype='integer' name='B18135_011E' ordinal='20' />
+            <column datatype='integer' name='B18135_011M' ordinal='21' />
+            <column datatype='integer' name='B18135_012E' ordinal='22' />
+            <column datatype='integer' name='B18135_012M' ordinal='23' />
+            <column datatype='integer' name='B18135_013E' ordinal='24' />
+            <column datatype='integer' name='B18135_013M' ordinal='25' />
+            <column datatype='integer' name='B18135_014E' ordinal='26' />
+            <column datatype='integer' name='B18135_014M' ordinal='27' />
+            <column datatype='integer' name='B18135_015E' ordinal='28' />
+            <column datatype='integer' name='B18135_015M' ordinal='29' />
+            <column datatype='integer' name='B18135_016E' ordinal='30' />
+            <column datatype='integer' name='B18135_016M' ordinal='31' />
+            <column datatype='integer' name='B18135_017E' ordinal='32' />
+            <column datatype='integer' name='B18135_017M' ordinal='33' />
+            <column datatype='integer' name='B18135_018E' ordinal='34' />
+            <column datatype='integer' name='B18135_018M' ordinal='35' />
+            <column datatype='integer' name='B18135_019E' ordinal='36' />
+            <column datatype='integer' name='B18135_019M' ordinal='37' />
+            <column datatype='integer' name='B18135_020E' ordinal='38' />
+            <column datatype='integer' name='B18135_020M' ordinal='39' />
+            <column datatype='integer' name='B18135_021E' ordinal='40' />
+            <column datatype='integer' name='B18135_021M' ordinal='41' />
+            <column datatype='integer' name='B18135_022E' ordinal='42' />
+            <column datatype='integer' name='B18135_022M' ordinal='43' />
+            <column datatype='integer' name='B18135_023E' ordinal='44' />
+            <column datatype='integer' name='B18135_023M' ordinal='45' />
+            <column datatype='integer' name='B18135_024E' ordinal='46' />
+            <column datatype='integer' name='B18135_024M' ordinal='47' />
+            <column datatype='integer' name='B18135_025E' ordinal='48' />
+            <column datatype='integer' name='B18135_025M' ordinal='49' />
+            <column datatype='integer' name='B18135_026E' ordinal='50' />
+            <column datatype='integer' name='B18135_026M' ordinal='51' />
+            <column datatype='integer' name='B18135_027E' ordinal='52' />
+            <column datatype='integer' name='B18135_027M' ordinal='53' />
+            <column datatype='integer' name='B18135_028E' ordinal='54' />
+            <column datatype='integer' name='B18135_028M' ordinal='55' />
+            <column datatype='integer' name='B18135_029E' ordinal='56' />
+            <column datatype='integer' name='B18135_029M' ordinal='57' />
+            <column datatype='integer' name='B18135_030E' ordinal='58' />
+            <column datatype='integer' name='B18135_030M' ordinal='59' />
+            <column datatype='integer' name='B18135_031E' ordinal='60' />
+            <column datatype='integer' name='B18135_031M' ordinal='61' />
+            <column datatype='integer' name='B18135_032E' ordinal='62' />
+            <column datatype='integer' name='B18135_032M' ordinal='63' />
+            <column datatype='integer' name='B18135_033E' ordinal='64' />
+            <column datatype='integer' name='B18135_033M' ordinal='65' />
+            <column datatype='integer' name='B18135_034E' ordinal='66' />
+            <column datatype='integer' name='B18135_034M' ordinal='67' />
+            <column datatype='string' name='GEO_ID' ordinal='68' />
+            <column datatype='string' name='NAME' ordinal='69' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1d5jaq202ic7jj1dopw4q05btigu' name='ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv' table='[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='B18135_001E' ordinal='0' />
+            <column datatype='integer' name='B18135_001M' ordinal='1' />
+            <column datatype='integer' name='B18135_002E' ordinal='2' />
+            <column datatype='integer' name='B18135_002M' ordinal='3' />
+            <column datatype='integer' name='B18135_003E' ordinal='4' />
+            <column datatype='integer' name='B18135_003M' ordinal='5' />
+            <column datatype='integer' name='B18135_004E' ordinal='6' />
+            <column datatype='integer' name='B18135_004M' ordinal='7' />
+            <column datatype='integer' name='B18135_005E' ordinal='8' />
+            <column datatype='integer' name='B18135_005M' ordinal='9' />
+            <column datatype='integer' name='B18135_006E' ordinal='10' />
+            <column datatype='integer' name='B18135_006M' ordinal='11' />
+            <column datatype='integer' name='B18135_007E' ordinal='12' />
+            <column datatype='integer' name='B18135_007M' ordinal='13' />
+            <column datatype='integer' name='B18135_008E' ordinal='14' />
+            <column datatype='integer' name='B18135_008M' ordinal='15' />
+            <column datatype='integer' name='B18135_009E' ordinal='16' />
+            <column datatype='integer' name='B18135_009M' ordinal='17' />
+            <column datatype='integer' name='B18135_010E' ordinal='18' />
+            <column datatype='integer' name='B18135_010M' ordinal='19' />
+            <column datatype='integer' name='B18135_011E' ordinal='20' />
+            <column datatype='integer' name='B18135_011M' ordinal='21' />
+            <column datatype='integer' name='B18135_012E' ordinal='22' />
+            <column datatype='integer' name='B18135_012M' ordinal='23' />
+            <column datatype='integer' name='B18135_013E' ordinal='24' />
+            <column datatype='integer' name='B18135_013M' ordinal='25' />
+            <column datatype='integer' name='B18135_014E' ordinal='26' />
+            <column datatype='integer' name='B18135_014M' ordinal='27' />
+            <column datatype='integer' name='B18135_015E' ordinal='28' />
+            <column datatype='integer' name='B18135_015M' ordinal='29' />
+            <column datatype='integer' name='B18135_016E' ordinal='30' />
+            <column datatype='integer' name='B18135_016M' ordinal='31' />
+            <column datatype='integer' name='B18135_017E' ordinal='32' />
+            <column datatype='integer' name='B18135_017M' ordinal='33' />
+            <column datatype='integer' name='B18135_018E' ordinal='34' />
+            <column datatype='integer' name='B18135_018M' ordinal='35' />
+            <column datatype='integer' name='B18135_019E' ordinal='36' />
+            <column datatype='integer' name='B18135_019M' ordinal='37' />
+            <column datatype='integer' name='B18135_020E' ordinal='38' />
+            <column datatype='integer' name='B18135_020M' ordinal='39' />
+            <column datatype='integer' name='B18135_021E' ordinal='40' />
+            <column datatype='integer' name='B18135_021M' ordinal='41' />
+            <column datatype='integer' name='B18135_022E' ordinal='42' />
+            <column datatype='integer' name='B18135_022M' ordinal='43' />
+            <column datatype='integer' name='B18135_023E' ordinal='44' />
+            <column datatype='integer' name='B18135_023M' ordinal='45' />
+            <column datatype='integer' name='B18135_024E' ordinal='46' />
+            <column datatype='integer' name='B18135_024M' ordinal='47' />
+            <column datatype='integer' name='B18135_025E' ordinal='48' />
+            <column datatype='integer' name='B18135_025M' ordinal='49' />
+            <column datatype='integer' name='B18135_026E' ordinal='50' />
+            <column datatype='integer' name='B18135_026M' ordinal='51' />
+            <column datatype='integer' name='B18135_027E' ordinal='52' />
+            <column datatype='integer' name='B18135_027M' ordinal='53' />
+            <column datatype='integer' name='B18135_028E' ordinal='54' />
+            <column datatype='integer' name='B18135_028M' ordinal='55' />
+            <column datatype='integer' name='B18135_029E' ordinal='56' />
+            <column datatype='integer' name='B18135_029M' ordinal='57' />
+            <column datatype='integer' name='B18135_030E' ordinal='58' />
+            <column datatype='integer' name='B18135_030M' ordinal='59' />
+            <column datatype='integer' name='B18135_031E' ordinal='60' />
+            <column datatype='integer' name='B18135_031M' ordinal='61' />
+            <column datatype='integer' name='B18135_032E' ordinal='62' />
+            <column datatype='integer' name='B18135_032M' ordinal='63' />
+            <column datatype='integer' name='B18135_033E' ordinal='64' />
+            <column datatype='integer' name='B18135_033M' ordinal='65' />
+            <column datatype='integer' name='B18135_034E' ordinal='66' />
+            <column datatype='integer' name='B18135_034M' ordinal='67' />
+            <column datatype='string' name='GEO_ID' ordinal='68' />
+            <column datatype='string' name='NAME' ordinal='69' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_001E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_001E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_001E</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_001M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_001M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_001M</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_002E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_002E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_002E</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_002M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_002M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_002M</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_003E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_003E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_003E</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_003M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_003M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_003M</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_004E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_004E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_004E</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_004M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_004M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_004M</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_005E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_005E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_005E</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_005M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_005M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_005M</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_006E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_006E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_006E</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_006M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_006M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_006M</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_007E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_007E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_007E</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_007M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_007M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_007M</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_008E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_008E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_008E</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_008M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_008M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_008M</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_009E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_009E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_009E</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_009M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_009M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_009M</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_010E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_010E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_010E</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_010M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_010M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_010M</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_011E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_011E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_011E</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_011M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_011M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_011M</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_012E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_012E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_012E</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_012M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_012M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_012M</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_013E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_013E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_013E</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_013M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_013M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_013M</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_014E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_014E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_014E</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_014M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_014M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_014M</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_015E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_015E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_015E</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_015M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_015M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_015M</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_016E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_016E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_016E</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_016M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_016M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_016M</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_017E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_017E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_017E</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_017M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_017M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_017M</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_018E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_018E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_018E</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_018M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_018M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_018M</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_019E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_019E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_019E</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_019M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_019M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_019M</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_020E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_020E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_020E</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_020M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_020M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_020M</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_021E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_021E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_021E</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_021M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_021M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_021M</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_022E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_022E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_022E</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_022M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_022M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_022M</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_023E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_023E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_023E</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_023M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_023M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_023M</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_024E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_024E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_024E</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_024M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_024M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_024M</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_025E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_025E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_025E</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_025M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_025M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_025M</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_026E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_026E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_026E</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_026M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_026M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_026M</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_027E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_027E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_027E</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_027M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_027M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_027M</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_028E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_028E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_028E</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_028M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_028M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_028M</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_029E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_029E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_029E</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_029M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_029M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_029M</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_030E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_030E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_030E</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_030M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_030M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_030M</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_031E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_031E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_031E</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_031M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_031M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_031M</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_032E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_032E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_032E</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_032M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_032M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_032M</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_033E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_033E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_033E</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_033M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_033M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_033M</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_034E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_034E]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_034E</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B18135_034M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B18135_034M]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>B18135_034M</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEO_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GEO_ID]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>GEO_ID</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME]</local-name>
+            <parent-name>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv]</parent-name>
+            <remote-alias>NAME</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[0-18 per no dis w/o insur cov (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-2' formula='[Calculation_1411878528448057347]' peg='0' size='0.0303' />
+      </column>
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528443613184:qk]&quot;' value='0-18' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528444628993:qk]&quot;' value='0-18 ' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528448057347:qk]&quot;' value=' 0-18' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528456278020:qk]&quot;' value='19-64' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528456491013:qk]&quot;' value='19-64 ' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528456937479:qk]&quot;' value=' 19-64' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528457089032:qk]&quot;' value='65+ ' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528457261065:qk]&quot;' value='65+' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528457506827:qk]&quot;' value=' 65+' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:No disability: 1:qk]&quot;' value='19 to 64 years without disability' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:No disability: 2:qk]&quot;' value='Nondisabled 65 years and over with health insurance coverage' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:No disability::qk]&quot;' value='Under 19 years without a disability' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:No health insurance coverage 1:qk]&quot;' value='Nondisabled under 19 years without health insurance coverage' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:No health insurance coverage 2:qk]&quot;' value='Disabled 19 to 64 years without health insurance coverage' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:No health insurance coverage 3:qk]&quot;' value='Nondisabled 19 to 64 years without health insurance coverage' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:No health insurance coverage 4:qk]&quot;' value='Disabled 65 years and over without health insurance coverage' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:No health insurance coverage 5:qk]&quot;' value='Nondisabled 65 years and over without health insurance coverage' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:No health insurance coverage:qk]&quot;' value='Disabled under 19 years without health insurance coverage' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:With a disability: 1:qk]&quot;' value='19 to 64 years with a disability' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:With a disability: 2:qk]&quot;' value='65 years and over with a disability' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:With a disability::qk]&quot;' value='Under 19 years with a disability' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:With health insurance coverage: 1:qk]&quot;' value='Nondisabled under 19 years with health insurance coverage' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:With health insurance coverage: 2:qk]&quot;' value='Disabled 19 to 64 years with health insurance coverage' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:With health insurance coverage: 3:qk]&quot;' value='Nondisabled 19 to 64 years with health insurance coverage' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:With health insurance coverage: 4:qk]&quot;' value='Disabled 65 years and over with health insurance coverage' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:With health insurance coverage: 5:qk]&quot;' value='65 years and over without disability' />
+          <alias key='&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:With health insurance coverage::qk]&quot;' value='Disabled under 19 years with health insurance coverage' />
+        </aliases>
+      </column>
+      <column caption='B18135 001E' datatype='integer' name='[B18135_001E]' role='measure' type='quantitative' />
+      <column caption='B18135 001M' datatype='integer' name='[B18135_001M]' role='measure' type='quantitative' />
+      <column caption='B18135 002E' datatype='integer' name='[B18135_002E]' role='measure' type='quantitative' />
+      <column caption='B18135 002M' datatype='integer' name='[B18135_002M]' role='measure' type='quantitative' />
+      <column caption='B18135 003E' datatype='integer' name='[B18135_003E]' role='measure' type='quantitative' />
+      <column caption='B18135 003M' datatype='integer' name='[B18135_003M]' role='measure' type='quantitative' />
+      <column caption='B18135 004E' datatype='integer' name='[B18135_004E]' role='measure' type='quantitative' />
+      <column caption='B18135 004M' datatype='integer' name='[B18135_004M]' role='measure' type='quantitative' />
+      <column caption='B18135 005E' datatype='integer' name='[B18135_005E]' role='measure' type='quantitative' />
+      <column caption='B18135 005M' datatype='integer' name='[B18135_005M]' role='measure' type='quantitative' />
+      <column caption='B18135 006E' datatype='integer' name='[B18135_006E]' role='measure' type='quantitative' />
+      <column caption='B18135 006M' datatype='integer' name='[B18135_006M]' role='measure' type='quantitative' />
+      <column caption='B18135 007E' datatype='integer' name='[B18135_007E]' role='measure' type='quantitative' />
+      <column caption='B18135 007M' datatype='integer' name='[B18135_007M]' role='measure' type='quantitative' />
+      <column caption='B18135 008E' datatype='integer' name='[B18135_008E]' role='measure' type='quantitative' />
+      <column caption='B18135 008M' datatype='integer' name='[B18135_008M]' role='measure' type='quantitative' />
+      <column caption='B18135 009E' datatype='integer' name='[B18135_009E]' role='measure' type='quantitative' />
+      <column caption='B18135 009M' datatype='integer' name='[B18135_009M]' role='measure' type='quantitative' />
+      <column caption='B18135 010E' datatype='integer' name='[B18135_010E]' role='measure' type='quantitative' />
+      <column caption='B18135 010M' datatype='integer' name='[B18135_010M]' role='measure' type='quantitative' />
+      <column caption='B18135 011E' datatype='integer' name='[B18135_011E]' role='measure' type='quantitative' />
+      <column caption='B18135 011M' datatype='integer' name='[B18135_011M]' role='measure' type='quantitative' />
+      <column caption='B18135 012E' datatype='integer' name='[B18135_012E]' role='measure' type='quantitative' />
+      <column caption='B18135 012M' datatype='integer' name='[B18135_012M]' role='measure' type='quantitative' />
+      <column caption='B18135 013E' datatype='integer' name='[B18135_013E]' role='measure' type='quantitative' />
+      <column caption='B18135 013M' datatype='integer' name='[B18135_013M]' role='measure' type='quantitative' />
+      <column caption='B18135 014E' datatype='integer' name='[B18135_014E]' role='measure' type='quantitative' />
+      <column caption='B18135 014M' datatype='integer' name='[B18135_014M]' role='measure' type='quantitative' />
+      <column caption='B18135 015E' datatype='integer' name='[B18135_015E]' role='measure' type='quantitative' />
+      <column caption='B18135 015M' datatype='integer' name='[B18135_015M]' role='measure' type='quantitative' />
+      <column caption='B18135 016E' datatype='integer' name='[B18135_016E]' role='measure' type='quantitative' />
+      <column caption='B18135 016M' datatype='integer' name='[B18135_016M]' role='measure' type='quantitative' />
+      <column caption='B18135 017E' datatype='integer' name='[B18135_017E]' role='measure' type='quantitative' />
+      <column caption='B18135 017M' datatype='integer' name='[B18135_017M]' role='measure' type='quantitative' />
+      <column caption='B18135 018E' datatype='integer' name='[B18135_018E]' role='measure' type='quantitative' />
+      <column caption='B18135 018M' datatype='integer' name='[B18135_018M]' role='measure' type='quantitative' />
+      <column caption='B18135 019E' datatype='integer' name='[B18135_019E]' role='measure' type='quantitative' />
+      <column caption='B18135 019M' datatype='integer' name='[B18135_019M]' role='measure' type='quantitative' />
+      <column caption='B18135 020E' datatype='integer' name='[B18135_020E]' role='measure' type='quantitative' />
+      <column caption='B18135 020M' datatype='integer' name='[B18135_020M]' role='measure' type='quantitative' />
+      <column caption='B18135 021E' datatype='integer' name='[B18135_021E]' role='measure' type='quantitative' />
+      <column caption='B18135 021M' datatype='integer' name='[B18135_021M]' role='measure' type='quantitative' />
+      <column caption='B18135 022E' datatype='integer' name='[B18135_022E]' role='measure' type='quantitative' />
+      <column caption='B18135 022M' datatype='integer' name='[B18135_022M]' role='measure' type='quantitative' />
+      <column caption='B18135 023E' datatype='integer' name='[B18135_023E]' role='measure' type='quantitative' />
+      <column caption='B18135 023M' datatype='integer' name='[B18135_023M]' role='measure' type='quantitative' />
+      <column caption='B18135 024E' datatype='integer' name='[B18135_024E]' role='measure' type='quantitative' />
+      <column caption='B18135 024M' datatype='integer' name='[B18135_024M]' role='measure' type='quantitative' />
+      <column caption='B18135 025E' datatype='integer' name='[B18135_025E]' role='measure' type='quantitative' />
+      <column caption='B18135 025M' datatype='integer' name='[B18135_025M]' role='measure' type='quantitative' />
+      <column caption='B18135 026E' datatype='integer' name='[B18135_026E]' role='measure' type='quantitative' />
+      <column caption='B18135 026M' datatype='integer' name='[B18135_026M]' role='measure' type='quantitative' />
+      <column caption='B18135 027E' datatype='integer' name='[B18135_027E]' role='measure' type='quantitative' />
+      <column caption='B18135 027M' datatype='integer' name='[B18135_027M]' role='measure' type='quantitative' />
+      <column caption='B18135 028E' datatype='integer' name='[B18135_028E]' role='measure' type='quantitative' />
+      <column caption='B18135 028M' datatype='integer' name='[B18135_028M]' role='measure' type='quantitative' />
+      <column caption='B18135 029E' datatype='integer' name='[B18135_029E]' role='measure' type='quantitative' />
+      <column caption='B18135 029M' datatype='integer' name='[B18135_029M]' role='measure' type='quantitative' />
+      <column caption='B18135 030E' datatype='integer' name='[B18135_030E]' role='measure' type='quantitative' />
+      <column caption='B18135 030M' datatype='integer' name='[B18135_030M]' role='measure' type='quantitative' />
+      <column caption='B18135 031E' datatype='integer' name='[B18135_031E]' role='measure' type='quantitative' />
+      <column caption='B18135 031M' datatype='integer' name='[B18135_031M]' role='measure' type='quantitative' />
+      <column caption='B18135 032E' datatype='integer' name='[B18135_032E]' role='measure' type='quantitative' />
+      <column caption='B18135 032M' datatype='integer' name='[B18135_032M]' role='measure' type='quantitative' />
+      <column caption='B18135 033E' datatype='integer' name='[B18135_033E]' role='measure' type='quantitative' />
+      <column caption='B18135 033M' datatype='integer' name='[B18135_033M]' role='measure' type='quantitative' />
+      <column caption='B18135 034E' datatype='integer' name='[B18135_034E]' role='measure' type='quantitative' />
+      <column caption='B18135 034M' datatype='integer' name='[B18135_034M]' role='measure' type='quantitative' />
+      <column caption='0-18 perc dis w insur cov' datatype='real' name='[Calculation_1411878528443613184]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[B18135_004E]/[B18135_003E]' />
+      </column>
+      <column caption='0-18 perc dis w/o insur cov' datatype='real' name='[Calculation_1411878528444628993]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[No health insurance coverage]/[With a disability:]' />
+      </column>
+      <column caption='0-18 perc no dis w insur cov' datatype='real' name='[Calculation_1411878528446922754]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[With health insurance coverage: 1]/[No disability:]' />
+      </column>
+      <column caption='0-18 per no dis w/o insur cov' datatype='real' name='[Calculation_1411878528448057347]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[B18135_007E]/[B18135_003E]' />
+      </column>
+      <column caption='19-64 per dis w insur cov' datatype='real' name='[Calculation_1411878528456278020]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[With health insurance coverage: 2]/[With a disability: 1]' />
+      </column>
+      <column caption='19-64 per dis w/o insur cov' datatype='real' name='[Calculation_1411878528456491013]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[No health insurance coverage 2]/[With a disability: 1]' />
+      </column>
+      <column caption='19-64 per no dis w insur cov' datatype='real' name='[Calculation_1411878528456810502]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[With health insurance coverage: 3]/[No disability: 1]' />
+      </column>
+      <column caption='19-64 per no dis w/o insur cov' datatype='real' name='[Calculation_1411878528456937479]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[No health insurance coverage 3]/[No disability: 1]' />
+      </column>
+      <column caption='65+ per dis w insur cov' datatype='real' name='[Calculation_1411878528457089032]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[With health insurance coverage: 4]/[With a disability: 2]' />
+      </column>
+      <column caption='65+ per dis w/o insur cov' datatype='real' name='[Calculation_1411878528457261065]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[No health insurance coverage 4]/[With a disability: 2]' />
+      </column>
+      <column caption='65+ per no dis w insur cov' datatype='real' name='[Calculation_1411878528457396234]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[With health insurance coverage: 5]/[No disability: 2]' />
+      </column>
+      <column caption='65+ per no dis w/o insur cov' datatype='real' name='[Calculation_1411878528457506827]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[No health insurance coverage 5]/[No disability: 2]' />
+      </column>
+      <column caption='est moe compare for filter' datatype='string' name='[Calculation_1541638492743491584]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [B18135_007E]/2 &gt;= [B18135_007M] THEN &#13;&#10;&quot;good&quot;&#13;&#10;Else &#13;&#10;&quot;bad&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Geo Id' datatype='string' name='[GEO_ID]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv' datatype='table' name='[__tableau_internal_object_id__].[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1411878528443613184]' derivation='Sum' name='[sum:Calculation_1411878528443613184:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1411878528444628993]' derivation='Sum' name='[sum:Calculation_1411878528444628993:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1411878528446922754]' derivation='Sum' name='[sum:Calculation_1411878528446922754:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1411878528448057347]' derivation='Sum' name='[sum:Calculation_1411878528448057347:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1411878528456278020]' derivation='Sum' name='[sum:Calculation_1411878528456278020:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1411878528456491013]' derivation='Sum' name='[sum:Calculation_1411878528456491013:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1411878528456937479]' derivation='Sum' name='[sum:Calculation_1411878528456937479:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1411878528457089032]' derivation='Sum' name='[sum:Calculation_1411878528457089032:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1411878528457261065]' derivation='Sum' name='[sum:Calculation_1411878528457261065:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1411878528457506827]' derivation='Sum' name='[sum:Calculation_1411878528457506827:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1411878528448057347]' derivation='Var' name='[var:Calculation_1411878528448057347:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='ordinal' measure-ordering='ordinal' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528443613184:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528456937479:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528446922754:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528448057347:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[var:Calculation_1411878528448057347:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528457506827:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528444628993:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv' id='ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv_6B4B1378FDAD4AE695E276E24002872C'>
+            <properties context=''>
+              <relation connection='textscan.1d5jaq202ic7jj1dopw4q05btigu' name='ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746.csv' table='[ACSDT5Y2020.B18135_data_with_overlays_2022-06-14T123746#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='B18135_001E' ordinal='0' />
+                  <column datatype='integer' name='B18135_001M' ordinal='1' />
+                  <column datatype='integer' name='B18135_002E' ordinal='2' />
+                  <column datatype='integer' name='B18135_002M' ordinal='3' />
+                  <column datatype='integer' name='B18135_003E' ordinal='4' />
+                  <column datatype='integer' name='B18135_003M' ordinal='5' />
+                  <column datatype='integer' name='B18135_004E' ordinal='6' />
+                  <column datatype='integer' name='B18135_004M' ordinal='7' />
+                  <column datatype='integer' name='B18135_005E' ordinal='8' />
+                  <column datatype='integer' name='B18135_005M' ordinal='9' />
+                  <column datatype='integer' name='B18135_006E' ordinal='10' />
+                  <column datatype='integer' name='B18135_006M' ordinal='11' />
+                  <column datatype='integer' name='B18135_007E' ordinal='12' />
+                  <column datatype='integer' name='B18135_007M' ordinal='13' />
+                  <column datatype='integer' name='B18135_008E' ordinal='14' />
+                  <column datatype='integer' name='B18135_008M' ordinal='15' />
+                  <column datatype='integer' name='B18135_009E' ordinal='16' />
+                  <column datatype='integer' name='B18135_009M' ordinal='17' />
+                  <column datatype='integer' name='B18135_010E' ordinal='18' />
+                  <column datatype='integer' name='B18135_010M' ordinal='19' />
+                  <column datatype='integer' name='B18135_011E' ordinal='20' />
+                  <column datatype='integer' name='B18135_011M' ordinal='21' />
+                  <column datatype='integer' name='B18135_012E' ordinal='22' />
+                  <column datatype='integer' name='B18135_012M' ordinal='23' />
+                  <column datatype='integer' name='B18135_013E' ordinal='24' />
+                  <column datatype='integer' name='B18135_013M' ordinal='25' />
+                  <column datatype='integer' name='B18135_014E' ordinal='26' />
+                  <column datatype='integer' name='B18135_014M' ordinal='27' />
+                  <column datatype='integer' name='B18135_015E' ordinal='28' />
+                  <column datatype='integer' name='B18135_015M' ordinal='29' />
+                  <column datatype='integer' name='B18135_016E' ordinal='30' />
+                  <column datatype='integer' name='B18135_016M' ordinal='31' />
+                  <column datatype='integer' name='B18135_017E' ordinal='32' />
+                  <column datatype='integer' name='B18135_017M' ordinal='33' />
+                  <column datatype='integer' name='B18135_018E' ordinal='34' />
+                  <column datatype='integer' name='B18135_018M' ordinal='35' />
+                  <column datatype='integer' name='B18135_019E' ordinal='36' />
+                  <column datatype='integer' name='B18135_019M' ordinal='37' />
+                  <column datatype='integer' name='B18135_020E' ordinal='38' />
+                  <column datatype='integer' name='B18135_020M' ordinal='39' />
+                  <column datatype='integer' name='B18135_021E' ordinal='40' />
+                  <column datatype='integer' name='B18135_021M' ordinal='41' />
+                  <column datatype='integer' name='B18135_022E' ordinal='42' />
+                  <column datatype='integer' name='B18135_022M' ordinal='43' />
+                  <column datatype='integer' name='B18135_023E' ordinal='44' />
+                  <column datatype='integer' name='B18135_023M' ordinal='45' />
+                  <column datatype='integer' name='B18135_024E' ordinal='46' />
+                  <column datatype='integer' name='B18135_024M' ordinal='47' />
+                  <column datatype='integer' name='B18135_025E' ordinal='48' />
+                  <column datatype='integer' name='B18135_025M' ordinal='49' />
+                  <column datatype='integer' name='B18135_026E' ordinal='50' />
+                  <column datatype='integer' name='B18135_026M' ordinal='51' />
+                  <column datatype='integer' name='B18135_027E' ordinal='52' />
+                  <column datatype='integer' name='B18135_027M' ordinal='53' />
+                  <column datatype='integer' name='B18135_028E' ordinal='54' />
+                  <column datatype='integer' name='B18135_028M' ordinal='55' />
+                  <column datatype='integer' name='B18135_029E' ordinal='56' />
+                  <column datatype='integer' name='B18135_029M' ordinal='57' />
+                  <column datatype='integer' name='B18135_030E' ordinal='58' />
+                  <column datatype='integer' name='B18135_030M' ordinal='59' />
+                  <column datatype='integer' name='B18135_031E' ordinal='60' />
+                  <column datatype='integer' name='B18135_031M' ordinal='61' />
+                  <column datatype='integer' name='B18135_032E' ordinal='62' />
+                  <column datatype='integer' name='B18135_032M' ordinal='63' />
+                  <column datatype='integer' name='B18135_033E' ordinal='64' />
+                  <column datatype='integer' name='B18135_033M' ordinal='65' />
+                  <column datatype='integer' name='B18135_034E' ordinal='66' />
+                  <column datatype='integer' name='B18135_034M' ordinal='67' />
+                  <column datatype='string' name='GEO_ID' ordinal='68' />
+                  <column datatype='string' name='NAME' ordinal='69' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (B18135 AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS)' name='federated.10uip8q1k5h72816sncvd11lno42' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10uip8q1k5h72816sncvd11lno42'>
+            <column caption='B18135 003E' datatype='integer' name='[B18135_003E]' role='measure' type='quantitative' />
+            <column caption='B18135 004E' datatype='integer' name='[B18135_004E]' role='measure' type='quantitative' />
+            <column caption='B18135 007E' datatype='integer' name='[B18135_007E]' role='measure' type='quantitative' />
+            <column caption='0-18 perc dis w insur cov' datatype='real' name='[Calculation_1411878528443613184]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[B18135_004E]/[B18135_003E]' />
+            </column>
+            <column caption='0-18 perc no dis w insur cov' datatype='real' name='[Calculation_1411878528446922754]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[With health insurance coverage: 1]/[No disability:]' />
+            </column>
+            <column caption='0-18 per no dis w/o insur cov' datatype='real' name='[Calculation_1411878528448057347]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[B18135_007E]/[B18135_003E]' />
+            </column>
+            <column-instance column='[Calculation_1411878528443613184]' derivation='Sum' name='[sum:Calculation_1411878528443613184:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1411878528446922754]' derivation='Sum' name='[sum:Calculation_1411878528446922754:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1411878528448057347]' derivation='Sum' name='[sum:Calculation_1411878528448057347:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]'>
+            <groupfilter function='empty-level' member='[:Measure Names]' user:op='manual' />
+          </filter>
+          <manual-sort column='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528443613184:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528446922754:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528448057347:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528443613184:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' value='-90' />
+            <format attr='text-format' field='[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528443613184:qk]' value='p0%' />
+            <format attr='text-format' field='[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]</rows>
+        <cols>[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{1BEAA32A-649C-45F9-B67C-481520E178B8}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (B18135 AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS)' name='federated.10uip8q1k5h72816sncvd11lno42' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10uip8q1k5h72816sncvd11lno42'>
+            <column caption='B18135 003E' datatype='integer' name='[B18135_003E]' role='measure' type='quantitative' />
+            <column caption='B18135 004E' datatype='integer' name='[B18135_004E]' role='measure' type='quantitative' />
+            <column caption='0-18 perc dis w insur cov' datatype='real' name='[Calculation_1411878528443613184]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[B18135_004E]/[B18135_003E]' />
+            </column>
+            <column caption='0-18 perc dis w/o insur cov' datatype='real' name='[Calculation_1411878528444628993]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[No health insurance coverage]/[With a disability:]' />
+            </column>
+            <column caption='0-18 perc no dis w insur cov' datatype='real' name='[Calculation_1411878528446922754]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[With health insurance coverage: 1]/[No disability:]' />
+            </column>
+            <column-instance column='[Calculation_1411878528443613184]' derivation='Sum' name='[sum:Calculation_1411878528443613184:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1411878528444628993]' derivation='Sum' name='[sum:Calculation_1411878528444628993:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1411878528446922754]' derivation='Sum' name='[sum:Calculation_1411878528446922754:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]'>
+            <groupfilter function='empty-level' member='[:Measure Names]' user:op='manual' />
+          </filter>
+          <manual-sort column='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528443613184:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528446922754:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528444628993:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528443613184:qk]' value='p0.0%' />
+            <format attr='text-format' field='[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528444628993:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' value='-90' />
+            <format attr='text-format' field='[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528443613184:qk]' value='p0%' />
+            <format attr='text-format' field='[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528444628993:qk]' value='p0.0%' />
+            <format attr='text-format' field='[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]</rows>
+        <cols>[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{FA6DF7C6-03AA-4C8E-B423-A1EE98084107}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (B18135 AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS)' name='federated.10uip8q1k5h72816sncvd11lno42' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10uip8q1k5h72816sncvd11lno42' />
+          <filter class='categorical' column='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]'>
+            <groupfilter function='empty-level' member='[:Measure Names]' user:op='manual' />
+          </filter>
+          <manual-sort column='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:No disability::qk]&quot;</bucket>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:With health insurance coverage: 1:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:No health insurance coverage 1:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]' scope='rows' value='Population' />
+            <format attr='height' field='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' value='96' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]</rows>
+        <cols>[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{F6AB956A-C3EF-4820-9AE7-2D96443C4072}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (B18135 AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS)' name='federated.10uip8q1k5h72816sncvd11lno42' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10uip8q1k5h72816sncvd11lno42' />
+          <filter class='categorical' column='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]'>
+            <groupfilter function='empty-level' member='[:Measure Names]' user:op='manual' />
+          </filter>
+          <manual-sort column='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:With a disability: 1:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:With health insurance coverage: 2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:No health insurance coverage 2:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]' scope='rows' value='Population' />
+            <format attr='height' field='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' value='96' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' value='218' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]</rows>
+        <cols>[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{E9A0CDC8-0744-419C-A636-415CD5F1370E}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (B18135 AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS)' name='federated.10uip8q1k5h72816sncvd11lno42' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10uip8q1k5h72816sncvd11lno42' />
+          <filter class='categorical' column='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]'>
+            <groupfilter function='empty-level' member='[:Measure Names]' user:op='manual' />
+          </filter>
+          <manual-sort column='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:No disability: 1:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:With health insurance coverage: 3:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:No health insurance coverage 3:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]' scope='rows' value='Population' />
+            <format attr='height' field='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' value='92' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]</rows>
+        <cols>[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{0404AB20-5307-4990-A7B1-38760D1D6189}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (B18135 AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS)' name='federated.10uip8q1k5h72816sncvd11lno42' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10uip8q1k5h72816sncvd11lno42' />
+          <filter class='categorical' column='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]'>
+            <groupfilter function='empty-level' member='[:Measure Names]' user:op='manual' />
+          </filter>
+          <manual-sort column='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:With a disability: 2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:With health insurance coverage: 4:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:No health insurance coverage 4:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]' scope='rows' value='Population' />
+            <format attr='height' field='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' value='92' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]</rows>
+        <cols>[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{FF0EEB54-590C-49B4-BDC0-14BD01BA3127}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (B18135 AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS)' name='federated.10uip8q1k5h72816sncvd11lno42' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10uip8q1k5h72816sncvd11lno42' />
+          <filter class='categorical' column='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]'>
+            <groupfilter function='empty-level' member='[:Measure Names]' user:op='manual' />
+          </filter>
+          <manual-sort column='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:With health insurance coverage: 5:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:No disability: 2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:No health insurance coverage 5:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]' scope='rows' value='Population' />
+            <format attr='height' field='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' value='92' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]</rows>
+        <cols>[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{59F5BD1F-BA9F-46C7-8C1A-9F2A658E64F3}' />
+    </worksheet>
+    <worksheet name='per dis with insurance'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (B18135 AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS)' name='federated.10uip8q1k5h72816sncvd11lno42' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10uip8q1k5h72816sncvd11lno42'>
+            <column caption='B18135 003E' datatype='integer' name='[B18135_003E]' role='measure' type='quantitative' />
+            <column caption='B18135 003M' datatype='integer' name='[B18135_003M]' role='measure' type='quantitative' />
+            <column caption='B18135 004E' datatype='integer' name='[B18135_004E]' role='measure' type='quantitative' />
+            <column caption='B18135 004M' datatype='integer' name='[B18135_004M]' role='measure' type='quantitative' />
+            <column caption='0-18 perc dis w insur cov' datatype='real' name='[Calculation_1411878528443613184]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[B18135_004E]/[B18135_003E]' />
+            </column>
+            <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+            <column-instance column='[NAME]' derivation='None' name='[none:NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[B18135_003E]' derivation='Sum' name='[sum:B18135_003E:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[B18135_003M]' derivation='Sum' name='[sum:B18135_003M:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[B18135_004E]' derivation='Sum' name='[sum:B18135_004E:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[B18135_004M]' derivation='Sum' name='[sum:B18135_004M:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1411878528443613184]' derivation='Sum' name='[sum:Calculation_1411878528443613184:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10uip8q1k5h72816sncvd11lno42].[none:NAME:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:NAME:nk]' />
+              <groupfilter function='member' level='[none:NAME:nk]' member='&quot;Geographic Area Name&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.10uip8q1k5h72816sncvd11lno42].[none:NAME:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528443613184:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.10uip8q1k5h72816sncvd11lno42].[none:NAME:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528443613184:qk]' field-type='quantitative' max='1.0' min='0.6' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.10uip8q1k5h72816sncvd11lno42].[sum:B18135_003E:qk]' />
+              <lod column='[federated.10uip8q1k5h72816sncvd11lno42].[sum:B18135_003M:qk]' />
+              <lod column='[federated.10uip8q1k5h72816sncvd11lno42].[sum:B18135_004E:qk]' />
+              <lod column='[federated.10uip8q1k5h72816sncvd11lno42].[sum:B18135_004M:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.10uip8q1k5h72816sncvd11lno42].[none:NAME:nk]</rows>
+        <cols>[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528443613184:qk]</cols>
+      </table>
+      <simple-id uuid='{99F962E3-9D22-43B6-8B5C-A97A2B369CD9}' />
+    </worksheet>
+    <worksheet name='per no dis and no insurance'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (B18135 AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS)' name='federated.10uip8q1k5h72816sncvd11lno42' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10uip8q1k5h72816sncvd11lno42'>
+            <column caption='B18135 003E' datatype='integer' name='[B18135_003E]' role='measure' type='quantitative' />
+            <column caption='B18135 007E' datatype='integer' name='[B18135_007E]' role='measure' type='quantitative' />
+            <column caption='0-18 per no dis w/o insur cov' datatype='real' name='[Calculation_1411878528448057347]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[B18135_007E]/[B18135_003E]' />
+            </column>
+            <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1411878528448057347]' derivation='Avg' name='[avg:Calculation_1411878528448057347:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NAME]' derivation='None' name='[none:NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1411878528448057347]' derivation='Sum' name='[sum:Calculation_1411878528448057347:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.10uip8q1k5h72816sncvd11lno42].[avg:Calculation_1411878528448057347:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528448057347:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.10uip8q1k5h72816sncvd11lno42].[none:NAME:nk]</rows>
+        <cols>[federated.10uip8q1k5h72816sncvd11lno42].[avg:Calculation_1411878528448057347:qk]</cols>
+      </table>
+      <simple-id uuid='{185D0F31-AAB6-410D-96BB-3173B9F6B7DA}' />
+    </worksheet>
+    <worksheet name='per with disability and without insur cov by age (2)'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (B18135 AGE BY DISABILITY STATUS BY HEALTH INSURANCE COVERAGE STATUS)' name='federated.10uip8q1k5h72816sncvd11lno42' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10uip8q1k5h72816sncvd11lno42'>
+            <column caption='B18135 003E' datatype='integer' name='[B18135_003E]' role='measure' type='quantitative' />
+            <column caption='B18135 004E' datatype='integer' name='[B18135_004E]' role='measure' type='quantitative' />
+            <column caption='0-18 perc dis w insur cov' datatype='real' name='[Calculation_1411878528443613184]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[B18135_004E]/[B18135_003E]' />
+            </column>
+            <column caption='0-18 perc no dis w insur cov' datatype='real' name='[Calculation_1411878528446922754]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[With health insurance coverage: 1]/[No disability:]' />
+            </column>
+            <column caption='19-64 per dis w insur cov' datatype='real' name='[Calculation_1411878528456278020]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[With health insurance coverage: 2]/[With a disability: 1]' />
+            </column>
+            <column caption='65+ per dis w insur cov' datatype='real' name='[Calculation_1411878528457089032]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[With health insurance coverage: 4]/[With a disability: 2]' />
+            </column>
+            <column-instance column='[Calculation_1411878528443613184]' derivation='Sum' name='[sum:Calculation_1411878528443613184:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1411878528446922754]' derivation='Sum' name='[sum:Calculation_1411878528446922754:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1411878528456278020]' derivation='Sum' name='[sum:Calculation_1411878528456278020:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1411878528457089032]' derivation='Sum' name='[sum:Calculation_1411878528457089032:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]'>
+            <groupfilter function='empty-level' member='[:Measure Names]' user:op='manual' />
+          </filter>
+          <manual-sort column='[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528443613184:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528456278020:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528457089032:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528446922754:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]' scope='rows' value='' />
+            <encoding attr='space' class='0' field='[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]' field-type='quantitative' max='0.080000000000000002' min='0.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528446922754:qk]' value='p0.0%' />
+            <format attr='text-format' field='[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528443613184:qk]' value='p0.0%' />
+            <format attr='text-format' field='[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528456278020:qk]' value='p0.0%' />
+            <format attr='text-format' field='[federated.10uip8q1k5h72816sncvd11lno42].[sum:Calculation_1411878528457089032:qk]' value='p0.0%' />
+            <format attr='text-format' field='[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]' value='p0%' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='alternate-text' field='[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]' value='' />
+            <format attr='display-alternate-text' field='[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10uip8q1k5h72816sncvd11lno42].[Multiple Values]</rows>
+        <cols>[federated.10uip8q1k5h72816sncvd11lno42].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{C8136ADE-BA51-410F-B187-F1988E3EE9B1}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='1000' maxwidth='1500' minheight='1000' minwidth='1500' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='49200' id='1' name='Sheet 1' show-title='false' w='33882' x='533' y='800'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49200' id='3' name='Sheet 2' show-title='false' w='33481' x='34415' y='800'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49200' id='4' name='Sheet 3' show-title='false' w='31571' x='67896' y='800'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49200' id='5' name='Sheet 4' show-title='false' w='33882' x='533' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49200' id='6' name='Sheet 5' show-title='false' w='33481' x='34415' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49200' id='7' name='Sheet 6' show-title='false' w='31571' x='67896' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{8C146010-F955-4C05-9288-307361438F30}' />
+    </dashboard>
+    <dashboard name='Dashboard 2'>
+      <style />
+      <size maxheight='600' maxwidth='1000' minheight='600' minwidth='1000' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='80166' id='5' name='per with disability and without insur cov by age (2)' w='49200' x='800' y='12667'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='80166' id='6' name='per no dis and no insurance' w='49200' x='50000' y='12667'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='5834' id='9' type-v2='text' w='49200' x='800' y='92833'>
+            <formatted-text>
+              <run fontalignment='1'>With Disability</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='5834' id='10' type-v2='text' w='49200' x='50000' y='92833'>
+            <formatted-text>
+              <run fontalignment='1'>No Disability&#10;</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='11334' id='11' type-v2='text' w='98400' x='800' y='1333'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#333333' fontsize='15'>Percent of individuals without </run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run fontalignment='1' fontcolor='#333333' fontsize='15'>insurance coverage by age and disability status</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='24' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone forceUpdate='true' h='11334' id='11' type-v2='text' w='98400' x='800' y='1333'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#333333' fontsize='15'>Percent of individuals without </run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run fontalignment='1' fontcolor='#333333' fontsize='15'>insurance coverage by age and disability status</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='80166' id='5' is-fixed='true' name='per with disability and without insur cov by age (2)' w='49200' x='800' y='12667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='80166' id='6' is-fixed='true' name='per no dis and no insurance' w='49200' x='50000' y='12667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5834' id='9' type-v2='text' w='49200' x='800' y='92833'>
+                  <formatted-text>
+                    <run fontalignment='1'>With Disability</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5834' id='10' type-v2='text' w='49200' x='50000' y='92833'>
+                  <formatted-text>
+                    <run fontalignment='1'>No Disability&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4800EE0A-EBC6-47C3-B1DE-3BC3EDD83884}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{4169D281-F60A-48C0-81FF-C11EAEDD838B}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{FDB34F83-160B-4990-AED1-5FF0D7C0EDE8}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0405037F-1E35-4C28-B98D-B921C10315DB}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='293'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{34F4CA2D-EF4C-403E-9D83-C8D65AE326A5}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2A462A53-D71D-469F-AA77-0D13D918E33A}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6CE20DF3-7B8F-4138-B17F-AB2BE0E87B61}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{B52DA2C1-315B-4722-B60B-13E50D95D147}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 6'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{F617B82C-85CC-421F-A1CE-1C0715C57EC0}' />
+    </window>
+    <window class='worksheet' name='per with disability and without insur cov by age (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{69DEB79B-857A-4BB1-9F6C-60ED4338CF1F}' />
+    </window>
+    <window class='worksheet' name='per no dis and no insurance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{09220362-63B1-456B-879B-8A78BD24E7FE}' />
+    </window>
+    <window class='worksheet' maximized='true' name='per dis with insurance'>
+      <cards>
+        <edge name='left'>
+          <strip size='257'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{23AB3F3F-ED71-49BE-9B3B-7626DEAEBF24}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='per no dis and no insurance'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='per with disability and without insur cov by age (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{97A07EB4-78B3-472B-BC51-1FAAD6B6DBAE}' />
+    </window>
+  </windows>
+</workbook>
