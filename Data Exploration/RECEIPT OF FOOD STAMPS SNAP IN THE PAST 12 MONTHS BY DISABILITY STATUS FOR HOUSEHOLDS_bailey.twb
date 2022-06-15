@@ -1,0 +1,680 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.22.0325.1155                               -->
+<workbook original-version='18.1' source-build='2021.2.10 (20212.22.0325.1155)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Data (B22010 RECEIPT OF FOOD STAMPS SNAP IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR HOUSEHOLDS)' inline='true' name='federated.0zqbozm0kmyk7x140ggh10ld2nvo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='B22010 RECEIPT OF FOOD STAMPS SNAP IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR HOUSEHOLDS' name='excel-direct.0wgoc731r90bz01b9v6r51sipp6z'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/bahanson/Documents/GitHub/DHR-Disabilities/Data Exploration/Datasets/B22010 RECEIPT OF FOOD STAMPS SNAP IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR HOUSEHOLDS.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821' name='textscan.0x6vqal1b5uxeo14tl55p0outsm5'>
+            <connection class='textscan' directory='C:/Users/bahanson/Documents/GitHub/DHR-Disabilities/Data Exploration/Datasets' filename='ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0x6vqal1b5uxeo14tl55p0outsm5' name='ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv' table='[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='B22010_001E' ordinal='0' />
+            <column datatype='integer' name='B22010_001M' ordinal='1' />
+            <column datatype='integer' name='B22010_002E' ordinal='2' />
+            <column datatype='integer' name='B22010_002M' ordinal='3' />
+            <column datatype='integer' name='B22010_003E' ordinal='4' />
+            <column datatype='integer' name='B22010_003M' ordinal='5' />
+            <column datatype='integer' name='B22010_004E' ordinal='6' />
+            <column datatype='integer' name='B22010_004M' ordinal='7' />
+            <column datatype='integer' name='B22010_005E' ordinal='8' />
+            <column datatype='integer' name='B22010_005M' ordinal='9' />
+            <column datatype='integer' name='B22010_006E' ordinal='10' />
+            <column datatype='integer' name='B22010_006M' ordinal='11' />
+            <column datatype='integer' name='B22010_007E' ordinal='12' />
+            <column datatype='integer' name='B22010_007M' ordinal='13' />
+            <column datatype='string' name='GEO_ID' ordinal='14' />
+            <column datatype='string' name='NAME' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0x6vqal1b5uxeo14tl55p0outsm5' name='ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv' table='[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='B22010_001E' ordinal='0' />
+            <column datatype='integer' name='B22010_001M' ordinal='1' />
+            <column datatype='integer' name='B22010_002E' ordinal='2' />
+            <column datatype='integer' name='B22010_002M' ordinal='3' />
+            <column datatype='integer' name='B22010_003E' ordinal='4' />
+            <column datatype='integer' name='B22010_003M' ordinal='5' />
+            <column datatype='integer' name='B22010_004E' ordinal='6' />
+            <column datatype='integer' name='B22010_004M' ordinal='7' />
+            <column datatype='integer' name='B22010_005E' ordinal='8' />
+            <column datatype='integer' name='B22010_005M' ordinal='9' />
+            <column datatype='integer' name='B22010_006E' ordinal='10' />
+            <column datatype='integer' name='B22010_006M' ordinal='11' />
+            <column datatype='integer' name='B22010_007E' ordinal='12' />
+            <column datatype='integer' name='B22010_007M' ordinal='13' />
+            <column datatype='string' name='GEO_ID' ordinal='14' />
+            <column datatype='string' name='NAME' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B22010_001E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B22010_001E]</local-name>
+            <parent-name>[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv]</parent-name>
+            <remote-alias>B22010_001E</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B22010_001M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B22010_001M]</local-name>
+            <parent-name>[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv]</parent-name>
+            <remote-alias>B22010_001M</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B22010_002E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B22010_002E]</local-name>
+            <parent-name>[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv]</parent-name>
+            <remote-alias>B22010_002E</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B22010_002M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B22010_002M]</local-name>
+            <parent-name>[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv]</parent-name>
+            <remote-alias>B22010_002M</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B22010_003E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B22010_003E]</local-name>
+            <parent-name>[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv]</parent-name>
+            <remote-alias>B22010_003E</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B22010_003M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B22010_003M]</local-name>
+            <parent-name>[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv]</parent-name>
+            <remote-alias>B22010_003M</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B22010_004E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B22010_004E]</local-name>
+            <parent-name>[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv]</parent-name>
+            <remote-alias>B22010_004E</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B22010_004M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B22010_004M]</local-name>
+            <parent-name>[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv]</parent-name>
+            <remote-alias>B22010_004M</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B22010_005E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B22010_005E]</local-name>
+            <parent-name>[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv]</parent-name>
+            <remote-alias>B22010_005E</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B22010_005M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B22010_005M]</local-name>
+            <parent-name>[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv]</parent-name>
+            <remote-alias>B22010_005M</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B22010_006E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B22010_006E]</local-name>
+            <parent-name>[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv]</parent-name>
+            <remote-alias>B22010_006E</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B22010_006M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B22010_006M]</local-name>
+            <parent-name>[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv]</parent-name>
+            <remote-alias>B22010_006M</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B22010_007E</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B22010_007E]</local-name>
+            <parent-name>[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv]</parent-name>
+            <remote-alias>B22010_007E</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B22010_007M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B22010_007M]</local-name>
+            <parent-name>[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv]</parent-name>
+            <remote-alias>B22010_007M</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEO_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GEO_ID]</local-name>
+            <parent-name>[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv]</parent-name>
+            <remote-alias>GEO_ID</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME]</local-name>
+            <parent-name>[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv]</parent-name>
+            <remote-alias>NAME</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[sum:Calculation_1411878528531353616:qk]&quot;' value='Disability' />
+          <alias key='&quot;[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[sum:Calculation_1411878528531775506:qk]&quot;' value='No Disability' />
+          <alias key='&quot;[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[sum:F2:qk]&quot;' value='Household received Food Stamps/SNAP in the past 12 months' />
+          <alias key='&quot;[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[sum:F3:qk]&quot;' value='Households with 1 or more persons with a disability received Food Stamps/SNAP in the past 12 months' />
+          <alias key='&quot;[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[sum:F4:qk]&quot;' value='Households with no persons with a disability received Food Stamps/SNAP in the past 12 months' />
+        </aliases>
+      </column>
+      <column caption='B22010 001E' datatype='integer' name='[B22010_001E]' role='measure' type='quantitative' />
+      <column caption='B22010 001M' datatype='integer' name='[B22010_001M]' role='dimension' type='quantitative' />
+      <column caption='B22010 002E' datatype='integer' name='[B22010_002E]' role='measure' type='quantitative' />
+      <column caption='B22010 002M' datatype='integer' name='[B22010_002M]' role='dimension' type='quantitative' />
+      <column caption='B22010 003E' datatype='integer' name='[B22010_003E]' role='measure' type='quantitative' />
+      <column caption='B22010 003M' datatype='integer' name='[B22010_003M]' role='dimension' type='quantitative' />
+      <column caption='B22010 004E' datatype='integer' name='[B22010_004E]' role='measure' type='quantitative' />
+      <column caption='B22010 004M' datatype='integer' name='[B22010_004M]' role='dimension' type='quantitative' />
+      <column caption='B22010 005E' datatype='integer' name='[B22010_005E]' role='measure' type='quantitative' />
+      <column caption='B22010 005M' datatype='integer' name='[B22010_005M]' role='dimension' type='quantitative' />
+      <column caption='B22010 006E' datatype='integer' name='[B22010_006E]' role='measure' type='quantitative' />
+      <column caption='B22010 006M' datatype='integer' name='[B22010_006M]' role='dimension' type='quantitative' />
+      <column caption='B22010 007E' datatype='integer' name='[B22010_007E]' role='measure' type='quantitative' />
+      <column caption='B22010 007M' datatype='integer' name='[B22010_007M]' role='dimension' type='quantitative' />
+      <column caption='per households food stamps and dis' datatype='real' name='[Calculation_1411878528530763790]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[B22010_003E]/[B22010_002E]' />
+      </column>
+      <column caption='per households food stamps no dis' datatype='real' name='[Calculation_1411878528530903055]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[B22010_004E]/[B22010_002E]' />
+      </column>
+      <column caption='per households no food stamps with dis' datatype='real' name='[Calculation_1411878528531353616]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[B22010_006E]/[B22010_005E]' />
+      </column>
+      <column caption='per households no food stamps  no dis' datatype='real' name='[Calculation_1411878528531775506]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[B22010_007E]/[B22010_005E]' />
+      </column>
+      <column caption='Geo Id' datatype='string' name='[GEO_ID]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv' datatype='table' name='[__tableau_internal_object_id__].[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv_0109B13CA8F14C098654C3FF19AB935B]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1411878528531353616]' derivation='Sum' name='[sum:Calculation_1411878528531353616:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1411878528531775506]' derivation='Sum' name='[sum:Calculation_1411878528531775506:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='ordinal' measure-ordering='ordinal' rowDisplayCount='2' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv' id='ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv_0109B13CA8F14C098654C3FF19AB935B'>
+            <properties context=''>
+              <relation connection='textscan.0x6vqal1b5uxeo14tl55p0outsm5' name='ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821.csv' table='[ACSDT5Y2020.B22010_data_with_overlays_2022-06-14T160821#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='B22010_001E' ordinal='0' />
+                  <column datatype='integer' name='B22010_001M' ordinal='1' />
+                  <column datatype='integer' name='B22010_002E' ordinal='2' />
+                  <column datatype='integer' name='B22010_002M' ordinal='3' />
+                  <column datatype='integer' name='B22010_003E' ordinal='4' />
+                  <column datatype='integer' name='B22010_003M' ordinal='5' />
+                  <column datatype='integer' name='B22010_004E' ordinal='6' />
+                  <column datatype='integer' name='B22010_004M' ordinal='7' />
+                  <column datatype='integer' name='B22010_005E' ordinal='8' />
+                  <column datatype='integer' name='B22010_005M' ordinal='9' />
+                  <column datatype='integer' name='B22010_006E' ordinal='10' />
+                  <column datatype='integer' name='B22010_006M' ordinal='11' />
+                  <column datatype='integer' name='B22010_007E' ordinal='12' />
+                  <column datatype='integer' name='B22010_007M' ordinal='13' />
+                  <column datatype='string' name='GEO_ID' ordinal='14' />
+                  <column datatype='string' name='NAME' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Percent of households that recieve foods stamps by household members having a disability</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (B22010 RECEIPT OF FOOD STAMPS SNAP IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR HOUSEHOLDS)' name='federated.0zqbozm0kmyk7x140ggh10ld2nvo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zqbozm0kmyk7x140ggh10ld2nvo'>
+            <column caption='B22010 002E' datatype='integer' name='[B22010_002E]' role='measure' type='quantitative' />
+            <column caption='B22010 003E' datatype='integer' name='[B22010_003E]' role='measure' type='quantitative' />
+            <column caption='B22010 004E' datatype='integer' name='[B22010_004E]' role='measure' type='quantitative' />
+            <column caption='per households food stamps and dis' datatype='real' name='[Calculation_1411878528530763790]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[B22010_003E]/[B22010_002E]' />
+            </column>
+            <column caption='per households food stamps no dis' datatype='real' name='[Calculation_1411878528530903055]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[B22010_004E]/[B22010_002E]' />
+            </column>
+            <column-instance column='[Calculation_1411878528530763790]' derivation='Sum' name='[sum:Calculation_1411878528530763790:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1411878528530903055]' derivation='Sum' name='[sum:Calculation_1411878528530903055:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[sum:Calculation_1411878528530763790:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[sum:Calculation_1411878528530903055:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[Multiple Values]</rows>
+        <cols>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{A929F207-98A9-4654-A8C0-6FB3A8EB52DA}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Percent of households that did not recieve foods stamps</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (B22010 RECEIPT OF FOOD STAMPS SNAP IN THE PAST 12 MONTHS BY DISABILITY STATUS FOR HOUSEHOLDS)' name='federated.0zqbozm0kmyk7x140ggh10ld2nvo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zqbozm0kmyk7x140ggh10ld2nvo'>
+            <column caption='B22010 002E' datatype='integer' name='[B22010_002E]' role='measure' type='quantitative' />
+            <column caption='B22010 003E' datatype='integer' name='[B22010_003E]' role='measure' type='quantitative' />
+            <column caption='B22010 004E' datatype='integer' name='[B22010_004E]' role='measure' type='quantitative' />
+            <column caption='B22010 005E' datatype='integer' name='[B22010_005E]' role='measure' type='quantitative' />
+            <column caption='B22010 006E' datatype='integer' name='[B22010_006E]' role='measure' type='quantitative' />
+            <column caption='B22010 007E' datatype='integer' name='[B22010_007E]' role='measure' type='quantitative' />
+            <column caption='per households food stamps and dis' datatype='real' name='[Calculation_1411878528530763790]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[B22010_003E]/[B22010_002E]' />
+            </column>
+            <column caption='per households food stamps no dis' datatype='real' name='[Calculation_1411878528530903055]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[B22010_004E]/[B22010_002E]' />
+            </column>
+            <column caption='per households no food stamps with dis' datatype='real' name='[Calculation_1411878528531353616]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[B22010_006E]/[B22010_005E]' />
+            </column>
+            <column caption='per households no food stamps  no dis' datatype='real' name='[Calculation_1411878528531775506]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[B22010_007E]/[B22010_005E]' />
+            </column>
+            <column-instance column='[Calculation_1411878528530763790]' derivation='Sum' name='[sum:Calculation_1411878528530763790:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1411878528530903055]' derivation='Sum' name='[sum:Calculation_1411878528530903055:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1411878528531353616]' derivation='Sum' name='[sum:Calculation_1411878528531353616:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1411878528531775506]' derivation='Sum' name='[sum:Calculation_1411878528531775506:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[sum:Calculation_1411878528531353616:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[sum:Calculation_1411878528531775506:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[sum:Calculation_1411878528530763790:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[sum:Calculation_1411878528530903055:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[sum:Calculation_1411878528531353616:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[sum:Calculation_1411878528531775506:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[Multiple Values]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[Multiple Values]</rows>
+        <cols>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{49F69F18-4635-4133-BF04-994C4F9B45B2}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[:Measure Names]</field>
+            <field>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[none:B22010_003E:nk]</field>
+            <field>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[none:B22010_003E:qk]</field>
+            <field>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[none:B22010_004E:nk]</field>
+            <field>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[none:B22010_004E:qk]</field>
+            <field>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[none:B22010_005E:qk]</field>
+            <field>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[none:B22010_006E:qk]</field>
+            <field>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[none:B22010_007E:qk]</field>
+            <field>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[none:NAME:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{4326CD46-F273-4F93-9071-F2124F68D55F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 1 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[:Measure Names]</field>
+            <field>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[none:B22010_003E:nk]</field>
+            <field>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[none:B22010_003E:qk]</field>
+            <field>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[none:B22010_004E:nk]</field>
+            <field>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[none:B22010_004E:qk]</field>
+            <field>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[none:B22010_005E:qk]</field>
+            <field>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[none:B22010_006E:qk]</field>
+            <field>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[none:B22010_007E:qk]</field>
+            <field>[federated.0zqbozm0kmyk7x140ggh10ld2nvo].[none:NAME:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{3B940B33-6285-45A6-9EF7-D003FC04F039}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='187'>
+      iVBORw0KGgoAAAANSUhEUgAAALsAAADACAYAAABcdRJoAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAG0ElEQVR4nO3dX2hcZR7G8aedtsmkjN2kJo1xW/9tStNSrUi2pLh0BRnXVWzQi3YFaaRs
+      Q0uFFW+WCpaW1TvpsgvVaQ1GC5KLUtIbhVJwwaCYIAYWDRRiJXTZdDIzoZntycR4nL0o1DQ5
+      u21pzBzzfD9XM2feeXkP8034MRfJknK5XBZgYGmlDwAsFGKHDWKHDWKHDWKHDWKHDWKHDWL/
+      P4IgqPQRMI+IHTaIHTaIHTaIHTaIHTaIHTaIHTaIHTaIHTaIHTaIHTaIHTaIHTaIHTaIHTaI
+      HTaIHTaIHTaIHTaIHTaIHTaIHTaIHTaIHTaIHTaIHTaIHTaIHTaIHTaIHTaIHTaIHTaIHTaI
+      HTaIHTaIHTaIHTaWVfoA+HnYcbCn0ke4ZWfe2HXdc36zwwaxwwaxwwaxwwaxwwaxwwaxwwax
+      wwaxwwaxwwaxwwaxwwaxwwaxwwaxwwaxwwaxwwaxwwaxwwaxwwaxwwaxwwaxw0bs/25MmPtM
+      3Uc/UH8uVHLtdu19eac2roxeO9jVqbf6Z1y4u12HX3tSjZJGPzqiQ73/mvHir7Uvs0dbfsKz
+      I15iHvuozh7/WLW7X9ex9Unl+07ozfc+1+H9W1U9Z+2Ysrk2Hch0aHPETmOXqvTcXzJK1//0
+      p0Y8xXuMufCpBta1a8f6O5TQcjU8ukvp4oC+LEUtziuXWKPoli8rn7tTDYRuLd6xXx5X3QP3
+      K3HtQp1aNi1TvhCxtjSuQu1daozcqKBCddP/eA0uYj3GTE1NKZm8fmBZmsjqUlZS06zFxaIm
+      +rvV2S9JK5S69yE9u/tFbWtKSPqPJr7u1aHOXkkJJRt+pd/+oVPtM4b/IAgiz1AsFufxjrCQ
+      Zn92sY69qqpKk5MlacaE/kPYoDUNEYvr0zqYSV99HJaUP39O7759SvVHdqpZm9VxLKMOSdK0
+      rlwcVM/xE/rklT/pN6uuvqWmpmbOlkEQKJVKze9NYcHM/uziPcasqlVh+BuF1y4UNPTV91pd
+      d4P3Jaq1uuVpPX7PsC6MzX5xuVb+slVPtQUaHpnvAyPO4h37fdvUOtKrM+cnFGpa2b4enU21
+      6uG5X8Vo9Nw7OjlwUVemJWla40On9eHIJm2ol/TPU/rbR0PKl0JJoUr/7tPpf/xCLc0Lezuo
+      rFiPMVKj0nsfU/fRV7U/FyrZ/IQO7Pvxa8fBrk598UhGe7ZIjduf0YaeLh16/1sVv0soubZN
+      L7z0vNZJ0sa0fnfxpP76578rOxlqxZ0P6vd/7NDWiB8aLF5LyuVyudKHiKsgCCJneUf8MwLg
+      Z4TYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPY
+      YYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPY
+      YYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPYYYPY
+      YYPYYYPYYWNZpQ9wI2HuM3Uf/UD9uVDJtdu19+Wd2rgyeu1gV6fe6p9x4e52HX7tSTXe4j5Y
+      nGIe+6jOHv9Ytbtf17H1SeX7TujN9z7X4f1bVT1n7ZiyuTYdyHRo823tg8Uq3mPMhU81sK5d
+      O9bfoYSWq+HRXUoXB/RlKWpxXrnEGtXf9j5YrOId++Vx1T1wvxLXLtSpZdMy5QsRa0vjKtTe
+      pcbb3QeLVqzHmKmpKSWT1w8aSxNZXcpKapq1uFjURH+3OvslaYVS9z6kZ3e/qG1NiZvaJwiC
+      yDMUi8X5uBVUwOzPLtaxV1VVaXKyJM2YrH8IG7SmIWJxfVoHM+mrj8OS8ufP6d23T6n+yE41
+      38Q+NTU1c7YMgkCpVGp+bgYLbvZnF+8xZlWtCsPfKLx2oaChr77X6robvC9RrdUtT+vxe4Z1
+      Yew29sGiEu/Y79um1pFenTk/oVDTyvb16GyqVQ9HfIUyeu4dnRy4qCvTkjSt8aHT+nBkkzbU
+      39o+WLxiPcZIjUrvfUzdR1/V/lyoZPMTOrDvx68LB7s69cUjGe3ZIjVuf0Yberp06P1vVfwu
+      oeTaNr3w0vNadxP7wMOScrlcrvQh4ioIgshZ3tGOgz2VPsItO/PGruuex3uMAeYRscMGscMG
+      scMGscMGscMGscMGscMGscMGscMGscMGscMGscMGscMGscMGscMGscMGscMGscMGscMGscMG
+      scMGscMGscMGscMGscMGscMGscMGscMGscMGscMGscMGscMGscMGscMGscMGscMGscMGscMG
+      scMGscMGscMGscMGscMGscPGfwGijasT5E21JgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1 (2)' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
