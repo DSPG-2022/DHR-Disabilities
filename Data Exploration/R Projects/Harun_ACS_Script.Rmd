@@ -1,0 +1,81 @@
+---
+title: "Harun_ACS_Script"
+author: "Harun"
+date: '2022-06-14'
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r Libraries, include = FALSE}
+library(tidycensus)
+library(sf)
+library(tidyverse)
+library(scales)
+
+
+census_api_key("f455269d8b80b427e28a1574cf5bb617a086fa46", install - TRUE)
+```
+
+```{r Loading Tables for Employment Status by Disability Status}
+#Taking data from ACS for Employment Status by Disability Status
+empstat_tables = c("Labor force employed with disability" = "C18120_004", "Labor force employed without disability" = "C18120_005", "Labor force unemployed with disability" = "C18120_007", "Labor force unemployed without disability" = "C18120_009", "Total not in labor force with disability" = "C18120_010", "Total not in labor force without disability" = "C18120_011")
+
+all_empstat_2020 <- get_acs(geography =  "state",
+                            variables = empstat_tables,
+                            survey = "acs5",
+                            state = "19"
+                            )
+
+all_empstat_2020
+```
+
+```{r Creating Visualizations}
+#Using ggplot to create bar graphs for employment status by disability status
+png(filename="EmpStatDisStat.png", width=1400, height=600)
+
+ggplot(all_empstat_2020, aes(x = variable, y = estimate, label = estimate)) + 
+  geom_text(check_overlap = FALSE, hjust = -.2) +
+  coord_flip() +
+  labs(
+    title = "Employment Status by Disability Status in Iowa",
+    subtitle = "2020 census tract",
+    x = "", 
+    y = "Number of People",
+    caption =  "Source: ACS5"
+  ) +
+  scale_y_continuous(labels = comma) +
+  geom_col(fill = "#69b3a2") 
+```
+
+```{r Loading Tables for Work Experience by Disability Status}
+#Taking data from ACS for Work Experience by Disability Status
+workexp_tables = c("Worked full time with disability" = "C18121_003", "Worked full time without disability" = "C18121_004", "Worked less than full time with disability" = "C18121_006", "Worked less than full time without disability" = "C18121_007", "Did not work with disability" = "C18121_009", "Did not work without disability" = "C18121_010")
+
+workexp_2020 <- get_acs(geography =  "state",
+                            variables = workexp_tables,
+                            survey = "acs5",
+                            state = "19"
+                            )
+
+workexp_2020
+```
+
+```{r Creating Visualizations}
+#Using ggplot to create bar graphs for employment status by disability status
+png(filename="Workexp_2020.png", width=1400, height=600)
+
+ggplot(workexp_2020, aes(x = variable, y = estimate, label = estimate)) + 
+  geom_text(check_overlap = FALSE, hjust = -.2) +
+  coord_flip() +
+  labs(
+    title = "Work Experience Year Round by Disability Status in Iowa",
+    subtitle = "2020 census tract",
+    x = "", 
+    y = "Number of People",
+    caption =  "Source: ACS5"
+  ) +
+  scale_y_continuous(labels = comma) +
+  geom_col(fill = "#69b3a2") 
+```
+
