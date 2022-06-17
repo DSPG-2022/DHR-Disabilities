@@ -39,15 +39,15 @@ IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE)
     IVRS_data_transformed$Annual.Wage.Change <- IVRS_data_transformed$Annual.Wage..Closure. - IVRS_data_transformed$Annual.Wage..Application.
 
 # Creates new columns for wether there was a wage increase or not
-    IVRS_data_transformed <- mutate(IVRS_data_transformed, Hourly.Wage.Change.String = ifelse(Hourly.Wage.Change < 0, "Decrease",
+    IVRS_data_transformed <- mutate(IVRS_data_transformed, Category.Hourly.Wage.Change = ifelse(Hourly.Wage.Change < 0, "Decrease",
                                                                              ifelse(Hourly.Wage.Change == 0, "No Change",
                                                                                     ifelse(Hourly.Wage.Change > 0, "Increase", NA))))
     
-    IVRS_data_transformed <- mutate(IVRS_data_transformed, Monthly.Wage.Change.String = ifelse(Monthly.Wage.Change < 0, "Decrease",
+    IVRS_data_transformed <- mutate(IVRS_data_transformed, Category.Monthly.Wage.Change = ifelse(Monthly.Wage.Change < 0, "Decrease",
                                                                              ifelse(Monthly.Wage.Change == 0, "No Change",
                                                                                     ifelse(Monthly.Wage.Change > 0, "Increase", NA))))
     
-    IVRS_data_transformed <- mutate(IVRS_data_transformed, Annual.Wage.Change.String = ifelse(Annual.Wage.Change < 0, "Decrease",
+    IVRS_data_transformed <- mutate(IVRS_data_transformed, Category.Annual.Wage.Change = ifelse(Annual.Wage.Change < 0, "Decrease",
                                                                              ifelse(Annual.Wage.Change == 0, "No Change",
                                                                                     ifelse(Annual.Wage.Change > 0, "Increase", NA))))
 # write to file
