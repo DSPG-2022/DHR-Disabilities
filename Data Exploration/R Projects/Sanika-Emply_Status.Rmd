@@ -54,17 +54,17 @@ View(empl_status_no_disability)
 ```
 
 ```{r}
-all_emp_stat= full_join(empl_status_disability,empl_status_no_disability)
-View(all_emp_stat)
 write.csv(all_emp_stat, "Employement_Status.csv") 
+
+write.csv(all_emp_stat,"C:/Users/sanik/Documents/Cleaned_Employement_Cases.csv", row.names = FALSE)
 ```
 
 ```{r}
+
+all_emp_stat= full_join(empl_status_disability,empl_status_no_disability)
 ggplot(all_emp_stat, aes(variable, weight= estimate))+
   geom_bar()+
   labs(x="Employment Status", y= "population",
        title= "Employement Status by Disability")+
   geom_errorbar((aes(ymin= estimate-moe,
                     ymax= estimate+moe)))
-               
-```
