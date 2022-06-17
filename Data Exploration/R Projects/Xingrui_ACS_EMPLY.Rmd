@@ -30,16 +30,14 @@ DisabledHispanicLatino <- c("Under 18 years" = "B18101I_003", "18 to 64 years" =
 ```
 
 ```{r}
-<<<<<<< HEAD
+
 White <- get_acs(geography = "county",
                            variables = c(White = DisabledWhite, Black = DisabledBlack),
 
-=======
-<<<<<<< HEAD
+
 White <- get_acs(geography = "county",
                            variables = c(White = DisabledWhite, Black = DisabledBlack),
-=======
->>>>>>> 67e3cf30d04e4610bdbf3dca94b62462858860a3
+
 Disabled <- get_acs(geography = "county",
                    variables = c("WHITE ALONE" = DisabledWhite, "BLACK OR AFRICAN AMERICAN ALONE" = DisabledBlack, "AMERICAN, INDIAN AND ALASKA NATIVE ALONE" = DisabledIndianAlaska, "ASIAN ALONE" = DisabledAsian, "NATIVE HAWAIIAN AND OTHER PACIFIC ISLANDER ALONE" = DisabledHawaiianPacific, "SOME OTHER RACE ALONE" = DisabledOtherAlone, "TWO OR MORE RACES" = DisabledTwoMore, "WHITE ALONE, NOT HISPANIC OR LATINO" = DisabledWhiteAlone, "HISPANIC OR LATINO" = DisabledHispanicLatino),
                    year = 2020,
@@ -66,8 +64,3 @@ Black <- Black %>% group_by(NAME) %>%
 <<<<<<< HEAD
 View(White)
 ```
-
-=======
-View(Black)
-```
->>>>>>> 3009d6d349708ce86a934f319426d0a7330de732
