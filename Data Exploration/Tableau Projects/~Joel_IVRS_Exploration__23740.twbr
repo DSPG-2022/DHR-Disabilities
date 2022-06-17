@@ -1,0 +1,2669 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0415.1144                               -->
+<workbook original-version='18.1' source-build='2022.1.1 (20221.22.0415.1144)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Closed_Iowa_Vocational_Rehabilitation_Cases' inline='true' name='federated.0c4h7qk1cokbm711itorm15yq7nr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Closed_Iowa_Vocational_Rehabilitation_Cases' name='textscan.06kkv2c1is02k519c2puy0ox7692'>
+            <connection class='textscan' directory='C:/Users/joelm/Documents/GitHub/DHR-Disabilities/Data Exploration/Datasets' filename='Closed_Iowa_Vocational_Rehabilitation_Cases.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.06kkv2c1is02k519c2puy0ox7692' name='Closed_Iowa_Vocational_Rehabilitation_Cases.csv' table='[Closed_Iowa_Vocational_Rehabilitation_Cases#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Federal.Fiscal.Year' ordinal='0' />
+            <column datatype='integer' name='Case.ID' ordinal='1' />
+            <column datatype='string' name='Client.County' ordinal='2' />
+            <column datatype='string' name='Office.Area' ordinal='3' />
+            <column datatype='string' name='Gender' ordinal='4' />
+            <column datatype='string' name='Minority.Group' ordinal='5' />
+            <column datatype='string' name='Transition.Student.Status' ordinal='6' />
+            <column datatype='string' name='Veteran.Status' ordinal='7' />
+            <column datatype='string' name='Service.Provided' ordinal='8' />
+            <column datatype='string' name='Meet.SD.Categories' ordinal='9' />
+            <column datatype='string' name='Disability.Category' ordinal='10' />
+            <column datatype='string' name='Disability.Type' ordinal='11' />
+            <column datatype='date' name='Application.Date' ordinal='12' />
+            <column datatype='integer' name='Age.at.Application' ordinal='13' />
+            <column datatype='string' name='Hourly.Wage..Application.' ordinal='14' />
+            <column datatype='string' name='Monthly.Wage..Application.' ordinal='15' />
+            <column datatype='string' name='Annual.Wage..Application.' ordinal='16' />
+            <column datatype='string' name='Primary.Support...Personal.Income..Application.' ordinal='17' />
+            <column datatype='date' name='Closure.Date' ordinal='18' />
+            <column datatype='integer' name='Months.Case.Open' ordinal='19' />
+            <column datatype='string' name='Status.Code' ordinal='20' />
+            <column datatype='string' name='Status.Name' ordinal='21' />
+            <column datatype='string' name='Closure.Description' ordinal='22' />
+            <column datatype='string' name='RSA.Closure.Reason' ordinal='23' />
+            <column datatype='string' name='Primary.Support..Closure.' ordinal='24' />
+            <column datatype='integer' name='Age.at.Closure' ordinal='25' />
+            <column datatype='string' name='Employed..Closure.' ordinal='26' />
+            <column datatype='string' name='Primary.Support...Personal.Income..Closure.' ordinal='27' />
+            <column datatype='string' name='Competitive.Employment..Closure.' ordinal='28' />
+            <column datatype='string' name='SOC.Category..Closure.' ordinal='29' />
+            <column datatype='string' name='SOC.Description..Closure.' ordinal='30' />
+            <column datatype='string' name='Hours.Worked.Week..Closure.' ordinal='31' />
+            <column datatype='string' name='Hourly.Wage..Closure.' ordinal='32' />
+            <column datatype='string' name='Monthly.Wage..Closure.' ordinal='33' />
+            <column datatype='string' name='Annual.Wage..Closure.' ordinal='34' />
+            <column datatype='string' name='Hourly.Wage.Change' ordinal='35' />
+            <column datatype='string' name='Monthly.Wage.Change' ordinal='36' />
+            <column datatype='string' name='Annual.Wage.Change' ordinal='37' />
+            <column datatype='string' name='Client.City' ordinal='38' />
+            <column datatype='string' name='Client.State' ordinal='39' />
+            <column datatype='integer' name='Client.Zip.Code' ordinal='40' />
+            <column datatype='string' name='Client.Zip.Code.Extra.Info' ordinal='41' />
+            <column datatype='string' name='Client.Location.Point' ordinal='42' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.06kkv2c1is02k519c2puy0ox7692' name='Closed_Iowa_Vocational_Rehabilitation_Cases.csv' table='[Closed_Iowa_Vocational_Rehabilitation_Cases#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Federal.Fiscal.Year' ordinal='0' />
+            <column datatype='integer' name='Case.ID' ordinal='1' />
+            <column datatype='string' name='Client.County' ordinal='2' />
+            <column datatype='string' name='Office.Area' ordinal='3' />
+            <column datatype='string' name='Gender' ordinal='4' />
+            <column datatype='string' name='Minority.Group' ordinal='5' />
+            <column datatype='string' name='Transition.Student.Status' ordinal='6' />
+            <column datatype='string' name='Veteran.Status' ordinal='7' />
+            <column datatype='string' name='Service.Provided' ordinal='8' />
+            <column datatype='string' name='Meet.SD.Categories' ordinal='9' />
+            <column datatype='string' name='Disability.Category' ordinal='10' />
+            <column datatype='string' name='Disability.Type' ordinal='11' />
+            <column datatype='date' name='Application.Date' ordinal='12' />
+            <column datatype='integer' name='Age.at.Application' ordinal='13' />
+            <column datatype='string' name='Hourly.Wage..Application.' ordinal='14' />
+            <column datatype='string' name='Monthly.Wage..Application.' ordinal='15' />
+            <column datatype='string' name='Annual.Wage..Application.' ordinal='16' />
+            <column datatype='string' name='Primary.Support...Personal.Income..Application.' ordinal='17' />
+            <column datatype='date' name='Closure.Date' ordinal='18' />
+            <column datatype='integer' name='Months.Case.Open' ordinal='19' />
+            <column datatype='string' name='Status.Code' ordinal='20' />
+            <column datatype='string' name='Status.Name' ordinal='21' />
+            <column datatype='string' name='Closure.Description' ordinal='22' />
+            <column datatype='string' name='RSA.Closure.Reason' ordinal='23' />
+            <column datatype='string' name='Primary.Support..Closure.' ordinal='24' />
+            <column datatype='integer' name='Age.at.Closure' ordinal='25' />
+            <column datatype='string' name='Employed..Closure.' ordinal='26' />
+            <column datatype='string' name='Primary.Support...Personal.Income..Closure.' ordinal='27' />
+            <column datatype='string' name='Competitive.Employment..Closure.' ordinal='28' />
+            <column datatype='string' name='SOC.Category..Closure.' ordinal='29' />
+            <column datatype='string' name='SOC.Description..Closure.' ordinal='30' />
+            <column datatype='string' name='Hours.Worked.Week..Closure.' ordinal='31' />
+            <column datatype='string' name='Hourly.Wage..Closure.' ordinal='32' />
+            <column datatype='string' name='Monthly.Wage..Closure.' ordinal='33' />
+            <column datatype='string' name='Annual.Wage..Closure.' ordinal='34' />
+            <column datatype='string' name='Hourly.Wage.Change' ordinal='35' />
+            <column datatype='string' name='Monthly.Wage.Change' ordinal='36' />
+            <column datatype='string' name='Annual.Wage.Change' ordinal='37' />
+            <column datatype='string' name='Client.City' ordinal='38' />
+            <column datatype='string' name='Client.State' ordinal='39' />
+            <column datatype='integer' name='Client.Zip.Code' ordinal='40' />
+            <column datatype='string' name='Client.Zip.Code.Extra.Info' ordinal='41' />
+            <column datatype='string' name='Client.Location.Point' ordinal='42' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Federal.Fiscal.Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Federal.Fiscal.Year]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Federal.Fiscal.Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Case.ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Case.ID]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Case.ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Client.County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Client.County]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Client.County</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Office.Area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Office.Area]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Office.Area</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Minority.Group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Minority.Group]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Minority.Group</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transition.Student.Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transition.Student.Status]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Transition.Student.Status</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Veteran.Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Veteran.Status]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Veteran.Status</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Service.Provided</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Service.Provided]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Service.Provided</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Meet.SD.Categories</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Meet.SD.Categories]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Meet.SD.Categories</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Disability.Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Disability.Category]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Disability.Category</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Disability.Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Disability.Type]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Disability.Type</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Application.Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Application.Date]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Application.Date</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age.at.Application</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age.at.Application]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Age.at.Application</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hourly.Wage..Application.</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hourly.Wage..Application.]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Hourly.Wage..Application.</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Monthly.Wage..Application.</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Monthly.Wage..Application.]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Monthly.Wage..Application.</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual.Wage..Application.</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Annual.Wage..Application.]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Annual.Wage..Application.</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary.Support...Personal.Income..Application.</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Primary.Support...Personal.Income..Application.]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Primary.Support...Personal.Income..Application.</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Closure.Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Closure.Date]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Closure.Date</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Months.Case.Open</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Months.Case.Open]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Months.Case.Open</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status.Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Status.Code]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Status.Code</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status.Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Status.Name]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Status.Name</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Closure.Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Closure.Description]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Closure.Description</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RSA.Closure.Reason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RSA.Closure.Reason]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>RSA.Closure.Reason</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary.Support..Closure.</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Primary.Support..Closure.]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Primary.Support..Closure.</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age.at.Closure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age.at.Closure]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Age.at.Closure</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Employed..Closure.</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Employed..Closure.]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Employed..Closure.</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary.Support...Personal.Income..Closure.</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Primary.Support...Personal.Income..Closure.]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Primary.Support...Personal.Income..Closure.</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Competitive.Employment..Closure.</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Competitive.Employment..Closure.]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Competitive.Employment..Closure.</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOC.Category..Closure.</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SOC.Category..Closure.]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>SOC.Category..Closure.</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOC.Description..Closure.</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SOC.Description..Closure.]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>SOC.Description..Closure.</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hours.Worked.Week..Closure.</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hours.Worked.Week..Closure.]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Hours.Worked.Week..Closure.</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hourly.Wage..Closure.</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hourly.Wage..Closure.]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Hourly.Wage..Closure.</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Monthly.Wage..Closure.</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Monthly.Wage..Closure.]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Monthly.Wage..Closure.</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual.Wage..Closure.</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Annual.Wage..Closure.]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Annual.Wage..Closure.</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hourly.Wage.Change</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hourly.Wage.Change]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Hourly.Wage.Change</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Monthly.Wage.Change</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Monthly.Wage.Change]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Monthly.Wage.Change</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual.Wage.Change</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Annual.Wage.Change]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Annual.Wage.Change</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Client.City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Client.City]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Client.City</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Client.State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Client.State]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Client.State</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Client.Zip.Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Client.Zip.Code]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Client.Zip.Code</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Client.Zip.Code.Extra.Info</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Client.Zip.Code.Extra.Info]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Client.Zip.Code.Extra.Info</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Client.Location.Point</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Client.Location.Point]</local-name>
+            <parent-name>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
+            <remote-alias>Client.Location.Point</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Hourly Wage Increase/Decrease' datatype='string' name='[Calculation_124130508219764736]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF([Hourly Wage Change] &gt; 0) THEN &apos;Wage Increase&apos;&#13;&#10;ELSEIF([Hourly Wage Change] = 0) THEN &apos;No Change&apos;&#13;&#10;ELSEIF([Hourly Wage Change] &lt; 0) THEN &apos;Wage Decrease&apos;&#13;&#10;ELSE &apos;Unemployed&apos;&#13;&#10;END' />
+      </column>
+      <column caption='RSA Closure Reason (Clean)' datatype='string' name='[Calculation_124130508224512001]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF([RSA Closure Reason] = &apos;Achieved employment outcome&apos; ) THEN &apos;Achieved Employment Outcome&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Achieved Competitive Integrated Employment Outcome&apos; ) THEN &apos;Achieved Competitive Integrated Employment Outcome&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;No longer interested in receiving services or further services&apos; OR&#13;&#10;        [RSA Closure Reason] = &apos;No Longer Interested in Receiving Services or Further Services&apos;) THEN &apos;No Longer Interested in Receiving Services or Further Services&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Unable to locate or contact&apos; OR&#13;&#10;        [RSA Closure Reason] = &apos;Unable to Locate or Contact&apos;) THEN &apos;Unable to Locate or Contact&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Failure to cooperate&apos;) THEN &apos;Failure to Cooperate&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;All other reasons&apos; OR&#13;&#10;        [RSA Closure Reason] = &apos;All Other Reasons&apos;) THEN &apos;All Other Reasons&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Disability too significant to benefit from VR services&apos;) THEN &apos;Disability Too Significant to Benefit from VR Services&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Health/Medical&apos;) THEN &apos;Health/Medical&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Transferred to another agency&apos; OR&#13;&#10;        [RSA Closure Reason] = &apos;Transferred to Another Agency&apos;) THEN &apos;Transferred to Another Agency&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Death&apos; OR&#13;&#10;        [RSA Closure Reason] = &apos;Death of the Individual&apos; OR&#13;&#10;        [RSA Closure Reason] = &apos;Death of Individual&apos;) THEN &apos;Death of the Individual&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Individual in Institution&apos;) THEN &apos;Individual in Institution&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Criminal Offender&apos;) THEN &apos;Criminal Offender&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Individual is incarcerated in a prison or jail&apos;) THEN &apos;Individual is Incarcerated in a Prison or Jail&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Extended Employment&apos; OR&#13;&#10;        [RSA Closure Reason] = &apos;Extended employment&apos;) THEN &apos;Extended Employment&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Disability Too Significant to Benefit from Services&apos;) THEN &apos;Disability Too Significant to Benefit from Services&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Extended services not available&apos; OR&#13;&#10;        [RSA Closure Reason] = &apos;Extended Services Not Available&apos;) THEN &apos;Extended Services Not Available&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Individual is No Longer Available for Services Due to Residence in an Institutional Setting Other Than a Prison or Jail&apos; OR&#13;&#10;        [RSA Closure Reason] = &apos;Individual in institution other than a prison or jail&apos;) THEN &apos;Individual in Institution Other Than a Prison or Jail&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Transportation not feasible or available&apos;) THEN &apos;Transportation Not Feasible or Available&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Ineligible After An Eligibility Determination&apos;) THEN &apos;Ineligible After an Eligibility Determination&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Ineligible&apos;) THEN &apos;Ineligible&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Reserve Forces Called to Active Duty&apos;) THEN &apos;Reserve Forces Called to Active Duty&apos;&#13;&#10;ELSE &apos;NULL&apos;&#13;&#10;END' />
+      </column>
+      <column caption='Annual Wage Change (Calculated)' datatype='string' name='[Calculation_124130508235907076]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF(ISNULL([Annual Wage (Closure)]) AND&#13;&#10;    ISNULL([Annual Wage (Application)])) THEN &apos;Unemployed&apos;&#13;&#10;ELSEIF([Annual Wage (Closure)] - [Annual Wage (Application)] = 0) THEN &apos;No Change&apos;&#13;&#10;ELSEIF([Annual Wage (Closure)] - [Annual Wage (Application)] &gt; 0) THEN &apos;Wage Increased&apos;&#13;&#10;ELSEIF([Annual Wage (Closure)] - [Annual Wage (Application)] &lt; 0) THEN &apos;Wage Decreased&apos;&#13;&#10;END' />
+      </column>
+      <column datatype='integer' name='[Case.ID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Client County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Client City' datatype='string' name='[Client Location - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0c4h7qk1cokbm711itorm15yq7nr].[Client Location]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Client Location], &quot;,&quot;, 1 ) )' />
+      </column>
+      <column caption='Client Location - Split 2 - Split 1' datatype='string' name='[Client Location - Split 2 - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.0c4h7qk1cokbm711itorm15yq7nr].[Client Location - Split 2]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Client Location - Split 2], &quot; &quot;, 1 ) )' />
+      </column>
+      <column caption='Client Location - Split 2' datatype='string' name='[Client Location - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0c4h7qk1cokbm711itorm15yq7nr].[Client Location]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Client Location], &quot;,&quot;, 2 ) )' />
+      </column>
+      <column datatype='string' name='[Client Location Point]' role='dimension' semantic-role='' type='nominal' />
+      <column datatype='string' name='[Client Location]' role='dimension' semantic-role='' type='nominal' />
+      <column datatype='string' name='[Client.City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Client.County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[Client.State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[Client.Zip.Code.Extra.Info]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Client.Zip.Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='CountD' datatype='string' name='[Disability Category]' role='dimension' type='nominal' />
+      <column aggregation='CountD' datatype='string' name='[Disability Type]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Federal.Fiscal.Year]' role='dimension' type='quantitative' />
+      <column caption='Months Case Open (copy)' datatype='integer' name='[Months Case Open (copy)_195062203776053248]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[Months Case Open]' />
+      </column>
+      <column datatype='string' name='[Status Name]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Closed, Not Rehabilitated, after IPE services started (from Status 14 or above)&quot;' value='Not Rehabilitated' />
+          <alias key='&quot;Closed, Rehabilitated&quot;' value='Rehabilitated' />
+        </aliases>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Closed_Iowa_Vocational_Rehabilitation_Cases.csv' datatype='table' name='[__tableau_internal_object_id__].[Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_124130508219764736]' derivation='None' name='[none:Calculation_124130508219764736:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_124130508219764736:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;No Change&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Wage Increase&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Wage Decrease&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Unemployed&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Federal Fiscal Year' />
+        <field-sort-custom-order field='Case ID' />
+        <field-sort-custom-order field='Client County' />
+        <field-sort-custom-order field='Client County (copy)_195062203783471107' />
+        <field-sort-custom-order field='Office Area' />
+        <field-sort-custom-order field='Office Area (copy)_195062203779727362' />
+        <field-sort-custom-order field='Gender' />
+        <field-sort-custom-order field='Minority Group' />
+        <field-sort-custom-order field='Transition Student Status' />
+        <field-sort-custom-order field='Veteran Status' />
+        <field-sort-custom-order field='Service Provided' />
+        <field-sort-custom-order field='Meet SD Categories' />
+        <field-sort-custom-order field='Disability Category' />
+        <field-sort-custom-order field='Disability Type' />
+        <field-sort-custom-order field='Application Date' />
+        <field-sort-custom-order field='Age at Application' />
+        <field-sort-custom-order field='Hourly Wage (Application)' />
+        <field-sort-custom-order field='Monthly Wage (Application)' />
+        <field-sort-custom-order field='Annual Wage (Application)' />
+        <field-sort-custom-order field='Primary Support - Personal Income (Application)' />
+        <field-sort-custom-order field='Closure Date' />
+        <field-sort-custom-order field='Months Case Open' />
+        <field-sort-custom-order field='Months Case Open (copy)_195062203776053248' />
+        <field-sort-custom-order field='Status Code' />
+        <field-sort-custom-order field='Status Name' />
+        <field-sort-custom-order field='Closure Description' />
+        <field-sort-custom-order field='RSA Closure Reason' />
+        <field-sort-custom-order field='Calculation_124130508224512001' />
+        <field-sort-custom-order field='Primary Support (Closure)' />
+        <field-sort-custom-order field='Age at Closure' />
+        <field-sort-custom-order field='Employed (Closure)' />
+        <field-sort-custom-order field='Primary Support - Personal Income (Closure)' />
+        <field-sort-custom-order field='Competitive Employment (Closure)' />
+        <field-sort-custom-order field='SOC Category (Closure)' />
+        <field-sort-custom-order field='SOC Description (Closure)' />
+        <field-sort-custom-order field='Hours Worked/Week (Closure)' />
+        <field-sort-custom-order field='Hourly Wage (Closure)' />
+        <field-sort-custom-order field='Monthly Wage (Closure)' />
+        <field-sort-custom-order field='Annual Wage (Closure)' />
+        <field-sort-custom-order field='Calculation_124130508235907076' />
+        <field-sort-custom-order field='Hourly Wage Change' />
+        <field-sort-custom-order field='Calculation_124130508219764736' />
+        <field-sort-custom-order field='Monthly Wage Change' />
+        <field-sort-custom-order field='Annual Wage Change' />
+        <field-sort-custom-order field='Client Location' />
+        <field-sort-custom-order field='Client Location Point' />
+        <field-sort-custom-order field='Client Location Point (copy)_195062203787259911' />
+        <field-sort-custom-order field='Client Location Point (copy)_195062203786162182' />
+        <field-sort-custom-order field='Client Location Point (copy)_195062203786022917' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Closed_Iowa_Vocational_Rehabilitation_Cases.csv' id='Closed_Iowa_Vocational_Rehabilitation_Cases.csv_5B89BBC199C040BF882CABECB0E5BEF5'>
+            <properties context=''>
+              <relation connection='textscan.06kkv2c1is02k519c2puy0ox7692' name='Closed_Iowa_Vocational_Rehabilitation_Cases.csv' table='[Closed_Iowa_Vocational_Rehabilitation_Cases#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Federal.Fiscal.Year' ordinal='0' />
+                  <column datatype='integer' name='Case.ID' ordinal='1' />
+                  <column datatype='string' name='Client.County' ordinal='2' />
+                  <column datatype='string' name='Office.Area' ordinal='3' />
+                  <column datatype='string' name='Gender' ordinal='4' />
+                  <column datatype='string' name='Minority.Group' ordinal='5' />
+                  <column datatype='string' name='Transition.Student.Status' ordinal='6' />
+                  <column datatype='string' name='Veteran.Status' ordinal='7' />
+                  <column datatype='string' name='Service.Provided' ordinal='8' />
+                  <column datatype='string' name='Meet.SD.Categories' ordinal='9' />
+                  <column datatype='string' name='Disability.Category' ordinal='10' />
+                  <column datatype='string' name='Disability.Type' ordinal='11' />
+                  <column datatype='date' name='Application.Date' ordinal='12' />
+                  <column datatype='integer' name='Age.at.Application' ordinal='13' />
+                  <column datatype='string' name='Hourly.Wage..Application.' ordinal='14' />
+                  <column datatype='string' name='Monthly.Wage..Application.' ordinal='15' />
+                  <column datatype='string' name='Annual.Wage..Application.' ordinal='16' />
+                  <column datatype='string' name='Primary.Support...Personal.Income..Application.' ordinal='17' />
+                  <column datatype='date' name='Closure.Date' ordinal='18' />
+                  <column datatype='integer' name='Months.Case.Open' ordinal='19' />
+                  <column datatype='string' name='Status.Code' ordinal='20' />
+                  <column datatype='string' name='Status.Name' ordinal='21' />
+                  <column datatype='string' name='Closure.Description' ordinal='22' />
+                  <column datatype='string' name='RSA.Closure.Reason' ordinal='23' />
+                  <column datatype='string' name='Primary.Support..Closure.' ordinal='24' />
+                  <column datatype='integer' name='Age.at.Closure' ordinal='25' />
+                  <column datatype='string' name='Employed..Closure.' ordinal='26' />
+                  <column datatype='string' name='Primary.Support...Personal.Income..Closure.' ordinal='27' />
+                  <column datatype='string' name='Competitive.Employment..Closure.' ordinal='28' />
+                  <column datatype='string' name='SOC.Category..Closure.' ordinal='29' />
+                  <column datatype='string' name='SOC.Description..Closure.' ordinal='30' />
+                  <column datatype='string' name='Hours.Worked.Week..Closure.' ordinal='31' />
+                  <column datatype='string' name='Hourly.Wage..Closure.' ordinal='32' />
+                  <column datatype='string' name='Monthly.Wage..Closure.' ordinal='33' />
+                  <column datatype='string' name='Annual.Wage..Closure.' ordinal='34' />
+                  <column datatype='string' name='Hourly.Wage.Change' ordinal='35' />
+                  <column datatype='string' name='Monthly.Wage.Change' ordinal='36' />
+                  <column datatype='string' name='Annual.Wage.Change' ordinal='37' />
+                  <column datatype='string' name='Client.City' ordinal='38' />
+                  <column datatype='string' name='Client.State' ordinal='39' />
+                  <column datatype='integer' name='Client.Zip.Code' ordinal='40' />
+                  <column datatype='string' name='Client.Zip.Code.Extra.Info' ordinal='41' />
+                  <column datatype='string' name='Client.Location.Point' ordinal='42' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Annual Wage Change'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Closed_Iowa_Vocational_Rehabilitation_Cases' name='federated.0c4h7qk1cokbm711itorm15yq7nr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0c4h7qk1cokbm711itorm15yq7nr'>
+            <column datatype='real' name='[Annual Wage (Application)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Annual Wage (Closure)]' role='measure' type='quantitative' />
+            <column caption='Annual Wage Change (Calculated)' datatype='string' name='[Calculation_124130508235907076]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF(ISNULL([Annual Wage (Closure)]) AND&#13;&#10;    ISNULL([Annual Wage (Application)])) THEN &apos;Unemployed&apos;&#13;&#10;ELSEIF([Annual Wage (Closure)] - [Annual Wage (Application)] = 0) THEN &apos;No Change&apos;&#13;&#10;ELSEIF([Annual Wage (Closure)] - [Annual Wage (Application)] &gt; 0) THEN &apos;Wage Increased&apos;&#13;&#10;ELSEIF([Annual Wage (Closure)] - [Annual Wage (Application)] &lt; 0) THEN &apos;Wage Decreased&apos;&#13;&#10;END' />
+            </column>
+            <column-instance column='[Calculation_124130508235907076]' derivation='Count' name='[cnt:Calculation_124130508235907076:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_124130508235907076]' derivation='None' name='[none:Calculation_124130508235907076:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508235907076:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_124130508235907076:nk]' />
+              <groupfilter function='member' level='[none:Calculation_124130508235907076:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508235907076:nk]' direction='DESC' using='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508235907076:qk]' />
+          <slices>
+            <column>[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508235907076:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508235907076:qk]' scope='rows' value='Total' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508235907076:qk]' value='bold' />
+            <format attr='color' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508235907076:qk]' value='#000000' />
+            <format attr='font-size' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508235907076:qk]' value='11' />
+            <format attr='font-weight' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508235907076:nk]' value='bold' />
+            <format attr='font-size' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508235907076:nk]' value='11' />
+            <format attr='color' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508235907076:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508235907076:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-weight' value='bold' />
+                <format attr='color' value='#000000' />
+                <format attr='font-size' value='11' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508235907076:qk]</rows>
+        <cols>[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508235907076:nk]</cols>
+      </table>
+      <simple-id uuid='{8512D5DD-5B4F-475F-9563-FC5182CAED97}' />
+    </worksheet>
+    <worksheet name='Case Closure Reason'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='18'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Closed_Iowa_Vocational_Rehabilitation_Cases' name='federated.0c4h7qk1cokbm711itorm15yq7nr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0c4h7qk1cokbm711itorm15yq7nr'>
+            <column caption='RSA Closure Reason (Clean)' datatype='string' name='[Calculation_124130508224512001]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF([RSA Closure Reason] = &apos;Achieved employment outcome&apos; ) THEN &apos;Achieved Employment Outcome&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Achieved Competitive Integrated Employment Outcome&apos; ) THEN &apos;Achieved Competitive Integrated Employment Outcome&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;No longer interested in receiving services or further services&apos; OR&#13;&#10;        [RSA Closure Reason] = &apos;No Longer Interested in Receiving Services or Further Services&apos;) THEN &apos;No Longer Interested in Receiving Services or Further Services&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Unable to locate or contact&apos; OR&#13;&#10;        [RSA Closure Reason] = &apos;Unable to Locate or Contact&apos;) THEN &apos;Unable to Locate or Contact&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Failure to cooperate&apos;) THEN &apos;Failure to Cooperate&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;All other reasons&apos; OR&#13;&#10;        [RSA Closure Reason] = &apos;All Other Reasons&apos;) THEN &apos;All Other Reasons&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Disability too significant to benefit from VR services&apos;) THEN &apos;Disability Too Significant to Benefit from VR Services&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Health/Medical&apos;) THEN &apos;Health/Medical&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Transferred to another agency&apos; OR&#13;&#10;        [RSA Closure Reason] = &apos;Transferred to Another Agency&apos;) THEN &apos;Transferred to Another Agency&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Death&apos; OR&#13;&#10;        [RSA Closure Reason] = &apos;Death of the Individual&apos; OR&#13;&#10;        [RSA Closure Reason] = &apos;Death of Individual&apos;) THEN &apos;Death of the Individual&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Individual in Institution&apos;) THEN &apos;Individual in Institution&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Criminal Offender&apos;) THEN &apos;Criminal Offender&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Individual is incarcerated in a prison or jail&apos;) THEN &apos;Individual is Incarcerated in a Prison or Jail&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Extended Employment&apos; OR&#13;&#10;        [RSA Closure Reason] = &apos;Extended employment&apos;) THEN &apos;Extended Employment&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Disability Too Significant to Benefit from Services&apos;) THEN &apos;Disability Too Significant to Benefit from Services&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Extended services not available&apos; OR&#13;&#10;        [RSA Closure Reason] = &apos;Extended Services Not Available&apos;) THEN &apos;Extended Services Not Available&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Individual is No Longer Available for Services Due to Residence in an Institutional Setting Other Than a Prison or Jail&apos; OR&#13;&#10;        [RSA Closure Reason] = &apos;Individual in institution other than a prison or jail&apos;) THEN &apos;Individual in Institution Other Than a Prison or Jail&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Transportation not feasible or available&apos;) THEN &apos;Transportation Not Feasible or Available&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Ineligible After An Eligibility Determination&apos;) THEN &apos;Ineligible After an Eligibility Determination&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Ineligible&apos;) THEN &apos;Ineligible&apos;&#13;&#10;ELSEIF([RSA Closure Reason] = &apos;Reserve Forces Called to Active Duty&apos;) THEN &apos;Reserve Forces Called to Active Duty&apos;&#13;&#10;ELSE &apos;NULL&apos;&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[RSA Closure Reason]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_124130508224512001]' derivation='Count' name='[cnt:Calculation_124130508224512001:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_124130508224512001]' derivation='None' name='[none:Calculation_124130508224512001:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508224512001:nk]' direction='DESC' using='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508224512001:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508224512001:qk]' scope='cols' value='Total Number of Cases' />
+            <encoding attr='space' class='0' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508224512001:qk]' field-type='quantitative' major-origin='0' major-show='false' major-spacing='10000' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508224512001:qk]' value='bold' />
+            <format attr='font-size' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508224512001:qk]' value='11' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508224512001:nk]' value='388' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508224512001:nk]' value='bold' />
+            <format attr='font-size' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508224512001:nk]' value='10' />
+            <format attr='color' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508224512001:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508224512001:qk]' value='bold' />
+            <format attr='font-size' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508224512001:qk]' value='11' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508224512001:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508224512001:nk]</rows>
+        <cols>[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508224512001:qk]</cols>
+      </table>
+      <simple-id uuid='{4045B243-90F7-4C68-9915-186EC58912BD}' />
+    </worksheet>
+    <worksheet name='Client Disabilities by Age'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7952B6A8-B444-4E96-9E4C-73F679663254}' />
+    </worksheet>
+    <worksheet name='Client Hourly Wage Change by County in Iowa'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Closed_Iowa_Vocational_Rehabilitation_Cases' name='federated.0c4h7qk1cokbm711itorm15yq7nr' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0c4h7qk1cokbm711itorm15yq7nr'>
+            <column caption='Hourly Wage Increase/Decrease' datatype='string' name='[Calculation_124130508219764736]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF([Hourly Wage Change] &gt; 0) THEN &apos;Wage Increase&apos;&#13;&#10;ELSEIF([Hourly Wage Change] = 0) THEN &apos;No Change&apos;&#13;&#10;ELSEIF([Hourly Wage Change] &lt; 0) THEN &apos;Wage Decrease&apos;&#13;&#10;ELSE &apos;Unemployed&apos;&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[Client County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Client Location - Split 2 - Split 1' datatype='string' name='[Client Location - Split 2 - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.0c4h7qk1cokbm711itorm15yq7nr].[Client Location - Split 2]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Client Location - Split 2], &quot; &quot;, 1 ) )' />
+            </column>
+            <column caption='Client Location - Split 2' datatype='string' name='[Client Location - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0c4h7qk1cokbm711itorm15yq7nr].[Client Location]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Client Location], &quot;,&quot;, 2 ) )' />
+            </column>
+            <column datatype='string' name='[Client Location]' role='dimension' semantic-role='' type='nominal' />
+            <column datatype='real' name='[Hourly Wage Change]' role='measure' type='quantitative' />
+            <column-instance column='[Client County]' derivation='Count' name='[cnt:Client County:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_124130508219764736]' derivation='None' name='[none:Calculation_124130508219764736:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Client County]' derivation='None' name='[none:Client County:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Client Location - Split 2 - Split 1]' derivation='None' name='[none:Client Location - Split 2 - Split 1:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Client County:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>1745</max>
+          </filter>
+          <filter class='categorical' column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Client County:nk]'>
+            <groupfilter function='level-members' level='[none:Client County:nk]' />
+          </filter>
+          <filter class='categorical' column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Client Location - Split 2 - Split 1:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Client Location - Split 2 - Split 1:nk]' member='&quot;IA&quot;' />
+              <groupfilter function='member' level='[none:Client Location - Split 2 - Split 1:nk]' member='&quot;Iowa&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Client Location - Split 2 - Split 1:nk]</column>
+            <column>[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Client County:qk]</column>
+            <column>[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Client County:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Client County:qk]' field-type='quantitative' max-size='1' min-size='0.0672889' type='rangesize' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508219764736:nk]' />
+              <size column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Client County:qk]' />
+              <lod column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Client County:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='15' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0c4h7qk1cokbm711itorm15yq7nr].[Latitude (generated)]</rows>
+        <cols>[federated.0c4h7qk1cokbm711itorm15yq7nr].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{64BE30C4-7EFF-426F-A920-0B193F975AB9}' />
+    </worksheet>
+    <worksheet name='Client Locations'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Closed_Iowa_Vocational_Rehabilitation_Cases' name='federated.0c4h7qk1cokbm711itorm15yq7nr' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0c4h7qk1cokbm711itorm15yq7nr'>
+            <column datatype='string' name='[Client Location Point]' role='dimension' semantic-role='' type='nominal' />
+            <column-instance column='[Client Location Point]' derivation='Collect' name='[clct:Client Location Point:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[Longitude (generated)]' field-type='quantitative' max='-9782677.4615254588' min='-11120810.108228702' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[Latitude (generated)]' field-type='quantitative' max='5472410.837191863' min='4783718.5551684517' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[clct:Client Location Point:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+                <format attr='size' value='2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0c4h7qk1cokbm711itorm15yq7nr].[Latitude (generated)]</rows>
+        <cols>[federated.0c4h7qk1cokbm711itorm15yq7nr].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{F1366EC0-32E6-4FAE-9E6E-8955EB616F49}' />
+    </worksheet>
+    <worksheet name='Closure Status'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='18'>Status</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Closed_Iowa_Vocational_Rehabilitation_Cases' name='federated.0c4h7qk1cokbm711itorm15yq7nr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0c4h7qk1cokbm711itorm15yq7nr'>
+            <column datatype='string' name='[Status Name]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Closed, Not Rehabilitated, after IPE services started (from Status 14 or above)&quot;' value='Not Rehabilitated' />
+                <alias key='&quot;Closed, Rehabilitated&quot;' value='Rehabilitated' />
+              </aliases>
+            </column>
+            <column-instance column='[Status Name]' derivation='Count' name='[cnt:Status Name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Status Name]' derivation='None' name='[none:Status Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Status Name:nk]' direction='DESC' using='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Status Name:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Status Name:qk]' scope='rows' value='Total' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Status Name:nk]' value='367' />
+            <format attr='border-width' value='0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-style' scope='rows' value='none' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Status Name:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Status Name:qk]</rows>
+        <cols>[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Status Name:nk]</cols>
+      </table>
+      <simple-id uuid='{458263DB-D9DD-4C84-ABE9-881F5F463D13}' />
+    </worksheet>
+    <worksheet name='Disability Category and Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Closed_Iowa_Vocational_Rehabilitation_Cases' name='federated.0c4h7qk1cokbm711itorm15yq7nr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0c4h7qk1cokbm711itorm15yq7nr'>
+            <column aggregation='CountD' datatype='string' name='[Disability Category]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='string' name='[Disability Type]' role='dimension' type='nominal' />
+            <column-instance column='[Disability Type]' derivation='Count' name='[cnt:Disability Type:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Disability Category]' derivation='None' name='[none:Disability Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Disability Type]' derivation='None' name='[none:Disability Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <manual-sort column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Disability Category:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;MSD&quot;</bucket>
+              <bucket>&quot;SD&quot;</bucket>
+              <bucket>&quot;Other&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0c4h7qk1cokbm711itorm15yq7nr].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Disability Type:qk]' scope='rows' value='Total' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Disability Type:nk]' />
+              <text column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Disability Type:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Disability Type:qk]</rows>
+        <cols>([federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Disability Category:nk] / [federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Disability Type:nk])</cols>
+      </table>
+      <simple-id uuid='{B42A4D6E-7CF9-47AA-A463-C30F2ED05707}' />
+    </worksheet>
+    <worksheet name='Disability by Office Area'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='18'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Closed_Iowa_Vocational_Rehabilitation_Cases' name='federated.0c4h7qk1cokbm711itorm15yq7nr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0c4h7qk1cokbm711itorm15yq7nr'>
+            <column aggregation='CountD' datatype='string' name='[Disability Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Office Area]' role='dimension' type='nominal' />
+            <column-instance column='[Disability Type]' derivation='Count' name='[cnt:Disability Type:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Disability Type]' derivation='None' name='[none:Disability Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Office Area]' derivation='None' name='[none:Office Area:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Office Area:nk]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Office Area:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Office Area:nk]' member='&quot;Central Office (000)&quot;' />
+                <groupfilter function='member' level='[none:Office Area:nk]' member='&quot;Diversity Project (022) (Inactive)&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Office Area:nk]' direction='DESC' using='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Disability Type:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Disability Type:qk]' scope='rows' value='Total Number of Cases' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Disability Type:qk]' value='#000000' />
+            <format attr='font-size' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Disability Type:qk]' value='11' />
+            <format attr='font-weight' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Disability Type:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Disability Type:nk]' />
+              <text column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Disability Type:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Disability Type:qk]</rows>
+        <cols>[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Office Area:nk]</cols>
+      </table>
+      <simple-id uuid='{217C2DC0-D0F5-4997-BBE0-1F32002853FB}' />
+    </worksheet>
+    <worksheet name='Employment at Time of Closure'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Closed_Iowa_Vocational_Rehabilitation_Cases' name='federated.0c4h7qk1cokbm711itorm15yq7nr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0c4h7qk1cokbm711itorm15yq7nr'>
+            <column datatype='string' name='[Employed (Closure)]' role='dimension' type='nominal' />
+            <column-instance column='[Employed (Closure)]' derivation='Count' name='[cnt:Employed (Closure):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Employed (Closure)]' derivation='None' name='[none:Employed (Closure):nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Employed (Closure):nk]' direction='DESC' using='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Employed (Closure):qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Employed (Closure):qk]' scope='rows' value='Total' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Employed (Closure):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Employed (Closure):qk]</rows>
+        <cols>[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Employed (Closure):nk]</cols>
+      </table>
+      <simple-id uuid='{AC99F6A9-4330-4D5D-AE95-4EE3C6759971}' />
+    </worksheet>
+    <worksheet name='Hourly Wage Change at End of Case'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='18'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Closed_Iowa_Vocational_Rehabilitation_Cases' name='federated.0c4h7qk1cokbm711itorm15yq7nr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0c4h7qk1cokbm711itorm15yq7nr'>
+            <column caption='Hourly Wage Increase/Decrease' datatype='string' name='[Calculation_124130508219764736]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF([Hourly Wage Change] &gt; 0) THEN &apos;Wage Increase&apos;&#13;&#10;ELSEIF([Hourly Wage Change] = 0) THEN &apos;No Change&apos;&#13;&#10;ELSEIF([Hourly Wage Change] &lt; 0) THEN &apos;Wage Decrease&apos;&#13;&#10;ELSE &apos;Unemployed&apos;&#13;&#10;END' />
+            </column>
+            <column datatype='real' name='[Hourly Wage Change]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_124130508219764736]' derivation='Count' name='[cnt:Calculation_124130508219764736:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_124130508219764736]' derivation='None' name='[none:Calculation_124130508219764736:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508219764736:nk]' direction='DESC' using='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508219764736:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508219764736:qk]' scope='rows' value='Total Number of Cases' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508219764736:qk]' value='bold' />
+            <format attr='font-size' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508219764736:qk]' value='11' />
+            <format attr='font-weight' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508219764736:nk]' value='bold' />
+            <format attr='font-size' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508219764736:nk]' value='11' />
+            <format attr='color' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508219764736:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='border-style' id='annotation_2' value='solid' />
+            <format attr='border-color' id='annotation_2' value='#000000' />
+            <format attr='stroke-color' id='annotation_2' value='#000000' />
+            <format attr='border-color' id='annotation_1' value='#000000' />
+            <format attr='border-style' id='annotation_1' value='solid' />
+            <format attr='border-style' id='annotation_0' value='solid' />
+            <format attr='border-color' id='annotation_0' value='#000000' />
+            <format attr='stroke-color' id='annotation_0' value='#000000' />
+            <format attr='border-style' id='annotation_3' value='solid' />
+            <format attr='border-color' id='annotation_3' value='#000000' />
+            <format attr='stroke-color' id='annotation_3' value='#000000' />
+            <format attr='stroke-color' id='annotation_1' value='#000000' />
+            <format attr='rounding' id='annotation_1' value='small' />
+            <format attr='rounding' id='annotation_0' value='small' />
+            <format attr='rounding' id='annotation_3' value='small' />
+            <format attr='rounding' id='annotation_2' value='small' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508219764736:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='11' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508219764736:qk]</rows>
+        <cols>[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508219764736:nk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='31' text-width='64'>
+            <formatted-text>
+              <run bold='true'>29.2%</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508219764736:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508219764736:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508219764736:qk]</field>
+                      <field>[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508219764736:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>14814</value>
+                    <value>&quot;No Change&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-1' y='-68' />
+          </annotation>
+          <annotation class='point' id='1' mark-position='1' pullback='29' text-width='64'>
+            <formatted-text>
+              <run bold='true' fontalignment='1'>22.5%</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508219764736:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508219764736:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508219764736:qk]</field>
+                      <field>[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508219764736:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>11457</value>
+                    <value>&quot;Unemployed&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='1' y='-66' />
+          </annotation>
+          <annotation class='point' id='2' mark-position='1' pullback='29' text-width='64'>
+            <formatted-text>
+              <run bold='true'>2.6%</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508219764736:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508219764736:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508219764736:qk]</field>
+                      <field>[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508219764736:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>1296</value>
+                    <value>&quot;Wage Decrease&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='1' y='-65' />
+          </annotation>
+          <annotation class='point' id='3' mark-position='0.963203' pullback='146.578' text-width='229'>
+            <formatted-text>
+              <run bold='true' fontalignment='1'>45.8% (Percentage of All Cases)</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508219764736:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508219764736:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508219764736:qk]</field>
+                      <field>[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508219764736:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>23249</value>
+                    <value>&quot;Wage Increase&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='285' y='-1' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{AC104F34-AA04-4071-A624-EBBA476A60BE}' />
+    </worksheet>
+    <worksheet name='Hourly Wage Change by Client County (Count)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Closed_Iowa_Vocational_Rehabilitation_Cases' name='federated.0c4h7qk1cokbm711itorm15yq7nr' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0c4h7qk1cokbm711itorm15yq7nr'>
+            <column caption='Hourly Wage Increase/Decrease' datatype='string' name='[Calculation_124130508219764736]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF([Hourly Wage Change] &gt; 0) THEN &apos;Wage Increase&apos;&#13;&#10;ELSEIF([Hourly Wage Change] = 0) THEN &apos;No Change&apos;&#13;&#10;ELSEIF([Hourly Wage Change] &lt; 0) THEN &apos;Wage Decrease&apos;&#13;&#10;ELSE &apos;Unemployed&apos;&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[Client County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column datatype='real' name='[Hourly Wage Change]' role='measure' type='quantitative' />
+            <column-instance column='[Client County]' derivation='Count' name='[cnt:Client County:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_124130508219764736]' derivation='None' name='[none:Calculation_124130508219764736:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Client County]' derivation='None' name='[none:Client County:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[Longitude (generated)]' field-type='quantitative' max='-9603696.0194550697' min='-11117469.427576968' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[Latitude (generated)]' field-type='quantitative' max='5621079.1532670232' min='4722492.1978501137' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Client County:qk]' field-type='quantitative' max='3000' max-size='1' min='1' min-size='0.094816' type='rangesize' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='size' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Client County:qk]' value='Number of Clients in a County'>
+              <formatted-text>
+                <run>Number of Clients in a County</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508219764736:nk]' />
+              <size column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Client County:qk]' />
+              <lod column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Client County:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='3.6187036037445068' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0c4h7qk1cokbm711itorm15yq7nr].[Latitude (generated)]</rows>
+        <cols>[federated.0c4h7qk1cokbm711itorm15yq7nr].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{F863122E-7306-43FB-8A8F-CA585255D09E}' />
+    </worksheet>
+    <worksheet name='Hourly Wage Change by Client County (Sum) (Test)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Closed_Iowa_Vocational_Rehabilitation_Cases' name='federated.0c4h7qk1cokbm711itorm15yq7nr' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0c4h7qk1cokbm711itorm15yq7nr'>
+            <column datatype='string' name='[Client County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column datatype='real' name='[Hourly Wage Change]' role='measure' type='quantitative' />
+            <column-instance column='[Client County]' derivation='Count' name='[cnt:Client County:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Client County]' derivation='None' name='[none:Client County:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Hourly Wage Change]' derivation='Sum' name='[sum:Hourly Wage Change:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[Longitude (generated)]' field-type='quantitative' max='-9334098.6784047969' min='-11187923.593656834' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[Latitude (generated)]' field-type='quantitative' max='5762195.2587832958' min='4694170.7184272958' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[sum:Hourly Wage Change:qk]' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='size' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Client County:qk]' value='Number of Clients in a County'>
+              <formatted-text>
+                <run>Number of Clients in a County</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[sum:Hourly Wage Change:qk]' />
+              <size column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Client County:qk]' />
+              <lod column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Client County:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='3.6132595539093018' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0c4h7qk1cokbm711itorm15yq7nr].[Latitude (generated)]</rows>
+        <cols>[federated.0c4h7qk1cokbm711itorm15yq7nr].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{0D320FD8-FE32-47D7-BDDE-FF050C37A774}' />
+    </worksheet>
+    <worksheet name='Hourly Wage Change by Disability Category and Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Closed_Iowa_Vocational_Rehabilitation_Cases' name='federated.0c4h7qk1cokbm711itorm15yq7nr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0c4h7qk1cokbm711itorm15yq7nr'>
+            <column caption='Hourly Wage Increase/Decrease' datatype='string' name='[Calculation_124130508219764736]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF([Hourly Wage Change] &gt; 0) THEN &apos;Wage Increase&apos;&#13;&#10;ELSEIF([Hourly Wage Change] = 0) THEN &apos;No Change&apos;&#13;&#10;ELSEIF([Hourly Wage Change] &lt; 0) THEN &apos;Wage Decrease&apos;&#13;&#10;ELSE &apos;Unemployed&apos;&#13;&#10;END' />
+            </column>
+            <column aggregation='CountD' datatype='string' name='[Disability Category]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='string' name='[Disability Type]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Hourly Wage Change]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_124130508219764736]' derivation='Count' name='[cnt:Calculation_124130508219764736:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_124130508219764736]' derivation='None' name='[none:Calculation_124130508219764736:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Disability Category]' derivation='None' name='[none:Disability Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Disability Type]' derivation='None' name='[none:Disability Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Disability Category:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;MSD&quot;</bucket>
+              <bucket>&quot;SD&quot;</bucket>
+              <bucket>&quot;Other&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508219764736:qk]' scope='rows' value='Total' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Disability Category:nk]' value='normal' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Disability Type:nk]' value='bold' />
+            <format attr='color' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Disability Type:nk]' value='#1b1b1b' />
+            <format attr='font-size' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Disability Type:nk]' value='12' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Disability Type:nk]' />
+              <text column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508219764736:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Calculation_124130508219764736:qk]</rows>
+        <cols>([federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Disability Type:nk] / ([federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Disability Category:nk] / [federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508219764736:nk]))</cols>
+      </table>
+      <simple-id uuid='{208F0CD5-3535-437B-8040-68DFC2D17B43}' />
+    </worksheet>
+    <worksheet name='Number of Months Cases Were Opened'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='18'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Closed_Iowa_Vocational_Rehabilitation_Cases' name='federated.0c4h7qk1cokbm711itorm15yq7nr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0c4h7qk1cokbm711itorm15yq7nr'>
+            <column caption='Months Case Open (copy)' datatype='integer' name='[Months Case Open (copy)_195062203776053248]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[Months Case Open]' />
+            </column>
+            <column datatype='integer' name='[Months Case Open]' role='measure' type='quantitative' />
+            <column-instance column='[Months Case Open]' derivation='Count' name='[cnt:Months Case Open:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Months Case Open (copy)_195062203776053248]' derivation='None' name='[none:Months Case Open (copy)_195062203776053248:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Months Case Open:qk]' scope='rows' value='Total Number of Cases' />
+            <format attr='title' class='0' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Months Case Open (copy)_195062203776053248:qk]' scope='cols' value='Number of Months a Case was Opened' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Months Case Open:qk]' value='#000000' />
+            <format attr='font-size' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Months Case Open:qk]' value='11' />
+            <format attr='font-weight' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Months Case Open:qk]' value='bold' />
+            <format attr='font-size' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Months Case Open (copy)_195062203776053248:qk]' value='11' />
+            <format attr='color' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Months Case Open (copy)_195062203776053248:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Months Case Open (copy)_195062203776053248:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Months Case Open:qk]</rows>
+        <cols>[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Months Case Open (copy)_195062203776053248:qk]</cols>
+      </table>
+      <simple-id uuid='{63AC73CC-A892-4B5D-BC03-3258DA23F89E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Closure Dashboard (Test)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f5f5f5' fontsize='22'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#ffffff' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='color' value='#333333' />
+          <format attr='background-color' value='#4e79a7' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98214' id='10' param='vert' type-v2='layout-flow' w='99064' x='468' y='893'>
+            <zone h='5357' id='11' type-v2='title' w='99064' x='468' y='893'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92857' id='8' type-v2='layout-basic' w='99064' x='468' y='6250'>
+              <zone h='43787' id='3' name='Closure Status' w='64198' x='468' y='6250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49070' id='5' name='Case Closure Reason' w='99064' x='468' y='50037'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='43787' id='6' type-v2='text' w='34866' x='64666' y='6250'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>From the graph on the left we can see that the majority of cases were closed with rehabilitation a success however the number of closed cases without a success are not far off.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='16071' id='7' type-v2='text' w='29988' x='63480' y='65848'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='12'>The main reason cases were closed is because IVRS achieved the employment outcome.</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#f5f5f5' fontsize='22'>&lt;Sheet Name&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98214' id='36' param='vert' type-v2='layout-flow' w='99064' x='468' y='893'>
+                <zone h='5357' id='11' type-v2='title' w='99064' x='468' y='893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43787' id='3' is-fixed='true' name='Closure Status' w='64198' x='468' y='6250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='43787' id='6' type-v2='text' w='34866' x='64666' y='6250'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>From the graph on the left we can see that the majority of cases were closed with rehabilitation a success however the number of closed cases without a success are not far off.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49070' id='5' is-fixed='true' name='Case Closure Reason' w='99064' x='468' y='50037'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='16071' id='7' type-v2='text' w='29988' x='63480' y='65848'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='12'>The main reason cases were closed is because IVRS achieved the employment outcome.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{48DFD069-0D0E-467C-A567-3AB13A629D0D}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Presentation Dashboard Test'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='24'>Iowa Vocational Rehabilitation Services (IVRS) Data Exploration</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#00000000' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='background-color' value='#f5ead7' />
+        </style-rule>
+      </style>
+      <size maxheight='1496' maxwidth='1560' minheight='1496' minwidth='1560' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98930' id='13' param='vert' type-v2='layout-flow' w='98974' x='513' y='535'>
+            <zone h='3476' id='14' type-v2='title' w='98974' x='513' y='535'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='95454' id='10' param='horz' type-v2='layout-flow' w='98974' x='513' y='4011'>
+              <zone h='95454' id='8' type-v2='layout-basic' w='98974' x='513' y='4011'>
+                <zone h='41277' id='3' name='Number of Months Cases Were Opened' w='48718' x='513' y='4011'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='5' />
+                  </zone-style>
+                </zone>
+                <zone h='54177' id='5' name='Hourly Wage Change at End of Case' w='48718' x='513' y='45288'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='41277' id='6' name='Case Closure Reason' w='50256' x='49231' y='4011'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='54177' id='7' name='Disability by Office Area' w='50256' x='49231' y='45288'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='7888' id='11' name='Disability by Office Area' pane-specification-id='0' param='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Disability Type:nk]' type-v2='color' w='9479' x='85723' y='48864' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='24'>Iowa Vocational Rehabilitation Services (IVRS) Data Exploration</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98930' id='21' param='vert' type-v2='layout-flow' w='98974' x='513' y='535'>
+                <zone h='3476' id='14' type-v2='title' w='98974' x='513' y='535'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41277' id='3' is-fixed='true' name='Number of Months Cases Were Opened' w='48718' x='513' y='4011'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41277' id='6' is-fixed='true' name='Case Closure Reason' w='50256' x='49231' y='4011'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54177' id='5' is-fixed='true' name='Hourly Wage Change at End of Case' w='48718' x='513' y='45288'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54177' id='7' is-fixed='true' name='Disability by Office Area' w='50256' x='49231' y='45288'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7888' id='11' name='Disability by Office Area' pane-specification-id='0' param='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Disability Type:nk]' type-v2='color' w='9479' x='85723' y='48864'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{83165949-CD24-4D08-87A9-D6A6144D3C4F}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Disability Category and Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Disability Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C6A07046-9C0E-433B-830F-F2B9A7F513CB}' />
+    </window>
+    <window class='worksheet' name='Employment at Time of Closure'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{01FD9597-1CD1-4ECD-81CB-F3AEFAB9E33A}' />
+    </window>
+    <window class='worksheet' name='Closure Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{849EAF28-1F93-41F8-81E6-9FADEB6C8512}' />
+    </window>
+    <window class='worksheet' name='Hourly Wage Change by Client County (Sum) (Test)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='211'>
+            <card pane-specification-id='5' param='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Client County:qk]' type='size' />
+            <card pane-specification-id='5' param='[federated.0c4h7qk1cokbm711itorm15yq7nr].[sum:Hourly Wage Change:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2AFDBD24-A242-4A8A-B224-597DB3E9F9ED}' />
+    </window>
+    <window class='worksheet' name='Hourly Wage Change by Client County (Count)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='211'>
+            <card pane-specification-id='5' param='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508219764736:nk]' type='color' />
+            <card pane-specification-id='5' param='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Client County:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{166974A3-6BC7-479B-875D-0077E4BEE7AE}' />
+    </window>
+    <window class='worksheet' name='Hourly Wage Change by Disability Category and Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{DE2DD182-2F83-4C1A-9196-57CFA5AF8736}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Annual Wage Change'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{DF3C7499-FA7F-400C-BADF-7F7D719D755D}' />
+    </window>
+    <window class='worksheet' name='Client Locations'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{085987D2-2BCC-48F1-BF35-BD58F340BBE1}' />
+    </window>
+    <window class='worksheet' name='Disability by Office Area'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{FD76DDC4-3495-4241-BDD5-82D16B725B23}' />
+    </window>
+    <window class='worksheet' name='Case Closure Reason'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{7D32BCE0-C859-4B1D-9A5F-EC86E0F97E4D}' />
+    </window>
+    <window class='worksheet' name='Hourly Wage Change at End of Case'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E70062CF-26B2-40C9-94C6-DE28CF86DF69}' />
+    </window>
+    <window class='worksheet' name='Number of Months Cases Were Opened'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{1FA040B8-421B-4315-8852-9002127F67E6}' />
+    </window>
+    <window class='dashboard' name='Presentation Dashboard Test'>
+      <viewpoints>
+        <viewpoint name='Case Closure Reason'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Disability by Office Area'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Hourly Wage Change at End of Case'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Number of Months Cases Were Opened'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{8AC9200A-4310-49D5-ADCF-1054380BD795}' />
+    </window>
+    <window class='dashboard' name='Closure Dashboard (Test)'>
+      <viewpoints>
+        <viewpoint name='Case Closure Reason'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Closure Status'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{5D615404-84C0-4FD2-B97D-8CB34F2B83D4}' />
+    </window>
+    <window class='worksheet' name='Client Disabilities by Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{820A7CA1-0104-4B1A-BCFD-49A79C8FFF31}' />
+    </window>
+    <window class='worksheet' name='Client Hourly Wage Change by County in Iowa'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Calculation_124130508219764736:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1F877520-54CA-4B98-85A4-E6CB2E8436AC}' />
+    </window>
+  </windows>
+</workbook>
