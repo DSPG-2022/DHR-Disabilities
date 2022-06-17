@@ -42,15 +42,3 @@ Disabled <- Disabled %>% separate(variable, into = c("Race", "Age"), sep = "\\."
 
 view(Disabled)
 ```
-
-```{r}
-Black <- get_acs(geography = "county",
-                           variables = DisabledBlack, 
-                           year = 2020,
-                           state = "IA")
-
-Black <- Black %>% group_by(NAME) %>%
-  mutate(Percentage = estimate / sum(estimate) * 100)
-
-View(Black)
-```
