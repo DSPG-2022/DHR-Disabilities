@@ -14,7 +14,7 @@ library(tidyverse)
 library(scales)
 
 
-census_api_key("f455269d8b80b427e28a1574cf5bb617a086fa46", install - TRUE)
+census_api_key("f455269d8b80b427e28a1574cf5bb617a086fa46", install = TRUE)
 ```
 
 ```{r Loading Tables for Employment Status by Disability Status}
