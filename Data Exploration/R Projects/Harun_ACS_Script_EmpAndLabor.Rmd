@@ -49,8 +49,8 @@ all_empstat_2020_clean_factor$variable <- factor(all_empstat_2020_clean$variable
 ```
 
 ```{r Creating Visualizations}
-#Using ggplot to create bar graphs for employment status by disability status
-png(filename="EmpStatDisStat.png", width=1400, height=600)
+##Using ggplot to create bar graphs for employment status by disability status
+#png(filename="EmpStatDisStat.png", width=1400, height=600)
 
 ggplot(all_empstat_2020_clean_factor, aes(x = variable, y = perc, label = perc)) + 
   geom_text(check_overlap = FALSE, hjust = -.2) +
@@ -79,8 +79,8 @@ workexp_2020
 ```
 
 ```{r Creating Visualizations}
-#Using ggplot to create bar graphs for employment status by disability status
-png(filename="Workexp_2020.png", width=1400, height=600)
+##Using ggplot to create bar graphs for employment status by disability status
+#png(filename="Workexp_2020.png", width=1400, height=600)
 
 ggplot(workexp_2020, aes(x = variable, y = estimate, label = estimate)) + 
   geom_text(check_overlap = FALSE, hjust = -.2) +
