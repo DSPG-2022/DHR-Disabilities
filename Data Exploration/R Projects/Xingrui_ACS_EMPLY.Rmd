@@ -30,12 +30,15 @@ DisabledHispanicLatino <- c("Under 18 years" = "B18101I_003", "18 to 64 years" =
 ```
 
 ```{r}
-White <- get_acs(geography = "county",
-                           variables = DisabledWhite,
-                           year = 2020,
-                           state = "IA")
-White <- White %>% group_by(NAME) %>%
-  mutate(Percentage = estimate / sum(estimate) * 100)
+Disabled <- get_acs(geography = "county",
+                   variables = c("WHITE ALONE" = DisabledWhite, "BLACK OR AFRICAN AMERICAN ALONE" = DisabledBlack, "AMERICAN, INDIAN AND ALASKA NATIVE ALONE" = DisabledIndianAlaska, "ASIAN ALONE" = DisabledAsian, "NATIVE HAWAIIAN AND OTHER PACIFIC ISLANDER ALONE" = DisabledHawaiianPacific, "SOME OTHER RACE ALONE" = DisabledOtherAlone, "TWO OR MORE RACES" = DisabledTwoMore, "WHITE ALONE, NOT HISPANIC OR LATINO" = DisabledWhiteAlone, "HISPANIC OR LATINO" = DisabledHispanicLatino),
+                   year = 2020,
+                   state = "IA")
 
-View(White)
+Disabled <- Disabled %>% separate(variable, into = c("Race", "Age"), sep = "\\.") %>%
+  pivot_wider(names_from = Race, values_from = estimate) %>%
+  group_by(NAME, Age)
+
+
+view(Disabled)
 ```

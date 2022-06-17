@@ -3,8 +3,8 @@ title: "Xingrui_ACS5_Script"
 author: "Xingrui"
 date: '2022-06-08'
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -16,7 +16,7 @@ library(tidycensus)
 library(tidyverse)
 library(sf)
 
-var <- load_variables(2020, "acs5")
+acs5 <- load_variables(2020, "acs5")
 ```
 
 People with disabilities in Iowa are more common at ages 35 and older than at younger ages. One guess is that more people's disabilities are acquired.  
@@ -45,9 +45,11 @@ Age %>% mutate(population = ifelse(sex == "Male", estimate * -1, estimate * 1)) 
   coord_flip() +
   geom_bar(stat = "identity") +
   labs(title = "Age of Persons With Disabilities by Sex",
-       subtitle = "2016 - 2020 American Community Survey",
+       subtitle = "2020 American Community Survey",
        x = "Age",
-       y = "Absolute Value of Population by Sex")
+       y = "|Population| by Sex") +
+  scale_fill_viridis_d(direction = -1) +
+  theme_classic()
 ```
 
 Among all disabled people, American Indian and Alaska Native alone account for the largest proportion (16.8%), and Asian alone account for the least (5.7%).  
@@ -59,13 +61,14 @@ ggplot(race, aes(x = "", y = Percent, fill = Race)) +
   geom_bar(stat = "identity") +
   coord_polar("y", start = 0) +
   labs(title = "Percentage of the Population With Disabilities by Race",
-       subtitle = "2016 - 2020 American Community Survey") +
+       subtitle = "2020 American Community Survey") +
   geom_text(aes(label = paste0(Percent, "%")),
             position = position_stack(vjust = 0.5)) +
-  theme_void()
+  theme_void() +
+  scale_fill_viridis_d()
 ```
 
-Disability types did not show significant differences in gender. Hearing and visioning difficulties are difficulties for most disabled persons.  
+(Wrong datasets!!!)Disability types did not show significant differences in gender. Hearing and visioning difficulties are difficulties for most disabled persons. 
 ```{r}
 difficultyMale <- c(Vision = "B18103_002", "Self-care" = "B18106_002", "Independent living" = "B18107_002", Hearing = "B18102_002", Cognitive = "B18104_002", Ambulatory = "B18105_002")
 
@@ -79,11 +82,16 @@ Difficulty <- get_acs(geography = "state",
 
 Difficulty$Sex <- rep(c("Male", "Female"), 6)
 
+Difficulty$variable <- str_replace(Difficulty$variable, c("Male.", "Female."), "")
+
 ggplot(Difficulty, aes(x = variable, y = estimate, fill = Sex)) +
   geom_bar(position="stack", stat="identity") +
   labs(title = "Disabled Population by Type of Disability",
-       subtitle = "2016 - 2020 American Community Survey") +
-  theme(axis.text.x = element_text(angle = 90))
+       subtitle = "2020 American Community Survey",
+       x = "Types of Disability",
+       y = "Population") +
+  scale_y_continuous(labels = scales::comma) +
+  scale_fill_viridis_d()
 ```
 
 The majority of disabled persons in the labor force are employed.  
@@ -100,7 +108,7 @@ ggplot(Employment, aes(variable, weight = estimate)) +
   labs(x = "Employment Status",
        y = "Population",
        title = "Disabled Population in the Labor Force by Employment Status",
-       subtitle = "2016 - 2020 American Community Survey") +
+       subtitle = "2020 American Community Survey") +
   geom_errorbar(aes(ymin = estimate - moe,
                     ymax = estimate + moe,
                     width = 0.5,
@@ -112,7 +120,7 @@ ggplot(Employment, aes(variable, weight = estimate)) +
 ```
 
 The employment rate of disabled persons in most counties is 80% and above, with a few outlier counties.  
-```{r}
+```{r, results = "hide"}
 Employed <- get_acs(geography = "county",
                     variables = "C18120_004",
                     year = 2020,
@@ -135,7 +143,7 @@ ggplot(Employment1, aes(fill = percentage)) +
   coord_sf(datum = NA) +
   scale_fill_continuous(type = "viridis", direction = -1) +
   labs(title = "Employment Rate of Persons With Disabilities in the Labor Force",
-       subtitle = "2016 - 2020 American Community Survey")
+       subtitle = "2020 American Community Survey")
 ```
 
 People with disabilities tend to earn about 30% less than the median earnings of non-disabled people, and women in the disabled group tend to earn about 50% less than the median earnings of men.  
@@ -153,9 +161,10 @@ MedEarningBySex$sex <- rep(c("Male", "Female"), 2)
 ggplot(MedEarningBySex, aes(x = sex, y = estimate, fill = variable)) +
   geom_bar(position="dodge", stat="identity") +
   labs(title = "Median Earning by Sex and Disability Status",
-       subtitle = "2016 - 2020 American Community Survey",
+       subtitle = "2020 American Community Survey",
        x = "Sex by Disability Status",
-       y = "Median Earnings")
+       y = "Median Earnings") +
+  scale_fill_viridis_d()
 ```
 
 A ratio of income to poverty below 1 is considered to be in poverty. The proportion of people with disabilities living in poverty varies from 10% to 30% in each Iowa county.  
@@ -191,7 +200,7 @@ ggplot(Employment1, aes(fill = Proportion)) +
   coord_sf(datum = NA) +
   scale_fill_continuous(type = "viridis") +
   labs(title = "Proportion of the Population Living in Poverty Among All Disabled People",
-       subtitle = "2016 - 2020 American Community Survey")
+       subtitle = "2020 American Community Survey")
 ```
 
 ```{r}

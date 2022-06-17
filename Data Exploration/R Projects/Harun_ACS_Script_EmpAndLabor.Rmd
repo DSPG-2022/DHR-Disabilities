@@ -14,20 +14,20 @@ library(tidyverse)
 library(scales)
 
 
-census_api_key("f455269d8b80b427e28a1574cf5bb617a086fa46", install - TRUE)
+census_api_key("f455269d8b80b427e28a1574cf5bb617a086fa46", install = TRUE)
 ```
 
 ```{r Loading Tables for Employment Status by Disability Status}
 #Taking data from ACS for Employment Status by Disability Status
 empstat_tables = c("Labor force employed with disability" = "C18120_004", "Labor force employed without disability" = "C18120_005", "Labor force unemployed with disability" = "C18120_007", "Labor force unemployed without disability" = "C18120_009", "Total not in labor force with disability" = "C18120_010", "Total not in labor force without disability" = "C18120_011")
 
-
+#Get Data from ACS
 all_empstat_2020 <- get_acs(geography =  "state",
                             variables = empstat_tables,
                             survey = "acs5",
                             state = "19",
                             )
-
+#Calculate Percentages
 all_empstat_2020_disability <- all_empstat_2020 %>%
   filter(grepl("with disability",variable)) %>%
   mutate(disability_total = sum(estimate)) %>%
@@ -38,11 +38,11 @@ all_empstat_2020_nodisability  <- all_empstat_2020 %>%
   mutate(no_disability_total = sum(estimate)) %>%
   mutate(perc = 100 * (estimate/no_disability_total))
   
-  
+#Join Percentages
 all_empstat_2020_clean <- full_join(x = all_empstat_2020_disability, y = all_empstat_2020_nodisability)
 all_empstat_2020_clean_factor <- all_empstat_2020_clean
   
-
+#Reorder the Variables
 all_empstat_2020_clean_factor$variable <- factor(all_empstat_2020_clean$variable,
          levels = c("Labor force employed with disability", "Labor force unemployed with disability", "Total not in labor force with disability", "Labor force employed without disability", "Labor force unemployed without disability", "Total not in labor force without disability"))
    
