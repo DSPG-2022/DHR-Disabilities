@@ -1,7 +1,6 @@
 library(tidyr)
 library(dplyr)
 library(stringr)
-library(zipcodeR)
 
 IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
 
@@ -22,19 +21,35 @@ IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.
       str_replace_all(IVRS_data_transformed$'Client Zip Code Extra Info', "[^[:alnum:]]", "")
     
 # Changes state names to abbreviations
-    x <- reverse_zipcode(IVRS_data_transformed$'Client Zip Code')$state
+
+    stateAbbreviations <- c()
     
-    IVRS_data_transformed$'Client State' <- x
-    
-    IVRS_data_transformed <- mutate(IVRS_data_transformed, 'Client State' = reverse_zipcode(IVRS_data_transformed$'Client Zip Code')$state)
-    
-    
-    IVRS_data_transformed <- mutate(IVRS_data_transformed, 'Client State' = case_when(
-                                                                                    is.na(match(IVRS_data_transformed$'Client State', state.name)) == FALSE ~ state.abb[match(IVRS_data_transformed$'Client State', state.name)],
-                                                                                    IVRS_data_transformed$'Client State' == 'District of Columbia' ~ IVRS_data_transformed$'Client State' = 'DC',
-                                                                                    IVRS_data_transformed$'Client State' == 'West VA' ~ IVRS_data_transformed$'Client State' = 'WV',
-                                                                                    TRUE ~ IVRS_data_transformed$'Client State'
-                                                                                    ))
+    for(state in IVRS_data_transformed$'Client State'){
+      state <- str_trim(state)
+      if(is.na(state)){
+        stateAbbreviations <- append(stateAbbreviations, NA)
+      }
+      else if(state == 'ArKS'){
+        stateAbbreviations <- append(stateAbbreviations, 'AR')
+      }
+      else if(state == 'ARKS'){
+        stateAbbreviations <- append(stateAbbreviations, 'AR')
+      }
+      else if(state == 'District of Columbia'){
+        stateAbbreviations <- append(stateAbbreviations, 'DC')
+      }
+      else if(state == 'Puerto Rico'){
+        stateAbbreviations <- append(stateAbbreviations, NA)
+      }
+      else if(nchar(state) > 2){
+        stateAbbreviations <- append(stateAbbreviations, state.abb[grep(state, state.name)])
+      }
+      else {
+        stateAbbreviations <- append(stateAbbreviations, state)
+      }
+    }
+
+IVRS_data_transformed$'Client State' <- stateAbbreviations
 
 # Change wage at application and closure values to NA if 0
     # hourly
