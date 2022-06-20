@@ -1,7 +1,7 @@
 library(tidyr)
 library(dplyr)
 library(stringr)
-
+library(zipcodeR)
 IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
 
 # Initial split on comma to get City
@@ -25,7 +25,9 @@ IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.
     stateAbbreviations <- c()
     
     for(state in IVRS_data_transformed$'Client State'){
+      
       state <- str_trim(state)
+      
       if(is.na(state)){
         stateAbbreviations <- append(stateAbbreviations, NA)
       }
