@@ -19,6 +19,14 @@ IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.
 # Remove '-' from extra zip code info
     IVRS_data_transformed$'Client Zip Code Extra Info' <- 
       str_replace_all(IVRS_data_transformed$'Client Zip Code Extra Info', "[^[:alnum:]]", "")
+    
+# Changes state names to abbreviations
+    IVRS_data_transformed <- mutate(IVRS_data_transformed, 'Client State' = case_when(
+                                                                                    is.na(match(IVRS_data_transformed$'Client State', state.name)) == FALSE ~ state.abb[match(IVRS_data_transformed$'Client State', state.name)],
+                                                                                    IVRS_data_transformed$'Client State' == 'District of Columbia' ~ IVRS_data_transformed$'Client State' = 'DC',
+                                                                                    IVRS_data_transformed$'Client State' == 'West VA' ~ IVRS_data_transformed$'Client State' = 'WV',
+                                                                                    TRUE ~ IVRS_data_transformed$'Client State'
+                                                                                    ))
 
 # Change wage at application and closure values to NA if 0
     # hourly
@@ -38,7 +46,7 @@ IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.
     IVRS_data_transformed$'Monthly Wage Change' <- IVRS_data_transformed$'Monthly Wage (Closure)' - IVRS_data_transformed$'Monthly Wage (Application)'
     IVRS_data_transformed$'Annual Wage Change' <- IVRS_data_transformed$'Annual Wage (Closure)' - IVRS_data_transformed$'Annual Wage (Application)'
 
-# Creates new columns for whether there was a wage increase or not
+# Creates new columns for whether there was a wage increase, no change, decrease, or unemployed
     IVRS_data_transformed <- mutate(IVRS_data_transformed, 'Hourly Wage Change Category' = case_when(
                                                                                             IVRS_data_transformed$'Hourly Wage Change' < 0 ~ "Decrease",
                                                                                             IVRS_data_transformed$'Hourly Wage Change' == 0 ~ "No Change",
