@@ -24,15 +24,47 @@ View(var)
 ```
 
 ```{r}
-emp_stat_disability <-("Employed with disability"= "C18120_004")
-emp_stat_no_disability <- ("Employed with no disability"= "C18120_005")
+emp_stat_disability <-c("In the Labor Force,Employed with disability"= "C18120_004", "In the Labor force,unemployed with a disability" = "C18120_007",  "Not in the Labor force, with a disability" = "C18120_010")
+
+emp_stat_no_disability <- c("In the Labor Force,Employed with no disability"= "C18120_005", "In the Labor force,unemployed with no disability" = "C18120_008", "Not in the Labor Force, with no disability" = "C18120_011")
 ```
+
 ```{r}
-empl_status_table <- get_acs(
+empl_status_disability <- get_acs(
   geography= "state",
   year = 2020,
   variables = emp_stat_disability,
   state= "IA"
 )
-View(empl_status_table)
+View(empl_status_disability)
+
+empl_status_disability= empl_status_disability %>% mutate(perc= 100* (estimate/sum(estimate))) 
+View(empl_status_disability)
+
+empl_status_no_disability <- get_acs(
+  geography= "state",
+  year = 2020,
+  variables = emp_stat_no_disability,
+  state= "IA"
+)
+View(empl_status_no_disability)
+
+empl_status_no_disability= empl_status_no_disability %>% mutate(perc= 100* (estimate/sum(estimate))) 
+View(empl_status_no_disability)
 ```
+
+```{r}
+write.csv(all_emp_stat, "Employement_Status.csv") 
+
+write.csv(all_emp_stat,"C:/Users/sanik/Documents/Cleaned_Employement_Cases.csv", row.names = FALSE)
+```
+
+```{r}
+
+all_emp_stat= full_join(empl_status_disability,empl_status_no_disability)
+ggplot(all_emp_stat, aes(variable, weight= estimate))+
+  geom_bar()+
+  labs(x="Employment Status", y= "population",
+       title= "Employement Status by Disability")+
+  geom_errorbar((aes(ymin= estimate-moe,
+                    ymax= estimate+moe)))
