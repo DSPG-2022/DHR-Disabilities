@@ -56,18 +56,17 @@ View(empl_status_no_disability)
 ```
 
 ```{r}
+#Joining tables
 all_emp_stat= full_join(empl_status_disability,empl_status_no_disability)
+View(all_emp_stat)
+```
+
+
+```{r}
 #Removing MOE
 all_emp_stat = subset(all_emp_stat, select = -c(`In the Labor Force,Employed with disabilityM`, `In the Labor force,unemployed with a disabilityM`, `Not in the Labor force, with a disabilityM`, `In the Labor Force,Employed with no disabilityM`, `In the Labor force,unemployed with no disabilityM`, `Not in the Labor Force, with no disabilityM`) )
 View(all_emp_stat)
 ```
-
-```{r}
-all_emp_stat$in_labor_force_employed_gap <- (all_emp_stat$`In the Labor Force,Employed with no disabilityE`- all_emp_stat$`In the Labor Force,Employed with disabilityE`)
-all_emp_stat$in_labor_force_unemployed_gap <- (all_emp_stat$`In the Labor force,unemployed with no disabilityE`- all_emp_stat$`In the Labor force,unemployed with a disabilityE`)
-all_emp_stat$not_in_labor_force_gap <- (all_emp_stat$`Not in the Labor Force, with no disabilityE`- all_emp_stat$`Not in the Labor force, with a disabilityE`)
-```
-
 
 ```{r}
 #Finding disability and non disability total
@@ -76,30 +75,29 @@ all_emp_stat$no_disability_total <- (all_emp_stat$`In the Labor Force,Employed w
 ```
 
 ```{r}
-#all_emp_stat = all_emp_stat %>% mutate(percent_in_labor_force_employed_disabled = 100 * (all_emp_stat$disability_total/all_emp_stat$in_labor_force_employed_gap), percent_in_labor_force_employed_not_disabled = 100 * (all_emp_stat$no_disability_total/all_emp_stat$in_labor_force_employed_gap))
+#Finding percentage gap
 
-#all_emp_stat = all_emp_stat %>% mutate(percent_in_labor_force_unemployed_disabled = 100 * (all_emp_stat$disability_total/all_emp_stat$in_labor_force_unemployed_gap), percent_in_labor_force_unemployed_not_disabled = 100 * (all_emp_stat$no_disability_total/all_emp_stat$in_labor_force_unemployed_gap))
+percent_in_labor_force_employed_disabled = 100 * (all_emp_stat$`In the Labor Force,Employed with disabilityE`/all_emp_stat$disability_total)
+percent_in_labor_force_employed_not_disabled = 100 * (all_emp_stat$`In the Labor Force,Employed with no disabilityE`/all_emp_stat$no_disability_total)
+                                                  
 
-#all_emp_stat = all_emp_stat %>% mutate(percent_not_in_labor_force_disabled = 100 * (all_emp_stat$disability_total/all_emp_stat$not_in_labor_force_gap), percent_not_in_labor_force = 100 * (all_emp_stat$no_disability_total/all_emp_stat$not_in_labor_force_gap))
+percent_in_labor_force_unemployed_disabled = 100 * (all_emp_stat$`In the Labor force,unemployed with a disabilityE`/all_emp_stat$disability_total)
+percent_in_labor_force_unemployed_not_disabled = 100 * (all_emp_stat$`In the Labor force,unemployed with no disabilityE`/all_emp_stat$no_disability_total)
 
+percent_not_in_labor_force_disabled = 100 * (all_emp_stat$`Not in the Labor force, with a disabilityE`/all_emp_stat$disability_total)
+percent_not_in_labor_force_not_disabled = 100 * (all_emp_stat$`Not in the Labor Force, with no disabilityE`/all_emp_stat$no_disability_total)
+
+
+all_emp_stat = all_emp_stat %>% mutate(percent_in_labor_force_employed_gap = percent_in_labor_force_employed_not_disabled - percent_in_labor_force_employed_disabled, percent_in_labor_force_unemployed_gap = percent_in_labor_force_unemployed_not_disabled - percent_in_labor_force_unemployed_disabled, percent_not_in_labor_force_gap = percent_not_in_labor_force_not_disabled - percent_not_in_labor_force_disabled)
 View(all_emp_stat)
+
 ```
 
 
 ```{r}
+#Converting into a csv 
+
 write.csv(all_emp_stat, "Employement_Status.csv") 
 
 write.csv(all_emp_stat,"C:/Users/sanik/Documents/Cleaned_Employement_Cases.csv", row.names = FALSE)
-```
-
-```{r}
-
-
-ggplot(all_emp_stat, aes(variable, weight= estimate))+
-  geom_bar()+
-  labs(x="Employment Status", y= "population",
-       title= "Employement Status by Disability")+
-  geom_errorbar((aes(ymin= estimate-moe,
-                    ymax= estimate+moe)))
-               
 ```
