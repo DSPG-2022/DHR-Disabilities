@@ -31,27 +31,37 @@ emp_stat_no_disability <- c("In the Labor Force,Employed with no disability"= "C
 
 ```{r}
 empl_status_disability <- get_acs(
-  geography= "state",
+  geography= "county",
   year = 2020,
   variables = emp_stat_disability,
   state= "IA"
 )
 View(empl_status_disability)
 
-empl_status_disability= empl_status_disability %>% mutate(perc= 100* (estimate/sum(estimate))) 
+empl_status_disability= empl_status_disability %>% mutate(overall_perc= 100* (estimate/sum(estimate)) )
 View(empl_status_disability)
 
 empl_status_no_disability <- get_acs(
-  geography= "state",
+  geography= "county",
   year = 2020,
   variables = emp_stat_no_disability,
   state= "IA"
 )
 View(empl_status_no_disability)
 
-empl_status_no_disability= empl_status_no_disability %>% mutate(perc= 100* (estimate/sum(estimate))) 
+empl_status_no_disability= empl_status_no_disability %>% mutate(overall_perc= 100* (estimate/sum(estimate))) 
 View(empl_status_no_disability)
 ```
+
+```{r}
+all_emp_stat= full_join(empl_status_disability,empl_status_no_disability)
+View(all_emp_stat)
+```
+
+```{r}
+
+```
+
 
 ```{r}
 write.csv(all_emp_stat, "Employement_Status.csv") 
@@ -61,10 +71,12 @@ write.csv(all_emp_stat,"C:/Users/sanik/Documents/Cleaned_Employement_Cases.csv",
 
 ```{r}
 
-all_emp_stat= full_join(empl_status_disability,empl_status_no_disability)
+
 ggplot(all_emp_stat, aes(variable, weight= estimate))+
   geom_bar()+
   labs(x="Employment Status", y= "population",
        title= "Employement Status by Disability")+
   geom_errorbar((aes(ymin= estimate-moe,
                     ymax= estimate+moe)))
+               
+```
