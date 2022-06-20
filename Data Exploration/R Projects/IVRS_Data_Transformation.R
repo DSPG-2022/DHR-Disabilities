@@ -1,6 +1,7 @@
 library(tidyr)
 library(dplyr)
 library(stringr)
+library(zipcodeR)
 
 IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
 
@@ -21,6 +22,13 @@ IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.
       str_replace_all(IVRS_data_transformed$'Client Zip Code Extra Info', "[^[:alnum:]]", "")
     
 # Changes state names to abbreviations
+    x <- reverse_zipcode(IVRS_data_transformed$'Client Zip Code')$state
+    
+    IVRS_data_transformed$'Client State' <- x
+    
+    IVRS_data_transformed <- mutate(IVRS_data_transformed, 'Client State' = reverse_zipcode(IVRS_data_transformed$'Client Zip Code')$state)
+    
+    
     IVRS_data_transformed <- mutate(IVRS_data_transformed, 'Client State' = case_when(
                                                                                     is.na(match(IVRS_data_transformed$'Client State', state.name)) == FALSE ~ state.abb[match(IVRS_data_transformed$'Client State', state.name)],
                                                                                     IVRS_data_transformed$'Client State' == 'District of Columbia' ~ IVRS_data_transformed$'Client State' = 'DC',
