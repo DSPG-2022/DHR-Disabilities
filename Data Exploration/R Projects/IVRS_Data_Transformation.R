@@ -53,15 +53,15 @@ IVRS_data_transformed$'Client State' <- stateAbbreviations
 
 # Change wage at application and closure values to NA if 0
     # hourly
-    IVRS_data_transformed$'Hourly Wage (Application)'[IVRS_data_transformed$'Hourly Wage (Application)' == 0] <- NA
+    IVRS_data_transformed$'Hourly Wage (Application)'[is.na(IVRS_data_transformed$'Hourly Wage (Application)')] <- 0
     IVRS_data_transformed$'Hourly Wage (Closure)'[IVRS_data_transformed$'Hourly Wage (Closure)' == 0] <- NA
     
     #monthly
-    IVRS_data_transformed$'Monthly Wage (Application)'[IVRS_data_transformed$'Monthly Wage (Application)' == 0] <- NA
+    IVRS_data_transformed$'Monthly Wage (Application)'[is.na(IVRS_data_transformed$'Monthly Wage (Application)')] <- 0
     IVRS_data_transformed$'Monthly Wage (Closure)'[IVRS_data_transformed$'Monthly Wage (Closure)' == 0] <- NA
     
     #annually
-    IVRS_data_transformed$'Annual Wage (Application)'[IVRS_data_transformed$'Annual Wage (Application)' == 0] <- NA
+    IVRS_data_transformed$'Annual Wage (Application)'[is.na(IVRS_data_transformed$'Annual Wage (Application)')] <- 0
     IVRS_data_transformed$'Annual Wage (Closure)'[IVRS_data_transformed$'Annual Wage (Closure)' == 0] <- NA
     
 # Recalculated wage change fields
