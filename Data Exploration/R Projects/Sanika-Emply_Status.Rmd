@@ -34,32 +34,41 @@ empl_status_disability <- get_acs(
   geography= "county",
   year = 2020,
   variables = emp_stat_disability,
-  state= "IA"
+  state= "IA",
+  output = "wide"
 )
 View(empl_status_disability)
 
-empl_status_disability= empl_status_disability %>% mutate(overall_perc= 100* (estimate/sum(estimate)) )
-View(empl_status_disability)
+#empl_status_disability= empl_status_disability %>% mutate(sum_of_estimates = sum (estimate),overall_perc= 100* (estimate/sum(estimate)) )
+#View(empl_status_disability)
 
 empl_status_no_disability <- get_acs(
   geography= "county",
   year = 2020,
   variables = emp_stat_no_disability,
-  state= "IA"
+  state= "IA",
+  output= "wide"
 )
 View(empl_status_no_disability)
 
-empl_status_no_disability= empl_status_no_disability %>% mutate(overall_perc= 100* (estimate/sum(estimate))) 
-View(empl_status_no_disability)
+#empl_status_no_disability= empl_status_no_disability %>% mutate(sum_of_estimates= sum(estimate),overall_perc= 100* (estimate/sum(estimate))) 
+#View(empl_status_no_disability)
+```
+```{r}
 ```
 
 ```{r}
 all_emp_stat= full_join(empl_status_disability,empl_status_no_disability)
 View(all_emp_stat)
+
+all_emp_stat = drop(all_emp_stat, -c(`In the Labor Force,Employed with disabilityM`,`In the Labor force,unemployed with a disabilityM`,`Not in the Labor force, with a disabilityM`,`In the Labor Force,Employed with no disabilityM`,`In the Labor force,unemployed with no disabilityM`,`Not in the Labor Force, with no disabilityM`))
 ```
 
 ```{r}
-
+all_emp_stat$in_labor_force_employed_gap <- (all_emp_stat$`In the Labor Force,Employed with no disabilityE`- all_emp_stat$`In the Labor Force,Employed with disabilityE`)
+all_emp_stat$in_labor_force_unemployed_gap <- (all_emp_stat$`In the Labor force,unemployed with no disabilityE`- all_emp_stat$`In the Labor force,unemployed with a disabilityE`)
+all_emp_stat$not_in_labor_force_gap <- (all_emp_stat$`Not in the Labor Force, with no disabilityE`- all_emp_stat$`Not in the Labor force, with a disabilityE`)
+View(all_emp_stat)
 ```
 
 
