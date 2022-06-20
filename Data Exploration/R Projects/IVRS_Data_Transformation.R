@@ -39,17 +39,21 @@ IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.
     IVRS_data_transformed$'Annual Wage Change' <- IVRS_data_transformed$'Annual Wage (Closure)' - IVRS_data_transformed$'Annual Wage (Application)'
 
 # Creates new columns for whether there was a wage increase or not
-    IVRS_data_transformed <- mutate(IVRS_data_transformed, 'Hourly Wage Change Category' = ifelse(IVRS_data_transformed$'Hourly Wage Change' < 0, "Decrease",
-                                                                             ifelse(IVRS_data_transformed$'Hourly Wage Change' == 0, "No Change",
-                                                                                    ifelse(IVRS_data_transformed$'Hourly Wage Change' > 0, "Increase", NA))))
-    
-    IVRS_data_transformed <- mutate(IVRS_data_transformed, 'Monthly Wage Change Category' = ifelse(IVRS_data_transformed$'Monthly Wage Change' < 0, "Decrease",
-                                                                             ifelse(IVRS_data_transformed$'Monthly Wage Change' == 0, "No Change",
-                                                                                    ifelse(IVRS_data_transformed$'Monthly Wage Change' > 0, "Increase", NA))))
-    
-    IVRS_data_transformed <- mutate(IVRS_data_transformed, 'Annual Wage Change Category' = ifelse(IVRS_data_transformed$'Annual Wage Change' < 0, "Decrease",
-                                                                             ifelse(IVRS_data_transformed$'Annual Wage Change' == 0, "No Change",
-                                                                                    ifelse(IVRS_data_transformed$'Annual Wage Change' > 0, "Increase", NA))))
+    IVRS_data_transformed <- mutate(IVRS_data_transformed, 'Hourly Wage Change Category' = case_when(
+                                                                                            IVRS_data_transformed$'Hourly Wage Change' < 0 ~ "Decrease",
+                                                                                            IVRS_data_transformed$'Hourly Wage Change' == 0 ~ "No Change",
+                                                                                            IVRS_data_transformed$'Hourly Wage Change' > 0 ~ "Increase",
+                                                                                            is.na(IVRS_data_transformed$'Hourly Wage Change') ~ "Unemployed"))
+    IVRS_data_transformed <- mutate(IVRS_data_transformed, 'Monthly Wage Change Category' = case_when(
+                                                                                            IVRS_data_transformed$'Monthly Wage Change' < 0 ~ "Decrease",
+                                                                                            IVRS_data_transformed$'Monthly Wage Change' == 0 ~ "No Change",
+                                                                                            IVRS_data_transformed$'Monthly Wage Change' > 0 ~ "Increase",
+                                                                                            is.na(IVRS_data_transformed$'Monthly Wage Change') ~ "Unemployed"))
+    IVRS_data_transformed <- mutate(IVRS_data_transformed, 'Annual Wage Change Category' = case_when(
+                                                                                            IVRS_data_transformed$'Annual Wage Change' < 0 ~ "Decrease",
+                                                                                            IVRS_data_transformed$'Annual Wage Change' == 0 ~ "No Change",
+                                                                                            IVRS_data_transformed$'Annual Wage Change' > 0 ~ "Increase",
+                                                                                            is.na(IVRS_data_transformed$'Annual Wage Change') ~ "Unemployed"))
     
 # write to file
     write.csv(IVRS_data_transformed, "C:/Users/joelm/Documents/GitHub/DHR-Disabilities/Data Exploration/Datasets/Cleaned_Closed_Iowa_Vocational_Rehabilitation_Cases.csv", row.names = FALSE)
