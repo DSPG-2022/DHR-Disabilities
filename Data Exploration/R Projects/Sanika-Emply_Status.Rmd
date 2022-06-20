@@ -31,7 +31,7 @@ emp_stat_no_disability <- c("In the Labor Force,Employed with no disability"= "C
 
 ```{r}
 empl_status_disability <- get_acs(
-  geography= "state",
+  geography= "county",
   year = 2020,
   variables = emp_stat_disability,
   state= "IA",
