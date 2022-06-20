@@ -77,18 +77,14 @@ all_emp_stat$no_disability_total <- (all_emp_stat$`In the Labor Force,Employed w
 ```{r}
 #Finding percentage gap
 
-percent_in_labor_force_employed_disabled = 100 * (all_emp_stat$`In the Labor Force,Employed with disabilityE`/all_emp_stat$disability_total)
-percent_in_labor_force_employed_not_disabled = 100 * (all_emp_stat$`In the Labor Force,Employed with no disabilityE`/all_emp_stat$no_disability_total)
-                                                  
-
-percent_in_labor_force_unemployed_disabled = 100 * (all_emp_stat$`In the Labor force,unemployed with a disabilityE`/all_emp_stat$disability_total)
-percent_in_labor_force_unemployed_not_disabled = 100 * (all_emp_stat$`In the Labor force,unemployed with no disabilityE`/all_emp_stat$no_disability_total)
-
-percent_not_in_labor_force_disabled = 100 * (all_emp_stat$`Not in the Labor force, with a disabilityE`/all_emp_stat$disability_total)
-percent_not_in_labor_force_not_disabled = 100 * (all_emp_stat$`Not in the Labor Force, with no disabilityE`/all_emp_stat$no_disability_total)
+all_emp_stat = all_emp_stat %>% mutate(percent_in_labor_force_employed_disabled = 100 * (all_emp_stat$`In the Labor Force,Employed with disabilityE`/all_emp_stat$disability_total),
+percent_in_labor_force_employed_not_disabled = 100 * (all_emp_stat$`In the Labor Force,Employed with no disabilityE`/all_emp_stat$no_disability_total), percent_in_labor_force_unemployed_disabled = 100 * (all_emp_stat$`In the Labor force,unemployed with a disabilityE`/all_emp_stat$disability_total),
+percent_in_labor_force_unemployed_not_disabled = 100 * (all_emp_stat$`In the Labor force,unemployed with no disabilityE`/all_emp_stat$no_disability_total), 
+percent_not_in_labor_force_disabled = 100 * (all_emp_stat$`Not in the Labor force, with a disabilityE`/all_emp_stat$disability_total),
+percent_not_in_labor_force_not_disabled = 100 * (all_emp_stat$`Not in the Labor Force, with no disabilityE`/all_emp_stat$no_disability_total))
 
 
-all_emp_stat = all_emp_stat %>% mutate(percent_in_labor_force_employed_gap = percent_in_labor_force_employed_not_disabled - percent_in_labor_force_employed_disabled, percent_in_labor_force_unemployed_gap = percent_in_labor_force_unemployed_not_disabled - percent_in_labor_force_unemployed_disabled, percent_not_in_labor_force_gap = percent_not_in_labor_force_not_disabled - percent_not_in_labor_force_disabled)
+all_emp_stat = all_emp_stat %>% mutate(percent_in_labor_force_employed_gap = percent_in_labor_force_employed_not_disabled - percent_in_labor_force_employed_disabled, percent_in_labor_force_unemployed_gap = percent_in_labor_force_unemployed_not_disabled - percent_in_labor_force_unemployed_disabled , percent_not_in_labor_force_gap =    percent_not_in_labor_force_not_disabled - percent_not_in_labor_force_disabled )
 View(all_emp_stat)
 
 ```
@@ -96,8 +92,5 @@ View(all_emp_stat)
 
 ```{r}
 #Converting into a csv 
-
-write.csv(all_emp_stat, "Employement_Status.csv") 
-
-write.csv(all_emp_stat,"C:/Users/sanik/Documents/Cleaned_Employement_Cases.csv", row.names = FALSE)
+write.csv(all_emp_stat, "S:/misc/clg/DSPG2022/ProjectA/Labor_Force_gaps.csv", row.names = FALSE)
 ```
