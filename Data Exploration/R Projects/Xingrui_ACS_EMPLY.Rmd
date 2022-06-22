@@ -12,11 +12,70 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(tidycensus)
 library(tidyverse)
+library(openxlsx)
+library(stringr)
 
 acs5 <- load_variables(2020, "acs5")
-view(acs5)
 ```
 
+Population of Iowans 5-64 years of age with disabilities (Disaggregate by age groups)
+```{r}
+DisabledHearing <- c("5 to 17 years" = c("B18102_007", "B18102_026"), "18 to 34 years" = c("B18102_010", "B18102_029"), "35 to 64 years" = c("B18102_013", "B18102_032"))
+DisabledVision <- c("5 to 17 years" = c("B18103_007", "B18103_026"), "18 to 34 years" = c("B18103_010", "B18103_029"), "35 to 64 years" = c("B18103_007", "B18103_032"))
+DisabledCognitive <- c("5 to 17 years" = c("B18104_004", "B18104_020"), "18 to 34 years" = c("B18104_007", "B18104_023"), "35 to 64 years" = c("B18104_010", "B18104_026"))
+DisabledAmbulatory <- c("5 to 17 years" = c("B18105_004", "B18105_020"), "18 to 34 years" = c("B18105_007", "B18105_023"), "35 to 64 years" = c("B18105_010", "B18105_026"))
+DisabledSelfCare <- c("5 to 17 years" = c("B18106_004", "B18106_020"), "18 to 34 years" = c("B18106_007", "B18106_023"), "35 to 64 years" = c("B18106_010", "B18106_026"))
+DisabledIndependentLiving <- c("5 to 17 years" = c("B18107_004", "B18107_020"), "18 to 34 years" = c("B18107_007", "B18107_023"), "35 to 64 years" = c("B18107_010", "B18107_026"))
+
+DisabledType <- get_acs(geography = "county",
+                        variables = c(Hearing = DisabledHearing, Vision = DisabledVision, Cognitive = DisabledCognitive, "Self-care" = DisabledSelfCare, "Independent living" = DisabledIndependentLiving),
+                        year = 2020,
+                        state = "IA")
+
+DisabledType$variable <- gsub("(years).*", "\\1", DisabledType$variable)
+
+DisabledType <- DisabledType %>%
+  group_by(NAME, variable) %>%
+  summarise(estimate = sum(estimate),
+            moe = sum(moe))
+
+DisabledType_pivot <- DisabledType %>% separate(variable, into = c("Type", "Age"), sep = "\\.") %>%
+  pivot_wider(names_from = Type, values_from = c(estimate, moe))
+
+DisabledType_sum <- aggregate(estimate ~ NAME, data = DisabledType, sum) %>%
+  slice(rep(1:n(), each = 3))
+
+DisabledType_pivot <- DisabledType_pivot %>%
+  ungroup() %>%
+  mutate(Percentage = rowSums(DisabledType_pivot[3:7] / DisabledType_sum$estimate) * 100)
+
+names(DisabledType_pivot) <- gsub("estimate_", "", names(DisabledType_pivot))
+DisabledType_pivot$NAME <- gsub(" County, Iowa", "", DisabledType_pivot$NAME)
+names(DisabledType_pivot)[names(DisabledType_pivot) == "NAME"] <- "County"
+
+write.xlsx(DisabledType_pivot, "DisabledType.xlsx")
+```
+
+Population of Iowans 5-64 years of age with disabilities (Disaggregate by difficulty type)
+```{r}
+DisabledType_pivot1 <- DisabledType %>% separate(variable, into = c("Type", "Age"), sep = "\\.") %>%
+  pivot_wider(names_from = Age, values_from = c(estimate, moe))
+
+DisabledType_sum1 <- aggregate(estimate ~ NAME, data = DisabledType, sum) %>%
+  slice(rep(1:n(), each = 5))
+
+DisabledType_pivot1 <- DisabledType_pivot1 %>%
+  ungroup() %>%
+  mutate(Percentage = rowSums(DisabledType_pivot1[3:5] / DisabledType_sum1$estimate) * 100)
+
+names(DisabledType_pivot1) <- gsub("estimate_", "", names(DisabledType_pivot1))
+DisabledType_pivot1$NAME <- gsub(" County, Iowa", "", DisabledType_pivot1$NAME)
+names(DisabledType_pivot1)[names(DisabledType_pivot1) == "NAME"] <- "County"
+
+write.xlsx(DisabledType_pivot1, "DisabledType1.xlsx")
+```
+
+Race and ethnic breakdown of populations for individuals with disabilities (Disaggregate by age groups)
 ```{r}
 DisabledWhite <- c("Under 18 years" = "B18101A_003", "18 to 64 years" = "B18101A_006", "65 years and over" = "B18101A_009")
 DisabledBlack <- c("Under 18 years" = "B18101B_003", "18 to 64 years" = "B18101B_006", "65 years and over" = "B18101B_009")
@@ -27,18 +86,79 @@ DisabledOtherAlone <- c("Under 18 years" = "B18101F_003", "18 to 64 years" = "B1
 DisabledTwoMore <- c("Under 18 years" = "B18101G_003", "18 to 64 years" = "B18101G_006", "65 years and over" = "B18101G_009")
 DisabledWhiteAlone <- c("Under 18 years" = "B18101H_003", "18 to 64 years" = "B18101H_006", "65 years and over" = "B18101H_009")
 DisabledHispanicLatino <- c("Under 18 years" = "B18101I_003", "18 to 64 years" = "B18101I_006", "65 years and over" = "B18101I_009")
+
+DisabledRace <- get_acs(geography = "county",
+                        variables = c("WHITE ALONE" = DisabledWhite, "BLACK OR AFRICAN AMERICAN ALONE" = DisabledBlack, "AMERICAN, INDIAN AND ALASKA NATIVE ALONE" = DisabledIndianAlaska, "ASIAN ALONE" = DisabledAsian, "NATIVE HAWAIIAN AND OTHER PACIFIC ISLANDER ALONE" = DisabledHawaiianPacific, "SOME OTHER RACE ALONE" = DisabledOtherAlone, "TWO OR MORE RACES" = DisabledTwoMore, "WHITE ALONE, NOT HISPANIC OR LATINO" = DisabledWhiteAlone, "HISPANIC OR LATINO" = DisabledHispanicLatino),
+                        year = 2020,
+                        state = "IA")
+
+DisabledRace_pivot <- DisabledRace %>% separate(variable, into = c("Race", "Age"), sep = "\\.") %>%
+  pivot_wider(names_from = Race, values_from = c(estimate, moe))
+
+DisabledRace_sum <- aggregate(estimate ~ NAME, data = DisabledRace, sum) %>%
+  slice(rep(1:n(), each = 3))
+
+DisabledRace_pivot <- DisabledRace_pivot %>%
+  mutate(Percentage = rowSums(DisabledRace_pivot[4:12] / DisabledRace_sum$estimate) * 100)
+
+names(DisabledRace_pivot) <- gsub("estimate_", "", names(DisabledRace_pivot))
+DisabledRace_pivot$NAME <- gsub(" County, Iowa", "", DisabledRace_pivot$NAME)
+names(DisabledRace_pivot)[names(DisabledRace_pivot) == "NAME"] <- "County"
+
+write.xlsx(DisabledRace_pivot, "DisabledRace.xlsx")
+```
+Population of Iowans 18-64 years of age with disabilities and without disabilities
+```{r}
+Disabled18to34 <- c(Total = c("B18101_009", "B18101_028"), Disabled = c("B18101_010", "B18101_029"))
+Nondisabled18to34 <- c(Total = c("B18101_009", "B18101_028"), Nondisabled = c("B18101_011", "B18101_030"))
+Disabled35to64 <- c(Total = c("B18101_012", "B18101_031"), Disabled = c("B18101_013", "B18101_032"))
+Nondisabled35to64 <- c(Total = c("B18101_012", "B18101_031"), Nondisabled = c("B18101_014", "B18101_033"))
+
+population <- get_acs(geography = "county",
+                      variables = c("18 to 34 years" = c(Disabled18to34, Nondisabled18to34), "35 to 64 years" = c(Disabled35to64, Nondisabled35to64)),
+                      year = 2020,
+                      state = "IA")
+
+population$variable <- str_sub(population$variable, end = -2)
+
+population <- population %>%
+  group_by(NAME, variable) %>%
+  summarise(estimate = sum(estimate),
+            moe = sum(moe)) %>%
+  pivot_wider(names_from = variable,
+              values_from = c(estimate, moe))
+
+names(population) <- gsub("estimate_", "", names(population))
+population$NAME <- gsub(" County, Iowa", "", population$NAME)
+names(population)[names(population) == "NAME"] <- "County"
+
+write.xlsx(population, "Population.xlsx")
 ```
 
+Race and ethnic breakdown of populations (18 to 64 years) for both individuals with disabilities and without disabilities
 ```{r}
-Disabled <- get_acs(geography = "county",
-                   variables = c("WHITE ALONE" = DisabledWhite, "BLACK OR AFRICAN AMERICAN ALONE" = DisabledBlack, "AMERICAN, INDIAN AND ALASKA NATIVE ALONE" = DisabledIndianAlaska, "ASIAN ALONE" = DisabledAsian, "NATIVE HAWAIIAN AND OTHER PACIFIC ISLANDER ALONE" = DisabledHawaiianPacific, "SOME OTHER RACE ALONE" = DisabledOtherAlone, "TWO OR MORE RACES" = DisabledTwoMore, "WHITE ALONE, NOT HISPANIC OR LATINO" = DisabledWhiteAlone, "HISPANIC OR LATINO" = DisabledHispanicLatino),
-                   year = 2020,
-                   state = "IA")
+White <- c("Total White"= "B18101A_005", "Disabled White" = "B18101A_006", "Nondisabled White" = "B18101A_007")
+Black <- c("Total Black" ="B18101B_005", "Disabled Black" = "B18101B_006", "Nondisabled Black" = "B18101B_007")
+IndianAlaska <- c("Total American Indian and Alaska Native" = "B18101C_005", "Disabled American Indian and Alaska Native" = "B18101C_006", "Nondisabled American Indian and Alaska Native" = "B18101C_007")
+Asian <- c("Total Asian" = "B18101D_005", "Disabled Asian" = "B18101D_006", "Nondisabled Asian" = "B18101D_007")
+HawaiianPacific <- c("Total Native Hawaiian and Other Pacific Islander" = "B18101E_005", "Disabled Native Hawaiian and Other Pacific Islander" = "B18101E_006", "Nondisabled Native Hawaiian and Other Pacific Islander" = "B18101E_007")
+OtherAlone <- c("Total Some Other Race Alone" = "B18101F_005", "Disabled Some Other Race Alone" = "B18101F_006", "Nondisabled Some Other Race Alone" = "B18101F_007")
+TwoMore <- c("Total Two Or More Races" = "B18101G_005", "Disabled Two Or More Races" = "B18101G_006", "Nondisabled Two Or More Races" = "B18101G_007")
+WhiteAlone <- c("Total White Alone" = "B18101H_005", "Disabled White Alone" = "B18101H_006", "Nondisabled White Alone" = "B18101H_007")
+HispanicLatino <- c("Total Hispanic Or Latino" = "B18101I_005", "Disabled Hispanic Or Latino" = "B18101I_006", "Nondisabled Hispanic Or Latino" = "B18101I_007")
 
-Disabled <- Disabled %>% separate(variable, into = c("Race", "Age"), sep = "\\.") %>%
-  pivot_wider(names_from = Race, values_from = estimate) %>%
-  group_by(NAME, Age)
+RaceEthnic <- get_acs(geography = "county",
+                      variables = c(White, Black, IndianAlaska, Asian, HawaiianPacific, OtherAlone, TwoMore, WhiteAlone, HispanicLatino),
+                      year = 2020,
+                      state = "IA")
 
+RaceEthnic <- RaceEthnic %>%
+  pivot_wider(names_from = variable,
+              values_from = c(estimate, moe))
 
-view(Disabled)
+names(RaceEthnic) <- gsub("estimate_", "", names(RaceEthnic))
+RaceEthnic$NAME <- gsub(" County, Iowa", "", RaceEthnic$NAME)
+names(RaceEthnic)[names(RaceEthnic) == "NAME"] <- "County"
+
+write.xlsx(RaceEthnic, "RaceEthnic.xlsx")
 ```
