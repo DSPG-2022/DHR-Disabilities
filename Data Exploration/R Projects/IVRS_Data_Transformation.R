@@ -4,6 +4,7 @@ library(stringr)
 library(zipcodeR)
 IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
 
+
 # Initial split on comma to get City
     IVRS_data_transformed <- IVRS_data %>%
                               separate('Client Location', c('Client City', 'Client State Zip Code'), ',')
@@ -31,6 +32,9 @@ IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.
     
     # Remove any leading and trailing whitespace
     IVRS_data_transformed$'Client Zip Code Extra Info' <- str_trim(IVRS_data_transformed$'Client Zip Code Extra Info')
+    
+# Renames Iowa county O'Brien to have ' instead of â???T
+    IVRS_data_transformed$'Client County'[IVRS_data_transformed$'Client County' == 'Oâ???TBrien'] <- "O'Brien"
     
 ## !!!NOT WORKING!!! ##
 # Changes state names to abbreviations
