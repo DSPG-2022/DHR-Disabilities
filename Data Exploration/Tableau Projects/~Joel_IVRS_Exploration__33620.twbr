@@ -78,7 +78,7 @@
             <column datatype='string' name='Client State' ordinal='39' />
             <column datatype='integer' name='Client Zip Code' ordinal='40' />
             <column datatype='string' name='Client Zip Code Extra Info' ordinal='41' />
-            <column datatype='string' name='Client Location Point' ordinal='42' />
+            <column datatype='spatial' name='Client Location Point' ordinal='42' />
             <column datatype='string' name='Hourly Wage Change Category' ordinal='43' />
             <column datatype='string' name='Monthly Wage Change Category' ordinal='44' />
             <column datatype='string' name='Annual Wage Change Category' ordinal='45' />
@@ -128,7 +128,7 @@
             <column datatype='string' name='Client State' ordinal='39' />
             <column datatype='integer' name='Client Zip Code' ordinal='40' />
             <column datatype='string' name='Client Zip Code Extra Info' ordinal='41' />
-            <column datatype='string' name='Client Location Point' ordinal='42' />
+            <column datatype='spatial' name='Client Location Point' ordinal='42' />
             <column datatype='string' name='Hourly Wage Change Category' ordinal='43' />
             <column datatype='string' name='Monthly Wage Change Category' ordinal='44' />
             <column datatype='string' name='Annual Wage Change Category' ordinal='45' />
@@ -720,12 +720,11 @@
             <parent-name>[Cleaned_Closed_Iowa_Vocational_Rehabilitation_Cases.csv]</parent-name>
             <remote-alias>Client Location Point</remote-alias>
             <ordinal>42</ordinal>
-            <local-type>string</local-type>
+            <local-type>spatial</local-type>
             <aggregation>Count</aggregation>
+            <precision>-1</precision>
             <scale>1</scale>
-            <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Hourly Wage Change Category</remote-name>
@@ -807,7 +806,7 @@
           <semantic-value key='&quot;Columbia&quot;' value='&quot;Columbia&quot;' />
         </semantic-values>
       </column>
-      <column datatype='string' name='[Client Location Point]' role='dimension' semantic-role='' type='nominal' />
+      <column datatype='spatial' name='[Client Location Point]' role='measure' semantic-role='' type='nominal' />
       <column datatype='string' name='[Client State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
       <column datatype='string' name='[Client Zip Code Extra Info]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
       <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Client Zip Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
@@ -924,7 +923,7 @@
                   <column datatype='string' name='Client State' ordinal='39' />
                   <column datatype='integer' name='Client Zip Code' ordinal='40' />
                   <column datatype='string' name='Client Zip Code Extra Info' ordinal='41' />
-                  <column datatype='string' name='Client Location Point' ordinal='42' />
+                  <column datatype='spatial' name='Client Location Point' ordinal='42' />
                   <column datatype='string' name='Hourly Wage Change Category' ordinal='43' />
                   <column datatype='string' name='Monthly Wage Change Category' ordinal='44' />
                   <column datatype='string' name='Annual Wage Change Category' ordinal='45' />
@@ -1397,11 +1396,10 @@
               <color column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Hourly Wage Change Category:nk]' />
               <size column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[cnt:Client County:qk]' />
               <lod column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Client County:nk]' />
-              <lod column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Client State:nk]' />
             </encodings>
             <style>
               <style-rule element='mark'>
-                <format attr='size' value='3.7900552749633789' />
+                <format attr='size' value='4.3685784339904785' />
               </style-rule>
             </style>
           </pane>
@@ -2237,6 +2235,60 @@
       </table>
       <simple-id uuid='{BF3AB78B-B4E0-4F43-AB83-630C7FE329C3}' />
     </worksheet>
+    <worksheet name='Sheet 25'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Closed_Iowa_Vocational_Rehabilitation_Cases' name='federated.0c4h7qk1cokbm711itorm15yq7nr' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0c4h7qk1cokbm711itorm15yq7nr'>
+            <column datatype='string' name='[Client State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Client Zip Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+            <column datatype='string' name='[Hourly Wage Change Category]' role='dimension' type='nominal' />
+            <column-instance column='[Client State]' derivation='None' name='[none:Client State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Client Zip Code]' derivation='None' name='[none:Client Zip Code:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Hourly Wage Change Category]' derivation='None' name='[none:Hourly Wage Change Category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Client State:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Client State:nk]' member='&quot;IA&quot;' />
+              <groupfilter function='member' level='[none:Client State:nk]' member='&quot;Iowa&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Client State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[Longitude (generated)]' field-type='quantitative' max='-9435992.6553365011' min='-10826385.161406055' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0c4h7qk1cokbm711itorm15yq7nr].[Latitude (generated)]' field-type='quantitative' max='5489354.484003705' min='4688322.3557849107' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Hourly Wage Change Category:nk]' />
+              <lod column='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Client Zip Code:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0c4h7qk1cokbm711itorm15yq7nr].[Latitude (generated)]</rows>
+        <cols>[federated.0c4h7qk1cokbm711itorm15yq7nr].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{E2759014-FD13-4310-87CE-2DAF597ABE84}' />
+    </worksheet>
     <worksheet name='Total Applications by Year'>
       <table>
         <view>
@@ -2931,7 +2983,7 @@
       </viewpoint>
       <simple-id uuid='{DF3C7499-FA7F-400C-BADF-7F7D719D755D}' />
     </window>
-    <window class='worksheet' name='Disability by Office Area'>
+    <window class='worksheet' maximized='true' name='Disability by Office Area'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -3303,7 +3355,7 @@
       </cards>
       <simple-id uuid='{027C625F-F11C-4223-8EC6-BF80C3822123}' />
     </window>
-    <window class='worksheet' maximized='true' name='Client Hourly Wage Change by County in Iowa'>
+    <window class='worksheet' name='Client Hourly Wage Change by County in Iowa'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -3437,6 +3489,34 @@
         </edge>
       </cards>
       <simple-id uuid='{00379CC8-BE95-4886-9DDE-FFB7EF78472A}' />
+    </window>
+    <window class='worksheet' name='Sheet 25'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0c4h7qk1cokbm711itorm15yq7nr].[none:Hourly Wage Change Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5C63B8C8-B927-4F02-B3D2-E0F0EB4D1F4B}' />
     </window>
   </windows>
 </workbook>
