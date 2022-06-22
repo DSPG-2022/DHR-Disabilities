@@ -74,6 +74,52 @@ all_emp_stat$disability_total <- (all_emp_stat$`In the Labor Force,Employed with
 all_emp_stat$no_disability_total <- (all_emp_stat$`In the Labor Force,Employed with no disabilityE`+ all_emp_stat$`In the Labor force,unemployed with no disabilityE`+all_emp_stat$`Not in the Labor Force, with no disabilityE`)
 ```
 
+
+```{r}
+#Checking if the estimates are reliable based on MOE disabled
+
+
+CV_employed_disabled = ((all_emp_stat$`In the Labor Force,Employed with disabilityM`/1.645)/all_emp_stat$`In the Labor Force,Employed with disabilityE`)*100
+
+CV_unemployed_disabled = ((all_emp_stat$`In the Labor force,unemployed with a disabilityM`/1.645)/all_emp_stat$`Not in the Labor force, with a disabilityE`)*100
+
+CV_not_in_Labor_force_disabled = ((all_emp_stat$`Not in the Labor force, with a disabilityM`/1.645)/all_emp_stat$`Not in the Labor force, with a disabilityE`)*100
+
+all_emp_stat$CV_employed_disabled = ifelse(CV_employed_disabled > 30 , " low reliability",
+                  ifelse(CV_employed_disabled <= 15, "high reliability",
+                         "median reliability"))
+
+all_emp_stat$CV_unemployed_disabled = ifelse(CV_unemployed_disabled > 30 , " low reliability",
+                  ifelse(CV_unemployed_disabled <= 15, "high reliability",
+                         "median reliability"))
+
+all_emp_stat$CV_not_in_Labor_force_disabled = ifelse(CV_not_in_Labor_force_disabled > 30 , " low reliability",
+                  ifelse(CV_not_in_Labor_force_disabled <= 15, "high reliability",
+                         "median reliability"))
+
+#Checking if the estimates are reliable based on MOE not disabled
+
+CV_employed_not_disabled = ((all_emp_stat$`In the Labor Force,Employed with no disabilityM`/1.645)/all_emp_stat$`In the Labor Force,Employed with no disabilityE`)*100
+
+CV_unemployed_not_disabled = ((all_emp_stat$`In the Labor force,unemployed with no disabilityM`/1.645)/all_emp_stat$`In the Labor force,unemployed with no disabilityE`)*100
+
+CV_not_in_Labor_force_not_disabled = ((all_emp_stat$`Not in the Labor Force, with no disabilityM`/1.645)/all_emp_stat$`Not in the Labor Force, with no disabilityE`)*100
+
+all_emp_stat$CV_employed_not_disabled = ifelse(CV_employed_not_disabled > 30 , " low reliability",
+                  ifelse(CV_employed_not_disabled <= 15, "high reliability",
+                         "median reliability"))
+
+all_emp_stat$CV_unemployed_not_disabled = ifelse(CV_unemployed_not_disabled > 30 , " low reliability",
+                  ifelse(CV_unemployed_not_disabled <= 15, "high reliability",
+                         "median reliability"))
+
+all_emp_stat$CV_not_in_Labor_force_not_disabled = ifelse(CV_not_in_Labor_force_not_disabled > 30 , " low reliability",
+                  ifelse(CV_not_in_Labor_force_not_disabled <= 15, "high reliability",
+                         "median reliability"))
+
+View(all_emp_stat)
+```
+
 ```{r}
 #Finding percentage gap
 
