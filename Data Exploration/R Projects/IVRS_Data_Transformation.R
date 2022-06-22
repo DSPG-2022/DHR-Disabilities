@@ -20,40 +20,49 @@ IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.
     IVRS_data_transformed$'Client Zip Code Extra Info' <- 
       str_replace_all(IVRS_data_transformed$'Client Zip Code Extra Info', "[^[:alnum:]]", "")
     
+## !!!NOT WORKING!!! ##
 # Changes state names to abbreviations
-
-    stateAbbreviations <- c()
+#
+#    stateAbbreviations <- c()
+#    
+#    for(state in IVRS_data_transformed$'Client State'){
+#      
+#      state <- str_trim(state)
+#      
+#      if(is.na(state)){
+#        stateAbbreviations <- append(stateAbbreviations, NA)
+#      }
+#      else if(state == 'ArKS'){
+#        stateAbbreviations <- append(stateAbbreviations, 'AR')
+#      }
+#      else if(state == 'ARKS'){
+#        stateAbbreviations <- append(stateAbbreviations, 'AR')
+#      }
+#      else if(state == 'District of Columbia'){
+#        stateAbbreviations <- append(stateAbbreviations, 'DC')
+#      }
+#      else if(state == 'Puerto Rico'){
+#        stateAbbreviations <- append(stateAbbreviations, NA)
+#      }
+#      else if(nchar(state) > 2){
+#        stateAbbreviations <- append(stateAbbreviations, state.abb[grep(state, state.name)])
+#      }
+#      else {
+#        stateAbbreviations <- append(stateAbbreviations, state)
+#      }
+#    }
+#
+# IVRS_data_transformed$'Client State' <- stateAbbreviations
     
-    for(state in IVRS_data_transformed$'Client State'){
-      
-      state <- str_trim(state)
-      
-      if(is.na(state)){
-        stateAbbreviations <- append(stateAbbreviations, NA)
-      }
-      else if(state == 'ArKS'){
-        stateAbbreviations <- append(stateAbbreviations, 'AR')
-      }
-      else if(state == 'ARKS'){
-        stateAbbreviations <- append(stateAbbreviations, 'AR')
-      }
-      else if(state == 'District of Columbia'){
-        stateAbbreviations <- append(stateAbbreviations, 'DC')
-      }
-      else if(state == 'Puerto Rico'){
-        stateAbbreviations <- append(stateAbbreviations, NA)
-      }
-      else if(nchar(state) > 2){
-        stateAbbreviations <- append(stateAbbreviations, state.abb[grep(state, state.name)])
-      }
-      else {
-        stateAbbreviations <- append(stateAbbreviations, state)
-      }
-    }
-
-IVRS_data_transformed$'Client State' <- stateAbbreviations
-
-# Change wage at application and closure values to NA if 0
+    
+# Change wage at application and closure values to correctly calculate wage change
+    # Note: Wage change is computed by the formula (Wage (Closure) - Wage (Application) = Wage Change)
+    #       NA in the data indicates that the client was unemployed. To make the formula acurate, Wage (Application) NA's 
+    #       are changed to 0 so as to correctly calculate if there was a wage increase. (i.e. client A indicates they are unemployed 
+    #       at the start of application [Wage (Application)], and at the end their wage was $15 an hour [Wage (Closure)]. If unemployed
+    #       was left at NA then the formula would return NA since any NA value in an equation defaults to equaling NA in R. However since
+    #       it is being set to 0, this will correctly compute a $15 increase in wage change.)
+    
     # hourly
     IVRS_data_transformed$'Hourly Wage (Application)'[is.na(IVRS_data_transformed$'Hourly Wage (Application)')] <- 0
     IVRS_data_transformed$'Hourly Wage (Closure)'[IVRS_data_transformed$'Hourly Wage (Closure)' == 0] <- NA
