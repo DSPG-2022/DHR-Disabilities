@@ -7,18 +7,30 @@ IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.
 # Initial split on comma to get City
     IVRS_data_transformed <- IVRS_data %>%
                               separate('Client Location', c('Client City', 'Client State Zip Code'), ',')
+    
+    # Remove any leading and trailing whitespace
+    IVRS_data_transformed$'Client City' <- str_trim(IVRS_data_transformed$'Client City')
 
 # Secondary split to get State and Zipcode
     IVRS_data_transformed <- IVRS_data_transformed %>%
                               separate('Client State Zip Code',c('Client State','Client Zip Code'),sep="\\s+(?=\\S*$)")
+    
+    # Remove any leading and trailing whitespace
+    IVRS_data_transformed$'Client State' <- str_trim(IVRS_data_transformed$'Client State')
 
 # Split Zip code into 5 digit format and extra information
     IVRS_data_transformed <- IVRS_data_transformed %>%
                               separate('Client Zip Code',c('Client Zip Code','Client Zip Code Extra Info'),sep=5)
+    
+    # Remove any leading and trailing whitespace
+    IVRS_data_transformed$'Client Zip Code' <- str_trim(IVRS_data_transformed$'Client Zip Code')
 
 # Remove '-' from extra zip code info
     IVRS_data_transformed$'Client Zip Code Extra Info' <- 
       str_replace_all(IVRS_data_transformed$'Client Zip Code Extra Info', "[^[:alnum:]]", "")
+    
+    # Remove any leading and trailing whitespace
+    IVRS_data_transformed$'Client Zip Code Extra Info' <- str_trim(IVRS_data_transformed$'Client Zip Code Extra Info')
     
 ## !!!NOT WORKING!!! ##
 # Changes state names to abbreviations
