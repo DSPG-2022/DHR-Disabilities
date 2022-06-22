@@ -43,7 +43,7 @@ IVRS_County_Office_Area <- data.frame('County' = c('Adair', 'Adams','Allamakee',
                                                                'Ottumwa','Iowa City','Ottumwa','Fort Dodge','Mason City',
                                                                'Mason City','Sioux City','Mason City','Fort Dodge'))
 # write to file
-write.csv(IVRS_data_transformed, "C:/Users/joelm/Documents/GitHub/DHR-Disabilities/Data Exploration/Datasets/IVRS_County_Office_Areas.csv", row.names = FALSE)
+write.csv(IVRS_County_Office_Area, "C:/Users/joelm/Documents/GitHub/DHR-Disabilities/Data Exploration/Datasets/IVRS_County_Office_Areas.csv", row.names = FALSE)
 
 
 
