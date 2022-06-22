@@ -56,12 +56,19 @@ IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.
     
     
 # Change wage at application and closure values to correctly calculate wage change
-    # Note: Wage change is computed by the formula (Wage (Closure) - Wage (Application) = Wage Change)
-    #       NA in the data indicates that the client was unemployed. To make the formula acurate, Wage (Application) NA's 
-    #       are changed to 0 so as to correctly calculate if there was a wage increase. (i.e. client A indicates they are unemployed 
-    #       at the start of application [Wage (Application)], and at the end their wage was $15 an hour [Wage (Closure)]. If unemployed
-    #       was left at NA then the formula would return NA since any NA value in an equation defaults to equaling NA in R. However since
+    #
+    # Note: Wage change is computed by the formula (Wage (Closure) - Wage (Application) = Wage Change).
+    #
+    #       NA's in the wage data indicates that the client was unemployed. 
+    #       
+    #       To make the formula accurate, Wage (Application) NA's  are changed to 0 so as to correctly calculate if there was a wage increase. 
+    #       (i.e. client A indicates they are unemployed at the start of application [Wage (Application)], and at the end their wage was $15 an hour [Wage (Closure)]. 
+    #       If unemployed was left at NA then the formula would return NA since any NA value in an equation defaults to equaling NA in R. However since
     #       it is being set to 0, this will correctly compute a $15 increase in wage change.)
+    #
+    #       Also vice versa, any 0's in Wage (Closure) were changed to NA so that the formula would output NA to indicate that the wage change
+    #       resulted in unemployment.
+    #
     
     # hourly
     IVRS_data_transformed$'Hourly Wage (Application)'[is.na(IVRS_data_transformed$'Hourly Wage (Application)')] <- 0
