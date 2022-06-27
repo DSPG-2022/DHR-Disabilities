@@ -138,10 +138,23 @@ View(all_emp_stat)
 
 ```
 
+```{r}
+colnames(all_emp_stat)[2] <-"County Names"
+colnames(all_emp_stat)[3] <- "In the Labor Force, Employed with Disability (Estimate)"
+colnames(all_emp_stat)[4] <- "In the Labor Force, Employed with Disability (MOE)"
+colnames(all_emp_stat)[5] <- "In the Labor Force, Unemployed with Disability (Estimate)"
+colnames(all_emp_stat)[6] <- "In the Labor Force, Unemployed with Disability (MOE)"
+colnames(all_emp_stat)[7] <- "Not in the Labor Force, with Disability (Estimate)"
+colnames(all_emp_stat)[8] <- "Not in the Labor Force, with Disability (MOE)"
+colnames(all_emp_stat)[9] <- "In the Labor Force, Employed with NO Disability (Estimate)"
+colnames(all_emp_stat)[10] <- "In the Labor Force, Employed with NO Disability (MOE)"
+colnames(all_emp_stat)[11] <- "In the Labor Force, Unemployed with NO Disability (Estimate)"
+colnames(all_emp_stat)[12] <- "In the Labor Force, Unemployed with NO Disability (MOE)"
+colnames(all_emp_stat)[13] <- "Not in the Labor Force, with NO Disability (Estimate)"
+colnames(all_emp_stat)[14] <- "Not in the Labor Force, with NO Disability (MOE)"
+```
 
 ```{r}
 #Converting into a csv 
 write.csv(all_emp_stat, "S:/misc/clg/DSPG2022/ProjectA/Labor_Force_gaps.csv", row.names = FALSE)
-
-colnames(all_emp_stat)[2] <-"County Names"
 ```
