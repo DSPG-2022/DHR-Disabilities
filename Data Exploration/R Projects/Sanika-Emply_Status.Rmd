@@ -18,6 +18,7 @@ library(ggplot2)
 ```{r}
 census_api_key("ab8b0fa7ef0993c579097beb76d0321bce5af443", install = TRUE)
 ```
+
 ```{r}
 var<-load_variables(2020,"acs5")
 View(var)
@@ -59,6 +60,8 @@ View(empl_status_no_disability)
 #Joining tables
 all_emp_stat= full_join(empl_status_disability,empl_status_no_disability)
 View(all_emp_stat)
+
+
 ```
 
 
@@ -135,6 +138,21 @@ View(all_emp_stat)
 
 ```
 
+```{r}
+colnames(all_emp_stat)[2] <-"County Names"
+colnames(all_emp_stat)[3] <- "In the Labor Force, Employed with Disability (Estimate)"
+colnames(all_emp_stat)[4] <- "In the Labor Force, Employed with Disability (MOE)"
+colnames(all_emp_stat)[5] <- "In the Labor Force, Unemployed with Disability (Estimate)"
+colnames(all_emp_stat)[6] <- "In the Labor Force, Unemployed with Disability (MOE)"
+colnames(all_emp_stat)[7] <- "Not in the Labor Force, with Disability (Estimate)"
+colnames(all_emp_stat)[8] <- "Not in the Labor Force, with Disability (MOE)"
+colnames(all_emp_stat)[9] <- "In the Labor Force, Employed with NO Disability (Estimate)"
+colnames(all_emp_stat)[10] <- "In the Labor Force, Employed with NO Disability (MOE)"
+colnames(all_emp_stat)[11] <- "In the Labor Force, Unemployed with NO Disability (Estimate)"
+colnames(all_emp_stat)[12] <- "In the Labor Force, Unemployed with NO Disability (MOE)"
+colnames(all_emp_stat)[13] <- "Not in the Labor Force, with NO Disability (Estimate)"
+colnames(all_emp_stat)[14] <- "Not in the Labor Force, with NO Disability (MOE)"
+```
 
 ```{r}
 #Converting into a csv 
