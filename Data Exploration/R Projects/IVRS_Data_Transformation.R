@@ -34,8 +34,10 @@ IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.
 # Remove any leading and trailing whitespace
     IVRS_data_transformed$'Client Zip Code Extra Info' <- str_trim(IVRS_data_transformed$'Client Zip Code Extra Info')
     
-# Renames Iowa county O'Brien to have ' instead of O�???T
-    IVRS_data_transformed$'Client County'[IVRS_data_transformed$'Client County' == 'O�???TTBrien'] <- "O'Brien"   
+# Renames Iowa county O'Brien to have ' instead of Oâ€™
+    # !!IMPORTANT!! File needs to be saved using UTF-8 encoding for the special characters to not disappear. 
+    #               This can be changed in File -> Save with encoding -> Choose Encoding -> UTF-8
+    IVRS_data_transformed$'Client County'[IVRS_data_transformed$'Client County' == 'Oâ€™Brien'] <- "O'Brien"   
     
 ## !!!NOT WORKING!!! ##
 # Changes state names to abbreviations
