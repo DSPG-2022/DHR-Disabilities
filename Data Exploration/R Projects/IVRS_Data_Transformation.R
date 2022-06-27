@@ -2,6 +2,7 @@ library(tidyr)
 library(dplyr)
 library(stringr)
 library(zipcodeR)
+
 IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
 
 
@@ -38,37 +39,37 @@ IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.
     
 ## !!!NOT WORKING!!! ##
 # Changes state names to abbreviations
-#
-#    stateAbbreviations <- c()
-#    
-#    for(state in IVRS_data_transformed$'Client State'){
-#      
-#      state <- str_trim(state)
-#      
-#      if(is.na(state)){
-#        stateAbbreviations <- append(stateAbbreviations, NA)
-#      }
-#      else if(state == 'ArKS'){
-#        stateAbbreviations <- append(stateAbbreviations, 'AR')
-#      }
-#      else if(state == 'ARKS'){
-#        stateAbbreviations <- append(stateAbbreviations, 'AR')
-#      }
-#      else if(state == 'District of Columbia'){
-#        stateAbbreviations <- append(stateAbbreviations, 'DC')
-#      }
-#      else if(state == 'Puerto Rico'){
-#        stateAbbreviations <- append(stateAbbreviations, NA)
-#      }
-#      else if(nchar(state) > 2){
-#        stateAbbreviations <- append(stateAbbreviations, state.abb[grep(state, state.name)])
-#      }
-#      else {
-#        stateAbbreviations <- append(stateAbbreviations, state)
-#      }
-#    }
-#
-# IVRS_data_transformed$'Client State' <- stateAbbreviations
+
+    stateAbbreviations <- c()
+    
+    for(state in IVRS_data_transformed$'Client State'){
+      
+      state <- str_trim(state)
+      
+      if(is.na(state)){
+        stateAbbreviations <- append(stateAbbreviations, NA)
+      }
+      else if(state == 'ArKS'){
+        stateAbbreviations <- append(stateAbbreviations, 'AR')
+      }
+      else if(state == 'ARKS'){
+        stateAbbreviations <- append(stateAbbreviations, 'AR')
+      }
+      else if(state == 'District of Columbia'){
+        stateAbbreviations <- append(stateAbbreviations, 'DC')
+      }
+      else if(state == 'Puerto Rico'){
+        stateAbbreviations <- append(stateAbbreviations, NA)
+      }
+      else if(nchar(state) > 2){
+        stateAbbreviations <- append(stateAbbreviations, state.abb[grep(state, state.name)])
+      }
+      else {
+        stateAbbreviations <- append(stateAbbreviations, state)
+      }
+    }
+
+ IVRS_data_transformed$'Client State' <- stateAbbreviations
     
     
 # Change wage at application and closure values to correctly calculate wage change
