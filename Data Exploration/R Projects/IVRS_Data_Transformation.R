@@ -31,11 +31,11 @@ IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.
     IVRS_data_transformed$'Client Zip Code Extra Info' <- 
       str_replace_all(IVRS_data_transformed$'Client Zip Code Extra Info', "[^[:alnum:]]", "")
     
-    # Remove any leading and trailing whitespace
+# Remove any leading and trailing whitespace
     IVRS_data_transformed$'Client Zip Code Extra Info' <- str_trim(IVRS_data_transformed$'Client Zip Code Extra Info')
     
-# Renames Iowa county O'Brien to have ' instead of â???T
-    IVRS_data_transformed$'Client County'[IVRS_data_transformed$'Client County' == 'Oâ???TBrien'] <- "O'Brien"
+# Renames Iowa county O'Brien to have ' instead of Oâ???T
+    IVRS_data_transformed$'Client County'[IVRS_data_transformed$'Client County' == 'Oâ???TTBrien'] <- "O'Brien"   
     
 ## !!!NOT WORKING!!! ##
 # Changes state names to abbreviations
@@ -120,6 +120,8 @@ IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.
                                                                                             IVRS_data_transformed$'Annual Wage Change' == 0 ~ "No Change",
                                                                                             IVRS_data_transformed$'Annual Wage Change' > 0 ~ "Increase",
                                                                                             is.na(IVRS_data_transformed$'Annual Wage Change') ~ "Unemployed"))
+    
+
     
 # write to file
     write.csv(IVRS_data_transformed, "C:/Users/joelm/Documents/GitHub/DHR-Disabilities/Data Exploration/Datasets/Cleaned_Closed_Iowa_Vocational_Rehabilitation_Cases.csv", row.names = FALSE)
