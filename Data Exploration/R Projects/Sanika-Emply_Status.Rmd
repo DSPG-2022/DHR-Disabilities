@@ -18,6 +18,7 @@ library(ggplot2)
 ```{r}
 census_api_key("ab8b0fa7ef0993c579097beb76d0321bce5af443", install = TRUE)
 ```
+
 ```{r}
 var<-load_variables(2020,"acs5")
 View(var)
@@ -59,6 +60,8 @@ View(empl_status_no_disability)
 #Joining tables
 all_emp_stat= full_join(empl_status_disability,empl_status_no_disability)
 View(all_emp_stat)
+
+
 ```
 
 
@@ -139,4 +142,6 @@ View(all_emp_stat)
 ```{r}
 #Converting into a csv 
 write.csv(all_emp_stat, "S:/misc/clg/DSPG2022/ProjectA/Labor_Force_gaps.csv", row.names = FALSE)
+
+colnames(all_emp_stat)[2] <-"County Names"
 ```
