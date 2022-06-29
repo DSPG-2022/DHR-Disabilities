@@ -27,7 +27,6 @@ View(var)
 
 ```{r}
 emp_stat_disability <-c("In the Labor Force,Employed with disability"= "C18120_004", "In the Labor force,unemployed with a disability" = "C18120_007",  "Not in the Labor force, with a disability" = "C18120_010")
-
 emp_stat_no_disability <- c("In the Labor Force,Employed with no disability"= "C18120_005", "In the Labor force,unemployed with no disability" = "C18120_008", "Not in the Labor Force, with no disability" = "C18120_011")
 ```
 
@@ -39,10 +38,8 @@ empl_status_disability <- get_acs(
   output = "wide"
 )
 View(empl_status_disability)
-
 #empl_status_disability= empl_status_disability %>% mutate(sum_of_estimates = sum (estimate),overall_perc= 100* (estimate/sum(estimate)) )
 #View(empl_status_disability)
-
 empl_status_no_disability <- get_acs(
   geography= "state",
   year = 2020,
@@ -63,64 +60,53 @@ all_emp_stat$no_disability_total <- (all_emp_stat$`In the Labor Force,Employed w
 
 ```{r}
 #Checking if the estimates are reliable based on MOE disabled
-
-
 CV_employed_disabled = ((all_emp_stat$`In the Labor Force,Employed with disabilityM`/1.645)/all_emp_stat$`In the Labor Force,Employed with disabilityE`)*100
-
 CV_unemployed_disabled = ((all_emp_stat$`In the Labor force,unemployed with a disabilityM`/1.645)/all_emp_stat$`Not in the Labor force, with a disabilityE`)*100
-
 CV_not_in_Labor_force_disabled = ((all_emp_stat$`Not in the Labor force, with a disabilityM`/1.645)/all_emp_stat$`Not in the Labor force, with a disabilityE`)*100
-
 all_emp_stat$CV_employed_disabled = ifelse(CV_employed_disabled > 30 , " low reliability",
                   ifelse(CV_employed_disabled <= 15, "high reliability",
                          "median reliability"))
-
 all_emp_stat$CV_unemployed_disabled = ifelse(CV_unemployed_disabled > 30 , " low reliability",
                   ifelse(CV_unemployed_disabled <= 15, "high reliability",
                          "median reliability"))
-
 all_emp_stat$CV_not_in_Labor_force_disabled = ifelse(CV_not_in_Labor_force_disabled > 30 , " low reliability",
                   ifelse(CV_not_in_Labor_force_disabled <= 15, "high reliability",
                          "median reliability"))
-
 #Checking if the estimates are reliable based on MOE not disabled
-
 CV_employed_not_disabled = ((all_emp_stat$`In the Labor Force,Employed with no disabilityM`/1.645)/all_emp_stat$`In the Labor Force,Employed with no disabilityE`)*100
-
 CV_unemployed_not_disabled = ((all_emp_stat$`In the Labor force,unemployed with no disabilityM`/1.645)/all_emp_stat$`In the Labor force,unemployed with no disabilityE`)*100
-
 CV_not_in_Labor_force_not_disabled = ((all_emp_stat$`Not in the Labor Force, with no disabilityM`/1.645)/all_emp_stat$`Not in the Labor Force, with no disabilityE`)*100
-
 all_emp_stat$CV_employed_not_disabled = ifelse(CV_employed_not_disabled > 30 , " low reliability",
                   ifelse(CV_employed_not_disabled <= 15, "high reliability",
                          "median reliability"))
-
 all_emp_stat$CV_unemployed_not_disabled = ifelse(CV_unemployed_not_disabled > 30 , " low reliability",
                   ifelse(CV_unemployed_not_disabled <= 15, "high reliability",
                          "median reliability"))
-
 all_emp_stat$CV_not_in_Labor_force_not_disabled = ifelse(CV_not_in_Labor_force_not_disabled > 30 , " low reliability",
                   ifelse(CV_not_in_Labor_force_not_disabled <= 15, "high reliability",
                          "median reliability"))
-
 View(all_emp_stat)
-
 ```
 
 ```{r}
 #Finding percentage gap
-
 all_emp_stat = all_emp_stat %>% mutate(percent_in_labor_force_employed_disabled = 100 * (all_emp_stat$`In the Labor Force,Employed with disabilityE`/all_emp_stat$disability_total),
 percent_in_labor_force_employed_not_disabled = 100 * (all_emp_stat$`In the Labor Force,Employed with no disabilityE`/all_emp_stat$no_disability_total), percent_in_labor_force_unemployed_disabled = 100 * (all_emp_stat$`In the Labor force,unemployed with a disabilityE`/all_emp_stat$disability_total),
 percent_in_labor_force_unemployed_not_disabled = 100 * (all_emp_stat$`In the Labor force,unemployed with no disabilityE`/all_emp_stat$no_disability_total), 
 percent_not_in_labor_force_disabled = 100 * (all_emp_stat$`Not in the Labor force, with a disabilityE`/all_emp_stat$disability_total),
 percent_not_in_labor_force_not_disabled = 100 * (all_emp_stat$`Not in the Labor Force, with no disabilityE`/all_emp_stat$no_disability_total))
 
-
 all_emp_stat = all_emp_stat %>% mutate(percent_in_labor_force_employed_gap = percent_in_labor_force_employed_not_disabled - percent_in_labor_force_employed_disabled, percent_in_labor_force_unemployed_gap = percent_in_labor_force_unemployed_not_disabled - percent_in_labor_force_unemployed_disabled , percent_not_in_labor_force_gap =    percent_not_in_labor_force_not_disabled - percent_not_in_labor_force_disabled )
 View(all_emp_stat)
-
 ```
+
+```{r}
+stateavg= mean(all_emp_stat$percent_in_labor_force_employed_disabled)
+all_emp_stat$compared_to_state_avg_ed = ifelse(all_emp_stat$percent_in_labor_force_employed_disabled > stateavg , "above average",
+                  ifelse(all_emp_stat$percent_in_labor_force_employed_disabled < stateavg, "below average",
+                         "average"))
+```
+
 
 ```{r}
 colnames(all_emp_stat)[2] <-"States"
