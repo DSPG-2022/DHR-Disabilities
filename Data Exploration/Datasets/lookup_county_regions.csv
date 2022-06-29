@@ -1,0 +1,139 @@
+County,stateName,state,countyFIPS5,pop2010,noaa_long,noaa_short,RUCC_2013,OMB_popDivision,igfi_popDivision
+Adair,Iowa,IA,19001,7682,Southwest,SW,8,nonmetropolitan,Non-Metro
+Adams,Iowa,IA,19003,4029,Southwest,SW,9,nonmetropolitan,Non-Metro
+Allamakee,Iowa,IA,19005,14330,Northeast,NE,6,nonmetropolitan,Non-Metro
+Appanoose,Iowa,IA,19007,12887,South Central,SC,7,nonmetropolitan,Non-Metro
+Audubon,Iowa,IA,19009,6119,West Central,WC,8,nonmetropolitan,Non-Metro
+Benton,Iowa,IA,19011,26076,East Central,EC,2,metropolitan,Metropolitan
+Black Hawk,Iowa,IA,19013,131090,Northeast,NE,3,metropolitan,Metropolitan
+Boone,Iowa,IA,19015,26306,Central,C,6,metropolitan,Micropolitan
+Bremer,Iowa,IA,19017,24276,Northeast,NE,3,metropolitan,Metropolitan
+Buchanan,Iowa,IA,19019,20958,Northeast,NE,6,nonmetropolitan,Non-Metro
+Buena Vista,Iowa,IA,19021,20260,Northwest,NW,7,micropolitan,Micropolitan
+Butler,Iowa,IA,19023,14867,North Central,NC,8,nonmetropolitan,Non-Metro
+Calhoun,Iowa,IA,19025,9670,West Central,WC,9,nonmetropolitan,Non-Metro
+Carroll,Iowa,IA,19027,20816,West Central,WC,7,nonmetropolitan,Non-Metro
+Cass,Iowa,IA,19029,13956,Southwest,SW,6,nonmetropolitan,Non-Metro
+Cedar,Iowa,IA,19031,18499,East Central,EC,6,nonmetropolitan,Non-Metro
+Cerro Gordo,Iowa,IA,19033,44151,North Central,NC,5,micropolitan,Micropolitan
+Cherokee,Iowa,IA,19035,12072,Northwest,NW,6,nonmetropolitan,Non-Metro
+Chickasaw,Iowa,IA,19037,12439,Northeast,NE,6,nonmetropolitan,Non-Metro
+Clarke,Iowa,IA,19039,9286,South Central,SC,6,nonmetropolitan,Non-Metro
+Clay,Iowa,IA,19041,16667,Northwest,NW,7,micropolitan,Micropolitan
+Clayton,Iowa,IA,19043,18129,Northeast,NE,8,nonmetropolitan,Non-Metro
+Clinton,Iowa,IA,19045,49116,East Central,EC,4,micropolitan,Micropolitan
+Crawford,Iowa,IA,19047,17096,West Central,WC,7,nonmetropolitan,Non-Metro
+Dallas,Iowa,IA,19049,66135,Central,C,2,metropolitan,Metropolitan
+Davis,Iowa,IA,19051,8753,Southeast,SE,9,micropolitan,Micropolitan
+Decatur,Iowa,IA,19053,8457,South Central,SC,9,nonmetropolitan,Non-Metro
+Delaware,Iowa,IA,19055,17764,Northeast,NE,6,nonmetropolitan,Non-Metro
+Des Moines,Iowa,IA,19057,40325,Southeast,SE,5,micropolitan,Micropolitan
+Dickinson,Iowa,IA,19059,16667,Northwest,NW,7,micropolitan,Micropolitan
+Dubuque,Iowa,IA,19061,93653,Northeast,NE,3,metropolitan,Metropolitan
+Emmet,Iowa,IA,19063,10302,Northwest,NW,7,nonmetropolitan,Non-Metro
+Fayette,Iowa,IA,19065,20880,Northeast,NE,6,nonmetropolitan,Non-Metro
+Floyd,Iowa,IA,19067,16303,North Central,NC,7,nonmetropolitan,Non-Metro
+Franklin,Iowa,IA,19069,10680,North Central,NC,7,nonmetropolitan,Non-Metro
+Fremont,Iowa,IA,19071,7441,Southwest,SW,8,nonmetropolitan,Non-Metro
+Greene,Iowa,IA,19073,9336,West Central,WC,6,nonmetropolitan,Non-Metro
+Grundy,Iowa,IA,19075,12453,Central,C,3,metropolitan,Metropolitan
+Guthrie,Iowa,IA,19077,10954,West Central,WC,2,metropolitan,Metropolitan
+Hamilton,Iowa,IA,19079,15673,Central,C,6,nonmetropolitan,Non-Metro
+Hancock,Iowa,IA,19081,11341,North Central,NC,7,nonmetropolitan,Non-Metro
+Hardin,Iowa,IA,19083,17534,Central,C,6,nonmetropolitan,Non-Metro
+Harrison,Iowa,IA,19085,14928,West Central,WC,2,metropolitan,Metropolitan
+Henry,Iowa,IA,19087,20145,Southeast,SE,6,nonmetropolitan,Non-Metro
+Howard,Iowa,IA,19089,9566,Northeast,NE,6,nonmetropolitan,Non-Metro
+Humboldt,Iowa,IA,19091,9815,North Central,NC,7,nonmetropolitan,Non-Metro
+Ida,Iowa,IA,19093,7089,West Central,WC,8,nonmetropolitan,Non-Metro
+Iowa,Iowa,IA,19095,16355,East Central,EC,6,nonmetropolitan,Non-Metro
+Jackson,Iowa,IA,19097,19848,East Central,EC,6,nonmetropolitan,Non-Metro
+Jasper,Iowa,IA,19099,36842,Central,C,6,micropolitan,Micropolitan
+Jefferson,Iowa,IA,19101,16843,Southeast,SE,7,micropolitan,Micropolitan
+Johnson,Iowa,IA,19103,130882,East Central,EC,3,metropolitan,Metropolitan
+Jones,Iowa,IA,19105,20638,East Central,EC,2,metropolitan,Metropolitan
+Keokuk,Iowa,IA,19107,10511,Southeast,SE,8,nonmetropolitan,Non-Metro
+Kossuth,Iowa,IA,19109,15543,North Central,NC,7,nonmetropolitan,Non-Metro
+Lee,Iowa,IA,19111,35862,Southeast,SE,5,micropolitan,Micropolitan
+Linn,Iowa,IA,19113,211226,East Central,EC,2,metropolitan,Metropolitan
+Louisa,Iowa,IA,19115,11387,Southeast,SE,8,nonmetropolitan,Non-Metro
+Lucas,Iowa,IA,19117,8898,South Central,SC,6,nonmetropolitan,Non-Metro
+Lyon,Iowa,IA,19119,11581,Northwest,NW,8,nonmetropolitan,Non-Metro
+Madison,Iowa,IA,19121,15679,South Central,SC,2,metropolitan,Metropolitan
+Mahaska,Iowa,IA,19123,22381,Southeast,SE,7,micropolitan,Micropolitan
+Marion,Iowa,IA,19125,33309,South Central,SC,6,nonmetropolitan,Non-Metro
+Marshall,Iowa,IA,19127,40648,Central,C,4,micropolitan,Micropolitan
+Mills,Iowa,IA,19129,15059,Southwest,SW,2,metropolitan,Metropolitan
+Mitchell,Iowa,IA,19131,10776,North Central,NC,7,nonmetropolitan,Non-Metro
+Monona,Iowa,IA,19133,9243,West Central,WC,6,nonmetropolitan,Non-Metro
+Monroe,Iowa,IA,19135,7970,South Central,SC,7,nonmetropolitan,Non-Metro
+Montgomery,Iowa,IA,19137,10740,Southwest,SW,6,nonmetropolitan,Non-Metro
+Muscatine,Iowa,IA,19139,42745,East Central,EC,4,micropolitan,Micropolitan
+O'Brien,Iowa,IA,19141,14398,Northwest,NW,7,nonmetropolitan,Non-Metro
+Osceola,Iowa,IA,19143,6462,Northwest,NW,7,nonmetropolitan,Non-Metro
+Page,Iowa,IA,19145,15932,Southwest,SW,6,nonmetropolitan,Non-Metro
+Palo Alto,Iowa,IA,19147,9421,Northwest,NW,7,nonmetropolitan,Non-Metro
+Plymouth,Iowa,IA,19149,24986,Northwest,NW,3,metropolitan,Metropolitan
+Pocahontas,Iowa,IA,19151,7310,Northwest,NW,9,nonmetropolitan,Non-Metro
+Polk,Iowa,IA,19153,430640,Central,C,2,metropolitan,Metropolitan
+Pottawattamie,Iowa,IA,19155,93158,Southwest,SW,2,metropolitan,Metropolitan
+Poweshiek,Iowa,IA,19157,18914,Central,C,7,nonmetropolitan,Non-Metro
+Ringgold,Iowa,IA,19159,5131,South Central,SC,9,nonmetropolitan,Non-Metro
+Sac,Iowa,IA,19161,10350,West Central,WC,9,nonmetropolitan,Non-Metro
+Scott,Iowa,IA,19163,165224,East Central,EC,2,metropolitan,Metropolitan
+Shelby,Iowa,IA,19165,12167,West Central,WC,6,nonmetropolitan,Non-Metro
+Sioux,Iowa,IA,19167,33704,Northwest,NW,7,nonmetropolitan,Non-Metro
+Story,Iowa,IA,19169,89542,Central,C,3,metropolitan,Metropolitan
+Tama,Iowa,IA,19171,17767,Central,C,6,nonmetropolitan,Non-Metro
+Taylor,Iowa,IA,19173,6317,Southwest,SW,9,nonmetropolitan,Non-Metro
+Union,Iowa,IA,19175,12534,South Central,SC,6,nonmetropolitan,Non-Metro
+Van Buren,Iowa,IA,19177,7570,Southeast,SE,9,nonmetropolitan,Non-Metro
+Wapello,Iowa,IA,19179,35625,Southeast,SE,5,micropolitan,Micropolitan
+Warren,Iowa,IA,19181,46225,South Central,SC,2,metropolitan,Metropolitan
+Washington,Iowa,IA,19183,21704,Southeast,SE,3,metropolitan,Metropolitan
+Wayne,Iowa,IA,19185,6403,South Central,SC,9,nonmetropolitan,Non-Metro
+Webster,Iowa,IA,19187,38013,Central,C,5,micropolitan,Micropolitan
+Winnebago,Iowa,IA,19189,10866,North Central,NC,7,nonmetropolitan,Non-Metro
+Winneshiek,Iowa,IA,19191,21056,Northeast,NE,7,nonmetropolitan,Non-Metro
+Woodbury,Iowa,IA,19193,102172,West Central,WC,3,metropolitan,Metropolitan
+Worth,Iowa,IA,19195,7598,North Central,NC,9,micropolitan,Micropolitan
+Wright,Iowa,IA,19197,13229,North Central,NC,7,nonmetropolitan,Non-Metro
+Rock Island,Illinois,IL,17161,147546,,,2,,
+Jo Daviess,Illinois,IL,17085,22678,,,6,,
+Hancock,Illinois,IL,17067,19104,,,7,,
+Whiteside,Illinois,IL,17195,58498,,,4,,
+Carroll,Illinois,IL,17015,15387,,,7,,
+Henderson,Illinois,IL,17071,7331,,,9,,
+Mercer,Illinois,IL,17131,16434,,,2,,
+Nobles,Minnesota,MN,27105,21378,,,7,,
+Freeborn,Minnesota,MN,27047,31255,,,7,,
+Jackson,Minnesota,MN,27063,10266,,,7,,
+Martin,Minnesota,MN,27091,20840,,,7,,
+Rock,Minnesota,MN,27133,9687,,,6,,
+Faribault,Minnesota,MN,27043,14553,,,6,,
+Mower,Minnesota,MN,27099,39163,,,4,,
+Houston,Minnesota,MN,27055,19027,,,3,,
+Fillmore,Minnesota,MN,27045,20866,,,3,,
+Clark,Missouri,MO,29045,7139,,,9,,
+Mercer,Missouri,MO,29129,3785,,,9,,
+Atchison,Missouri,MO,29005,5685,,,9,,
+Harrison,Missouri,MO,29081,8957,,,7,,
+Schuyler,Missouri,MO,29197,4431,,,9,,
+Putnam,Missouri,MO,29171,4979,,,9,,
+Scotland,Missouri,MO,29199,4843,,,9,,
+Nodaway,Missouri,MO,29147,23370,,,6,,
+Worth,Missouri,MO,29227,2171,,,9,,
+Washington,Nebraska,NE,31177,20234,,,2,,
+Douglas,Nebraska,NE,31055,517110,,,2,,
+Sarpy,Nebraska,NE,31153,158840,,,2,,
+Cass,Nebraska,NE,31025,25241,,,2,,
+Otoe,Nebraska,NE,31131,15740,,,6,,
+Burt,Nebraska,NE,31021,6858,,,8,,
+Thurston,Nebraska,NE,31173,6940,,,8,,
+Dakota,Nebraska,NE,31043,21006,,,3,,
+Lincoln,South Dakota,SD,46083,44828,,,3,,
+Minnehaha,South Dakota,SD,46099,169468,,,3,,
+Union,South Dakota,SD,46127,14399,,,3,,
+Vernon,Wisconsin,WI,55123,29773,,,6,,
+Grant,Wisconsin,WI,55043,51208,,,6,,
+Crawford,Wisconsin,WI,55023,16644,,,7,,
