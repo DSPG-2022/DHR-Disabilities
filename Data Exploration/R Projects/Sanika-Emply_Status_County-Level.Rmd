@@ -61,14 +61,12 @@ View(empl_status_no_disability)
 all_emp_stat= full_join(empl_status_disability,empl_status_no_disability)
 View(all_emp_stat)
 
-
 ```
 
 
 ```{r}
 #Removing MOE
-all_emp_stat = subset(all_emp_stat, select = -c(`In the Labor Force,Employed with disabilityM`, `In the Labor force,unemployed with a disabilityM`, `Not in the Labor force, with a disabilityM`, `In the Labor Force,Employed with no disabilityM`, `In the Labor force,unemployed with no disabilityM`, `Not in the Labor Force, with no disabilityM`) )
-View(all_emp_stat)
+#all_emp_stat = subset(all_emp_stat, select = -c(`In the Labor Force,Employed with disabilityM`, `In the Labor force,unemployed with a disabilityM`, `Not in the Labor force, with a disabilityM`, `In the Labor Force,Employed with no disabilityM`, `In the Labor force,unemployed with no disabilityM`, `Not in the Labor Force, with no disabilityM`) )
 ```
 
 ```{r}
@@ -135,8 +133,49 @@ percent_not_in_labor_force_not_disabled = 100 * (all_emp_stat$`Not in the Labor 
 
 all_emp_stat = all_emp_stat %>% mutate(percent_in_labor_force_employed_gap = percent_in_labor_force_employed_not_disabled - percent_in_labor_force_employed_disabled, percent_in_labor_force_unemployed_gap = percent_in_labor_force_unemployed_not_disabled - percent_in_labor_force_unemployed_disabled , percent_not_in_labor_force_gap =    percent_not_in_labor_force_not_disabled - percent_not_in_labor_force_disabled )
 View(all_emp_stat)
+```
+
+```{r}
+#State Avg Employed Not Disabled
+max(all_emp_stat$percent_in_labor_force_employed_not_disabled)
+mean(all_emp_stat$percent_in_labor_force_employed_not_disabled)
+min(all_emp_stat$percent_in_labor_force_employed_not_disabled)
+
+all_emp_stat$compared_to_state_avg_end= ifelse( all_emp_stat$percent_in_labor_force_employed_not_disabled > state_avg , "above average",
+                  ifelse(all_emp_stat$percent_in_labor_force_employed_not_disabled < state_avg, "below average",
+                         "average"))
+
+
+#State Avg Employed Disabled
+max(all_emp_stat$percent_in_labor_force_employed_disabled)
+mean(all_emp_stat$percent_in_labor_force_employed_disabled)
+min(all_emp_stat$percent_in_labor_force_employed_disabled)
+
+all_emp_stat$compared_to_state_avg_ed= ifelse( all_emp_stat$percent_in_labor_force_employed_disabled > state_avg2 , "above average",
+                  ifelse(all_emp_stat$percent_in_labor_force_employed_disabled < state_avg2, "below average",
+                         "average"))
+
+#State Avg Unemployed Disabled
+max(all_emp_stat$percent_in_labor_force_unemployed_disabled)
+state_avg3=mean(all_emp_stat$percent_in_labor_force_unemployed_disabled)
+min(all_emp_stat$percent_in_labor_force_unemployed_disabled)
+
+all_emp_stat$compared_to_state_avg_ud= ifelse(all_emp_stat$percent_in_labor_force_unemployed_disabled > state_avg3 , "above average",
+                  ifelse(all_emp_stat$percent_in_labor_force_unemployed_disabled < state_avg3, "below average",
+                         "average"))
+
+#State Avg Not in Lab force disabled
+max(all_emp_stat$percent_not_in_labor_force_disabled)
+state_avg4=mean(all_emp_stat$percent_not_in_labor_force_disabled)
+min(all_emp_stat$percent_not_in_labor_force_disabled)
+
+all_emp_stat$compared_to_state_avg_nd = ifelse(all_emp_stat$percent_not_in_labor_force_disabled > state_avg4 , "above average",
+                  ifelse(all_emp_stat$percent_not_in_labor_force_disabled < state_avg4, "below average",
+                         "average"))
 
 ```
+
+
 
 ```{r}
 colnames(all_emp_stat)[2] <-"County Names"
@@ -156,5 +195,5 @@ colnames(all_emp_stat)[14] <- "Not in the Labor Force, with NO Disability (MOE)"
 
 ```{r}
 #Converting into a csv 
-write.csv(all_emp_stat, "S:/misc/clg/DSPG2022/ProjectA/Labor_Force_gaps.csv", row.names = FALSE)
+write.csv(all_emp_stat, "S:/misc/clg/DSPG2022/ProjectA/Sanika-Labor_Force_gaps_county-level.csv", row.names = FALSE)
 ```
