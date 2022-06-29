@@ -80,7 +80,7 @@ View(population)
 write.xlsx(population, "Population.xlsx")
 ```
 
-2.1 Population of Iowans 18-64 years with disabilities by age groups and difficulty types
+2.1 Population of Iowans 18-64 years with disabilities by age groups
 ```{r}
 DisabledHearing <- c("18 to 34 years" = c("B18102_010", "B18102_029"), "35 to 64 years" = c("B18102_013", "B18102_032"))
 DisabledVision <- c("18 to 34 years" = c("B18103_010", "B18103_029"), "35 to 64 years" = c("B18103_007", "B18103_032"))
@@ -141,10 +141,43 @@ DisabledType_pivot$CV_Vision <- ifelse(CV_Vision > 30, "Low reliability",
                                               "Median reliability"))
 
 View(DisabledType_pivot)
-write.xlsx(DisabledType_pivot, "DisabledType.xlsx")
+write.xlsx(DisabledType_pivot, "DisabledType1.xlsx")
 ```
 
-3.1 Population of Iowans 18-64 years with disabilities and without disabilities by race and ethnic
+3.1 Population of Iowans 18-64 years of age with disabilities by difficulty types
+```{r}
+DisabledType_pivot1 <- DisabledType %>% separate(variable, into = c("Type", "Age"), sep = "\\.") %>%
+  pivot_wider(names_from = Age, values_from = c(estimate, moe))
+
+DisabledType_sum1 <- aggregate(estimate ~ NAME, data = DisabledType, sum) %>%
+  slice(rep(1:n(), each = 5))
+
+DisabledType_pivot1 <- DisabledType_pivot1 %>%
+  ungroup() %>%
+  mutate(Percentage = rowSums(DisabledType_pivot1[3:5] / DisabledType_sum1$estimate) * 100)
+
+names(DisabledType_pivot1) <- gsub("estimate_", "", names(DisabledType_pivot1))
+DisabledType_pivot1$NAME <- gsub(" County, Iowa", "", DisabledType_pivot1$NAME)
+names(DisabledType_pivot1)[names(DisabledType_pivot1) == "NAME"] <- "County"
+```
+
+3.2 Testing the reliability of DisabledType_pivot1 data
+```{r}
+CV_Disabled18to34 <- ((DisabledType_pivot1$`moe_18 to 34 years` / 1.645) / DisabledType_pivot1$`18 to 34 years` ) * 100
+CV_Disabled35to64 <- ((DisabledType_pivot1$`moe_35 to 64 years` / 1.645) / DisabledType_pivot1$`35 to 64 years` ) * 100
+
+DisabledType_pivot1$CV_Disabled_18to34 <- ifelse(CV_Disabled18to34 > 30, "Low reliability",
+                                                 ifelse(CV_Disabled18to34 <= 15, "High reliability",
+                                                        "Median reliability"))
+DisabledType_pivot1$CV_Disabled_35to64 <- ifelse(CV_Disabled35to64 > 30, "Low reliability",
+                                                 ifelse(CV_Disabled35to64 <= 15, "High reliability",
+                                                        "Median reliability"))
+
+view(DisabledType_pivot1)
+write.xlsx(DisabledType_pivot1, "DisabledType2.xlsx")
+```
+
+4.1 Population of Iowans 18-64 years with disabilities and without disabilities by race and ethnic
 ```{r}
 White <- c("Total White"= "B18101A_005", "Disabled White" = "B18101A_006", "Nondisabled White" = "B18101A_007")
 Black <- c("Total Black" ="B18101B_005", "Disabled Black" = "B18101B_006", "Nondisabled Black" = "B18101B_007")
@@ -176,7 +209,7 @@ RaceEthnic$NAME <- gsub(" County, Iowa", "", RaceEthnic$NAME)
 names(RaceEthnic)[names(RaceEthnic) == "NAME"] <- "County"
 ```
 
-3.2 Testing the reliability of RaceEthnic data
+4.2 Testing the reliability of RaceEthnic data
 ```{r}
 CV_White_Disabled <- ((RaceEthnic$`moe_Disabled White` / 1.645) / RaceEthnic$`Disabled White`) * 100
 CV_White_Nondisabled <- ((RaceEthnic$`moe_Nondisabled White` / 1.645) / RaceEthnic$`Nondisabled White`) * 100
@@ -254,4 +287,28 @@ RaceEthnic$CV_HispanicLatino_Nondisabled <- ifelse(CV_HispanicLatino_Nondisabled
 
 view(RaceEthnic)
 write.xlsx(RaceEthnic, "RaceEthnic.xlsx")
+```
+
+5.1 Median earnings of people with a disability
+```{r}
+earning <- get_acs(geography = "county",
+                   variables = "B18140_002",
+                   year = 2020,
+                   state = "IA")
+
+names(earning) <- gsub("estimate_", "", names(earning))
+earning$NAME <- gsub(" County, Iowa", "", earning$NAME)
+names(earning)[names(earning) == "NAME"] <- "County"
+```
+
+5.2 Testing the reliability of earning data
+```{r}
+CV_earning <- ((earning$moe / 1.645) / earning$estimate) * 100
+
+earning$CV <- ifelse(CV_earning > 30, "Low reliability",
+                     ifelse(CV_earning <= 15, "High reliability",
+                            "Median reliability"))
+
+view(earning)
+write.xlsx(earning, "Median Earnings.xlsx")
 ```
