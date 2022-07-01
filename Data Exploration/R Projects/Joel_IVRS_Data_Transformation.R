@@ -4,6 +4,7 @@ library(stringr)
 library(zipcodeR)
 
 IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
+county_pop <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
 
 
 # Initial split on comma to get City
@@ -34,7 +35,7 @@ IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.
 # Remove any leading and trailing whitespace
     IVRS_data_transformed$'Client Zip Code Extra Info' <- str_trim(IVRS_data_transformed$'Client Zip Code Extra Info')
     
-# Renames Iowa county O'Brien to have ' instead of Oâ€™
+# Renames Iowa county O'Brien to have ' instead of Oâ€™Brien
     # !!IMPORTANT!! File needs to be saved using UTF-8 encoding for the special characters to not disappear. 
     #               This can be changed in File -> Save with encoding -> Choose Encoding -> UTF-8
     IVRS_data_transformed$'Client County'[IVRS_data_transformed$'Client County' == 'Oâ€™Brien'] <- "O'Brien"   
@@ -42,32 +43,38 @@ IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.
 ## !!!NOT WORKING!!! ##
 # Changes state names to abbreviations
 
-    stateAbbreviations <- c()
+    stateAbbreviations <- rep(NA, dim(IVRS_data_transformed)[1])
+    
+    index <- 0
     
     for(state in IVRS_data_transformed$'Client State'){
       
       state <- str_trim(state)
+      index <- index + 1
       
       if(is.na(state)){
-        stateAbbreviations <- append(stateAbbreviations, NA)
+        stateAbbreviations[index] <- NA
       }
       else if(state == 'ArKS'){
-        stateAbbreviations <- append(stateAbbreviations, 'AR')
+        stateAbbreviations[index] <- 'AR'
       }
       else if(state == 'ARKS'){
-        stateAbbreviations <- append(stateAbbreviations, 'AR')
+        stateAbbreviations[index] <- 'AR'
       }
       else if(state == 'District of Columbia'){
-        stateAbbreviations <- append(stateAbbreviations, 'DC')
+        stateAbbreviations[index] <- 'DC'
       }
       else if(state == 'Puerto Rico'){
-        stateAbbreviations <- append(stateAbbreviations, NA)
+        stateAbbreviations[index] <- NA
+      }
+      else if(state == 'West VA'){
+        stateAbbreviations[index] <- 'WV'
       }
       else if(nchar(state) > 2){
-        stateAbbreviations <- append(stateAbbreviations, state.abb[grep(state, state.name)])
+        stateAbbreviations[index] <- state.abb[grep(state, state.name)]
       }
       else {
-        stateAbbreviations <- append(stateAbbreviations, state)
+        stateAbbreviations[index] <- state
       }
     }
 
@@ -123,7 +130,22 @@ IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.
                                                                                             IVRS_data_transformed$'Annual Wage Change' > 0 ~ "Increase",
                                                                                             is.na(IVRS_data_transformed$'Annual Wage Change') ~ "Unemployed"))
     
+# drop uneeded population columns
+    county_pop_transformed <- subset(county_pop, select = -c(9:65,68))
 
+# change population data to long
+    county_pop_transformed <- county_pop_transformed %>%
+      pivot_longer(
+        -c(1:7),
+        names_to = "Census",
+        values_to = "Population"
+      )
+    
+# split to get Year from Category
+    county_pop_transformed <- county_pop_transformed %>%
+      separate(Census,c('Census', 'Year'),sep="(?<=\\w)(?=[0-9]{4})")
     
 # write to file
     write.csv(IVRS_data_transformed, "C:/Users/joelm/Documents/GitHub/DHR-Disabilities/Data Exploration/Datasets/Cleaned_Closed_Iowa_Vocational_Rehabilitation_Cases.csv", row.names = FALSE)
+    write.csv(county_pop_transformed, "C:/Users/joelm/Documents/GitHub/DHR-Disabilities/Data Exploration/Datasets/2008_2019_county_pop_long.csv", row.names = FALSE)
+    
