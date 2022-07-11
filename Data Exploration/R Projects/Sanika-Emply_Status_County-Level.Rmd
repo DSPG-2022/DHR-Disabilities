@@ -24,6 +24,12 @@ new_table= read.csv("lookup_county_regions.csv")
 View(new_table)
 pop_table <- read.csv("Population_by_County.csv")
 View(pop_table)
+oasdi_table <- read.csv("oasdi_2020.csv")
+View(oasdi_table)
+oasdi_amount_table <- read.csv("oasdi_amount_2020.csv")
+View(oasdi_amount_table)
+ssi_table <- read.csv("SSI.csv")
+View(ssi_table)
 var<-load_variables(2020,"acs5")
 View(var)
 ```
@@ -217,6 +223,20 @@ merged_pop_table = merge(x = all_emp_stat, y = pop_table, by = "GEOID", all.x = 
 View(merged_pop_table)
 ```
 
+```{r}
+#Merging OASDI Table (Number and Amount)
+merged_oasdi_table = merge(x = all_emp_stat, y = oasdi_table, by = "GEOID", all.x = TRUE)
+View(merged_oasdi_table)
+
+merged_oasdi_amount_table = merge(x = all_emp_stat, y = oasdi_amount_table, by = "GEOID", all.x = TRUE)
+View(merged_oasdi_amount_table)
+```
+
+```{r}
+merged_ssi_table = merge(x = all_emp_stat, y = ssi_table, by = "GEOID", all.x = TRUE)
+View(merged_ssi_table)
+```
+
 
 ```{r}
 #Converting into a csv 
@@ -224,4 +244,9 @@ write.csv(all_emp_stat, "S:/misc/clg/DSPG2022/ProjectA/Sanika-Labor_Force_gaps_c
 write.csv(new_all_emp_stat, "S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_table_county-level.csv", row.names = FALSE)
 write.csv(merged_pop_table, "S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_table_pop_county_level.csv", row.names = FALSE)
 
+write.csv(merged_oasdi_table, "S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_OASDI_table.csv", row.names = FALSE)
+
+write.csv(merged_oasdi_amount_table, "S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_OASDI_amount_table.csv", row.names = FALSE)
+
+write.csv(merged_ssi_table, "S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_SSI_table.csv", row.names = FALSE)
 ```
