@@ -20,9 +20,18 @@ census_api_key("ab8b0fa7ef0993c579097beb76d0321bce5af443", install = TRUE)
 ```
 
 ```{r}
+new_table= read.csv("lookup_county_regions.csv")
+View(new_table)
+pop_table <- read.csv("Population_by_County.csv")
+View(pop_table)
 var<-load_variables(2020,"acs5")
 View(var)
 ```
+
+```{r}
+colnames(pop_table)[1] <- "County"
+```
+
 
 ```{r}
 emp_stat_disability <-c("In the Labor Force,Employed with disability"= "C18120_004", "In the Labor force,unemployed with a disability" = "C18120_007",  "Not in the Labor force, with a disability" = "C18120_010")
@@ -138,7 +147,7 @@ View(all_emp_stat)
 ```{r}
 #State Avg Employed Not Disabled
 max(all_emp_stat$percent_in_labor_force_employed_not_disabled)
-mean(all_emp_stat$percent_in_labor_force_employed_not_disabled)
+state_avg=mean(all_emp_stat$percent_in_labor_force_employed_not_disabled)
 min(all_emp_stat$percent_in_labor_force_employed_not_disabled)
 
 all_emp_stat$compared_to_state_avg_end= ifelse( all_emp_stat$percent_in_labor_force_employed_not_disabled > state_avg , "above average",
@@ -148,7 +157,7 @@ all_emp_stat$compared_to_state_avg_end= ifelse( all_emp_stat$percent_in_labor_fo
 
 #State Avg Employed Disabled
 max(all_emp_stat$percent_in_labor_force_employed_disabled)
-mean(all_emp_stat$percent_in_labor_force_employed_disabled)
+state_avg2=mean(all_emp_stat$percent_in_labor_force_employed_disabled)
 min(all_emp_stat$percent_in_labor_force_employed_disabled)
 
 all_emp_stat$compared_to_state_avg_ed= ifelse( all_emp_stat$percent_in_labor_force_employed_disabled > state_avg2 , "above average",
@@ -172,13 +181,12 @@ min(all_emp_stat$percent_not_in_labor_force_disabled)
 all_emp_stat$compared_to_state_avg_nd = ifelse(all_emp_stat$percent_not_in_labor_force_disabled > state_avg4 , "above average",
                   ifelse(all_emp_stat$percent_not_in_labor_force_disabled < state_avg4, "below average",
                          "average"))
-
+View(all_emp_stat)
 ```
 
 
-
 ```{r}
-colnames(all_emp_stat)[2] <-"County Names"
+colnames(all_emp_stat)[2] <-"County"
 colnames(all_emp_stat)[3] <- "In the Labor Force, Employed with Disability (Estimate)"
 colnames(all_emp_stat)[4] <- "In the Labor Force, Employed with Disability (MOE)"
 colnames(all_emp_stat)[5] <- "In the Labor Force, Unemployed with Disability (Estimate)"
@@ -193,7 +201,27 @@ colnames(all_emp_stat)[13] <- "Not in the Labor Force, with NO Disability (Estim
 colnames(all_emp_stat)[14] <- "Not in the Labor Force, with NO Disability (MOE)"
 ```
 
+
+```{r}
+all_emp_stat$County<-gsub("County, Iowa","",as.character(all_emp_stat$County))
+```
+
+```{r}
+#Joining table to Metropolitan table
+new_all_emp_stat = merge(x = all_emp_stat, y = new_table, by = "GEOID", all.x = TRUE)
+View(new_all_emp_stat)
+```
+
+```{r}
+merged_pop_table = merge(x = all_emp_stat, y = pop_table, by = "GEOID", all.x = TRUE)
+View(merged_pop_table)
+```
+
+
 ```{r}
 #Converting into a csv 
 write.csv(all_emp_stat, "S:/misc/clg/DSPG2022/ProjectA/Sanika-Labor_Force_gaps_county-level.csv", row.names = FALSE)
+write.csv(new_all_emp_stat, "S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_table_county-level.csv", row.names = FALSE)
+write.csv(merged_pop_table, "S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_table_pop_county_level.csv", row.names = FALSE)
+
 ```
