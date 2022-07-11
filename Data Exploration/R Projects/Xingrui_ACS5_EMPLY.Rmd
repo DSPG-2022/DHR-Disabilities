@@ -194,6 +194,66 @@ DisabledType_pivot1$CV_Disabled_35to64 <- ifelse(CV_Disabled35to64 > 30, "Low re
 # write.xlsx(DisabledType_pivot1, "DisabledType2.xlsx")
 ```
 
+3.3 Proportion of each type of difficulty among persons with disabilities aged 18-64
+```{r}
+DisabledType2 <- read.xlsx("DisabledType2 18-64 years.xlsx", sheet = 2)
+
+DisabledType2 <- pivot_wider(DisabledType2,
+                             names_from = Type,
+                             values_from = c("18.to.64.years", "moe_18.to.64.years"))
+
+DisabledType_sum2 <- aggregate(estimate ~ NAME, data = DisabledType, sum)
+
+DisabledType2$Ambulatory.Pct <- DisabledType2$`18.to.64.years_Ambulatory` / DisabledType_sum2$estimate * 100
+DisabledType2$Cognitive.Pct <- DisabledType2$`18.to.64.years_Cognitive`  / DisabledType_sum2$estimate * 100
+DisabledType2$Hearing.Pct <- DisabledType2$`18.to.64.years_Hearing` / DisabledType_sum2$estimate * 100
+DisabledType2$IndependentLiving.Pct <- DisabledType2$`18.to.64.years_Independent living` / DisabledType_sum2$estimate * 100
+DisabledType2$SelfCare.Pct <- DisabledType2$`18.to.64.years_Self-care` / DisabledType_sum2$estimate * 100
+DisabledType2$Vision.Pct <- DisabledType2$`18.to.64.years_Vision` / DisabledType_sum2$estimate * 100
+```
+
+3.4 Testing the reliability of DisabledType2 data
+```{r}
+CV_ambulatory <- ((DisabledType2$moe_18.to.64.years_Ambulatory / 1.645) / DisabledType2$`18.to.64.years_Ambulatory`) * 100
+CV_cognitive <- ((DisabledType2$moe_18.to.64.years_Cognitive / 1.645) / DisabledType2$`18.to.64.years_Cognitive`) * 100
+CV_hearing <- ((DisabledType2$moe_18.to.64.years_Hearing / 1.645) / DisabledType2$`18.to.64.years_Hearing`) * 100
+CV_independent_living <- ((DisabledType2$`moe_18.to.64.years_Independent living` / 1.645) / DisabledType2$`18.to.64.years_Independent living`) * 100
+CV_selfcare <- ((DisabledType2$`moe_18.to.64.years_Self-care` / 1.645) / DisabledType2$`18.to.64.years_Self-care`) * 100
+CV_vision <- ((DisabledType2$moe_18.to.64.years_Vision / 1.645) / DisabledType2$`18.to.64.years_Vision`) * 100
+
+DisabledType2$CV_ambulatory <- ifelse(CV_ambulatory > 30, "Low reliability",
+                                      ifelse(CV_ambulatory <= 15, "High reliability",
+                                             "Median reliability"))
+DisabledType2$CV_cognitive <- ifelse(CV_cognitive > 30, "Low reliability",
+                                     ifelse(CV_cognitive <= 15, "High reliability",
+                                            "Median reliability"))
+DisabledType2$CV_hearing <- ifelse(CV_hearing > 30, "Low reliability",
+                                   ifelse(CV_hearing <= 15, "High reliability",
+                                          "Median reliability"))
+DisabledType2$CV_independent_living <- ifelse(CV_independent_living > 30, "Low reliability",
+                                              ifelse(CV_independent_living <= 15, "High reliability",
+                                                     "Median reliability"))
+DisabledType2$CV_selfcare <- ifelse(CV_selfcare > 30, "Low reliability",
+                                    ifelse(CV_selfcare <= 15, "High reliability",
+                                           "Median reliability"))
+DisabledType2$CV_vision <- ifelse(CV_vision > 30, "Low reliability",
+                                  ifelse(CV_vision <= 15, "High reliability",
+                                         "Median reliability"))
+
+# view(DisabledType2)
+# write.xlsx(DisabledType2, "DisabledType.xlsx")
+```
+
+3.5 DisabledType2 with Urban/Rural Codes
+```{r}
+Type <- read.xlsx("DisabledType2 18-64 years.xlsx", sheet = 1)
+Divisioin <- read.csv("lookup_county_regions.csv")
+
+TypeDivisioin <- left_join(Type, Divisioin)
+
+write.xlsx(TypeDivisioin, "DisabledType2 with Divisioin.xlsx")
+```
+
 4.1 Population of Iowans 18-64 years with disabilities and without disabilities by race and ethnic
 ```{r}
 White <- c("Total White"= "B18101A_005", "Disabled White" = "B18101A_006", "Nondisabled White" = "B18101A_007")
@@ -350,4 +410,63 @@ employment$CV <- ifelse(CV_employment > 30, "Low reliability",
                                               "Median reliability"))
 
 # write.xlsx(employment, "Employed.xlsx")
+```
+
+7.1 Reformatting, MOE, and reliability testing of BRFSS MENTHLTH data
+```{r}
+MENTHLTH <- read.xlsx("BRFSS For how many days during the past 30 days was your mental health not good.xlsx", sheet = "MENTHLTH")
+
+MENTHLTH$Row.Percent <- as.numeric(MENTHLTH$Row.Percent)
+MENTHLTH$`95%.Confidence.Limits.for.Row.Percent.Lower` <- as.numeric(MENTHLTH$`95%.Confidence.Limits.for.Row.Percent.Lower`)
+MENTHLTH$`95%.Confidence.Limits.for.Row.Percent.Upper` <- as.numeric(MENTHLTH$`95%.Confidence.Limits.for.Row.Percent.Upper`)
+
+MENTHLTH <- MENTHLTH %>%
+  mutate(MOE = `95%.Confidence.Limits.for.Row.Percent.Upper` - Row.Percent)
+
+CV_Row.Percent <- ((MENTHLTH$MOE / 1.645) / MENTHLTH$Row.Percent) * 100
+
+MENTHLTH$CV_Row.Percent <- ifelse(CV_Row.Percent > 30, "Low reliability",
+                                  ifelse(CV_Row.Percent <= 15, "High reliability",
+                                         "Median reliability"))
+
+
+# MENTHLTH <- MENTHLTH %>% select(Geography, MENTHLTH, Row.Percent) %>%
+#   pivot_wider(names_from = MENTHLTH, values_from = Row.Percent)
+# 
+# MENTHLTH$None <- as.numeric(MENTHLTH$None)
+# MENTHLTH$`14 - 30 days` <- as.numeric(MENTHLTH$`14 - 30 days`)
+# MENTHLTH$`< 14 days` <- as.numeric(MENTHLTH$`< 14 days`)
+
+# write.xlsx(MENTHLTH, "BRFSS MENTHLTH.xlsx")
+```
+
+7.2 MOE and reliability testing of BRFSS Disable data
+```{r}
+Disable <- read.xlsx("BRFSS Do you have a disability.xlsx", sheet = "Disable")
+
+Disable <- Disable %>% mutate(MOE = `95%.Confidence.Limits.for.Row.Percent.Upper` - Row.Percent)
+Disable <- Disable %>% mutate("Lower MOE" = `95%.Confidence.Limits.for.Row.Percent.Lower` - Row.Percent)
+Disable <- Disable %>% mutate("Upper MOE" = `95%.Confidence.Limits.for.Row.Percent.Upper` - Row.Percent)
+
+CV_Row.Percent <- ((Disable$MOE / 1.645) / Disable$Row.Percent) * 100
+
+Disable$CV_Row.Percent <- ifelse(CV_Row.Percent > 30, "Low reliability",
+                                 ifelse(CV_Row.Percent <= 15, "High reliability",
+                                        "Median reliability"))
+
+# write.xlsx(Disable, "BRFSS Disable.xlsx")
+```
+
+8.1 IVRS hourly wage information and ACS median earnings
+```{r}
+wage <- read.csv("IVRS_Hourly_Wage.csv")
+earnings <- read.xlsx("Median Earnings.xlsx")
+
+WageClosure <- wage %>% filter(Client.State == "IA") %>%
+  group_by(Client.County) %>%
+  summarise("Median Wage Closure" = median(Hourly.Wage..Closure., na.rm = TRUE))
+
+WageEarnings <- left_join(WageClosure, earnings, by = c("Client.County" = "County"))
+
+write.xlsx(WageEarnings, "IVRS Median Closure Wage and ACS Median Earnings.xlsx")
 ```
