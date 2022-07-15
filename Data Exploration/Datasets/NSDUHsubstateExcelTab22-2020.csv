@@ -1,0 +1,504 @@
+State,Substate Region,Small Area Estimate,95% CI (Lower),95% CI (Upper),Map Group
+Total U.S.,Total U.S.,5.15%,4.96%,5.35%,1
+Northeast,Northeast,4.71%,4.40%,5.05%,2
+Midwest,Midwest,5.70%,5.40%,6.01%,2
+South,South,4.97%,4.71%,5.24%,2
+West,West,5.29%,4.95%,5.64%,2
+Alabama,Alabama,5.87%,4.86%,7.07%,3
+Alabama,Region 1,6.53%,4.94%,8.59%,4
+Alabama,Region 2,5.66%,4.31%,7.40%,4
+Alabama,Region 3,5.38%,4.06%,7.09%,4
+Alabama,Region 4,5.71%,4.32%,7.50%,4
+Alaska,Alaska,5.73%,4.83%,6.78%,3
+Alaska,Anchorage,5.88%,4.62%,7.45%,4
+Alaska,Northern,6.12%,4.85%,7.68%,5
+Alaska,Fairbanks North Star,7.28%,5.50%,9.59%,4
+Alaska,"Northern, Interior, and Western",4.38%,3.22%,5.94%,4
+Alaska,South Central,5.39%,4.29%,6.74%,5
+Alaska,"Aleutians, Gulf Coast, and Kenai Peninsula",4.90%,3.63%,6.58%,4
+Alaska,Mat-Su,5.86%,4.44%,7.70%,4
+Alaska,Southeast,5.25%,4.04%,6.81%,5
+Alaska,Northern Southeast,5.34%,3.93%,7.20%,4
+Alaska,Southern Southeast,5.03%,3.69%,6.83%,4
+Arizona,Arizona,6.25%,5.26%,7.41%,3
+Arizona,Central,6.39%,5.18%,7.85%,4
+Arizona,North,5.91%,4.50%,7.74%,4
+Arizona,South,6.09%,4.83%,7.65%,5
+Arizona,South A,6.53%,4.93%,8.59%,4
+Arizona,South B,5.57%,4.14%,7.46%,4
+Arkansas,Arkansas,6.87%,5.75%,8.19%,3
+Arkansas,Catchment Area 1,7.76%,5.91%,10.13%,4
+Arkansas,Catchment Areas 2 and 5,7.10%,5.39%,9.30%,4
+Arkansas,Catchment Area 3,7.05%,5.30%,9.32%,4
+Arkansas,Catchment Area 4,6.37%,4.72%,8.54%,4
+Arkansas,Catchment Area 6,5.56%,4.04%,7.60%,4
+Arkansas,Catchment Area 7,6.20%,4.55%,8.39%,4
+Arkansas,Catchment Area 8,6.40%,4.81%,8.46%,4
+California,California,4.52%,4.05%,5.04%,3
+California,Region 1R,6.23%,4.80%,8.05%,4
+California,Region 2R,5.36%,4.09%,7.01%,4
+California,Region 3R (Sacramento),5.11%,3.92%,6.63%,4
+California,Region 4R,4.68%,3.53%,6.18%,4
+California,Region 5R (San Francisco),5.65%,4.26%,7.46%,4
+California,Region 6 (Santa Clara),3.84%,2.97%,4.94%,4
+California,Region 7R (Contra Costa),4.12%,3.13%,5.42%,4
+California,Region 8R (Alameda),4.18%,3.20%,5.45%,4
+California,Region 9R (San Mateo),4.21%,3.21%,5.50%,4
+California,Region 10,4.35%,3.25%,5.79%,4
+California,Region 11 (Los Angeles),4.14%,3.60%,4.76%,5
+California,LA SPA 1 and 5,4.56%,3.49%,5.94%,4
+California,LA SPA 2,4.19%,3.25%,5.40%,4
+California,LA SPA 3,3.61%,2.74%,4.74%,4
+California,LA SPA 4,4.30%,3.24%,5.68%,4
+California,LA SPA 6,4.27%,3.20%,5.67%,4
+California,LA SPA 7,3.86%,2.93%,5.06%,4
+California,LA SPA 8,4.41%,3.37%,5.74%,4
+California,Region 12R,4.75%,3.57%,6.29%,4
+California,Regions 13 and 19R,4.89%,3.78%,6.31%,4
+California,Region 14 (Orange),4.25%,3.34%,5.41%,4
+California,Region 15R (Fresno),4.83%,3.72%,6.25%,4
+California,Region 16R (San Diego),4.83%,3.78%,6.14%,4
+California,Region 17R,4.68%,3.61%,6.03%,4
+California,Region 18R (San Bernardino),4.35%,3.34%,5.65%,4
+California,Region 20R,5.02%,3.83%,6.55%,4
+California,Region 21R,4.39%,3.36%,5.72%,4
+Colorado,Colorado,5.63%,4.79%,6.59%,3
+Colorado,Region 1,5.91%,4.56%,7.62%,4
+Colorado,Region 2,5.84%,4.38%,7.75%,4
+Colorado,Region 3,5.12%,3.93%,6.64%,4
+Colorado,Region 4,5.04%,3.74%,6.76%,4
+Colorado,Region 5,6.74%,5.16%,8.77%,4
+Colorado,Region 6,5.50%,4.20%,7.18%,4
+Colorado,Region 7,5.47%,4.16%,7.17%,4
+Connecticut,Connecticut,4.65%,3.87%,5.60%,3
+Connecticut,Eastern,5.03%,3.70%,6.80%,4
+Connecticut,North Central,4.99%,3.79%,6.54%,4
+Connecticut,Northwestern,4.45%,3.33%,5.93%,4
+Connecticut,South Central,5.11%,3.92%,6.66%,4
+Connecticut,Southwest,3.54%,2.59%,4.82%,4
+Delaware,Delaware,5.65%,4.69%,6.80%,3
+Delaware,Kent,7.05%,5.33%,9.28%,4
+Delaware,New Castle (excluding Wilmington City),5.54%,4.37%,7.00%,4
+Delaware,Sussex,4.84%,3.58%,6.50%,4
+Delaware,Wilmington City,5.66%,4.14%,7.68%,4
+District of Columbia,District of Columbia,5.16%,4.27%,6.23%,3
+District of Columbia,Ward 1,5.75%,4.23%,7.76%,4
+District of Columbia,Ward 2,6.71%,4.90%,9.15%,4
+District of Columbia,Ward 3,5.66%,4.16%,7.64%,4
+District of Columbia,Ward 4,4.13%,3.00%,5.66%,4
+District of Columbia,Ward 5,4.22%,3.11%,5.71%,4
+District of Columbia,Ward 6,6.00%,4.43%,8.09%,4
+District of Columbia,Ward 7,3.84%,2.73%,5.36%,4
+District of Columbia,Ward 8,4.09%,2.92%,5.71%,4
+Florida,Florida,4.67%,4.12%,5.30%,3
+Florida,Broward (Circuit 17),3.34%,2.51%,4.45%,4
+Florida,Central I,4.91%,4.06%,5.94%,5
+Florida,Circuit 9,4.97%,3.89%,6.32%,4
+Florida,Circuit 18,4.83%,3.67%,6.34%,4
+Florida,Central II,5.00%,4.24%,5.89%,5
+Florida,Circuit 6,5.11%,3.89%,6.69%,4
+Florida,Circuit 10,5.95%,4.42%,7.96%,4
+Florida,Circuit 12,4.57%,3.42%,6.09%,4
+Florida,Circuit 13 (Hillsborough),5.10%,3.95%,6.56%,4
+Florida,Circuit 20,4.51%,3.38%,5.99%,4
+Florida,Northeast,5.54%,4.67%,6.57%,5
+Florida,Circuit 4,6.20%,4.65%,8.23%,4
+Florida,Circuit 5,5.35%,4.10%,6.95%,4
+Florida,Circuit 7,4.84%,3.64%,6.40%,4
+Florida,"Circuit 8 plus Columbia, Dixie, Hamilton, Lafayette, and Suwannee",5.79%,4.42%,7.56%,4
+Florida,Northwest,6.06%,5.00%,7.32%,5
+Florida,Circuit 1,6.75%,5.15%,8.81%,4
+Florida,Circuit 2 plus Madison and Taylor,4.99%,3.78%,6.57%,4
+Florida,Circuit 14,5.91%,4.36%,7.97%,4
+Florida,South (Circuits 11 and 16),3.01%,2.27%,3.98%,4
+Florida,Southeast,4.26%,3.38%,5.36%,5
+Florida,Circuit 15 (Palm Beach),4.12%,3.07%,5.50%,4
+Florida,Circuit 19,4.57%,3.35%,6.20%,4
+Georgia,Georgia,4.46%,3.78%,5.26%,3
+Georgia,Region 1,5.00%,3.86%,6.46%,4
+Georgia,Region 2,5.23%,3.90%,6.96%,4
+Georgia,Region 3,3.56%,2.75%,4.58%,4
+Georgia,Region 4,4.85%,3.57%,6.56%,4
+Georgia,Region 5,4.86%,3.64%,6.48%,4
+Georgia,Region 6,4.23%,3.19%,5.60%,4
+Hawaii,Hawaii,4.63%,3.78%,5.67%,3
+Hawaii,Hawaii Island,4.08%,2.98%,5.55%,4
+Hawaii,Honolulu,4.89%,3.85%,6.19%,4
+Hawaii,Kauai,3.72%,2.71%,5.10%,4
+Hawaii,Maui,4.16%,3.07%,5.62%,4
+Idaho,Idaho,5.93%,5.05%,6.97%,3
+Idaho,Region 1,5.60%,4.17%,7.49%,4
+Idaho,Region 2,6.49%,4.79%,8.73%,4
+Idaho,Region 3,5.95%,4.55%,7.73%,4
+Idaho,Region 4,6.27%,4.91%,7.97%,4
+Idaho,Region 5,5.24%,3.86%,7.08%,4
+Idaho,Region 6,5.64%,4.22%,7.48%,4
+Idaho,Region 7,5.96%,4.63%,7.66%,4
+Illinois,Illinois,4.98%,4.38%,5.65%,3
+Illinois,Region 1 (Cook),4.68%,3.97%,5.50%,5
+Illinois,Region 1.1 (Far North Side),5.53%,4.17%,7.29%,4
+Illinois,Region 1.2 (Northwest Side),4.79%,3.53%,6.47%,4
+Illinois,Region 1.3 (North Central Side),6.60%,4.95%,8.75%,4
+Illinois,Region 1.4 (West Side),5.12%,3.86%,6.77%,4
+Illinois,Region 1.5 (South Side),4.47%,3.34%,5.97%,4
+Illinois,Region 1.6 (Southwest Side),4.33%,3.18%,5.87%,4
+Illinois,Region 1.7 (Suburban Cook),4.12%,3.22%,5.27%,4
+Illinois,Region 2,4.43%,3.78%,5.19%,5
+Illinois,Region 2a (DuPage),4.26%,3.26%,5.55%,4
+Illinois,Region 2b,3.99%,3.14%,5.05%,4
+Illinois,Region 2c (Winnebago),5.08%,3.85%,6.68%,4
+Illinois,Region 2d,5.87%,4.56%,7.54%,4
+Illinois,Region 3,6.31%,5.13%,7.75%,5
+Illinois,Region 3a (Champaign),6.75%,5.04%,8.98%,4
+Illinois,Region 3b,6.24%,4.92%,7.88%,4
+Illinois,Region 4,5.79%,4.54%,7.36%,5
+Illinois,Region 4a (Sangamon),5.78%,4.29%,7.75%,4
+Illinois,Region 4b,5.79%,4.35%,7.68%,4
+Illinois,Region 5,6.00%,4.87%,7.39%,5
+Illinois,Region 5a,6.34%,4.82%,8.30%,4
+Illinois,Region 5b,5.73%,4.31%,7.59%,4
+Indiana,Indiana,6.31%,5.40%,7.37%,3
+Indiana,Central,6.13%,4.78%,7.85%,4
+Indiana,East,7.11%,5.27%,9.54%,4
+Indiana,North Central,6.50%,4.87%,8.63%,4
+Indiana,Northeast,5.64%,4.21%,7.51%,4
+Indiana,Northwest,5.25%,3.92%,6.99%,4
+Indiana,Southeast,6.59%,4.97%,8.69%,4
+Indiana,Southwest,6.29%,4.73%,8.32%,4
+Indiana,West,7.29%,5.49%,9.61%,4
+Iowa,Iowa,5.77%,4.87%,6.82%,3
+Iowa,Central,6.33%,4.82%,8.27%,4
+Iowa,North Central,5.72%,4.32%,7.54%,4
+Iowa,Northeast,5.45%,4.12%,7.19%,4
+Iowa,Northwest,4.93%,3.68%,6.56%,4
+Iowa,Southeast,6.41%,4.88%,8.38%,4
+Iowa,Southwest,5.35%,3.94%,7.23%,4
+Kansas,Kansas,6.26%,5.25%,7.44%,3
+Kansas,Northeast,6.13%,4.90%,7.65%,4
+Kansas,Northwest and North Central,5.85%,4.36%,7.80%,4
+Kansas,South Central,6.83%,5.19%,8.94%,4
+Kansas,Southeast,6.31%,4.66%,8.49%,4
+Kansas,Southwest,4.82%,3.52%,6.58%,4
+Kentucky,Kentucky,6.21%,5.26%,7.33%,3
+Kentucky,"Adanta, Cumberland River, and Lifeskills",6.19%,4.65%,8.20%,4
+Kentucky,Communicare and River Valley,6.68%,4.92%,9.00%,4
+Kentucky,"Comprehend, New Vista, and North Key",6.35%,4.98%,8.06%,4
+Kentucky,Four Rivers and Pennyroyal,6.32%,4.67%,8.50%,4
+Kentucky,"Kentucky River, Mountain, and Pathways",6.90%,5.12%,9.24%,4
+Kentucky,Seven Counties,5.47%,4.20%,7.10%,4
+Louisiana,Louisiana,5.30%,4.41%,6.34%,3
+Louisiana,Regions 1 and 10,5.30%,4.17%,6.72%,5
+Louisiana,Region 1,5.50%,4.08%,7.38%,4
+Louisiana,Region 10 (Jefferson),5.09%,3.76%,6.86%,4
+Louisiana,Regions 2 and 9,5.24%,3.99%,6.84%,4
+Louisiana,Region 3,4.79%,3.54%,6.45%,4
+Louisiana,"Regions 4, 5, and 6",5.69%,4.33%,7.45%,4
+Louisiana,Regions 7 and 8,5.08%,3.76%,6.81%,4
+Maine,Maine,6.20%,5.22%,7.34%,3
+Maine,Aroostook/Downeast,5.66%,4.40%,7.27%,5
+Maine,Aroostook,5.50%,4.00%,7.53%,4
+Maine,Downeast,5.79%,4.27%,7.81%,4
+Maine,Central,6.00%,4.46%,8.02%,4
+Maine,Cumberland,6.16%,4.69%,8.06%,4
+Maine,Midcoast,5.46%,4.05%,7.32%,4
+Maine,Penquis,6.99%,5.28%,9.21%,4
+Maine,Western,6.48%,4.92%,8.47%,4
+Maine,York,6.43%,4.79%,8.60%,4
+Maryland,Maryland,4.46%,3.74%,5.32%,3
+Maryland,Anne Arundel,5.42%,4.04%,7.25%,4
+Maryland,Baltimore City,5.70%,4.20%,7.69%,4
+Maryland,Baltimore County,4.98%,3.72%,6.63%,4
+Maryland,Montgomery,3.36%,2.49%,4.52%,4
+Maryland,North Central,4.11%,3.05%,5.51%,4
+Maryland,Northeast,5.17%,3.78%,7.02%,4
+Maryland,Prince George’s,3.43%,2.55%,4.60%,4
+Maryland,South,4.55%,3.35%,6.14%,4
+Maryland,West,4.66%,3.50%,6.19%,4
+Massachusetts,Massachusetts,5.04%,4.25%,5.98%,3
+Massachusetts,Boston,5.38%,4.01%,7.20%,4
+Massachusetts,Central,5.69%,4.26%,7.56%,4
+Massachusetts,Metrowest,4.42%,3.30%,5.90%,4
+Massachusetts,Northeast,4.83%,3.59%,6.47%,4
+Massachusetts,Southeast,5.07%,3.83%,6.68%,4
+Massachusetts,Western,5.51%,4.09%,7.38%,4
+Michigan,Michigan,5.20%,4.55%,5.93%,3
+Michigan,Region 1,5.75%,4.23%,7.79%,4
+Michigan,Region 2,5.09%,3.82%,6.76%,4
+Michigan,Region 3,4.95%,3.87%,6.30%,4
+Michigan,Region 4,5.80%,4.54%,7.38%,4
+Michigan,Region 5,5.50%,4.45%,6.78%,4
+Michigan,Region 6,5.41%,4.17%,6.99%,4
+Michigan,Region 7,4.96%,3.80%,6.45%,4
+Michigan,Region 8,4.38%,3.39%,5.63%,4
+Michigan,Region 9,5.25%,4.04%,6.81%,4
+Michigan,Region 10,5.83%,4.39%,7.71%,4
+Minnesota,Minnesota,5.39%,4.63%,6.27%,3
+Minnesota,Regions 1 and 2,5.92%,4.69%,7.44%,5
+Minnesota,Region 1,5.79%,4.31%,7.74%,4
+Minnesota,Region 2,5.99%,4.50%,7.94%,4
+Minnesota,Regions 3 and 4,5.34%,4.19%,6.79%,5
+Minnesota,Region 3,5.90%,4.36%,7.92%,4
+Minnesota,Region 4,5.04%,3.71%,6.83%,4
+Minnesota,Regions 5 and 6,5.34%,4.30%,6.62%,5
+Minnesota,Region 5,5.19%,3.92%,6.86%,4
+Minnesota,Region 6,5.48%,4.15%,7.21%,4
+Minnesota,Region 7,5.33%,4.47%,6.35%,5
+Minnesota,Region 7A (Hennepin),5.57%,4.35%,7.11%,4
+Minnesota,Region 7B (Ramsey),6.71%,5.16%,8.68%,4
+Minnesota,Region 7C,4.48%,3.47%,5.77%,4
+Mississippi,Mississippi,5.17%,4.25%,6.28%,3
+Mississippi,Region 1,6.11%,4.57%,8.11%,4
+Mississippi,Region 2,4.47%,3.26%,6.09%,4
+Mississippi,Region 3,4.68%,3.44%,6.33%,4
+Mississippi,Region 4,4.48%,3.28%,6.09%,4
+Mississippi,Region 5,4.62%,3.31%,6.39%,4
+Mississippi,Region 6,4.96%,3.59%,6.81%,4
+Mississippi,Region 7,5.86%,4.35%,7.84%,4
+Missouri,Missouri,5.91%,5.02%,6.96%,3
+Missouri,Central,6.52%,4.96%,8.52%,4
+Missouri,Eastern,5.22%,4.21%,6.47%,5
+Missouri,Eastern (St. Louis City and County),5.15%,3.94%,6.69%,4
+Missouri,Eastern (excluding St. Louis),5.35%,4.01%,7.10%,4
+Missouri,Northwest,5.87%,4.67%,7.35%,5
+Missouri,Northwest (Jackson),5.92%,4.44%,7.86%,4
+Missouri,Northwest (excluding Jackson),5.82%,4.35%,7.75%,4
+Missouri,Southeast,6.22%,4.61%,8.34%,4
+Missouri,Southwest,6.75%,5.08%,8.93%,4
+Montana,Montana,5.68%,4.76%,6.77%,3
+Montana,Region 1,5.46%,4.01%,7.39%,4
+Montana,Region 2,6.36%,4.80%,8.39%,4
+Montana,Region 3,5.83%,4.46%,7.59%,4
+Montana,Region 4,5.65%,4.34%,7.33%,4
+Montana,Region 5,5.39%,4.14%,6.98%,4
+Nebraska,Nebraska,5.73%,4.83%,6.78%,3
+Nebraska,Regions 1 and 2,5.44%,4.26%,6.92%,5
+Nebraska,Region 1,5.53%,4.09%,7.44%,4
+Nebraska,Region 2,5.36%,3.91%,7.30%,4
+Nebraska,Region 3,5.92%,4.44%,7.86%,4
+Nebraska,Region 4,4.58%,3.36%,6.22%,4
+Nebraska,Region 5,5.88%,4.56%,7.55%,4
+Nebraska,Region 6,5.93%,4.70%,7.47%,4
+Nevada,Nevada,6.22%,5.15%,7.51%,3
+Nevada,Clark,5.99%,4.79%,7.47%,4
+Nevada,Northern,6.43%,4.63%,8.87%,4
+Nevada,Rural/Southern,5.85%,4.30%,7.92%,4
+Nevada,Washoe ,7.37%,5.65%,9.55%,4
+New Hampshire,New Hampshire,5.14%,4.29%,6.15%,3
+New Hampshire,Central,5.78%,4.62%,7.21%,4
+New Hampshire,Central 1,5.82%,4.42%,7.64%,5
+New Hampshire,Central 2,5.74%,4.27%,7.66%,5
+New Hampshire,Northern,5.18%,3.85%,6.93%,4
+New Hampshire,Southern,4.82%,3.87%,5.99%,4
+New Hampshire,Southern 1 (Rockingham),4.63%,3.47%,6.14%,5
+New Hampshire,Southern 2,4.94%,3.78%,6.44%,5
+New Jersey,New Jersey,4.38%,3.69%,5.19%,3
+New Jersey,Central,4.11%,3.12%,5.39%,4
+New Jersey,Metropolitan,3.68%,2.77%,4.87%,4
+New Jersey,Northern,4.62%,3.60%,5.91%,4
+New Jersey,Southern,5.14%,3.95%,6.68%,4
+New Mexico,New Mexico,5.04%,4.21%,6.02%,3
+New Mexico,Region 1,4.47%,3.36%,5.91%,4
+New Mexico,Region 2,3.40%,2.49%,4.64%,4
+New Mexico,Region 3 (Bernalillo),5.74%,4.48%,7.34%,4
+New Mexico,Region 4,5.91%,4.38%,7.93%,4
+New Mexico,Region 5,5.15%,4.00%,6.60%,5
+New Mexico,Region 5a,5.28%,3.83%,7.25%,4
+New Mexico,Region 5b (Dona Ana),5.02%,3.72%,6.74%,4
+New York,New York,4.32%,3.79%,4.93%,3
+New York,Region 1: Long Island,3.43%,2.64%,4.45%,4
+New York,Region 2: New York City,4.07%,3.42%,4.83%,5
+New York,Region 2A: Bronx,3.53%,2.64%,4.71%,4
+New York,Region 2B: Kings,4.21%,3.26%,5.43%,4
+New York,Region 2C: New York,4.82%,3.67%,6.29%,4
+New York,Region 2D: Queens,3.61%,2.72%,4.78%,4
+New York,Region 2E: Richmond,4.25%,3.21%,5.60%,4
+New York,Region 3: Mid-Hudson,3.40%,2.61%,4.41%,4
+New York,Region 4: Capital Region,5.46%,4.21%,7.05%,4
+New York,Region 5: Mohawk Valley,5.04%,3.78%,6.70%,4
+New York,Region 6: North Country,5.05%,3.78%,6.71%,4
+New York,Region 7: Tug Hill Seaway,6.78%,4.96%,9.21%,4
+New York,Region 8: Central,5.96%,4.60%,7.70%,4
+New York,Region 9: Southern Tier,5.98%,4.57%,7.79%,4
+New York,Region 10: Finger Lakes,4.73%,3.67%,6.06%,4
+New York,Region 11: Western,5.43%,4.24%,6.93%,4
+North Carolina,North Carolina,4.85%,4.18%,5.61%,3
+North Carolina,Alliance Health 1,4.92%,3.73%,6.47%,4
+North Carolina,Alliance Health 2,4.26%,3.23%,5.60%,4
+North Carolina,Cardinal Innovations Healthcare 1,5.02%,3.69%,6.78%,4
+North Carolina,Cardinal Innovations Healthcare 2,4.42%,3.31%,5.89%,4
+North Carolina,Cardinal Innovations Healthcare 3,4.44%,3.32%,5.90%,4
+North Carolina,Cardinal Innovations Healthcare 4,5.13%,3.82%,6.86%,4
+North Carolina,Eastpointe,4.47%,3.32%,6.00%,4
+North Carolina,Partners Behavioral Health Management,5.10%,3.89%,6.67%,4
+North Carolina,Sandhills Center 1,5.11%,3.77%,6.89%,4
+North Carolina,Sandhills Center 2,4.51%,3.40%,5.98%,4
+North Carolina,Trillium Health Resources 1,4.86%,3.66%,6.43%,4
+North Carolina,Trillium Health Resources 2,5.36%,4.02%,7.12%,4
+North Carolina,Vaya Health 1,5.25%,3.89%,7.04%,4
+North Carolina,Vaya Health 2,5.56%,4.09%,7.52%,4
+North Dakota,North Dakota,5.74%,4.86%,6.76%,3
+North Dakota,Badlands and West Central,5.09%,3.98%,6.48%,5
+North Dakota,Badlands,4.89%,3.61%,6.59%,4
+North Dakota,West Central,5.14%,3.89%,6.76%,4
+North Dakota,Lake Region,4.92%,3.60%,6.69%,4
+North Dakota,North Central,5.76%,4.33%,7.62%,4
+North Dakota,Northeast,6.15%,4.61%,8.14%,4
+North Dakota,Northwest,5.82%,4.35%,7.76%,4
+North Dakota,South Central,4.58%,3.37%,6.21%,4
+North Dakota,Southeast,6.58%,5.16%,8.35%,4
+Ohio,Ohio,6.60%,5.88%,7.40%,3
+Ohio,"Boards 2, 46, 55, and 68",6.24%,4.68%,8.27%,4
+Ohio,"Boards 3, 52, and 85",5.45%,4.15%,7.12%,4
+Ohio,Boards 4 and 78,6.34%,4.81%,8.32%,4
+Ohio,Boards 5 and 60,7.39%,5.59%,9.72%,4
+Ohio,"Boards 7, 15, 41, 79, and 84",6.04%,4.52%,8.03%,4
+Ohio,"Boards 8, 13, and 83",6.53%,5.02%,8.45%,4
+Ohio,Board 9 (Butler),6.64%,5.09%,8.62%,4
+Ohio,Board 12,7.19%,5.55%,9.28%,4
+Ohio,Boards 18 and 47,6.18%,4.88%,7.80%,4
+Ohio,"Boards 20, 32, 54, and 69",6.20%,4.67%,8.19%,4
+Ohio,"Boards 21, 39, 51, 70, and 80",5.66%,4.32%,7.38%,4
+Ohio,"Boards 22, 74, and 87",6.52%,4.95%,8.54%,4
+Ohio,Boards 23 and 45,7.38%,5.64%,9.61%,4
+Ohio,Board 25 (Franklin),7.58%,6.09%,9.40%,4
+Ohio,"Boards 27, 71, and 73",6.38%,4.77%,8.48%,4
+Ohio,"Boards 28, 43, and 67",6.59%,5.02%,8.61%,4
+Ohio,Board 31 (Hamilton),7.08%,5.54%,9.01%,4
+Ohio,Board 48 (Lucas),6.64%,5.00%,8.76%,4
+Ohio,Boards 50 and 76,6.09%,4.65%,7.96%,4
+Ohio,Board 57 (Montgomery),7.09%,5.49%,9.11%,4
+Ohio,Board 77 (Summit),6.62%,5.11%,8.54%,4
+Oklahoma,Oklahoma,6.32%,5.36%,7.44%,3
+Oklahoma,Central,6.66%,5.08%,8.69%,4
+Oklahoma,East Central,6.22%,4.65%,8.28%,4
+Oklahoma,Northeast,6.01%,4.56%,7.89%,4
+Oklahoma,Northwest and Southwest,6.08%,4.61%,7.98%,4
+Oklahoma,Oklahoma County,6.13%,4.69%,7.98%,4
+Oklahoma,Southeast,7.35%,5.54%,9.69%,4
+Oklahoma,Tulsa County,5.93%,4.45%,7.86%,4
+Oregon,Oregon,6.79%,5.80%,7.93%,3
+Oregon,Region 1 (Multnomah),7.85%,6.10%,10.06%,4
+Oregon,Region 2 (Washington),5.93%,4.49%,7.79%,4
+Oregon,Region 3,6.07%,4.60%,7.97%,4
+Oregon,Region 4,6.93%,5.15%,9.28%,4
+Oregon,Region 5 ,7.62%,5.93%,9.74%,4
+Oregon,Region 6 ,6.48%,4.82%,8.67%,4
+Oregon,Region 7,5.93%,4.49%,7.80%,4
+Pennsylvania,Pennsylvania,5.01%,4.41%,5.70%,3
+Pennsylvania,Region 1 (Allegheny),5.71%,4.40%,7.38%,4
+Pennsylvania,"Regions 3, 8, 9, and 51",4.78%,3.58%,6.35%,4
+Pennsylvania,"Regions 4, 11, 37, and 49",4.67%,3.56%,6.11%,4
+Pennsylvania,"Regions 5, 18, 23, 24, and 46",5.20%,3.95%,6.82%,4
+Pennsylvania,"Regions 6, 12, 16, 31, 35, 45, and 47",5.59%,4.33%,7.19%,4
+Pennsylvania,"Regions 7, 13, 20, and 33",4.56%,3.64%,5.69%,4
+Pennsylvania,"Regions 10, 15, 27, 32, 43, and 44",4.93%,3.70%,6.54%,4
+Pennsylvania,Regions 17 and 21,5.96%,4.51%,7.85%,4
+Pennsylvania,"Regions 19, 26, 28, and 42",4.32%,3.35%,5.56%,4
+Pennsylvania,"Regions 22, 38, 40, 41, and 48",4.85%,3.63%,6.45%,4
+Pennsylvania,Regions 29 and 34,4.82%,3.66%,6.32%,4
+Pennsylvania,Regions 30 and 50,5.79%,4.33%,7.69%,4
+Pennsylvania,Region 36 (Philadelphia),5.51%,4.17%,7.25%,4
+Rhode Island,Rhode Island,5.70%,4.76%,6.82%,3
+Rhode Island,Region 1: Southern Providence County,5.74%,4.28%,7.66%,4
+Rhode Island,Region 2: Northern Providence County/Blackstone Valley,5.83%,4.32%,7.81%,4
+Rhode Island,Region 3: Providence,6.71%,5.02%,8.91%,4
+Rhode Island,Region 4: Kent County,5.93%,4.43%,7.88%,4
+Rhode Island,Region 5: East Bay,5.25%,3.85%,7.13%,4
+Rhode Island,Region 6: Newport County,4.81%,3.53%,6.54%,4
+Rhode Island,Region 7: South County,4.58%,3.39%,6.17%,4
+South Carolina,South Carolina,5.54%,4.53%,6.76%,3
+South Carolina,Region 1,5.26%,3.97%,6.95%,4
+South Carolina,Region 2,5.49%,4.15%,7.22%,4
+South Carolina,Region 3,5.44%,3.92%,7.51%,4
+South Carolina,Region 4,5.96%,4.41%,8.02%,4
+South Dakota,South Dakota,5.91%,5.02%,6.96%,3
+South Dakota,Region 1,6.78%,5.18%,8.82%,4
+South Dakota,Region 2,5.19%,3.86%,6.93%,4
+South Dakota,Region 3,5.71%,4.39%,7.39%,4
+South Dakota,Region 4,5.32%,3.99%,7.07%,4
+South Dakota,Region 5,5.82%,4.55%,7.43%,4
+Tennessee,Tennessee,5.85%,4.89%,6.97%,3
+Tennessee,Region 1,5.92%,4.36%,8.00%,4
+Tennessee,Region 2,6.28%,4.78%,8.22%,4
+Tennessee,Region 3,6.11%,4.63%,8.02%,4
+Tennessee,Region 4 (Davidson),7.18%,5.39%,9.50%,4
+Tennessee,Region 5,5.67%,4.29%,7.47%,4
+Tennessee,Region 6,5.59%,4.15%,7.47%,4
+Tennessee,Region 7 (Shelby),4.42%,3.24%,6.00%,4
+Texas,Texas,4.37%,3.86%,4.96%,3
+Texas,Region 1,5.38%,4.05%,7.11%,4
+Texas,Region 2,5.65%,4.12%,7.71%,4
+Texas,Region 3,4.15%,3.46%,4.98%,4
+Texas,Region 3a,3.88%,3.07%,4.90%,5
+Texas,Region 3bc,4.65%,3.67%,5.86%,5
+Texas,Region 4,5.22%,3.87%,7.02%,4
+Texas,Region 5,4.52%,3.35%,6.06%,4
+Texas,Region 6,4.20%,3.40%,5.17%,4
+Texas,Region 6a,4.14%,3.30%,5.19%,5
+Texas,Region 6bc,4.66%,3.55%,6.09%,5
+Texas,Region 7,4.90%,4.01%,5.97%,4
+Texas,Region 7a,4.57%,3.52%,5.92%,5
+Texas,Region 7bcd,5.53%,4.25%,7.16%,5
+Texas,Region 8,4.50%,3.47%,5.81%,4
+Texas,Region 9,4.77%,3.57%,6.34%,4
+Texas,Region 10,3.99%,2.93%,5.42%,4
+Texas,Region 11,3.50%,2.72%,4.50%,4
+Texas,Region 11abd,3.52%,2.59%,4.78%,5
+Texas,Region 11c (Hidalgo),3.47%,2.53%,4.75%,5
+Utah,Utah,6.85%,5.87%,7.97%,3
+Utah,"Bear River, Northeastern, Summit, Tooele, and Wasatch",6.44%,5.15%,8.02%,5
+Utah,Bear River,7.36%,5.54%,9.72%,4
+Utah,"Northeastern, Summit, Tooele, and Wasatch",5.59%,4.16%,7.47%,4
+Utah,"Central, Four Corners, San Juan, and Southwest",5.77%,4.53%,7.32%,5
+Utah,"Central, Four Corners, and San Juan",5.64%,4.17%,7.58%,4
+Utah,Southwest,5.84%,4.34%,7.82%,4
+Utah,Davis County,7.31%,5.50%,9.64%,4
+Utah,Salt Lake County,7.14%,5.70%,8.91%,4
+Utah,Utah County,7.09%,5.58%,8.97%,4
+Utah,"Weber, Morgan",6.58%,5.02%,8.58%,4
+Vermont,Vermont,5.93%,4.99%,7.05%,3
+Vermont,Champlain Valley,5.99%,4.70%,7.60%,4
+Vermont,Rural Northeast,5.62%,4.31%,7.31%,4
+Vermont,Rural Southeast,5.77%,4.35%,7.61%,4
+Vermont,Rural Southwest,6.49%,4.94%,8.49%,4
+Virginia,Virginia,4.62%,3.95%,5.40%,3
+Virginia,Region 1,4.81%,3.72%,6.20%,4
+Virginia,Region 2,3.52%,2.66%,4.64%,4
+Virginia,Region 3,5.41%,4.16%,7.00%,4
+Virginia,Region 4,5.04%,3.83%,6.61%,4
+Virginia,Region 5,5.10%,4.01%,6.47%,4
+Washington,Washington,6.19%,5.27%,7.26%,3
+Washington,Great Rivers,6.26%,4.64%,8.41%,4
+Washington,Greater Columbia,6.01%,4.49%,7.99%,4
+Washington,King,5.68%,4.43%,7.27%,4
+Washington,North Central,5.58%,4.14%,7.50%,4
+Washington,North Sound,5.82%,4.42%,7.62%,4
+Washington,Pierce,6.67%,4.95%,8.94%,4
+Washington,Salish,6.38%,4.75%,8.51%,4
+Washington,Southwest Washington,6.39%,4.80%,8.46%,4
+Washington,Spokane,7.74%,5.80%,10.27%,4
+Washington,Thurston-Mason,7.15%,5.34%,9.52%,4
+West Virginia,West Virginia,6.31%,5.29%,7.50%,3
+West Virginia,Region I,5.43%,3.98%,7.39%,4
+West Virginia,Region II,6.36%,4.76%,8.44%,4
+West Virginia,Region III,6.21%,4.55%,8.42%,4
+West Virginia,Region IV,6.06%,4.58%,7.97%,4
+West Virginia,Region V,7.04%,5.42%,9.10%,4
+West Virginia,Region VI,5.85%,4.39%,7.76%,4
+Wisconsin,Wisconsin,5.38%,4.54%,6.37%,3
+Wisconsin,Milwaukee,6.71%,5.07%,8.82%,4
+Wisconsin,Northeastern,4.82%,3.62%,6.38%,4
+Wisconsin,Northern,5.01%,3.70%,6.75%,4
+Wisconsin,Southeastern,4.79%,3.62%,6.33%,4
+Wisconsin,Southern,5.52%,4.20%,7.21%,4
+Wisconsin,Western,5.62%,4.23%,7.44%,4
+Wyoming,Wyoming,5.60%,4.71%,6.64%,3
+Wyoming,Judicial District 1 (Laramie),6.30%,4.78%,8.25%,4
+Wyoming,Judicial District 2,7.12%,5.35%,9.42%,4
+Wyoming,Judicial District 3,4.45%,3.28%,6.01%,4
+Wyoming,Judicial District 4,4.90%,3.63%,6.59%,4
+Wyoming,Judicial District 5,5.07%,3.70%,6.91%,4
+Wyoming,Judicial District 6,5.48%,4.07%,7.33%,4
+Wyoming,Judicial District 7 (Natrona),6.30%,4.73%,8.34%,4
+Wyoming,Judicial District 8,5.32%,3.84%,7.32%,4
+Wyoming,Judicial District 9,4.98%,3.65%,6.76%,4

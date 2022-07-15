@@ -4,6 +4,7 @@ library(stringr)
 library(zipcodeR)
 
 IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
+IVRS_County_Office <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
 county_pop <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
 
 
@@ -144,6 +145,10 @@ county_pop <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check
 # split to get Year from Category
     county_pop_transformed <- county_pop_transformed %>%
       separate(Census,c('Census', 'Year'),sep="(?<=\\w)(?=[0-9]{4})")
+
+# remove numbers from office areas
+    IVRS_data_transformed$`Office Area` = substr(IVRS_data_transformed$`Office Area`,1,nchar(IVRS_data_transformed$`Office Area`)-6)
+
     
 # write to file
     write.csv(IVRS_data_transformed, "C:/Users/joelm/Documents/GitHub/DHR-Disabilities/Data Exploration/Datasets/Cleaned_Closed_Iowa_Vocational_Rehabilitation_Cases.csv", row.names = FALSE)
