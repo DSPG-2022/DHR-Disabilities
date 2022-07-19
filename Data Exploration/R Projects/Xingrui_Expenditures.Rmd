@@ -1,0 +1,85 @@
+---
+title: "Xingrui_Expenditures"
+author: "Xingrui Xue"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(openxlsx)
+library(stringr)
+```
+
+```{r}
+budgeted <- read.csv("County_Budgeted_Expenditures_By_Service_Area_By_Fiscal_Year.csv")
+actual <- read.csv("County_Actual_Expenditures_by_Service_Area_by_Fiscal_Year.csv")
+```
+
+Gap Between Budgeted and Actual Expenditures for Physical Health & Social Services (2010-2021)
+```{r}
+PhysicalBudgeted <- budgeted %>%
+  select(c(2, 4, 6)) %>%
+  filter(Fiscal.Year.Ending %in% c(2010:2021)) %>%
+  arrange(Fiscal.Year.Ending, County.Name)
+
+PhysicalActual <- actual %>%
+  select(c(1, 3, 5)) %>%
+  filter(FISCAL.YEAR %in% c(2010:2021)) %>%
+  arrange(FISCAL.YEAR, County)
+
+PhysicalGap <- cbind(PhysicalActual, PhysicalBudgeted) %>%
+  select(-c(4, 5)) %>%
+  mutate(County = toupper(County),
+         "Gap (Actual-Budgeted)" = PHYSICAL.HEALTH.SOCIAL.SERVICES - Physical.Health...Social.Services) %>%
+  select(-c(Physical.Health...Social.Services, PHYSICAL.HEALTH.SOCIAL.SERVICES)) %>%
+  pivot_wider(names_from = FISCAL.YEAR,
+              values_from = "Gap (Actual-Budgeted)")
+
+write.xlsx(PhysicalGap, "PhysicalGap.xlsx")
+```
+
+Gap Between Budgeted and Actual Expenditures for MENTAL HEALTH, ID & DD (2010-2021)
+```{r}
+MentalBudgeted <- budgeted %>%
+  select(c(2, 4, 7)) %>%
+  filter(Fiscal.Year.Ending %in% c(2010:2021)) %>%
+  arrange(Fiscal.Year.Ending, County.Name)
+
+MentalActual <- actual %>%
+  select(c(1, 3, 6)) %>%
+  filter(FISCAL.YEAR %in% c(2010:2021)) %>%
+  arrange(FISCAL.YEAR, County)
+
+MentalGap <- cbind(MentalActual, MentalBudgeted) %>%
+  select(-c(4, 5)) %>%
+  mutate(County = toupper(County),
+         "Gap (Actual-Budgeted)" = MENTAL.HEALTH..ID...DD - Mental.Health.MR..DD) %>%
+  select(-c(MENTAL.HEALTH..ID...DD, Mental.Health.MR..DD)) %>%
+  pivot_wider(names_from = FISCAL.YEAR,
+              values_from = "Gap (Actual-Budgeted)")
+
+write.xlsx(MentalGap, "MentalGap.xlsx")
+```
+
+Actual mean expenditures and disabled population for Physical Health & Social Services from 2016-2020
+```{r}
+DisabledPop <- read.xlsx("DisabledPop.xlsx", sheet = 1)
+
+PhysicalActual1 <- actual %>%
+  select(c(1, 3, 5)) %>%
+  filter(FISCAL.YEAR %in% c(2016:2020)) %>%
+  mutate(County = toupper(County)) %>%
+  arrange(FISCAL.YEAR, County)
+
+PhysicalActual1 <- aggregate(PHYSICAL.HEALTH.SOCIAL.SERVICES ~ County, data = PhysicalActual1, mean)
+
+DisabledPop <- DisabledPop %>% select(1, 5, 6)
+
+PhysicalActual1_DisabledPop <- cbind(DisabledPop, PhysicalActual1) %>%
+  select(-4)
+
+write.xlsx(PhysicalActual1_DisabledPop, "PhysicalActual1_DisabledPop.xlsx")
+
+view(PhysicalActual1)
+view(PhysicalActual1_DisabledPop)
+```

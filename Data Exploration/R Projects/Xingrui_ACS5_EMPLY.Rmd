@@ -4,10 +4,6 @@ author: "Xingrui Xue"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ```{r}
 library(tidycensus)
 library(tidyverse)
@@ -91,6 +87,33 @@ population <- full_join(population, pop)
 
 # View(population)
 # write.xlsx(population, "Population.xlsx")
+```
+1.5 total with a disability / total population = percent of total population with a disability 
+```{r}
+Total <- c(Total = "B18101_001")
+DisabledMale <- c("Under 5 years" = "B18101_004", "5 to 17 years" = "B18101_007", "18 to 34 years" = "B18101_010", "35 to 64 years" = "B18101_013", "65 to 74 years" = "B18101_016", "75 years and over" = "B18101_019")
+DisabledFemale <- c("Under 5 years" = "B18101_023", "5 to 17 years" = "B18101_026", "18 to 34 years" = "B18101_029", "35 to 64 years" = "B18101_032", "65 to 74 years" = "B18101_035", "75 years and over" = "B18101_035")
+
+DisabledPop <- get_acs(geography = "county",
+                       variables = c(Total, DisabledMale, DisabledFemale),
+                       year = 2020,
+                       state = "IA")
+
+DisabledPop <- DisabledPop %>%
+  group_by(NAME, variable) %>%
+  summarise(estimate = sum(estimate),
+            moe = sum(moe)) %>%
+  pivot_wider(names_from = variable, values_from = c(estimate, moe))
+
+DisabledPop$NAME <- gsub(" County, Iowa", "", DisabledPop$NAME)
+names(DisabledPop)[names(DisabledPop) == "NAME"] <- "County"
+
+# write.xlsx(DisabledPop, "DisabledPop.xlsx")
+```
+
+1.6 16-64 with a disability / total with a disability = percent of disabled population in the working age group
+```{r}
+
 ```
 
 2.1 Population of Iowans 18-64 years with disabilities by age groups
@@ -468,5 +491,5 @@ WageClosure <- wage %>% filter(Client.State == "IA") %>%
 
 WageEarnings <- left_join(WageClosure, earnings, by = c("Client.County" = "County"))
 
-write.xlsx(WageEarnings, "IVRS Median Closure Wage and ACS Median Earnings.xlsx")
+# write.xlsx(WageEarnings, "IVRS Median Closure Wage and ACS Median Earnings.xlsx")
 ```
