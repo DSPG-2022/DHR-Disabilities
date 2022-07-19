@@ -216,6 +216,10 @@ all_emp_stat$County<-gsub("County, Iowa","",as.character(all_emp_stat$County))
 #Joining table to Metropolitan table
 new_all_emp_stat = merge(x = all_emp_stat, y = new_table, by = "GEOID", all.x = TRUE)
 View(new_all_emp_stat)
+
+#Joining OASDI table to Metropolitan Table
+oasdi_metro_stat = merge(x = oasdi_table, y = new_table, by = "GEOID", all.x =  TRUE)
+view(oasdi_metro_stat)
 ```
 
 ```{r}
@@ -235,6 +239,15 @@ View(merged_oasdi_amount_table)
 ```{r}
 merged_ssi_table = merge(x = all_emp_stat, y = ssi_table, by = "GEOID", all.x = TRUE)
 View(merged_ssi_table)
+
+mean(all_emp_stat$percent_in_labor_force_employed_disabled)
+#mean(all_emp_stat$percent_in_labor_force_unemployed_disabled)
+
+#merge SSI w Metro data
+
+SSI_merge_Metro = merge(x = ssi_table, y = new_table, by = "GEOID", all.x = TRUE)
+
+oasdi_amount_pop = merge(x = oasdi_amount_table, y = pop_table, by = "GEOID", all.x = TRUE)
 ```
 
 
@@ -249,4 +262,11 @@ write.csv(merged_oasdi_table, "S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_OASDI
 write.csv(merged_oasdi_amount_table, "S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_OASDI_amount_table.csv", row.names = FALSE)
 
 write.csv(merged_ssi_table, "S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_SSI_table.csv", row.names = FALSE)
+
+write.csv(oasdi_metro_stat, "S:/misc/clg/DSPG2022/ProjectA/Sanika-oasdi_metro_stat.csv", row.names = FALSE)
+
+write.csv(SSI_merge_Metro, "S:/misc/clg/DSPG2022/ProjectA/Sanika-SSI_metro_stat.csv", row.names = FALSE)
+
+write.csv(oasdi_amount_pop, "S:/misc/clg/DSPG2022/ProjectA/Sanika-OASDI_amount_pop.csv", row.names = FALSE)
+
 ```
