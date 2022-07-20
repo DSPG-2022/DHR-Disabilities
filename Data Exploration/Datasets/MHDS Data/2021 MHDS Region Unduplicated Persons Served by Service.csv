@@ -1,0 +1,489 @@
+Region,Year,ID,Category,Sub Category 1,Sub Category 2,MI (40) (Adult),MI (40) (Child),ID(42) (Adult),ID(42) (Child),DD(43) (Adult),DD(43) (Child),BI (47) (Adult),BI (47) (Child),Other (Adult),Other (Child),Total
+Care Connections of Northern Iowa,2021,42305,Core,Treatment,Psychotherapeutic Treatment - Outpatient,5,,,,,,,,,,5
+Care Connections of Northern Iowa,2021,42306,Core,Treatment,Psychotherapeutic Treatment - Medication Prescribing,6,,,,,,,,,,6
+Care Connections of Northern Iowa,2021,71319,Core,Treatment,State MHI Inpatient - Per diem charges,1,,,,,,,,,,1
+Care Connections of Northern Iowa,2021,44301,Core,Basic Crisis Response,Crisis Evaluation,9,9,,,,,,,,,18
+Care Connections of Northern Iowa,2021,44307,Core,Basic Crisis Response,Mobile Response,17,11,,,,,,,,,28
+Care Connections of Northern Iowa,2021,32325,Core,Support for Community Living,Support Services - Respite Services,7,3,,,,,,,,,10
+Care Connections of Northern Iowa,2021,32329,Core,Support for Community Living,Support Services - Supported Community Living,13,1,3,,,,,,,,17
+Care Connections of Northern Iowa,2021,50367,Core,Support For Employment,Day Habilitation,3,,2,,,,,,,,5
+Care Connections of Northern Iowa,2021,50368,Core,Support For Employment,Voc/Day - Individual Supported Employment,7,,2,,,,,,,,9
+Care Connections of Northern Iowa,2021,74XXX,Mandated,,CommitmentRelated (except 301),105,4,,,,,,,,,109
+Care Connections of Northern Iowa,2021,75XXX,Mandated,,Mental health advocate,86,3,,,,,,,,,89
+Care Connections of Northern Iowa,2021,44346,Core Plus,Justice System Involved Services,Crisis Services - Telephone Crisis Service,1,1,,,,,,,,,2
+Care Connections of Northern Iowa,2021,46305,Core Plus,Justice System Involved Services,Mental Health Services in Jails,64,,,,,,,,,,64
+Care Connections of Northern Iowa,2021,22XXX,Community Living Support Services,,Services management,136,27,,,,,,,,,163
+Care Connections of Northern Iowa,2021,31XXX,Community Living Support Services,,Transportation,17,2,,,,,,,,,19
+Care Connections of Northern Iowa,2021,33340,Community Living Support Services,,Basic Needs - Rent Payments,2,,,,,,,,,,2
+Care Connections of Northern Iowa,2021,33399,Community Living Support Services,,Basic Needs - Other,3,,,,,,,,,,3
+Care Connections of Northern Iowa,2021,41307,Community Living Support Services,,Physiological Treatment - In-Home Nursing,2,,,,,,,,,,2
+Care Connections of Northern Iowa,2021,46306,Community Living Support Services,,Prescription Medication (Psychiatric Medications in Jail),43,1,,,,,,,,,44
+Care Connections of Northern Iowa,2021,64XXX,Congregate Services,,RCF-6 and over beds,15,1,,,,,,,,,16
+Care Connections of Northern Iowa,2021,11XXX,Administration,,Direct Administration,,,,,,,,,1,,1
+Central Iowa Community Services,2021,42305,Core,Treatment,Psychotherapeutic Treatment - Outpatient,52,4,,,,,,,,,56
+Central Iowa Community Services,2021,42306,Core,Treatment,Psychotherapeutic Treatment - Medication Prescribing,48,,,,,,,,,,48
+Central Iowa Community Services,2021,71319,Core,Treatment,State MHI Inpatient - Per diem charges,11,,,,,,,,,,11
+Central Iowa Community Services,2021,73319,Core,Treatment,Other Priv./Public Hospitals - Inpatient per diem charges,3,,,,,,,,,,3
+Central Iowa Community Services,2021,44301,Core,Basic Crisis Response,Crisis Evaluation,829,292,11,,1,,1,,,,1134
+Central Iowa Community Services,2021,44312,Core,Basic Crisis Response,Crisis Stabilization Community Based Services (CSCBS),1,,,,,,,,,,1
+Central Iowa Community Services,2021,44313,Core,Basic Crisis Response,Crisis Stabilization Residential Service (CSRS),9,6,,,,,,,,,15
+Central Iowa Community Services,2021,44396,Core,Basic Crisis Response,Access Center start-up/sustainability/coordination,1,,,,,,,,,,1
+Central Iowa Community Services,2021,32329,Core,Support for Community Living,Support Services - Supported Community Living,71,1,17,,25,,4,,,,118
+Central Iowa Community Services,2021,50362,Core,Support For Employment,Voc/Day - Prevocational Services,,,1,,1,,1,,,,3
+Central Iowa Community Services,2021,50367,Core,Support For Employment,Day Habilitation,3,,6,,8,,4,,,,21
+Central Iowa Community Services,2021,50368,Core,Support For Employment,Voc/Day - Individual Supported Employment,13,,11,,20,,2,,,,46
+Central Iowa Community Services,2021,50369,Core,Support For Employment,Voc/Day - Group Supported Employment,,,,,1,,,,,,1
+Central Iowa Community Services,2021,42398,Core,Core Evidence Based Treatment,Assertive Community Treatment (ACT),18,,,,,,,,,,18
+Central Iowa Community Services,2021,74XXX,Mandated,,CommitmentRelated (except 301),427,63,2,1,,,,,,,493
+Central Iowa Community Services,2021,75XXX,Mandated,,Mental health advocate,436,44,,,,,,,,,480
+Central Iowa Community Services,2021,25XXX,Core Plus,Justice System Involved Services,Coordination services,168,,,,,,,,,,168
+Central Iowa Community Services,2021,46305,Core Plus,Justice System Involved Services,Mental Health Services in Jails,373,1,,,,,,,,,374
+Central Iowa Community Services,2021,46399,Core Plus,Justice System Involved Services,Justice System - Involved Services - Other,5,,,,,,,,,,5
+Central Iowa Community Services,2021,42366,Core Plus,Additional Core Evidence Based Treatment,Psychotherapeutic Treatment - Social Support Services,355,2,197,1,16,,3,,,,574
+Central Iowa Community Services,2021,42397,Core Plus,Additional Core Evidence Based Treatment,Psychotherapeutic Treatment - Psychiatric Rehabilitation,7,1,,,,,,,,,8
+Central Iowa Community Services,2021,22XXX,Community Living Support Services,,Services management,2098,379,40,2,39,,4,,,,2562
+Central Iowa Community Services,2021,31XXX,Community Living Support Services,,Transportation,252,122,3,,5,,,,,,382
+Central Iowa Community Services,2021,32327,Community Living Support Services,,Support Services - Representative Payee,26,,5,,3,,,,,,34
+Central Iowa Community Services,2021,33340,Community Living Support Services,,Basic Needs - Rent Payments,32,1,1,,,,,,,,34
+Central Iowa Community Services,2021,33399,Community Living Support Services,,Basic Needs - Other,21,,1,,1,,,,,,23
+Central Iowa Community Services,2021,41306,Community Living Support Services,,Physiological Treatment - Prescription Medicine/Vaccines,4,,,,,,,,,,4
+Central Iowa Community Services,2021,42310,Community Living Support Services,,Psychotherapeutic Treatment - Transitional Living Program,30,,,,,,,,,,30
+Central Iowa Community Services,2021,46306,Community Living Support Services,,Prescription Medication (Psychiatric Medications in Jail),340,1,,,,,,,,,341
+Central Iowa Community Services,2021,64XXX,Congregate Services,,RCF-6 and over beds,28,,,,,,,,,,28
+Cross Rural Offices of Social Services,2021,71319,Core,Treatment,State MHI Inpatient - Per diem charges,4,,,,,,,,,,4
+Cross Rural Offices of Social Services,2021,44301,Core,Basic Crisis Response,Crisis Evaluation,216,113,,,,,,,,,329
+Cross Rural Offices of Social Services,2021,44302,Core,Basic Crisis Response,23 Hour Observation and Holding,5,1,,,,,,,,,6
+Cross Rural Offices of Social Services,2021,44305,Core,Basic Crisis Response,24 Hour Crisis Response,1,1,,,,,,,,,2
+Cross Rural Offices of Social Services,2021,44307,Core,Basic Crisis Response,Mobile Response,35,5,,,,,,,,,40
+Cross Rural Offices of Social Services,2021,44312,Core,Basic Crisis Response,Crisis Stabilization Community Based Services (CSCBS),1,,,,,,,,,,1
+Cross Rural Offices of Social Services,2021,44313,Core,Basic Crisis Response,Crisis Stabilization Residential Service (CSRS),16,1,,,,,,,,,17
+Cross Rural Offices of Social Services,2021,32329,Core,Support for Community Living,Support Services - Supported Community Living,5,,2,,1,,,,,,8
+Cross Rural Offices of Social Services,2021,50368,Core,Support For Employment,Voc/Day - Individual Supported Employment,,,,,1,,,,,,1
+Cross Rural Offices of Social Services,2021,24376,Core,Service Coordination,Health Homes Coordination - Coordination Services,1,,,,,,,,,,1
+Cross Rural Offices of Social Services,2021,63309,Core,Sub-Acute Services,Sub Acute Services (1-5 Beds),1,,,,,,,,,,1
+Cross Rural Offices of Social Services,2021,64309,Core,Sub-Acute Services,Sub Acute Services (6+ Beds),5,,,,,,,,,,5
+Cross Rural Offices of Social Services,2021,32396,Core,Core Evidence Based Treatment,Supported Housing,26,,,,,,,,,,26
+Cross Rural Offices of Social Services,2021,42398,Core,Core Evidence Based Treatment,Assertive Community Treatment (ACT),2,,,,,,,,,,2
+Cross Rural Offices of Social Services,2021,74XXX,Mandated,,CommitmentRelated (except 301),92,,,,,,,,,,92
+Cross Rural Offices of Social Services,2021,75XXX,Mandated,,Mental health advocate,49,1,,,,,,,,,50
+Cross Rural Offices of Social Services,2021,46305,Core Plus,Justice System Involved Services,Mental Health Services in Jails,132,,,,,,,,,,132
+Cross Rural Offices of Social Services,2021,22XXX,Community Living Support Services,,Services management,303,22,,,,,,,,,325
+Cross Rural Offices of Social Services,2021,31XXX,Community Living Support Services,,Transportation,15,1,,,1,,,,,,17
+Cross Rural Offices of Social Services,2021,33340,Community Living Support Services,,Basic Needs - Rent Payments,2,,,,,,,,,,2
+Cross Rural Offices of Social Services,2021,33345,Community Living Support Services,,Basic Needs - Ongoing Rent Subsidy,26,,,,,,,,,,26
+Cross Rural Offices of Social Services,2021,33399,Community Living Support Services,,Basic Needs - Other,1,,,,,,,,,,1
+Cross Rural Offices of Social Services,2021,41305,Community Living Support Services,,Physiological Treatment - Outpatient,9,1,,,,,,,,,10
+Cross Rural Offices of Social Services,2021,41306,Community Living Support Services,,Physiological Treatment - Prescription Medicine/Vaccines,1,,,,,,,,,,1
+Cross Rural Offices of Social Services,2021,63XXX,Community Living Support Services,,RCF 1-5 beds,1,,,,,,,,,,1
+Cross Rural Offices of Social Services,2021,64329,Congregate Services,,Comm Based Settings (6+ Beds) - Supported Community Living,,,2,,,,,,,,2
+Cross Rural Offices of Social Services,2021,64XXX,Congregate Services,,RCF-6 and over beds,8,,,,,,,,,,8
+County Social Services,2021,42305,Core,Treatment,Psychotherapeutic Treatment - Outpatient,376,9,1,,,1,,,,,387
+County Social Services,2021,42306,Core,Treatment,Psychotherapeutic Treatment - Medication Prescribing,535,6,5,,2,,,,,,548
+County Social Services,2021,43301,Core,Treatment,Evaluation (Non Crisis) - Assessment and Evaluation,4,,33,,1,,,,,,38
+County Social Services,2021,71319,Core,Treatment,State MHI Inpatient - Per diem charges,28,,2,,,,,,,,30
+County Social Services,2021,73319,Core,Treatment,Other Priv./Public Hospitals - Inpatient per diem charges,3,,,,,,,,,,3
+County Social Services,2021,32322,Core,Basic Crisis Response,Support Services - Personal Emergency Response System,1,,,,,,,,,,1
+County Social Services,2021,44301,Core,Basic Crisis Response,Crisis Evaluation,753,289,29,2,4,1,,,,,1078
+County Social Services,2021,44307,Core,Basic Crisis Response,Mobile Response,175,66,7,1,,,,,,,249
+County Social Services,2021,44313,Core,Basic Crisis Response,Crisis Stabilization Residential Service (CSRS),92,32,5,,2,2,,,,,133
+County Social Services,2021,44396,Core,Basic Crisis Response,Access Center start-up/sustainability/coordination,60,1,,,,,,,,,61
+County Social Services,2021,32320,Core,Support for Community Living,Support Services - Home Health Aides,1,,1,,,,,,,,2
+County Social Services,2021,32325,Core,Support for Community Living,Support Services - Respite Services,,,,,,,1,,,,1
+County Social Services,2021,32329,Core,Support for Community Living,Support Services - Supported Community Living,120,1,43,,25,,5,,,,194
+County Social Services,2021,50362,Core,Support For Employment,Voc/Day - Prevocational Services,,,,,5,,,,,,5
+County Social Services,2021,50367,Core,Support For Employment,Day Habilitation,6,,11,1,8,,2,,,,28
+County Social Services,2021,50368,Core,Support For Employment,Voc/Day - Individual Supported Employment,8,,15,,20,1,1,,,,45
+County Social Services,2021,50369,Core,Support For Employment,Voc/Day - Group Supported Employment,2,,2,,8,,2,,,,14
+County Social Services,2021,45366,Core,Recovery Services,Peer Family Support - Peer Support Services,12,,,,,,,,,,12
+County Social Services,2021,24376,Core,Service Coordination,Health Homes Coordination - Coordination Services,1,,,,,,,,,,1
+County Social Services,2021,64309,Core,Sub-Acute Services,Sub Acute Services (6+ Beds),40,1,4,,,,,,,,45
+County Social Services,2021,42398,Core,Core Evidence Based Treatment,Assertive Community Treatment (ACT),18,,,,,,,,,,18
+County Social Services,2021,74XXX,Mandated,,CommitmentRelated (except 301),766,90,22,,4,,1,,,,883
+County Social Services,2021,75XXX,Mandated,,Mental health advocate,969,67,4,,,,,,,,1040
+County Social Services,2021,25XXX,Core Plus,Justice System Involved Services,Coordination services,245,4,3,,2,,,,,,254
+County Social Services,2021,46305,Core Plus,Justice System Involved Services,Mental Health Services in Jails,654,4,4,,3,,,,,,665
+County Social Services,2021,42366,Core Plus,Additional Core Evidence Based Treatment,Psychotherapeutic Treatment - Social Support Services,91,,3,,,,,,,,94
+County Social Services,2021,22XXX,Community Living Support Services,,Services management,964,26,72,4,24,3,10,,128,,1231
+County Social Services,2021,23XXX,Community Living Support Services,,Crisis Care Coordination,71,26,2,,,1,,,,,100
+County Social Services,2021,31XXX,Community Living Support Services,,Transportation,256,4,32,2,14,1,5,,,,314
+County Social Services,2021,32326,Community Living Support Services,,Support Services - Guardian/Conservator,73,,55,1,2,,2,,,,133
+County Social Services,2021,32327,Community Living Support Services,,Support Services - Representative Payee,152,1,21,1,4,,,,,,179
+County Social Services,2021,32335,Community Living Support Services,,Consumer-Directed Attendant Care,1,,,,,,1,,,,2
+County Social Services,2021,33340,Community Living Support Services,,Basic Needs - Rent Payments,38,,,,,,,,,,38
+County Social Services,2021,33345,Community Living Support Services,,Basic Needs - Ongoing Rent Subsidy,39,,,,,,,,,,39
+County Social Services,2021,33399,Community Living Support Services,,Basic Needs - Other,22,,1,,,,,,,,23
+County Social Services,2021,41305,Community Living Support Services,,Physiological Treatment - Outpatient,34,,,,,,,,,,34
+County Social Services,2021,41306,Community Living Support Services,,Physiological Treatment - Prescription Medicine/Vaccines,44,,,,,,,,,,44
+County Social Services,2021,41307,Community Living Support Services,,Physiological Treatment - In-Home Nursing,5,,,,,,,,,,5
+County Social Services,2021,42396,Community Living Support Services,,Psychotherapeutic Treatment - Community Support Programs,15,,,,,,,,,,15
+County Social Services,2021,42399,Community Living Support Services,,Psychotherapeutic Treatment - Other,5,,103,3,6,,,,,,117
+County Social Services,2021,44399,Community Living Support Services,,Other Crisis Services,28,8,,,,,,,,,36
+County Social Services,2021,46306,Community Living Support Services,,Prescription Medication (Psychiatric Medications in Jail),708,5,,,,,,,,,713
+County Social Services,2021,63399,Community Living Support Services,,Comm Based Settings (1-5 Bed) - Other,,,,,,,1,,,,1
+County Social Services,2021,64329,Congregate Services,,Comm Based Settings (6+ Beds) - Supported Community Livin,27,,5,,1,,1,,,,34
+County Social Services,2021,64XXX,Congregate Services,,RCF-6 and over beds,41,1,4,,1,,1,,,,48
+County Social Services,2021,11XXX,Administration,,Direct Administration,,,,,,,,,128,,128
+Eastern Iowa MHDS,2021,42305,Core,Treatment,Psychotherapeutic Treatment - Outpatient,377,9,,,,,,,,,386
+Eastern Iowa MHDS,2021,42306,Core,Treatment,Psychotherapeutic Treatment - Medication Prescribing,234,2,2,,,,,,,,238
+Eastern Iowa MHDS,2021,43301,Core,Treatment,Evaluation (Non Crisis) - Assessment and Evaluation,,1,,,,,,,,,1
+Eastern Iowa MHDS,2021,71319,Core,Treatment,State MHI Inpatient - Per diem charges,8,,,,,,,,,,8
+Eastern Iowa MHDS,2021,73319,Core,Treatment,Other Priv./Public Hospitals - Inpatient per diem charges,41,3,,,,,,,,,44
+Eastern Iowa MHDS,2021,44301,Core,Basic Crisis Response,Crisis Evaluation,1,,,,,,,,,,1
+Eastern Iowa MHDS,2021,44313,Core,Basic Crisis Response,Crisis Stabilization Residential Service (CSRS),2,,,,,,,,,,2
+Eastern Iowa MHDS,2021,32329,Core,Support for Community Living,Support Services - Supported Community Living,30,,6,,9,,,,,,45
+Eastern Iowa MHDS,2021,50362,Core,Support For Employment,Voc/Day - Prevocational Services,,,1,,,,,,,,1
+Eastern Iowa MHDS,2021,50364,Core,Support For Employment,Voc/Day - Job Development,,,3,,1,,,,,,4
+Eastern Iowa MHDS,2021,50367,Core,Support For Employment,Day Habilitation,,,1,,,,1,,,,2
+Eastern Iowa MHDS,2021,50368,Core,Support For Employment,Voc/Day - Individual Supported Employment,4,,2,,4,,1,,,,11
+Eastern Iowa MHDS,2021,24376,Core,Service Coordination,Health Homes Coordination - Coordination Services,9,,,,,,,,,,9
+Eastern Iowa MHDS,2021,42398,Core,Core Evidence Based Treatment,Assertive Community Treatment (ACT),12,,,,,,,,,,12
+Eastern Iowa MHDS,2021,74XXX,Mandated,,CommitmentRelated (except 301),492,89,,,,,,,,,581
+Eastern Iowa MHDS,2021,75XXX,Mandated,,Mental health advocate,370,51,,,,,,,,,421
+Eastern Iowa MHDS,2021,42397,Core Plus,Additional Core Evidence Based Treatment,Psychotherapeutic Treatment - Psychiatric Rehabilitation,1,,,,,,,,,,1
+Eastern Iowa MHDS,2021,22XXX,Community Living Support Services,,Services management,248,54,,,,,,,,,302
+Eastern Iowa MHDS,2021,23XXX,Community Living Support Services,,Crisis Care Coordination,47,,,,,,,,,,47
+Eastern Iowa MHDS,2021,31XXX,Community Living Support Services,,Transportation,,,1,,1,,,,,,2
+Eastern Iowa MHDS,2021,32326,Community Living Support Services,,Support Services - Guardian/Conservator,1,,,,,,,,,,1
+Eastern Iowa MHDS,2021,32327,Community Living Support Services,,Support Services - Representative Payee,33,,1,,,,,,,,34
+Eastern Iowa MHDS,2021,33345,Community Living Support Services,,Basic Needs - Ongoing Rent Subsidy,6,,,,,,,,,,6
+Eastern Iowa MHDS,2021,33399,Community Living Support Services,,Basic Needs - Other,1,,,,,,,,,,1
+Eastern Iowa MHDS,2021,41305,Community Living Support Services,,Physiological Treatment - Outpatient,1,,,,,,,,,,1
+Eastern Iowa MHDS,2021,41306,Community Living Support Services,,Physiological Treatment - Prescription Medicine/Vaccines,12,,,,,,,,,,12
+Eastern Iowa MHDS,2021,42396,Community Living Support Services,,Psychotherapeutic Treatment - Community Support Programs,17,,,,,,,,,,17
+Eastern Iowa MHDS,2021,46306,Community Living Support Services,,Prescription Medication (Psychiatric Medications in Jail),414,28,,,,,,,,,442
+Eastern Iowa MHDS,2021,63XXX,Community Living Support Services,,RCF 1-5 beds,3,,,,,,,,,,3
+Eastern Iowa MHDS,2021,50360,Congregate Services,,Voc/Day - Sheltered Workshop Services,,,1,,,,,,,,1
+Eastern Iowa MHDS,2021,64XXX,Congregate Services,,ICF-6 and over beds,2,,,,,,,,,,2
+Eastern Iowa MHDS,2021,64XXX,Congregate Services,,RCF-6 and over beds,80,,2,,,,,,,,82
+Heart of Iowa Community Services,2021,42305,Core,Treatment,Psychotherapeutic Treatment - Outpatient,36,7,,,,,,,,,43
+Heart of Iowa Community Services,2021,71319,Core,Treatment,State MHI Inpatient - Per diem charges,6,,,,,,,,,,6
+Heart of Iowa Community Services,2021,73319,Core,Treatment,Other Priv./Public Hospitals - Inpatient per diem charges,5,,,,,,,,,,5
+Heart of Iowa Community Services,2021,32322,Core,Basic Crisis Response,Support Services - Personal Emergency Response System,1,,1,,,,,,,,2
+Heart of Iowa Community Services,2021,44301,Core,Basic Crisis Response,Crisis Evaluation,145,39,,,,,,,,,184
+Heart of Iowa Community Services,2021,44313,Core,Basic Crisis Response,Crisis Stabilization Residential Service (CSRS),23,,,,,,,,,,23
+Heart of Iowa Community Services,2021,32320,Core,Support for Community Living,Support Services - Home Health Aides,1,,,,,,,,,,1
+Heart of Iowa Community Services,2021,32325,Core,Support for Community Living,Support Services - Respite Services,2,,,,,,,,,,2
+Heart of Iowa Community Services,2021,32329,Core,Support for Community Living,Support Services - Supported Community Living,18,1,9,,,,1,,,,29
+Heart of Iowa Community Services,2021,50364,Core,Support For Employment,Voc/Day - Job Development,1,,,,,,,,,,1
+Heart of Iowa Community Services,2021,50367,Core,Support For Employment,Day Habilitation,2,,1,,1,,,,,,4
+Heart of Iowa Community Services,2021,50368,Core,Support For Employment,Voc/Day - Individual Supported Employment,5,,3,,,,,,,,8
+Heart of Iowa Community Services,2021,74XXX,Mandated,,CommitmentRelated (except 301),83,2,,,,,,,,,85
+Heart of Iowa Community Services,2021,75XXX,Mandated,,Mental health advocate,67,1,,,,,,,,,68
+Heart of Iowa Community Services,2021,25XXX,Core Plus,Justice System Involved Services,Coordination services,309,6,,,,,,,,,315
+Heart of Iowa Community Services,2021,46305,Core Plus,Justice System Involved Services,Mental Health Services in Jails,168,1,,,,,,,,,169
+Heart of Iowa Community Services,2021,42366,Core Plus,Additional Core Evidence Based Treatment,Psychotherapeutic Treatment - Social Support Services,2,4,5,5,,,,,,,16
+Heart of Iowa Community Services,2021,22XXX,Community Living Support Services,,Services management,173,12,,,,,,,,,185
+Heart of Iowa Community Services,2021,31XXX,Community Living Support Services,,Transportation,15,1,2,,,,,,,,18
+Heart of Iowa Community Services,2021,32335,Community Living Support Services,,Consumer-Directed Attendant Care,2,,,,,,,,,,2
+Heart of Iowa Community Services,2021,32399,Community Living Support Services,,Support Services - Other,2,,,,,,,,,,2
+Heart of Iowa Community Services,2021,33330,Community Living Support Services,,Mobile Meals,1,,,,,,1,,,,2
+Heart of Iowa Community Services,2021,33340,Community Living Support Services,,Basic Needs - Rent Payments,13,,,,,,,,,,13
+Heart of Iowa Community Services,2021,33399,Community Living Support Services,,Basic Needs - Other,10,,,,,,,,,,10
+Heart of Iowa Community Services,2021,41305,Community Living Support Services,,Physiological Treatment - Outpatient,1,,,,,,,,,,1
+Heart of Iowa Community Services,2021,41306,Community Living Support Services,,Physiological Treatment - Prescription Medicine/Vaccines,3,1,,,,,,,,,4
+Heart of Iowa Community Services,2021,41307,Community Living Support Services,,Physiological Treatment - In-Home Nursing,1,,,,,,,,,,1
+Heart of Iowa Community Services,2021,42309,Community Living Support Services,,Psychotherapeutic Treatment - Partial Hospitalization,23,,,,,,,,,,23
+Heart of Iowa Community Services,2021,42310,Community Living Support Services,,Psychotherapeutic Treatment - Transitional Living Program,24,,,,,,,,,,24
+Heart of Iowa Community Services,2021,42396,Community Living Support Services,,Psychotherapeutic Treatment - Community Support Programs,3,4,,1,1,,,,,,9
+Heart of Iowa Community Services,2021,46306,Community Living Support Services,,Prescription Medication (Psychiatric Medications in Jail),152,,,,,,,,,,152
+Heart of Iowa Community Services,2021,63329,Community Living Support Services,,Comm Based Settings (1-5 Bed) - Supported Community Livin,1,,,,,,,,,,1
+Heart of Iowa Community Services,2021,64329,Congregate Services,,Comm Based Settings (6+ Beds) - Supported Community Livin,1,,,,,,,,,,1
+Heart of Iowa Community Services,2021,64XXX,Congregate Services,,RCF-6 and over beds,13,,,,,,,,,,13
+MHDS of East Central Region,2021,42305,Core,Treatment,Psychotherapeutic Treatment - Outpatient,80,3,,,,,,,,,83
+MHDS of East Central Region,2021,42306,Core,Treatment,Psychotherapeutic Treatment - Medication Prescribing,37,,,,,,,,,,37
+MHDS of East Central Region,2021,71319,Core,Treatment,State MHI Inpatient - Per diem charges,22,1,,,,,,,,,23
+MHDS of East Central Region,2021,73319,Core,Treatment,Other Priv./Public Hospitals - Inpatient per diem charges,4,,,,,,,,,,4
+MHDS of East Central Region,2021,32322,Core,Basic Crisis Response,Support Services - Personal Emergency Response System,10,,,,,,,,,,10
+MHDS of East Central Region,2021,44301,Core,Basic Crisis Response,Crisis Evaluation,211,105,,,,,,,,,316
+MHDS of East Central Region,2021,44307,Core,Basic Crisis Response,Mobile Response,859,334,,,,,,,,,1193
+MHDS of East Central Region,2021,44312,Core,Basic Crisis Response,Crisis Stabilization Community Based Services (CSCBS),2,,,,,,,,,,2
+MHDS of East Central Region,2021,44313,Core,Basic Crisis Response,Crisis Stabilization Residential Service (CSRS),43,1,,,,,,,,,44
+MHDS of East Central Region,2021,44396,Core,Basic Crisis Response,Access Center start-up/sustainability/coordination,5,,,,,,,,,,5
+MHDS of East Central Region,2021,32325,Core,Support for Community Living,Support Services - Respite Services,,,1,,2,,,,,,3
+MHDS of East Central Region,2021,32329,Core,Support for Community Living,Support Services - Supported Community Living,112,1,15,,31,,,,,,159
+MHDS of East Central Region,2021,50362,Core,Support For Employment,Voc/Day - Prevocational Services,,,4,,3,,,,,,7
+MHDS of East Central Region,2021,50364,Core,Support For Employment,Voc/Day - Job Development,27,,,,,,,,,,27
+MHDS of East Central Region,2021,50367,Core,Support For Employment,Day Habilitation,14,,13,,15,,,,,,42
+MHDS of East Central Region,2021,50368,Core,Support For Employment,Voc/Day - Individual Supported Employment,8,,5,,20,,,,,,33
+MHDS of East Central Region,2021,45366,Core,Recovery Services,Peer Family Support - Peer Support Services,7,,,,,,,,,,7
+MHDS of East Central Region,2021,64309,Core,Sub-Acute Services,Sub Acute Services (6+ Beds),1,,,,,,,,,,1
+MHDS of East Central Region,2021,42398,Core,Core Evidence Based Treatment,Assertive Community Treatment (ACT),197,,,,,,,,,,197
+MHDS of East Central Region,2021,74XXX,Mandated,,CommitmentRelated (except 301),1147,121,,,,,,,,,1268
+MHDS of East Central Region,2021,75XXX,Mandated,,Mental health advocate,1631,25,,,,,,,,,1656
+MHDS of East Central Region,2021,25XXX,Core Plus,Justice System Involved Services,Coordination services,373,8,,,,,,,,,381
+MHDS of East Central Region,2021,46305,Core Plus,Justice System Involved Services,Mental Health Services in Jails,170,5,,,,,,,,,175
+MHDS of East Central Region,2021,42366,Core Plus,Additional Core Evidence Based Treatment,Psychotherapeutic Treatment - Social Support Services,422,1,,,3,,,,,,426
+MHDS of East Central Region,2021,42397,Core Plus,Additional Core Evidence Based Treatment,Psychotherapeutic Treatment - Psychiatric Rehabilitation,2,,,,,,,,,,2
+MHDS of East Central Region,2021,22XXX,Community Living Support Services,,Services management,677,10,85,2,125,2,,,,,901
+MHDS of East Central Region,2021,31XXX,Community Living Support Services,,Transportation,130,1,11,,18,,,,,,160
+MHDS of East Central Region,2021,32326,Community Living Support Services,,Support Services - Guardian/Conservator,9,,11,,1,,,,,,21
+MHDS of East Central Region,2021,32399,Community Living Support Services,,Support Services - Other,1,,,,1,,,,,,2
+MHDS of East Central Region,2021,33345,Community Living Support Services,,Basic Needs - Ongoing Rent Subsidy,75,,1,,,,,,,,76
+MHDS of East Central Region,2021,33399,Community Living Support Services,,Basic Needs - Other,28,,1,,,,,,,,29
+MHDS of East Central Region,2021,41305,Community Living Support Services,,Physiological Treatment - Outpatient,1,,,,,,,,,,1
+MHDS of East Central Region,2021,41306,Community Living Support Services,,Physiological Treatment - Prescription Medicine/Vaccines,19,,,,,,,,,,19
+MHDS of East Central Region,2021,41307,Community Living Support Services,,Physiological Treatment - In-Home Nursing,1,,,,,,,,,,1
+MHDS of East Central Region,2021,42396,Community Living Support Services,,Psychotherapeutic Treatment - Community Support Programs,8,,,,,,,,,,8
+MHDS of East Central Region,2021,42399,Community Living Support Services,,Psychotherapeutic Treatment - Other,1,,26,1,2,,,,,,30
+MHDS of East Central Region,2021,46306,Community Living Support Services,,Prescription Medication (Psychiatric Medications in Jail),116,1,,,,,,,,,117
+MHDS of East Central Region,2021,63XXX,Community Living Support Services,,RCF 1-5 beds,4,,,,,,,,,,4
+MHDS of East Central Region,2021,64329,Congregate Services,,Comm Based Settings (6+ Beds) - Supported Community Livin,1,,,,,,,,,,1
+MHDS of East Central Region,2021,64XXX,Congregate Services,,ICF-6 and over beds,1,,,,,,,,,,1
+MHDS of East Central Region,2021,64XXX,Congregate Services,,RCF-6 and over beds,249,1,1,,2,,,,,,253
+MHDS of East Central Region,2021,12XXX,Administration,,Purchased Administration,,,,,,,,,2,,2
+MHDS of East Central Region,2021,14951,Uncategorized,,MHDS Fiscal Agent Reimbursement to MHDS Regional Members,,,,,,,,,1,,1
+Polk County,2021,42305,Core Domains,Treatment,Mental health outpatient therapy,170,,,,,,,,,,170
+Polk County,2021,42306,Core Domains,Treatment,Medication prescribing & management,79,,,,,,,,,,79
+Polk County,2021,43301,Core Domains,Treatment,Assessment & evaluation,114,,1,,,,,,,,115
+Polk County,2021,71319,Core Domains,Treatment,Mental health inpatient therapy-MHI,1,,,,,,,,,,1
+Polk County,2021,73319,Core Domains,Treatment,Mental health inpatient therapy,,,,,,,,,,,0
+Polk County,2021,32322,Core Domains,Crisis Services,Personal emergency response system,,,,,3,,,,,,3
+Polk County,2021,44301,Core Domains,Crisis Services,Crisis evaluation,,,,,,,,,,,0
+Polk County,2021,44302,Core Domains,Crisis Services,23 hour crisis observation & holding,1,,,,,,,,,,1
+Polk County,2021,44305,Core Domains,Crisis Services,24 hour access to crisis response,1,,,,,,,,,,1
+Polk County,2021,44307,Core Domains,Crisis Services,Mobile response,1,,,,,,,,,,1
+Polk County,2021,44312,Core Domains,Crisis Services,Crisis Stabilization community-based services,,,,,,,,,,,0
+Polk County,2021,44313,Core Domains,Crisis Services,Crisis Stabilization residential services,1,,,,,,,,,,1
+Polk County,2021,44396,Core Domains,Crisis Services,Access Centers: start-up / sustainability,1,,,,,,,,,,1
+Polk County,2021,32320,Core Domains,Support for Community Living,Home health aide,,,,,,,,,,,0
+Polk County,2021,32325,Core Domains,Support for Community Living,Respite,,,1,,2,,,,,,3
+Polk County,2021,32328,Core Domains,Support for Community Living,Home & vehicle modifications,,,,,,,,,,,0
+Polk County,2021,32329,Core Domains,Support for Community Living,Supported community living,733,,48,,207,,,,,,988
+Polk County,2021,42329,Core Domains,Support for Community Living,Intensive residential services,,,,,,,,,,,0
+Polk County,2021,50362,Core Domains,Support for Employment,Prevocational services,,,3,,4,,,,,,7
+Polk County,2021,50364,Core Domains,Support for Employment,Job development,,,,,20,,,,,,20
+Polk County,2021,50367,Core Domains,Support for Employment,Day habilitation,5,,,,,,,,,,5
+Polk County,2021,50368,Core Domains,Support for Employment,Supported employment,10,,,,57,,,,,,67
+Polk County,2021,50369,Core Domains,Support for Employment,Group Supported employment-enclave,,,,,,,,,,,0
+Polk County,2021,45323,Core Domains,Recovery Services,Family support,,,,,,,,,,,0
+Polk County,2021,45366,Core Domains,Recovery Services,Peer support,3,,,,,,,,,,3
+Polk County,2021,21375,Core Domains,Service Coordination,Case management,1,,,,1,,,,,,2
+Polk County,2021,24376,Core Domains,Service Coordination,Health homes,1372,,6,,1,,,,,,1379
+Polk County,2021,63309,Core Domains,Sub-Acute Services,Subacute services-1-5 beds,,,,,,,,,,,0
+Polk County,2021,64309,Core Domains,Sub-Acute Services,Subacute services-6 and over beds,,,,,,,,,,,0
+Polk County,2021,4422,Core Domains,Core Evidenced Based Treatment,Education & Training Services - provider competency,,,,,,,,,,,0
+Polk County,2021,32396,Core Domains,Core Evidenced Based Treatment,Supported housing,738,,8,,13,,,,,,759
+Polk County,2021,42398,Core Domains,Core Evidenced Based Treatment,Assertive community treatment (ACT),96,,,,,,,,,,96
+Polk County,2021,45373,Core Domains,Core Evidenced Based Treatment,Family psychoeducation,,,,,,,,,,,0
+Polk County,2021,46319,Mandated Services,,Oakdale,,,,,,,,,,,0
+Polk County,2021,72319,Mandated Services,,State resource centers,,,,,,,,,,,0
+Polk County,2021,74XXX,Mandated Services,,Commitment related (except 301),589,,12,,2,,,,,,603
+Polk County,2021,75XXX,Mandated Services,,Mental health advocate,615,,,,,,,,,,615
+Polk County,2021,25xxx,Additional Core Domains,Justice system-involved services,Coordination services,,,,,,,,,,,0
+Polk County,2021,44346,Additional Core Domains,Justice system-involved services,24 hour crisis line**,,,,,,,,,,,0
+Polk County,2021,44366,Additional Core Domains,Justice system-involved services,Warm line**,,,,,,,,,,,0
+Polk County,2021,46305,Additional Core Domains,Justice system-involved services,Mental health services in jails,,,,,,,,,,,0
+Polk County,2021,46399,Additional Core Domains,Justice system-involved services,Justice system-involved services-other,,,,,,,,,,,0
+Polk County,2021,46422,Additional Core Domains,Justice system-involved services,Crisis prevention training,,,,,,,,,,,0
+Polk County,2021,46425,Additional Core Domains,Justice system-involved services,Mental health court related costs,,,,,,,,,,,0
+Polk County,2021,74301,Additional Core Domains,Justice system-involved services,Civil commitment prescreening evaluation,1,,,,,,,,,,1
+Polk County,2021,42366,Additional Core Domains,Additional Core Evidenced based treatment,Peer self-help drop-in centers,,,,,,,,,,,0
+Polk County,2021,42397,Additional Core Domains,Additional Core Evidenced based treatment,Psychiatric rehabilitation (IPR),,,,,,,,,,,0
+Polk County,2021,3371,Other Informational Services,,Information & referral,,,,,,,,,,,0
+Polk County,2021,4372,Other Informational Services,,Planning and/or Consultation (client related),,,,,,,,,,,0
+Polk County,2021,4377,Other Informational Services,,Provider Incentive Payment,,,,,,,,,,,0
+Polk County,2021,4399,Other Informational Services,,Consultation Other,,,,,,,,,,,0
+Polk County,2021,4429,Other Informational Services,,Planning and Management Consultants (non-client related),,,,,,,,,,,0
+Polk County,2021,5373,Other Informational Services,,Public education,,,,,,,,,,,0
+Polk County,2021,6397,Community Living Supports,,Academic services,,,,,,,,,,,0
+Polk County,2021,22XXX,Community Living Supports,,Services management,567,,150,,240,,,,,,957
+Polk County,2021,23376,Community Living Supports,,Crisis care coordination,298,,,,,,,,,,298
+Polk County,2021,23399,Community Living Supports,,Crisis care coordination other,,,,,,,,,,,0
+Polk County,2021,24399,Community Living Supports,,Health home other,,,,,,,,,,,0
+Polk County,2021,31XXX,Community Living Supports,,Transportation,,,,,,,,,,,0
+Polk County,2021,32321,Community Living Supports,,Chore services,,,,,,,,,,,0
+Polk County,2021,32326,Community Living Supports,,Guardian/conservator,,,,,,,,,,,0
+Polk County,2021,32327,Community Living Supports,,Representative payee,,,,,,,,,,,0
+Polk County,2021,32335,Community Living Supports,,CDAC,6,,,,5,,,,,,11
+Polk County,2021,32399,Community Living Supports,,Other support,2,,1,,1,,,,,,4
+Polk County,2021,33330,Community Living Supports,,Mobile meals,,,,,,,,,,,0
+Polk County,2021,33340,Community Living Supports,,Rent payments (time limited),,,,,,,,,,,0
+Polk County,2021,33345,Community Living Supports,,Ongoing rent subsidy,,,,,,,,,,,0
+Polk County,2021,33399,Community Living Supports,,Other basic needs,1,,,,,,,,,,1
+Polk County,2021,41305,Community Living Supports,,Physiological outpatient treatment,,,,,,,,,,,0
+Polk County,2021,41306,Community Living Supports,,Prescription meds,1,,,,,,,,,,1
+Polk County,2021,41307,Community Living Supports,,In-home nursing,,,,,,,,,,,0
+Polk County,2021,41308,Community Living Supports,,Health supplies,,,,,,,,,,,0
+Polk County,2021,41399,Community Living Supports,,Other physiological treatment,,,,,,,,,,,0
+Polk County,2021,42309,Community Living Supports,,Partial hospitalization,,,,,,,,,,,0
+Polk County,2021,42310,Community Living Supports,,Transitional living program,,,,,,,,,,,0
+Polk County,2021,42363,Community Living Supports,,Day treatment,,,,,,,,,,,0
+Polk County,2021,42396,Community Living Supports,,Community support programs,,,,,,,,,,,0
+Polk County,2021,42399,Community Living Supports,,Other psychotherapeutic treatment,,,,,,,,,,,0
+Polk County,2021,43399,Community Living Supports,,Other non-crisis evaluation,,,,,,,,,,,0
+Polk County,2021,44304,Community Living Supports,,Emergency care,,,,,,,,,,,0
+Polk County,2021,44399,Community Living Supports,,Other crisis services,,,,,,,,,,,0
+Polk County,2021,45399,Community Living Supports,,Other family & peer support,,,,,,,,,,,0
+Polk County,2021,46306,Community Living Supports,,Psychiatric medications in jail,,,,,,,,,,,0
+Polk County,2021,50361,Community Living Supports,,Vocational skills training,16,,7,,,,,,,,23
+Polk County,2021,50365,Community Living Supports,,Supported education,2,,3,,16,,,,,,21
+Polk County,2021,50399,Community Living Supports,,Other vocational & day services,,,,,,,,,,,0
+Polk County,2021,63XXX,Community Living Supports,,"RCF 1-5 beds (63314, 63315 & 63316)",,,,,,,,,,,0
+Polk County,2021,63XXX,Community Living Supports,,ICF 1-5 beds (63317 & 63318),,,,,,,,,,,0
+Polk County,2021,63329,Community Living Supports,,SCL 1-5 beds,,,,,,,,,,,0
+Polk County,2021,63399,Community Living Supports,,Other 1-5 beds,,,,,,,,,,,0
+Polk County,2021,50358,Other Congregate Services,,Work services (work activity/sheltered work),,,,,,,,,,,0
+Polk County,2021,64XXX,Other Congregate Services,,"RCF 6 and over beds (64314, 64315 & 64316)",28,,,,,,,,,,28
+Polk County,2021,64XXX,Other Congregate Services,,ICF 6 and over beds (64317 & 64318),1,,,,,,,,,,1
+Polk County,2021,64329,Other Congregate Services,,SCL 6 and over beds,,,,,,,,,,,0
+Polk County,2021,64399,Other Congregate Services,,Other 6 and over beds,,,,,,,,,,,0
+Polk County,2021,11XXX,Administration,,Direct Administration,,,,,,,,,1,,1
+Polk County,2021,12XXX,Administration,,Purchased Administration,,,,,,,,,1,,1
+Rolling Hills Community Services,2021,42305,Core,Treatment,Psychotherapeutic Treatment - Outpatient,1,,,,,,,,,,1
+Rolling Hills Community Services,2021,42306,Core,Treatment,Psychotherapeutic Treatment - Medication Prescribing,1,,,,,,,,,,1
+Rolling Hills Community Services,2021,43301,Core,Treatment,Evaluation (Non Crisis) - Assessment and Evaluation,1,,,,,,,,,,1
+Rolling Hills Community Services,2021,71319,Core,Treatment,State MHI Inpatient - Per diem charges,22,,,,,,,,,,22
+Rolling Hills Community Services,2021,44301,Core,Basic Crisis Response,Crisis Evaluation,275,134,,,,,,,,,409
+Rolling Hills Community Services,2021,44302,Core,Basic Crisis Response,23 Hour Observation and Holding,60,,,,,,,,,,60
+Rolling Hills Community Services,2021,44307,Core,Basic Crisis Response,Mobile Response,1,,,,,,,,,,1
+Rolling Hills Community Services,2021,44313,Core,Basic Crisis Response,Crisis Stabilization Residential Service (CSRS),101,1,,,,,,,,,102
+Rolling Hills Community Services,2021,32329,Core,Support for Community Living,Support Services - Supported Community Living,9,,3,,3,,,,,,15
+Rolling Hills Community Services,2021,50367,Core,Support For Employment,Day Habilitation,2,,1,,1,,,,,,4
+Rolling Hills Community Services,2021,50368,Core,Support For Employment,Voc/Day - Individual Supported Employment,26,,18,,2,,,,,,46
+Rolling Hills Community Services,2021,45366,Core,Recovery Services,Peer Family Support - Peer Support Services,1,,,,,,,,,,1
+Rolling Hills Community Services,2021,42398,Core,Core Evidence Based Treatment,Assertive Community Treatment (ACT),1,,,,,,,,,,1
+Rolling Hills Community Services,2021,74XXX,Mandated,,CommitmentRelated (except 301),472,28,,,,,,,,,500
+Rolling Hills Community Services,2021,75XXX,Mandated,,Mental health advocate,775,2,,,,,,,,,777
+Rolling Hills Community Services,2021,25XXX,Core Plus,Justice System Involved Services,Coordination services,109,,,,,,,,,,109
+Rolling Hills Community Services,2021,44346,Core Plus,Justice System Involved Services,Crisis Services - Telephone Crisis Service,1,,,,,,,,,,1
+Rolling Hills Community Services,2021,46305,Core Plus,Justice System Involved Services,Mental Health Services in Jails,26,,,,,,,,,,26
+Rolling Hills Community Services,2021,42366,Core Plus,Additional Core Evidence Based Treatment,Psychotherapeutic Treatment - Social Support Services,97,1,,,,,,,,,98
+Rolling Hills Community Services,2021,4429,Other Informational Services,,Planning and Management Consultants (Non-Client Related),1,,,,,,,,,,1
+Rolling Hills Community Services,2021,5373,Other Informational Services,,Public Education Services,1,,,,,,,,,,1
+Rolling Hills Community Services,2021,22XXX,Community Living Support Services,,Services management,461,12,,,,,,,,,473
+Rolling Hills Community Services,2021,23XXX,Community Living Support Services,,Crisis Care Coordination,1,,,,,,,,,,1
+Rolling Hills Community Services,2021,31XXX,Community Living Support Services,,Transportation,1,,2,,1,,,,,,4
+Rolling Hills Community Services,2021,32327,Community Living Support Services,,Support Services - Representative Payee,296,6,2,,,,,,,,304
+Rolling Hills Community Services,2021,33340,Community Living Support Services,,Basic Needs - Rent Payments,2,,,,,,,,,,2
+Rolling Hills Community Services,2021,33399,Community Living Support Services,,Basic Needs - Other,1,,,,,,,,,,1
+Rolling Hills Community Services,2021,42310,Community Living Support Services,,Psychotherapeutic Treatment - Transitional Living Program,55,,,,,,,,,,55
+Rolling Hills Community Services,2021,42396,Community Living Support Services,,Psychotherapeutic Treatment - Community Support Programs,6,,,,,,,,,,6
+Rolling Hills Community Services,2021,42399,Community Living Support Services,,Psychotherapeutic Treatment - Other,11,85,25,,,,,,,,121
+Rolling Hills Community Services,2021,63329,Community Living Support Services,,Comm Based Settings (1-5 Bed) - Supported Community Living,,,1,,,,,,,,1
+Rolling Hills Community Services,2021,64XXX,Congregate Services,,RCF-6 and over beds,12,,,,,,,,,,12
+Rolling Hills Community Services,2021,11XXX,Administration,,Direct Administration,,,,,,,,,1,,1
+South Central Behavioral Health Region,2021,42305,Core,Treatment,Psychotherapeutic Treatment - Outpatient,4,,,,,,,,,,4
+South Central Behavioral Health Region,2021,42306,Core,Treatment,Psychotherapeutic Treatment - Medication Prescribing,9,,,,,,,,,,9
+South Central Behavioral Health Region,2021,43301,Core,Treatment,Evaluation (Non Crisis) - Assessment and Evaluation,18,2,,,,,,,,,20
+South Central Behavioral Health Region,2021,71319,Core,Treatment,State MHI Inpatient - Per diem charges,5,,,,,,,,,,5
+South Central Behavioral Health Region,2021,73319,Core,Treatment,Other Priv./Public Hospitals - Inpatient per diem charges,14,,,,,,,,,,14
+South Central Behavioral Health Region,2021,44301,Core,Basic Crisis Response,Crisis Evaluation,180,63,,,,,,,,,243
+South Central Behavioral Health Region,2021,44302,Core,Basic Crisis Response,23 Hour Observation and Holding,45,4,,,,,,,,,49
+South Central Behavioral Health Region,2021,44307,Core,Basic Crisis Response,Mobile Response,23,11,,,,,,,,,34
+South Central Behavioral Health Region,2021,44313,Core,Basic Crisis Response,Crisis Stabilization Residential Service (CSRS),32,2,,,,,,,,,34
+South Central Behavioral Health Region,2021,32329,Core,Support for Community Living,Support Services - Supported Community Living,10,,,,,,,,,,10
+South Central Behavioral Health Region,2021,32396,Core,Core Evidence Based Treatment,Supported Housing,10,,,,,,,,,,10
+South Central Behavioral Health Region,2021,42398,Core,Core Evidence Based Treatment,Assertive Community Treatment (ACT),9,,,,,,,,,,9
+South Central Behavioral Health Region,2021,74XXX,Mandated,,CommitmentRelated (except 301),235,7,,,,,,,,,242
+South Central Behavioral Health Region,2021,75XXX,Mandated,,Mental health advocate,226,1,,,,,,,,,227
+South Central Behavioral Health Region,2021,46305,Core Plus,Justice System Involved Services,Mental Health Services in Jails,316,3,,,,,,,,,319
+South Central Behavioral Health Region,2021,42366,Core Plus,Additional Core Evidence Based Treatment,Psychotherapeutic Treatment - Social Support Services,246,1,,,,,,,,,247
+South Central Behavioral Health Region,2021,22XXX,Community Living Support Services,,Services management,646,43,1,,,,,,,,690
+South Central Behavioral Health Region,2021,31XXX,Community Living Support Services,,Transportation,50,2,,,,,,,,,52
+South Central Behavioral Health Region,2021,33340,Community Living Support Services,,Basic Needs - Rent Payments,1,,,,,,,,,,1
+South Central Behavioral Health Region,2021,33345,Community Living Support Services,,Basic Needs - Ongoing Rent Subsidy,31,,,,,,,,,,31
+South Central Behavioral Health Region,2021,33399,Community Living Support Services,,Basic Needs - Other,1,,,,,,,,,,1
+South Central Behavioral Health Region,2021,41306,Community Living Support Services,,Physiological Treatment - Prescription Medicine/Vaccines,9,,,,,,,,,,9
+South Central Behavioral Health Region,2021,46306,Community Living Support Services,,Prescription Medication (Psychiatric Medications in Jail),300,2,,,,,,,,,302
+South Central Behavioral Health Region,2021,64XXX,Congregate Services,,RCF-6 and over beds,9,,,,,,,,,,9
+South Central Behavioral Health Region,2021,11XXX,Administration,,Direct Administration,,,,,,,,,1,,1
+Southeast Iowa Link,2021,42305,Core,Treatment,Psychotherapeutic Treatment - Outpatient,3,8,,,,,,,,,11
+Southeast Iowa Link,2021,42306,Core,Treatment,Psychotherapeutic Treatment - Medication Prescribing,1,,,,,,,,,,1
+Southeast Iowa Link,2021,43301,Core,Treatment,Evaluation (Non Crisis) - Assessment and Evaluation,1,1,,,,,,,,,2
+Southeast Iowa Link,2021,71319,Core,Treatment,State MHI Inpatient - Per diem charges,12,,,,,,,,,,12
+Southeast Iowa Link,2021,44301,Core,Basic Crisis Response,Crisis Evaluation,614,131,,,,,,,,,745
+Southeast Iowa Link,2021,44302,Core,Basic Crisis Response,23 Hour Observation and Holding,6,,,,,,,,,,6
+Southeast Iowa Link,2021,44307,Core,Basic Crisis Response,Mobile Response,23,6,,,,,,,,,29
+Southeast Iowa Link,2021,44312,Core,Basic Crisis Response,Crisis Stabilization Community Based Services (CSCBS),1,,,,,,,,,,1
+Southeast Iowa Link,2021,44313,Core,Basic Crisis Response,Crisis Stabilization Residential Service (CSRS),71,1,,,,,,,,,72
+Southeast Iowa Link,2021,44396,Core,Basic Crisis Response,Access Center start-up/sustainability/coordination,3,1,,,,,,,,,4
+Southeast Iowa Link,2021,32329,Core,Support for Community Living,Support Services - Supported Community Living,10,,,,1,,,,,,11
+Southeast Iowa Link,2021,50367,Core,Support For Employment,Day Habilitation,,,,,2,,,,,,2
+Southeast Iowa Link,2021,50368,Core,Support For Employment,Voc/Day - Individual Supported Employment,2,,,,2,,,,,,4
+Southeast Iowa Link,2021,50369,Core,Support For Employment,Voc/Day - Group Supported Employment,1,,,,1,,,,,,2
+Southeast Iowa Link,2021,24376,Core,Service Coordination,Health Homes Coordination - Coordination Services,292,1,,,,,,,,,293
+Southeast Iowa Link,2021,63309,Core,Sub-Acute Services,Sub Acute Services (1-5 Beds),1,,,,,,,,,,1
+Southeast Iowa Link,2021,32396,Core,Core Evidence Based Treatment,Supported Housing,4,,,,,,,,,,4
+Southeast Iowa Link,2021,42398,Core,Core Evidence Based Treatment,Assertive Community Treatment (ACT),1,,,,,,,,,,1
+Southeast Iowa Link,2021,74XXX,Mandated,,CommitmentRelated (except 301),317,3,,,,,,,,,320
+Southeast Iowa Link,2021,75XXX,Mandated,,Mental health advocate,434,16,,,,,,,,,450
+Southeast Iowa Link,2021,25XXX,Core Plus,Justice System Involved Services,Coordination services,311,1,,,,,,,,,312
+Southeast Iowa Link,2021,42366,Core Plus,Additional Core Evidence Based Treatment,Psychotherapeutic Treatment - Social Support Services,369,,9,,3,,,,,,381
+Southeast Iowa Link,2021,4372,Other Informational Services,,Planning and/or Consultation Services (Client Related),3,,,,,,,,,,3
+Southeast Iowa Link,2021,23XXX,Community Living Support Services,,Crisis Care Coordination,17,9,,,,,,,,,26
+Southeast Iowa Link,2021,33340,Community Living Support Services,,Basic Needs - Rent Payments,13,,,,,,,,,,13
+Southeast Iowa Link,2021,64329,Congregate Services,,Comm Based Settings (6+ Beds) - Supported Community Livin,1,,,,,,,,,,1
+Southeast Iowa Link,2021,64XXX,Congregate Services,,RCF-6 and over beds,12,1,,,,,,,,,13
+Sioux Rivers Regional MHDS,2021,42305,Core,Treatment,Psychotherapeutic Treatment - Outpatient,3,91,,,,,,,,,94
+Sioux Rivers Regional MHDS,2021,42306,Core,Treatment,Psychotherapeutic Treatment - Medication Prescribing,511,114,,,,,,,,,625
+Sioux Rivers Regional MHDS,2021,43301,Core,Treatment,Evaluation (Non Crisis) - Assessment and Evaluation,1,,,,,,,,,,1
+Sioux Rivers Regional MHDS,2021,73319,Core,Treatment,Other Priv./Public Hospitals - Inpatient per diem charges,2,,,,,,,,,,2
+Sioux Rivers Regional MHDS,2021,44301,Core,Basic Crisis Response,Crisis Evaluation,24,10,,,,,,,,,34
+Sioux Rivers Regional MHDS,2021,44302,Core,Basic Crisis Response,23 Hour Observation and Holding,14,1,,,,,,,,,15
+Sioux Rivers Regional MHDS,2021,44307,Core,Basic Crisis Response,Mobile Response,25,19,,,,,,,,,44
+Sioux Rivers Regional MHDS,2021,44313,Core,Basic Crisis Response,Crisis Stabilization Residential Service (CSRS),13,1,,,,,,,,,14
+Sioux Rivers Regional MHDS,2021,32329,Core,Support for Community Living,Support Services - Supported Community Living,2,,3,,,,,,,,5
+Sioux Rivers Regional MHDS,2021,50367,Core,Support For Employment,Day Habilitation,,,5,1,,,,,,,6
+Sioux Rivers Regional MHDS,2021,50368,Core,Support For Employment,Voc/Day - Individual Supported Employment,39,,114,12,1,,,,,,166
+Sioux Rivers Regional MHDS,2021,45366,Core,Recovery Services,Peer Family Support - Peer Support Services,63,,,,,,,,,,63
+Sioux Rivers Regional MHDS,2021,74XXX,Mandated,,CommitmentRelated (except 301),142,3,,,,,,,,,145
+Sioux Rivers Regional MHDS,2021,75XXX,Mandated,,Mental health advocate,262,2,,,,,,,,,264
+Sioux Rivers Regional MHDS,2021,46305,Core Plus,Justice System Involved Services,Mental Health Services in Jails,13,,,,,,,,,,13
+Sioux Rivers Regional MHDS,2021,4372,Other Informational Services,,Planning and/or Consultation Services (Client Related),81,126,,,,,,,,,207
+Sioux Rivers Regional MHDS,2021,5373,Other Informational Services,,Public Education Services,119,131,,,,,,,,,250
+Sioux Rivers Regional MHDS,2021,22XXX,Community Living Support Services,,Services management,293,44,44,5,,,,,,,386
+Sioux Rivers Regional MHDS,2021,31XXX,Community Living Support Services,,Transportation,8,,,,,,,,,,8
+Sioux Rivers Regional MHDS,2021,33340,Community Living Support Services,,Basic Needs - Rent Payments,2,1,,,,,,,,,3
+Sioux Rivers Regional MHDS,2021,33399,Community Living Support Services,,Basic Needs - Other,1,,,,,,,,,,1
+Sioux Rivers Regional MHDS,2021,42396,Community Living Support Services,,Psychotherapeutic Treatment - Community Support Programs,3,,,,,,,,,,3
+Sioux Rivers Regional MHDS,2021,64XXX,Congregate Services,,RCF-6 and over beds,20,,,,,,,,,,20
+Southern Hills Regional Mental Health,2021,42305,Core,Treatment,Psychotherapeutic Treatment - Outpatient,103,49,,,,,,,,,152
+Southern Hills Regional Mental Health,2021,71319,Core,Treatment,State MHI Inpatient - Per diem charges,1,,,,,,,,,,1
+Southern Hills Regional Mental Health,2021,73319,Core,Treatment,Other Priv./Public Hospitals - Inpatient per diem charges,4,,,,,,,,,,4
+Southern Hills Regional Mental Health,2021,44313,Core,Basic Crisis Response,Crisis Stabilization Residential Service (CSRS),34,,,,,,,,,,34
+Southern Hills Regional Mental Health,2021,32329,Core,Support for Community Living,Support Services - Supported Community Living,12,,,,,,,,,,12
+Southern Hills Regional Mental Health,2021,50362,Core,Support For Employment,Voc/Day - Prevocational Services,1,,,,,,,,,,1
+Southern Hills Regional Mental Health,2021,50367,Core,Support For Employment,Day Habilitation,1,,,,,,,,,,1
+Southern Hills Regional Mental Health,2021,50368,Core,Support For Employment,Voc/Day - Individual Supported Employment,1,,,,,,,,,,1
+Southern Hills Regional Mental Health,2021,74XXX,Mandated,,CommitmentRelated (except 301),24,,,,,,,,,,24
+Southern Hills Regional Mental Health,2021,22XXX,Community Living Support Services,,Services management,63,23,40,16,,,,,,,142
+Southern Hills Regional Mental Health,2021,31XXX,Community Living Support Services,,Transportation,37,,,,,,,,,,37
+Southern Hills Regional Mental Health,2021,33340,Community Living Support Services,,Basic Needs - Rent Payments,4,,,,,,,,,,4
+Southern Hills Regional Mental Health,2021,42310,Community Living Support Services,,Psychotherapeutic Treatment - Transitional Living Program,5,,,,,,,,,,5
+Southern Hills Regional Mental Health,2021,50360,Congregate Services,,Voc/Day - Sheltered Workshop Services,,,2,,,,,,,,2
+Southern Hills Regional Mental Health,2021,64XXX,Congregate Services,,RCF-6 and over beds,12,,,,,,,,,,12
+Southwest Iowa MHDS,2021,42305,Core,Treatment,Psychotherapeutic Treatment - Outpatient,46,,,,,,,,,,46
+Southwest Iowa MHDS,2021,71319,Core,Treatment,State MHI Inpatient - Per diem charges,5,,,,,,,,,,5
+Southwest Iowa MHDS,2021,73319,Core,Treatment,Other Priv./Public Hospitals - Inpatient per diem charges,5,,,,,,,,,,5
+Southwest Iowa MHDS,2021,44301,Core,Basic Crisis Response,Crisis Evaluation,13,5,,,,,,,,,18
+Southwest Iowa MHDS,2021,44307,Core,Basic Crisis Response,Mobile Response,297,117,,,,,,,,,414
+Southwest Iowa MHDS,2021,44313,Core,Basic Crisis Response,Crisis Stabilization Residential Service (CSRS),104,2,,,,,,,,,106
+Southwest Iowa MHDS,2021,32320,Core,Support for Community Living,Support Services - Home Health Aides,4,,,,,,,,,,4
+Southwest Iowa MHDS,2021,32329,Core,Support for Community Living,Support Services - Supported Community Living,24,,2,,1,,,,,,27
+Southwest Iowa MHDS,2021,50362,Core,Support For Employment,Voc/Day - Prevocational Services,5,,19,,,,,,,,24
+Southwest Iowa MHDS,2021,50367,Core,Support For Employment,Day Habilitation,2,,2,,,,,,,,4
+Southwest Iowa MHDS,2021,50368,Core,Support For Employment,Voc/Day - Individual Supported Employment,26,,23,,2,,,,,,51
+Southwest Iowa MHDS,2021,50369,Core,Support For Employment,Voc/Day - Group Supported Employment,,,1,,,,,,,,1
+Southwest Iowa MHDS,2021,4422,Core,Core Evidence Based Treatment,Consultation - Educational and Training Services,2,1,7,,,,,,,,10
+Southwest Iowa MHDS,2021,42398,Core,Core Evidence Based Treatment,Assertive Community Treatment (ACT),15,,,,,,,,,,15
+Southwest Iowa MHDS,2021,74XXX,Mandated,,CommitmentRelated (except 301),151,18,,,,,,,,,169
+Southwest Iowa MHDS,2021,75XXX,Mandated,,Mental health advocate,246,1,,,,,,,,,247
+Southwest Iowa MHDS,2021,25XXX,Core Plus,Justice System Involved Services,Coordination services,338,2,,,,,,,,,340
+Southwest Iowa MHDS,2021,46305,Core Plus,Justice System Involved Services,Mental Health Services in Jails,42,,,,,,,,,,42
+Southwest Iowa MHDS,2021,46425,Core Plus,Justice System Involved Services,Mental Health Court related expenses,32,,,,,,,,,,32
+Southwest Iowa MHDS,2021,74301,Core Plus,Justice System Involved Services,Civil Commitment Prescreening,20,2,,,,,,,,,22
+Southwest Iowa MHDS,2021,42366,Core Plus,Additional Core Evidence Based Treatment,Psychotherapeutic Treatment - Social Support Services,227,2,,,,,,,,,229
+Southwest Iowa MHDS,2021,42397,Core Plus,Additional Core Evidence Based Treatment,Psychotherapeutic Treatment - Psychiatric Rehabilitation,1,,,,,,,,,,1
+Southwest Iowa MHDS,2021,22XXX,Community Living Support Services,,Services management,593,66,,,,,,,,,659
+Southwest Iowa MHDS,2021,31XXX,Community Living Support Services,,Transportation,34,,5,,1,,,,,,40
+Southwest Iowa MHDS,2021,32326,Community Living Support Services,,Support Services - Guardian/Conservator,,,3,1,,,,,,,4
+Southwest Iowa MHDS,2021,33340,Community Living Support Services,,Basic Needs - Rent Payments,18,,,,,,,,,,18
+Southwest Iowa MHDS,2021,41305,Community Living Support Services,,Physiological Treatment - Outpatient,2,,,,,,,,,,2
+Southwest Iowa MHDS,2021,41306,Community Living Support Services,,Physiological Treatment - Prescription Medicine/Vaccines,2,,,,,,,,,,2
+Southwest Iowa MHDS,2021,42310,Community Living Support Services,,Psychotherapeutic Treatment - Transitional Living Program,47,1,,,,,,,,,48
+Southwest Iowa MHDS,2021,42396,Community Living Support Services,,Psychotherapeutic Treatment - Community Support Programs,1,,,,,,,,,,1
+Southwest Iowa MHDS,2021,42399,Community Living Support Services,,Psychotherapeutic Treatment - Other,,,1,,,,,,,,1
+Southwest Iowa MHDS,2021,63329,Community Living Support Services,,Comm Based Settings (1-5 Bed) - Supported Community Livin,5,,,,,,,,,,5
+Southwest Iowa MHDS,2021,64329,Congregate Services,,Comm Based Settings (6+ Beds) - Supported Community Livin,9,,1,,,,,,,,10
+Southwest Iowa MHDS,2021,64XXX,Congregate Services,,ICF-6 and over beds,1,,,,,,,,,,1
+Southwest Iowa MHDS,2021,64XXX,Congregate Services,,RCF-6 and over beds,76,2,2,,2,,,,,,82
