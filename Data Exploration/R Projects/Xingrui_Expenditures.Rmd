@@ -60,8 +60,48 @@ MentalGap <- cbind(MentalActual, MentalBudgeted) %>%
 
 write.xlsx(MentalGap, "MentalGap.xlsx")
 ```
+Gap Between Budgeted and Actual Expenditures for Physical Health & Social Services and MENTAL HEALTH, ID & DD (2010-2021)
+```{r}
+PhysicalGap1 <- cbind(PhysicalActual, PhysicalBudgeted) %>%
+  select(-c(4, 5)) %>%
+  mutate(County = toupper(County),
+         "Physical Gap (Actual-Budgeted)" = PHYSICAL.HEALTH.SOCIAL.SERVICES - Physical.Health...Social.Services) %>%
+  select(-c(Physical.Health...Social.Services, PHYSICAL.HEALTH.SOCIAL.SERVICES))
+  
+MentalGap1 <- cbind(MentalActual, MentalBudgeted) %>%
+  select(-c(4, 5)) %>%
+  mutate(County = toupper(County),
+         "Mental Gap (Actual-Budgeted)" = MENTAL.HEALTH..ID...DD - Mental.Health.MR..DD) %>%
+  select(-c(MENTAL.HEALTH..ID...DD, Mental.Health.MR..DD))
 
-Actual mean expenditures and disabled population for Physical Health & Social Services from 2016-2020
+ExpenditureGap <- cbind(PhysicalGap1, MentalGap1) %>%
+  select(-c(4, 5))
+
+write.xlsx(ExpenditureGap, "Expenditures Gap.xlsx")
+```
+
+Mean Gap Between Budgeted and Actual Expenditures for Physical Health & Social Services and MENTAL HEALTH, ID & DD (2010-2021)
+```{r}
+# ExpenditureGap1 <- ExpenditureGap %>% filter(FISCAL.YEAR %in% c(2016:2020))
+
+PhysicalGapMean <- aggregate(`Physical Gap (Actual-Budgeted)` ~ County, data = ExpenditureGap, mean)
+MentalGapMean <- aggregate(`Mental Gap (Actual-Budgeted)` ~ County, data = ExpenditureGap, mean)
+
+GapMean <- full_join(PhysicalGapMean, MentalGapMean, by = "County")
+
+write.xlsx(GapMean, "Mean Expenditures Gap.xlsx")
+```
+Mean Gap and median earnings
+```{r}
+earnings <- read.xlsx("Median Earnings.xlsx")
+
+MeanGap_MieianEarnings <- cbind(GapMean, earnings) %>%
+  select(-c(4:6))
+
+write.xlsx(MeanGap_MieianEarnings, "MeanGap_MieianEarnings.xlsx")
+```
+
+Actual mean expenditures and disabled population for Physical Health & Social Services and MENTAL HEALTH, ID & DD (2016-2020)
 ```{r}
 DisabledPop <- read.xlsx("DisabledPop.xlsx", sheet = 1)
 
@@ -73,13 +113,20 @@ PhysicalActual1 <- actual %>%
 
 PhysicalActual1 <- aggregate(PHYSICAL.HEALTH.SOCIAL.SERVICES ~ County, data = PhysicalActual1, mean)
 
+MentalActual1 <- actual %>%
+  select(c(1, 3, 6)) %>%
+  filter(FISCAL.YEAR %in% c(2016:2020)) %>%
+  mutate(County = toupper(County)) %>%
+  arrange(FISCAL.YEAR, County)
+
+MentalActual1 <- aggregate(MENTAL.HEALTH..ID...DD ~ County, data = MentalActual1, mean)
+
 DisabledPop <- DisabledPop %>% select(1, 5, 6)
 
-PhysicalActual1_DisabledPop <- cbind(DisabledPop, PhysicalActual1) %>%
-  select(-4)
+ActualExpenditures_DisabledPop <- cbind(DisabledPop, PhysicalActual1, MentalActual1) %>%
+  select(-c(4, 6))
 
-write.xlsx(PhysicalActual1_DisabledPop, "PhysicalActual1_DisabledPop.xlsx")
+write.xlsx(ActualExpenditures_DisabledPop, "ActualExpenditures_DisabledPop.xlsx")
 
-view(PhysicalActual1)
-view(PhysicalActual1_DisabledPop)
+view(ActualExpenditures_DisabledPop)
 ```
