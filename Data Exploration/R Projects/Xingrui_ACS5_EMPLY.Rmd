@@ -435,52 +435,7 @@ employment$CV <- ifelse(CV_employment > 30, "Low reliability",
 # write.xlsx(employment, "Employed.xlsx")
 ```
 
-7.1 Reformatting, MOE, and reliability testing of BRFSS MENTHLTH data
-```{r}
-MENTHLTH <- read.xlsx("BRFSS For how many days during the past 30 days was your mental health not good.xlsx", sheet = "MENTHLTH")
-
-MENTHLTH$Row.Percent <- as.numeric(MENTHLTH$Row.Percent)
-MENTHLTH$`95%.Confidence.Limits.for.Row.Percent.Lower` <- as.numeric(MENTHLTH$`95%.Confidence.Limits.for.Row.Percent.Lower`)
-MENTHLTH$`95%.Confidence.Limits.for.Row.Percent.Upper` <- as.numeric(MENTHLTH$`95%.Confidence.Limits.for.Row.Percent.Upper`)
-
-MENTHLTH <- MENTHLTH %>%
-  mutate(MOE = `95%.Confidence.Limits.for.Row.Percent.Upper` - Row.Percent)
-
-CV_Row.Percent <- ((MENTHLTH$MOE / 1.645) / MENTHLTH$Row.Percent) * 100
-
-MENTHLTH$CV_Row.Percent <- ifelse(CV_Row.Percent > 30, "Low reliability",
-                                  ifelse(CV_Row.Percent <= 15, "High reliability",
-                                         "Median reliability"))
-
-
-# MENTHLTH <- MENTHLTH %>% select(Geography, MENTHLTH, Row.Percent) %>%
-#   pivot_wider(names_from = MENTHLTH, values_from = Row.Percent)
-# 
-# MENTHLTH$None <- as.numeric(MENTHLTH$None)
-# MENTHLTH$`14 - 30 days` <- as.numeric(MENTHLTH$`14 - 30 days`)
-# MENTHLTH$`< 14 days` <- as.numeric(MENTHLTH$`< 14 days`)
-
-# write.xlsx(MENTHLTH, "BRFSS MENTHLTH.xlsx")
-```
-
-7.2 MOE and reliability testing of BRFSS Disable data
-```{r}
-Disable <- read.xlsx("BRFSS Do you have a disability.xlsx", sheet = "Disable")
-
-Disable <- Disable %>% mutate(MOE = `95%.Confidence.Limits.for.Row.Percent.Upper` - Row.Percent)
-Disable <- Disable %>% mutate("Lower MOE" = `95%.Confidence.Limits.for.Row.Percent.Lower` - Row.Percent)
-Disable <- Disable %>% mutate("Upper MOE" = `95%.Confidence.Limits.for.Row.Percent.Upper` - Row.Percent)
-
-CV_Row.Percent <- ((Disable$MOE / 1.645) / Disable$Row.Percent) * 100
-
-Disable$CV_Row.Percent <- ifelse(CV_Row.Percent > 30, "Low reliability",
-                                 ifelse(CV_Row.Percent <= 15, "High reliability",
-                                        "Median reliability"))
-
-# write.xlsx(Disable, "BRFSS Disable.xlsx")
-```
-
-8.1 IVRS hourly wage information and ACS median earnings
+7.1 IVRS hourly wage information and ACS median earnings
 ```{r}
 wage <- read.csv("IVRS_Hourly_Wage.csv")
 earnings <- read.xlsx("Median Earnings.xlsx")
@@ -492,4 +447,22 @@ WageClosure <- wage %>% filter(Client.State == "IA") %>%
 WageEarnings <- left_join(WageClosure, earnings, by = c("Client.County" = "County"))
 
 # write.xlsx(WageEarnings, "IVRS Median Closure Wage and ACS Median Earnings.xlsx")
+```
+
+8.1 Poverty level
+```{r}
+DisabledPop <- read.xlsx("DisabledPop.xlsx") %>%
+  select(c(1, 6))
+
+BelowPoverty <- get_acs(geography = "county",
+                        variables = "B23024_003",
+                        year = 2020,
+                        state = "IA")
+
+BelowPoverty <- BelowPoverty %>%
+  cbind(DisabledPop) 
+  # select(-c(2, 3)) %>%
+  # mutate("Below Poverty" = estimate / Total.Disabled * 100)
+
+write.xlsx(BelowPoverty, "Income in the past 12 months below poverty level.xlsx")
 ```

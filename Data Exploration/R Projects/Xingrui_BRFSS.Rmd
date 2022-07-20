@@ -1,0 +1,56 @@
+---
+title: "Xingrui_BRFSS"
+author: "Xingrui Xue"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(openxlsx)
+library(stringr)
+```
+
+Reformatting, MOE, and reliability testing of BRFSS MENTHLTH data
+```{r}
+MENTHLTH <- read.xlsx("BRFSS For how many days during the past 30 days was your mental health not good.xlsx", sheet = "MENTHLTH")
+
+MENTHLTH$Row.Percent <- as.numeric(MENTHLTH$Row.Percent)
+MENTHLTH$`95%.Confidence.Limits.for.Row.Percent.Lower` <- as.numeric(MENTHLTH$`95%.Confidence.Limits.for.Row.Percent.Lower`)
+MENTHLTH$`95%.Confidence.Limits.for.Row.Percent.Upper` <- as.numeric(MENTHLTH$`95%.Confidence.Limits.for.Row.Percent.Upper`)
+
+MENTHLTH <- MENTHLTH %>%
+  mutate(MOE = `95%.Confidence.Limits.for.Row.Percent.Upper` - Row.Percent)
+
+CV_Row.Percent <- ((MENTHLTH$MOE / 1.645) / MENTHLTH$Row.Percent) * 100
+
+MENTHLTH$CV_Row.Percent <- ifelse(CV_Row.Percent > 30, "Low reliability",
+                                  ifelse(CV_Row.Percent <= 15, "High reliability",
+                                         "Median reliability"))
+
+
+# MENTHLTH <- MENTHLTH %>% select(Geography, MENTHLTH, Row.Percent) %>%
+#   pivot_wider(names_from = MENTHLTH, values_from = Row.Percent)
+# 
+# MENTHLTH$None <- as.numeric(MENTHLTH$None)
+# MENTHLTH$`14 - 30 days` <- as.numeric(MENTHLTH$`14 - 30 days`)
+# MENTHLTH$`< 14 days` <- as.numeric(MENTHLTH$`< 14 days`)
+
+# write.xlsx(MENTHLTH, "BRFSS MENTHLTH.xlsx")
+```
+
+MOE and reliability testing of BRFSS Disable data
+```{r}
+Disable <- read.xlsx("BRFSS Do you have a disability.xlsx", sheet = "Disable")
+
+Disable <- Disable %>% mutate(MOE = `95%.Confidence.Limits.for.Row.Percent.Upper` - Row.Percent)
+Disable <- Disable %>% mutate("Lower MOE" = `95%.Confidence.Limits.for.Row.Percent.Lower` - Row.Percent)
+Disable <- Disable %>% mutate("Upper MOE" = `95%.Confidence.Limits.for.Row.Percent.Upper` - Row.Percent)
+
+CV_Row.Percent <- ((Disable$MOE / 1.645) / Disable$Row.Percent) * 100
+
+Disable$CV_Row.Percent <- ifelse(CV_Row.Percent > 30, "Low reliability",
+                                 ifelse(CV_Row.Percent <= 15, "High reliability",
+                                        "Median reliability"))
+
+# write.xlsx(Disable, "BRFSS Disable.xlsx")
+```
