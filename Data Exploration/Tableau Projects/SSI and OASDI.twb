@@ -1,0 +1,2358 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0415.1144                               -->
+<workbook original-version='18.1' source-build='2022.1.1 (20221.22.0415.1144)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='SSIandOASDI' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sanika-Merged_SSI_table' inline='true' name='federated.1et6gvy1xbmp5u176wjum1wz4y4a' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Sanika-Merged_SSI_table' name='textscan.1x4wsci1bpvi0a1fazu0e0on6ztf'>
+            <connection class='textscan' directory='S:/misc/clg/DSPG2022/ProjectA' filename='Sanika-Merged_SSI_table.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1x4wsci1bpvi0a1fazu0e0on6ztf' name='Sanika-Merged_SSI_table.csv' table='[Sanika-Merged_SSI_table#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='GEOID' ordinal='0' />
+            <column datatype='string' name='NAME' ordinal='1' />
+            <column datatype='integer' name='In the Labor Force,Employed with disabilityE' ordinal='2' />
+            <column datatype='integer' name='In the Labor Force,Employed with disabilityM' ordinal='3' />
+            <column datatype='integer' name='In the Labor force,unemployed with a disabilityE' ordinal='4' />
+            <column datatype='integer' name='In the Labor force,unemployed with a disabilityM' ordinal='5' />
+            <column datatype='integer' name='Not in the Labor force, with a disabilityE' ordinal='6' />
+            <column datatype='integer' name='Not in the Labor force, with a disabilityM' ordinal='7' />
+            <column datatype='integer' name='In the Labor Force,Employed with no disabilityE' ordinal='8' />
+            <column datatype='integer' name='In the Labor Force,Employed with no disabilityM' ordinal='9' />
+            <column datatype='integer' name='In the Labor force,unemployed with no disabilityE' ordinal='10' />
+            <column datatype='integer' name='In the Labor force,unemployed with no disabilityM' ordinal='11' />
+            <column datatype='integer' name='Not in the Labor Force, with no disabilityE' ordinal='12' />
+            <column datatype='integer' name='Not in the Labor Force, with no disabilityM' ordinal='13' />
+            <column datatype='integer' name='disability_total' ordinal='14' />
+            <column datatype='integer' name='no_disability_total' ordinal='15' />
+            <column datatype='string' name='CV_employed_disabled' ordinal='16' />
+            <column datatype='string' name='CV_unemployed_disabled' ordinal='17' />
+            <column datatype='string' name='CV_not_in_Labor_force_disabled' ordinal='18' />
+            <column datatype='string' name='CV_employed_not_disabled' ordinal='19' />
+            <column datatype='string' name='CV_unemployed_not_disabled' ordinal='20' />
+            <column datatype='string' name='CV_not_in_Labor_force_not_disabled' ordinal='21' />
+            <column datatype='real' name='percent_in_labor_force_employed_disabled' ordinal='22' />
+            <column datatype='real' name='percent_in_labor_force_employed_not_disabled' ordinal='23' />
+            <column datatype='real' name='percent_in_labor_force_unemployed_disabled' ordinal='24' />
+            <column datatype='real' name='percent_in_labor_force_unemployed_not_disabled' ordinal='25' />
+            <column datatype='real' name='percent_not_in_labor_force_disabled' ordinal='26' />
+            <column datatype='real' name='percent_not_in_labor_force_not_disabled' ordinal='27' />
+            <column datatype='real' name='percent_in_labor_force_employed_gap' ordinal='28' />
+            <column datatype='real' name='percent_in_labor_force_unemployed_gap' ordinal='29' />
+            <column datatype='real' name='percent_not_in_labor_force_gap' ordinal='30' />
+            <column datatype='string' name='ï..County' ordinal='31' />
+            <column datatype='integer' name='Total' ordinal='32' />
+            <column datatype='string' name='Aged' ordinal='33' />
+            <column datatype='integer' name='Blind.and.disabled' ordinal='34' />
+            <column datatype='integer' name='Under.18' ordinal='35' />
+            <column datatype='integer' name='X18â..64' ordinal='36' />
+            <column datatype='integer' name='X65.or.older' ordinal='37' />
+            <column datatype='integer' name='SSI.recipients.also.receiving.OASDI' ordinal='38' />
+            <column datatype='integer' name='Amount.of.payments..thousands.of.dollars..a' ordinal='39' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1x4wsci1bpvi0a1fazu0e0on6ztf' name='Sanika-Merged_SSI_table.csv' table='[Sanika-Merged_SSI_table#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='GEOID' ordinal='0' />
+            <column datatype='string' name='NAME' ordinal='1' />
+            <column datatype='integer' name='In the Labor Force,Employed with disabilityE' ordinal='2' />
+            <column datatype='integer' name='In the Labor Force,Employed with disabilityM' ordinal='3' />
+            <column datatype='integer' name='In the Labor force,unemployed with a disabilityE' ordinal='4' />
+            <column datatype='integer' name='In the Labor force,unemployed with a disabilityM' ordinal='5' />
+            <column datatype='integer' name='Not in the Labor force, with a disabilityE' ordinal='6' />
+            <column datatype='integer' name='Not in the Labor force, with a disabilityM' ordinal='7' />
+            <column datatype='integer' name='In the Labor Force,Employed with no disabilityE' ordinal='8' />
+            <column datatype='integer' name='In the Labor Force,Employed with no disabilityM' ordinal='9' />
+            <column datatype='integer' name='In the Labor force,unemployed with no disabilityE' ordinal='10' />
+            <column datatype='integer' name='In the Labor force,unemployed with no disabilityM' ordinal='11' />
+            <column datatype='integer' name='Not in the Labor Force, with no disabilityE' ordinal='12' />
+            <column datatype='integer' name='Not in the Labor Force, with no disabilityM' ordinal='13' />
+            <column datatype='integer' name='disability_total' ordinal='14' />
+            <column datatype='integer' name='no_disability_total' ordinal='15' />
+            <column datatype='string' name='CV_employed_disabled' ordinal='16' />
+            <column datatype='string' name='CV_unemployed_disabled' ordinal='17' />
+            <column datatype='string' name='CV_not_in_Labor_force_disabled' ordinal='18' />
+            <column datatype='string' name='CV_employed_not_disabled' ordinal='19' />
+            <column datatype='string' name='CV_unemployed_not_disabled' ordinal='20' />
+            <column datatype='string' name='CV_not_in_Labor_force_not_disabled' ordinal='21' />
+            <column datatype='real' name='percent_in_labor_force_employed_disabled' ordinal='22' />
+            <column datatype='real' name='percent_in_labor_force_employed_not_disabled' ordinal='23' />
+            <column datatype='real' name='percent_in_labor_force_unemployed_disabled' ordinal='24' />
+            <column datatype='real' name='percent_in_labor_force_unemployed_not_disabled' ordinal='25' />
+            <column datatype='real' name='percent_not_in_labor_force_disabled' ordinal='26' />
+            <column datatype='real' name='percent_not_in_labor_force_not_disabled' ordinal='27' />
+            <column datatype='real' name='percent_in_labor_force_employed_gap' ordinal='28' />
+            <column datatype='real' name='percent_in_labor_force_unemployed_gap' ordinal='29' />
+            <column datatype='real' name='percent_not_in_labor_force_gap' ordinal='30' />
+            <column datatype='string' name='ï..County' ordinal='31' />
+            <column datatype='integer' name='Total' ordinal='32' />
+            <column datatype='string' name='Aged' ordinal='33' />
+            <column datatype='integer' name='Blind.and.disabled' ordinal='34' />
+            <column datatype='integer' name='Under.18' ordinal='35' />
+            <column datatype='integer' name='X18â..64' ordinal='36' />
+            <column datatype='integer' name='X65.or.older' ordinal='37' />
+            <column datatype='integer' name='SSI.recipients.also.receiving.OASDI' ordinal='38' />
+            <column datatype='integer' name='Amount.of.payments..thousands.of.dollars..a' ordinal='39' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;ibm-5348_P100-1997&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEOID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GEOID]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>GEOID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>NAME</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor Force,Employed with disabilityE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor Force,Employed with disabilityE]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>In the Labor Force,Employed with disabilityE</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor Force,Employed with disabilityM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor Force,Employed with disabilityM]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>In the Labor Force,Employed with disabilityM</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor force,unemployed with a disabilityE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor force,unemployed with a disabilityE]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>In the Labor force,unemployed with a disabilityE</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor force,unemployed with a disabilityM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor force,unemployed with a disabilityM]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>In the Labor force,unemployed with a disabilityM</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Not in the Labor force, with a disabilityE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Not in the Labor force, with a disabilityE]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>Not in the Labor force, with a disabilityE</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Not in the Labor force, with a disabilityM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Not in the Labor force, with a disabilityM]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>Not in the Labor force, with a disabilityM</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor Force,Employed with no disabilityE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor Force,Employed with no disabilityE]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>In the Labor Force,Employed with no disabilityE</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor Force,Employed with no disabilityM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor Force,Employed with no disabilityM]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>In the Labor Force,Employed with no disabilityM</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor force,unemployed with no disabilityE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor force,unemployed with no disabilityE]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>In the Labor force,unemployed with no disabilityE</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor force,unemployed with no disabilityM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor force,unemployed with no disabilityM]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>In the Labor force,unemployed with no disabilityM</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Not in the Labor Force, with no disabilityE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Not in the Labor Force, with no disabilityE]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>Not in the Labor Force, with no disabilityE</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Not in the Labor Force, with no disabilityM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Not in the Labor Force, with no disabilityM]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>Not in the Labor Force, with no disabilityM</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>disability_total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[disability_total]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>disability_total</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>no_disability_total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[no_disability_total]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>no_disability_total</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CV_employed_disabled</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CV_employed_disabled]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>CV_employed_disabled</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CV_unemployed_disabled</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CV_unemployed_disabled]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>CV_unemployed_disabled</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CV_not_in_Labor_force_disabled</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CV_not_in_Labor_force_disabled]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>CV_not_in_Labor_force_disabled</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CV_employed_not_disabled</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CV_employed_not_disabled]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>CV_employed_not_disabled</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CV_unemployed_not_disabled</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CV_unemployed_not_disabled]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>CV_unemployed_not_disabled</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CV_not_in_Labor_force_not_disabled</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CV_not_in_Labor_force_not_disabled]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>CV_not_in_Labor_force_not_disabled</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_in_labor_force_employed_disabled</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_in_labor_force_employed_disabled]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>percent_in_labor_force_employed_disabled</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_in_labor_force_employed_not_disabled</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_in_labor_force_employed_not_disabled]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>percent_in_labor_force_employed_not_disabled</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_in_labor_force_unemployed_disabled</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_in_labor_force_unemployed_disabled]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>percent_in_labor_force_unemployed_disabled</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_in_labor_force_unemployed_not_disabled</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_in_labor_force_unemployed_not_disabled]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>percent_in_labor_force_unemployed_not_disabled</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_not_in_labor_force_disabled</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_not_in_labor_force_disabled]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>percent_not_in_labor_force_disabled</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_not_in_labor_force_not_disabled</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_not_in_labor_force_not_disabled]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>percent_not_in_labor_force_not_disabled</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_in_labor_force_employed_gap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_in_labor_force_employed_gap]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>percent_in_labor_force_employed_gap</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_in_labor_force_unemployed_gap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_in_labor_force_unemployed_gap]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>percent_in_labor_force_unemployed_gap</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_not_in_labor_force_gap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_not_in_labor_force_gap]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>percent_not_in_labor_force_gap</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ï..County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ï..County]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>ï..County</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>Total</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aged</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Aged]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>Aged</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Blind.and.disabled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Blind.and.disabled]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>Blind.and.disabled</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Under.18</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Under.18]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>Under.18</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>X18â..64</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[X18â..64]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>X18â..64</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>X65.or.older</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[X65.or.older]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>X65.or.older</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SSI.recipients.also.receiving.OASDI</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SSI.recipients.also.receiving.OASDI]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>SSI.recipients.also.receiving.OASDI</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Amount.of.payments..thousands.of.dollars..a</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Amount.of.payments..thousands.of.dollars..a]</local-name>
+            <parent-name>[Sanika-Merged_SSI_table.csv]</parent-name>
+            <remote-alias>Amount.of.payments..thousands.of.dollars..a</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='CV employed disabled' datatype='string' name='[CV_employed_disabled]' role='dimension' type='nominal' />
+      <column caption='CV employed not disabled' datatype='string' name='[CV_employed_not_disabled]' role='dimension' type='nominal' />
+      <column caption='CV not in Labor force disabled' datatype='string' name='[CV_not_in_Labor_force_disabled]' role='dimension' type='nominal' />
+      <column caption='CV not in Labor force not disabled' datatype='string' name='[CV_not_in_Labor_force_not_disabled]' role='dimension' type='nominal' />
+      <column caption='CV unemployed disabled' datatype='string' name='[CV_unemployed_disabled]' role='dimension' type='nominal' />
+      <column caption='CV unemployed not disabled' datatype='string' name='[CV_unemployed_not_disabled]' role='dimension' type='nominal' />
+      <column caption='Calculation1' datatype='real' name='[Calculation_2908199514960199681]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[SSI.recipients.also.receiving.OASDI]/[Total]' />
+      </column>
+      <column caption='Geoid' datatype='integer' name='[GEOID]' role='measure' type='quantitative' />
+      <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sanika-Merged_SSI_table.csv' datatype='table' name='[__tableau_internal_object_id__].[Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A]' role='measure' type='quantitative' />
+      <column caption='Disability Total' datatype='integer' name='[disability_total]' role='measure' type='quantitative' />
+      <column caption='No Disability Total' datatype='integer' name='[no_disability_total]' role='measure' type='quantitative' />
+      <column caption='Percent In Labor Force Employed Disabled' datatype='real' name='[percent_in_labor_force_employed_disabled]' role='measure' type='quantitative' />
+      <column caption='Percent In Labor Force Employed Gap' datatype='real' name='[percent_in_labor_force_employed_gap]' role='measure' type='quantitative' />
+      <column caption='Percent In Labor Force Employed Not Disabled' datatype='real' name='[percent_in_labor_force_employed_not_disabled]' role='measure' type='quantitative' />
+      <column caption='Percent In Labor Force Unemployed Disabled' datatype='real' name='[percent_in_labor_force_unemployed_disabled]' role='measure' type='quantitative' />
+      <column caption='Percent In Labor Force Unemployed Gap' datatype='real' name='[percent_in_labor_force_unemployed_gap]' role='measure' type='quantitative' />
+      <column caption='Percent In Labor Force Unemployed Not Disabled' datatype='real' name='[percent_in_labor_force_unemployed_not_disabled]' role='measure' type='quantitative' />
+      <column caption='Percent Not In Labor Force Disabled' datatype='real' name='[percent_not_in_labor_force_disabled]' role='measure' type='quantitative' />
+      <column caption='Percent Not In Labor Force Gap' datatype='real' name='[percent_not_in_labor_force_gap]' role='measure' type='quantitative' />
+      <column caption='Percent Not In Labor Force Not Disabled' datatype='real' name='[percent_not_in_labor_force_not_disabled]' role='measure' type='quantitative' />
+      <column datatype='string' name='[ï..County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column-instance column='[ï..County]' derivation='None' name='[none:ï..County:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_SSI_table.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/13/2022 05:29:22 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='Sanika-Merged_SSI_table' increment-value='%null%' refresh-type='create' rows-inserted='99' timestamp-start='2022-07-13 17:29:22.498' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>GEOID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[GEOID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GEOID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NAME</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>In the Labor Force,Employed with disabilityE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[In the Labor Force,Employed with disabilityE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>In the Labor Force,Employed with disabilityE</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>In the Labor Force,Employed with disabilityM</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[In the Labor Force,Employed with disabilityM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>In the Labor Force,Employed with disabilityM</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>81</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>In the Labor force,unemployed with a disabilityE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[In the Labor force,unemployed with a disabilityE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>In the Labor force,unemployed with a disabilityE</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>In the Labor force,unemployed with a disabilityM</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[In the Labor force,unemployed with a disabilityM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>In the Labor force,unemployed with a disabilityM</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>56</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Not in the Labor force, with a disabilityE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Not in the Labor force, with a disabilityE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Not in the Labor force, with a disabilityE</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>91</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Not in the Labor force, with a disabilityM</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Not in the Labor force, with a disabilityM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Not in the Labor force, with a disabilityM</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>80</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>In the Labor Force,Employed with no disabilityE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[In the Labor Force,Employed with no disabilityE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>In the Labor Force,Employed with no disabilityE</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>In the Labor Force,Employed with no disabilityM</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[In the Labor Force,Employed with no disabilityM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>In the Labor Force,Employed with no disabilityM</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>In the Labor force,unemployed with no disabilityE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[In the Labor force,unemployed with no disabilityE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>In the Labor force,unemployed with no disabilityE</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>In the Labor force,unemployed with no disabilityM</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[In the Labor force,unemployed with no disabilityM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>In the Labor force,unemployed with no disabilityM</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>81</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Not in the Labor Force, with no disabilityE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Not in the Labor Force, with no disabilityE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Not in the Labor Force, with no disabilityE</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>97</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Not in the Labor Force, with no disabilityM</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Not in the Labor Force, with no disabilityM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Not in the Labor Force, with no disabilityM</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>81</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>disability_total</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[disability_total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>disability_total</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>94</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>no_disability_total</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[no_disability_total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>no_disability_total</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CV_employed_disabled</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CV_employed_disabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CV_employed_disabled</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CV_unemployed_disabled</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CV_unemployed_disabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CV_unemployed_disabled</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CV_not_in_Labor_force_disabled</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CV_not_in_Labor_force_disabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CV_not_in_Labor_force_disabled</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CV_employed_not_disabled</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CV_employed_not_disabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CV_employed_not_disabled</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CV_unemployed_not_disabled</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CV_unemployed_not_disabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CV_unemployed_not_disabled</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CV_not_in_Labor_force_not_disabled</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CV_not_in_Labor_force_not_disabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CV_not_in_Labor_force_not_disabled</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>percent_in_labor_force_employed_disabled</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[percent_in_labor_force_employed_disabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>percent_in_labor_force_employed_disabled</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>percent_in_labor_force_employed_not_disabled</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[percent_in_labor_force_employed_not_disabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>percent_in_labor_force_employed_not_disabled</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>percent_in_labor_force_unemployed_disabled</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[percent_in_labor_force_unemployed_disabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>percent_in_labor_force_unemployed_disabled</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>97</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>percent_in_labor_force_unemployed_not_disabled</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[percent_in_labor_force_unemployed_not_disabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>percent_in_labor_force_unemployed_not_disabled</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>percent_not_in_labor_force_disabled</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[percent_not_in_labor_force_disabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>percent_not_in_labor_force_disabled</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>percent_not_in_labor_force_not_disabled</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[percent_not_in_labor_force_not_disabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>percent_not_in_labor_force_not_disabled</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>percent_in_labor_force_employed_gap</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[percent_in_labor_force_employed_gap]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>percent_in_labor_force_employed_gap</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>percent_in_labor_force_unemployed_gap</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[percent_in_labor_force_unemployed_gap]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>percent_in_labor_force_unemployed_gap</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>percent_not_in_labor_force_gap</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[percent_not_in_labor_force_gap]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>percent_not_in_labor_force_gap</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ï..County</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ï..County]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ï..County</remote-alias>
+              <ordinal>31</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total</remote-alias>
+              <ordinal>32</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aged</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Aged]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aged</remote-alias>
+              <ordinal>33</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Blind.and.disabled</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Blind.and.disabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Blind.and.disabled</remote-alias>
+              <ordinal>34</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>57</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Under.18</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Under.18]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Under.18</remote-alias>
+              <ordinal>35</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>57</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>X18â..64</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[X18â..64]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>X18â..64</remote-alias>
+              <ordinal>36</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>86</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>X65.or.older</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[X65.or.older]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>X65.or.older</remote-alias>
+              <ordinal>37</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>58</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SSI.recipients.also.receiving.OASDI</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SSI.recipients.also.receiving.OASDI]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SSI.recipients.also.receiving.OASDI</remote-alias>
+              <ordinal>38</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>81</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Amount.of.payments..thousands.of.dollars..a</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Amount.of.payments..thousands.of.dollars..a]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Amount.of.payments..thousands.of.dollars..a</remote-alias>
+              <ordinal>39</ordinal>
+              <family>Sanika-Merged_SSI_table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:ï..County:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Bremer&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Des Moines&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Jackson&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Montgomery&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Van Buren&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Adair&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Clay&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Hancock&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Madison&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Sac&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Audubon&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Dallas&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Howard&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mills&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Story&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Calhoun&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Fayette&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Jones&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Page&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Wayne&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Buchanan&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Dickinson&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Jasper&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Muscatine&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Wapello&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Benton&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Davis&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Humboldt&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mitchell&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Tama&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Chickasaw&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Guthrie&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Lucas&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Poweshiek&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Wright&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Adams&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Clayton&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Hardin&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Mahaska&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Scott&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Cerro Gordo&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Greene&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Linn&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Polk&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Woodbury&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Black Hawk&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Decatur&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Ida&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Monona&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Taylor&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Carroll&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Floyd&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Keokuk&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Palo Alto&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Webster&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Cass&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Franklin&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Kossuth&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Plymouth&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Winnebago&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cherokee&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Grundy&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Louisa&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Pottawattamie&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Worth&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Clarke&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Hamilton&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Lyon&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Ringgold&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Buena Vista&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Dubuque&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Jefferson&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;O&apos;Brien&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Warren&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Boone&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Delaware&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Iowa&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Monroe&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Union&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Allamakee&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Clinton&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Harrison&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Marion&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Shelby&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Cedar&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Fremont&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Lee&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Pocahontas&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Winneshiek&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Butler&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Emmet&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Johnson&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Osceola&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Washington&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Appanoose&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Crawford&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Henry&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Marshall&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sioux&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sanika-Merged_SSI_table.csv' id='Sanika-Merged_SSI_table.csv_8DDE106CCFB7442397188BCE47344B4A'>
+            <properties context=''>
+              <relation connection='textscan.1x4wsci1bpvi0a1fazu0e0on6ztf' name='Sanika-Merged_SSI_table.csv' table='[Sanika-Merged_SSI_table#csv]' type='table'>
+                <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='GEOID' ordinal='0' />
+                  <column datatype='string' name='NAME' ordinal='1' />
+                  <column datatype='integer' name='In the Labor Force,Employed with disabilityE' ordinal='2' />
+                  <column datatype='integer' name='In the Labor Force,Employed with disabilityM' ordinal='3' />
+                  <column datatype='integer' name='In the Labor force,unemployed with a disabilityE' ordinal='4' />
+                  <column datatype='integer' name='In the Labor force,unemployed with a disabilityM' ordinal='5' />
+                  <column datatype='integer' name='Not in the Labor force, with a disabilityE' ordinal='6' />
+                  <column datatype='integer' name='Not in the Labor force, with a disabilityM' ordinal='7' />
+                  <column datatype='integer' name='In the Labor Force,Employed with no disabilityE' ordinal='8' />
+                  <column datatype='integer' name='In the Labor Force,Employed with no disabilityM' ordinal='9' />
+                  <column datatype='integer' name='In the Labor force,unemployed with no disabilityE' ordinal='10' />
+                  <column datatype='integer' name='In the Labor force,unemployed with no disabilityM' ordinal='11' />
+                  <column datatype='integer' name='Not in the Labor Force, with no disabilityE' ordinal='12' />
+                  <column datatype='integer' name='Not in the Labor Force, with no disabilityM' ordinal='13' />
+                  <column datatype='integer' name='disability_total' ordinal='14' />
+                  <column datatype='integer' name='no_disability_total' ordinal='15' />
+                  <column datatype='string' name='CV_employed_disabled' ordinal='16' />
+                  <column datatype='string' name='CV_unemployed_disabled' ordinal='17' />
+                  <column datatype='string' name='CV_not_in_Labor_force_disabled' ordinal='18' />
+                  <column datatype='string' name='CV_employed_not_disabled' ordinal='19' />
+                  <column datatype='string' name='CV_unemployed_not_disabled' ordinal='20' />
+                  <column datatype='string' name='CV_not_in_Labor_force_not_disabled' ordinal='21' />
+                  <column datatype='real' name='percent_in_labor_force_employed_disabled' ordinal='22' />
+                  <column datatype='real' name='percent_in_labor_force_employed_not_disabled' ordinal='23' />
+                  <column datatype='real' name='percent_in_labor_force_unemployed_disabled' ordinal='24' />
+                  <column datatype='real' name='percent_in_labor_force_unemployed_not_disabled' ordinal='25' />
+                  <column datatype='real' name='percent_not_in_labor_force_disabled' ordinal='26' />
+                  <column datatype='real' name='percent_not_in_labor_force_not_disabled' ordinal='27' />
+                  <column datatype='real' name='percent_in_labor_force_employed_gap' ordinal='28' />
+                  <column datatype='real' name='percent_in_labor_force_unemployed_gap' ordinal='29' />
+                  <column datatype='real' name='percent_not_in_labor_force_gap' ordinal='30' />
+                  <column datatype='string' name='ï..County' ordinal='31' />
+                  <column datatype='integer' name='Total' ordinal='32' />
+                  <column datatype='string' name='Aged' ordinal='33' />
+                  <column datatype='integer' name='Blind.and.disabled' ordinal='34' />
+                  <column datatype='integer' name='Under.18' ordinal='35' />
+                  <column datatype='integer' name='X18â..64' ordinal='36' />
+                  <column datatype='integer' name='X65.or.older' ordinal='37' />
+                  <column datatype='integer' name='SSI.recipients.also.receiving.OASDI' ordinal='38' />
+                  <column datatype='integer' name='Amount.of.payments..thousands.of.dollars..a' ordinal='39' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Cleaned_Employement_Cases' inline='true' name='federated.1h1976s10kotcw158qqhp0k2vvch' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Cleaned_Employement_Cases' name='textscan.0m80l0d0c7pjqb1d63p3w0c12sb1'>
+            <connection class='textscan' directory='C:/Users/sanik/Documents' filename='Cleaned_Employement_Cases.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0m80l0d0c7pjqb1d63p3w0c12sb1' name='Cleaned_Employement_Cases.csv' table='[Cleaned_Employement_Cases#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='GEOID' ordinal='0' />
+            <column datatype='string' name='NAME' ordinal='1' />
+            <column datatype='integer' name='In the Labor Force,Employed with disabilityE' ordinal='2' />
+            <column datatype='integer' name='In the Labor force,unemployed with a disabilityE' ordinal='3' />
+            <column datatype='integer' name='Not in the Labor force, with a disabilityE' ordinal='4' />
+            <column datatype='integer' name='In the Labor Force,Employed with no disabilityE' ordinal='5' />
+            <column datatype='integer' name='In the Labor force,unemployed with no disabilityE' ordinal='6' />
+            <column datatype='integer' name='Not in the Labor Force, with no disabilityE' ordinal='7' />
+            <column datatype='integer' name='disability_total' ordinal='8' />
+            <column datatype='integer' name='no_disability_total' ordinal='9' />
+            <column datatype='real' name='percent_in_labor_force_employed_gap' ordinal='10' />
+            <column datatype='real' name='percent_in_labor_force_unemployed_gap' ordinal='11' />
+            <column datatype='real' name='percent_not_in_labor_force_gap' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0m80l0d0c7pjqb1d63p3w0c12sb1' name='Cleaned_Employement_Cases.csv' table='[Cleaned_Employement_Cases#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='GEOID' ordinal='0' />
+            <column datatype='string' name='NAME' ordinal='1' />
+            <column datatype='integer' name='In the Labor Force,Employed with disabilityE' ordinal='2' />
+            <column datatype='integer' name='In the Labor force,unemployed with a disabilityE' ordinal='3' />
+            <column datatype='integer' name='Not in the Labor force, with a disabilityE' ordinal='4' />
+            <column datatype='integer' name='In the Labor Force,Employed with no disabilityE' ordinal='5' />
+            <column datatype='integer' name='In the Labor force,unemployed with no disabilityE' ordinal='6' />
+            <column datatype='integer' name='Not in the Labor Force, with no disabilityE' ordinal='7' />
+            <column datatype='integer' name='disability_total' ordinal='8' />
+            <column datatype='integer' name='no_disability_total' ordinal='9' />
+            <column datatype='real' name='percent_in_labor_force_employed_gap' ordinal='10' />
+            <column datatype='real' name='percent_in_labor_force_unemployed_gap' ordinal='11' />
+            <column datatype='real' name='percent_not_in_labor_force_gap' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Cleaned_Employement_Cases.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEOID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GEOID]</local-name>
+            <parent-name>[Cleaned_Employement_Cases.csv]</parent-name>
+            <remote-alias>GEOID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME]</local-name>
+            <parent-name>[Cleaned_Employement_Cases.csv]</parent-name>
+            <remote-alias>NAME</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor Force,Employed with disabilityE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor Force,Employed with disabilityE]</local-name>
+            <parent-name>[Cleaned_Employement_Cases.csv]</parent-name>
+            <remote-alias>In the Labor Force,Employed with disabilityE</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor force,unemployed with a disabilityE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor force,unemployed with a disabilityE]</local-name>
+            <parent-name>[Cleaned_Employement_Cases.csv]</parent-name>
+            <remote-alias>In the Labor force,unemployed with a disabilityE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Not in the Labor force, with a disabilityE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Not in the Labor force, with a disabilityE]</local-name>
+            <parent-name>[Cleaned_Employement_Cases.csv]</parent-name>
+            <remote-alias>Not in the Labor force, with a disabilityE</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor Force,Employed with no disabilityE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor Force,Employed with no disabilityE]</local-name>
+            <parent-name>[Cleaned_Employement_Cases.csv]</parent-name>
+            <remote-alias>In the Labor Force,Employed with no disabilityE</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor force,unemployed with no disabilityE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor force,unemployed with no disabilityE]</local-name>
+            <parent-name>[Cleaned_Employement_Cases.csv]</parent-name>
+            <remote-alias>In the Labor force,unemployed with no disabilityE</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Not in the Labor Force, with no disabilityE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Not in the Labor Force, with no disabilityE]</local-name>
+            <parent-name>[Cleaned_Employement_Cases.csv]</parent-name>
+            <remote-alias>Not in the Labor Force, with no disabilityE</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>disability_total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[disability_total]</local-name>
+            <parent-name>[Cleaned_Employement_Cases.csv]</parent-name>
+            <remote-alias>disability_total</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>no_disability_total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[no_disability_total]</local-name>
+            <parent-name>[Cleaned_Employement_Cases.csv]</parent-name>
+            <remote-alias>no_disability_total</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_in_labor_force_employed_gap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_in_labor_force_employed_gap]</local-name>
+            <parent-name>[Cleaned_Employement_Cases.csv]</parent-name>
+            <remote-alias>percent_in_labor_force_employed_gap</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_in_labor_force_unemployed_gap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_in_labor_force_unemployed_gap]</local-name>
+            <parent-name>[Cleaned_Employement_Cases.csv]</parent-name>
+            <remote-alias>percent_in_labor_force_unemployed_gap</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_not_in_labor_force_gap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_not_in_labor_force_gap]</local-name>
+            <parent-name>[Cleaned_Employement_Cases.csv]</parent-name>
+            <remote-alias>percent_not_in_labor_force_gap</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Geoid' datatype='integer' name='[GEOID]' role='measure' type='quantitative' />
+      <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Cleaned_Employement_Cases.csv' datatype='table' name='[__tableau_internal_object_id__].[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='S:/misc/clg/DSPG2022/ProjectA/Cleaned_Employement_Cases.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/13/2022 05:29:31 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='Cleaned_Employement_Cases' increment-value='%null%' refresh-type='create' rows-inserted='99' timestamp-start='2022-07-13 17:29:31.032' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>GEOID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[GEOID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GEOID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Cleaned_Employement_Cases.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NAME</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Cleaned_Employement_Cases.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>In the Labor Force,Employed with disabilityE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[In the Labor Force,Employed with disabilityE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>In the Labor Force,Employed with disabilityE</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Cleaned_Employement_Cases.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>In the Labor force,unemployed with a disabilityE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[In the Labor force,unemployed with a disabilityE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>In the Labor force,unemployed with a disabilityE</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Cleaned_Employement_Cases.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Not in the Labor force, with a disabilityE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Not in the Labor force, with a disabilityE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Not in the Labor force, with a disabilityE</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Cleaned_Employement_Cases.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>91</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>In the Labor Force,Employed with no disabilityE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[In the Labor Force,Employed with no disabilityE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>In the Labor Force,Employed with no disabilityE</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Cleaned_Employement_Cases.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>In the Labor force,unemployed with no disabilityE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[In the Labor force,unemployed with no disabilityE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>In the Labor force,unemployed with no disabilityE</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Cleaned_Employement_Cases.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Not in the Labor Force, with no disabilityE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Not in the Labor Force, with no disabilityE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Not in the Labor Force, with no disabilityE</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Cleaned_Employement_Cases.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>97</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>disability_total</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[disability_total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>disability_total</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Cleaned_Employement_Cases.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>94</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>no_disability_total</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[no_disability_total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>no_disability_total</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Cleaned_Employement_Cases.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>percent_in_labor_force_employed_gap</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[percent_in_labor_force_employed_gap]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>percent_in_labor_force_employed_gap</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Cleaned_Employement_Cases.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>percent_in_labor_force_unemployed_gap</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[percent_in_labor_force_unemployed_gap]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>percent_in_labor_force_unemployed_gap</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Cleaned_Employement_Cases.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>percent_not_in_labor_force_gap</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[percent_not_in_labor_force_gap]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>percent_not_in_labor_force_gap</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Cleaned_Employement_Cases.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Cleaned_Employement_Cases.csv' id='Cleaned_Employement_Cases.csv_74DB3C0D245943F994530CF19921D430'>
+            <properties context=''>
+              <relation connection='textscan.0m80l0d0c7pjqb1d63p3w0c12sb1' name='Cleaned_Employement_Cases.csv' table='[Cleaned_Employement_Cases#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='GEOID' ordinal='0' />
+                  <column datatype='string' name='NAME' ordinal='1' />
+                  <column datatype='integer' name='In the Labor Force,Employed with disabilityE' ordinal='2' />
+                  <column datatype='integer' name='In the Labor force,unemployed with a disabilityE' ordinal='3' />
+                  <column datatype='integer' name='Not in the Labor force, with a disabilityE' ordinal='4' />
+                  <column datatype='integer' name='In the Labor Force,Employed with no disabilityE' ordinal='5' />
+                  <column datatype='integer' name='In the Labor force,unemployed with no disabilityE' ordinal='6' />
+                  <column datatype='integer' name='Not in the Labor Force, with no disabilityE' ordinal='7' />
+                  <column datatype='integer' name='disability_total' ordinal='8' />
+                  <column datatype='integer' name='no_disability_total' ordinal='9' />
+                  <column datatype='real' name='percent_in_labor_force_employed_gap' ordinal='10' />
+                  <column datatype='real' name='percent_in_labor_force_unemployed_gap' ordinal='11' />
+                  <column datatype='real' name='percent_not_in_labor_force_gap' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='SSI_vs_OASDI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#242424' fontname='-apple-system,BlinkMacSystemFont,Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,Segoe UI Web,sans-serif' fontsize='17'>Number of recipients receiving SSI and OASDI</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#242424' fontname='-apple-system,BlinkMacSystemFont,Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,Segoe UI Web,sans-serif' fontsize='17'>County Level</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sanika-Merged_SSI_table' name='federated.1et6gvy1xbmp5u176wjum1wz4y4a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1et6gvy1xbmp5u176wjum1wz4y4a'>
+            <column caption='Calculation1' datatype='real' name='[Calculation_2908199514960199681]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[SSI.recipients.also.receiving.OASDI]/[Total]' />
+            </column>
+            <column datatype='integer' name='[SSI.recipients.also.receiving.OASDI]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total]' role='measure' type='quantitative' />
+            <column-instance column='[ï..County]' derivation='None' name='[none:ï..County:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2908199514960199681]' derivation='Sum' name='[sum:Calculation_2908199514960199681:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SSI.recipients.also.receiving.OASDI]' derivation='Sum' name='[sum:SSI.recipients.also.receiving.OASDI:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[ï..County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1et6gvy1xbmp5u176wjum1wz4y4a].[none:ï..County:nk]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:ï..County:nk]' />
+              <groupfilter function='member' level='[none:ï..County:nk]' member='&quot;Carroll&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1et6gvy1xbmp5u176wjum1wz4y4a].[none:ï..County:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1et6gvy1xbmp5u176wjum1wz4y4a].[sum:Calculation_2908199514960199681:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1et6gvy1xbmp5u176wjum1wz4y4a].[sum:SSI.recipients.also.receiving.OASDI:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1et6gvy1xbmp5u176wjum1wz4y4a].[sum:SSI.recipients.also.receiving.OASDI:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1et6gvy1xbmp5u176wjum1wz4y4a].[none:ï..County:nk]</rows>
+        <cols>[federated.1et6gvy1xbmp5u176wjum1wz4y4a].[sum:Calculation_2908199514960199681:qk]</cols>
+      </table>
+      <simple-id uuid='{E2115605-9627-4CD5-8101-3C5FEB9DBDF3}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='75'>
+    <window class='worksheet' maximized='true' name='SSI_vs_OASDI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1et6gvy1xbmp5u176wjum1wz4y4a].[sum:SSI.recipients.also.receiving.OASDI:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1et6gvy1xbmp5u176wjum1wz4y4a].[none:ï..County:nk]</field>
+            <field>[federated.1et6gvy1xbmp5u176wjum1wz4y4a].[sum:SSI.recipients.also.receiving.OASDI:qk]</field>
+            <field>[federated.1h1976s10kotcw158qqhp0k2vvch].[:Measure Names]</field>
+            <field>[federated.1h1976s10kotcw158qqhp0k2vvch].[none:variable:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4F4D74B7-D843-42D0-B2BF-1347697B223D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='SSI_vs_OASDI' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
