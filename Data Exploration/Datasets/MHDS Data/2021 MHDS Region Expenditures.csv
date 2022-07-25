@@ -1,4 +1,4 @@
-﻿Region,Year,ID,Category,Sub Category 1,Sub Category 2,MI (40),ID (42),DD (43),BI (47),Admin (44),Other,Total
+﻿Region,Year,Code,Category,Sub Category 1,Sub Category 2,MI (40),ID (42),DD (43),BI (47),Admin (44),Other,Total
 Care Connections of Northern Iowa,2021,42305,Core,Treatment,Psychotherapeutic Treatment - Outpatient,90469.59,,,,,,90469.59
 Care Connections of Northern Iowa,2021,42306,Core,Treatment,Psychotherapeutic Treatment - Medication Prescribing,24393.07,,,,,,24393.07
 Care Connections of Northern Iowa,2021,43301,Core,Treatment,Evaluation (Non Crisis) - Assessment and Evaluation,400,,,,,,400
@@ -292,102 +292,103 @@ Southeast Iowa Link,2021,12XXX,Administration,,Purchased Administration,,,,,5758
 Southeast Iowa Link,2021,15481,Administration,,Distribution to other MHDS Regions: Payments to other government or organization,,,,,,,
 Southeast Iowa Link,2021,13951,Uncategorized,,Distribution to MHDS Regional Fiscal Agent - Contributions to Other Governments and Organizations,,,,,5934451,,5934451
 Southeast Iowa Link,2021,14951,Uncategorized,,MHDS Fiscal Agent Reimbursement to MHDS Regional Members,,,,,114438.17,,114438.17
-Polk County,2021,42305,Core Domains,Treatment,Mental health outpatient therapy **,587710,,,,,587710,
-Polk County,2021,42306,Core Domains,Treatment,Medication prescribing & management **,18676,,,,,18676,
-Polk County,2021,43301,Core Domains,Treatment,"Assessment, evaluation, and early identification **",44926,500,,,,45426,
-Polk County,2021,71319,Core Domains,Treatment,Mental health inpatient therapy-MHI,85013,,,,,85013,
-Polk County,2021,73319,Core Domains,Treatment,Mental health inpatient therapy **,,,,,,,
-Polk County,2021,32322,Core Domains,Crisis Services,Personal emergency response system,,,1175,,,1175,
-Polk County,2021,44301,Core Domains,Crisis Services,Crisis evaluation,,,,,,,
-Polk County,2021,44302,Core Domains,Crisis Services,23 hour crisis observation & holding,1062704,,,,,1062704,
-Polk County,2021,44305,Core Domains,Crisis Services,24 hour access to crisis response,100000,,,,,100000,
-Polk County,2021,44307,Core Domains,Crisis Services,Mobile response **,442425,,,,,442425,
-Polk County,2021,44312,Core Domains,Crisis Services,Crisis Stabilization community-based services **,,,,,,,
-Polk County,2021,44313,Core Domains,Crisis Services,Crisis Stabilization residential services **,143096,,,,,143096,
-Polk County,2021,44396,Core Domains,Crisis Services,Access Centers: start-up / sustainability,1015619,,,,,1015619,
-Polk County,2021,32320,Core Domains,Support for Community Living,Home health aide,,,,,,,
-Polk County,2021,32325,Core Domains,Support for Community Living,Respite,,3000,11862,,,14862,
-Polk County,2021,32328,Core Domains,Support for Community Living,Home & vehicle modifications,,,,,,,
-Polk County,2021,32329,Core Domains,Support for Community Living,Supported community living,6629357,1697418.06,3297640,,,11624416,
-Polk County,2021,42329,Core Domains,Support for Community Living,Intensive residential services,,,,,,,
-Polk County,2021,50362,Core Domains,Support for Employment,Prevocational services,,780,1090,,,1870,
-Polk County,2021,50364,Core Domains,Support for Employment,Job development,,,20942,,,20942,
-Polk County,2021,50367,Core Domains,Support for Employment,Day habilitation,1396,,,,,1396,
-Polk County,2021,50368,Core Domains,Support for Employment,Supported employment,108699,,112925,,,221624,
-Polk County,2021,50369,Core Domains,Support for Employment,Group Supported employment-enclave,,,,,,,
-Polk County,2021,45323,Core Domains,Recovery Services,Family support,,,,,,,
-Polk County,2021,45366,Core Domains,Recovery Services,Peer support,72044,,,,,72044,
-Polk County,2021,21375,Core Domains,Service Coordination,Case management,52,,156,,,208,
-Polk County,2021,24376,Core Domains,Service Coordination,Health homes,430410,,,,,430410,
-Polk County,2021,63309,Core Domains,Sub-Acute Services,Subacute services-1-5 beds,,,,,,,
-Polk County,2021,64309,Core Domains,Sub-Acute Services,Subacute services-6 and over beds,,,,,,,
-Polk County,2021,4422,Core Domains,Core Evidenced Based Treatment,Education & Training Services - provider competency,224092,,,,,224092,
-Polk County,2021,32396,Core Domains,Core Evidenced Based Treatment,Supported housing,2671811,3615,25850,,,2701276,
-Polk County,2021,42398,Core Domains,Core Evidenced Based Treatment,Assertive community treatment (ACT),638816,,,,,638816,
-Polk County,2021,45373,Core Domains,Core Evidenced Based Treatment,Family psychoeducation,,,,,,,
-Polk County,2021,46319,Mandated Services,,Oakdale,,,,,,,
-Polk County,2021,72319,Mandated Services,,State resource centers,,,,,,,
-Polk County,2021,74XXX,Mandated Services,,Commitment related (except 301),109401,1705,338,,,111443,
-Polk County,2021,75XXX,Mandated Services,,Mental health advocate,140728,,,,,140728,
-Polk County,2021,25xxx,Additional Core Domains,Justice system-involved services,Coordination services,,,,,,,
-Polk County,2021,44346,Additional Core Domains,Justice system-involved services,24 hour crisis line*,,,,,,,
-Polk County,2021,44366,Additional Core Domains,Justice system-involved services,Warm line*,,,,,,,
-Polk County,2021,46305,Additional Core Domains,Justice system-involved services,Mental health services in jails,,,,,,,
-Polk County,2021,46399,Additional Core Domains,Justice system-involved services,Justice system-involved services-other,,,,,,,
-Polk County,2021,46422,Additional Core Domains,Justice system-involved services,Crisis prevention training,,,,,,,
-Polk County,2021,46425,Additional Core Domains,Justice system-involved services,Mental health court related costs,,,,,,,
-Polk County,2021,74301,Additional Core Domains,Justice system-involved services,Civil commitment prescreening evaluation,100000,,,,,100000,
-Polk County,2021,42366,Additional Core Domains,Additional Core Evidenced based treatment,Peer self-help drop-in centers,,,,,,,
-Polk County,2021,42397,Additional Core Domains,Additional Core Evidenced based treatment,Psychiatric rehabilitation (IPR),,,,,,,
-Polk County,2021,3371,Other Informational Services,,Information & referral,27291,,,,,27291,
-Polk County,2021,4372,Other Informational Services,,"Planning, consultation &/or early intervention (client related) **",59824,,,,,59824,
+Polk County,2021,42305,Core,Treatment,Mental health outpatient therapy **,587710,,,,,,587710
+Polk County,2021,42306,Core,Treatment,Medication prescribing & management **,18676,,,,,,18676
+Polk County,2021,43301,Core,Treatment,"Assessment, evaluation, and early identification **",44926,500,,,,,45426
+Polk County,2021,71319,Core,Treatment,Mental health inpatient therapy-MHI,85013,,,,,,85013
+Polk County,2021,73319,Core,Treatment,Mental health inpatient therapy **,,,,,,,
+Polk County,2021,32322,Core,Basic Crisis Response,Personal emergency response system,,,1175,,,,1175
+Polk County,2021,44301,Core,Basic Crisis Response,Crisis evaluation,,,,,,,
+Polk County,2021,44302,Core,Basic Crisis Response,23 hour crisis observation & holding,1062704,,,,,,1062704
+Polk County,2021,44305,Core,Basic Crisis Response,24 hour access to crisis response,100000,,,,,,100000
+Polk County,2021,44307,Core,Basic Crisis Response,Mobile response **,442425,,,,,,442425
+Polk County,2021,44312,Core,Basic Crisis Response,Crisis Stabilization community-based services **,,,,,,,
+Polk County,2021,44313,Core,Basic Crisis Response,Crisis Stabilization residential services **,143096,,,,,,143096
+Polk County,2021,44396,Core,Basic Crisis Response,Access Centers: start-up / sustainability,1015619,,,,,,1015619
+Polk County,2021,32320,Core,Support for Community Living,Home health aide,,,,,,,
+Polk County,2021,32325,Core,Support for Community Living,Respite,,3000,11862,,,,14862
+Polk County,2021,32328,Core,Support for Community Living,Home & vehicle modifications,,,,,,,
+Polk County,2021,32329,Core,Support for Community Living,Supported community living,6629357,1697418.06,3297640,,,,11624416
+Polk County,2021,42329,Core,Support for Community Living,Intensive residential services,,,,,,,
+Polk County,2021,50362,Core,Support for Employment,Prevocational services,,780,1090,,,,1870
+Polk County,2021,50364,Core,Support for Employment,Job development,,,20942,,,,20942
+Polk County,2021,50367,Core,Support for Employment,Day habilitation,1396,,,,,,1396
+Polk County,2021,50368,Core,Support for Employment,Supported employment,108699,,112925,,,,221624
+Polk County,2021,50369,Core,Support for Employment,Group Supported employment-enclave,,,,,,,
+Polk County,2021,45323,Core,Recovery Services,Family support,,,,,,,
+Polk County,2021,45366,Core,Recovery Services,Peer support,72044,,,,,,72044
+Polk County,2021,21375,Core,Service Coordination,Case management,52,,156,,,,208
+Polk County,2021,24376,Core,Service Coordination,Health homes,430410,,,,,,430410
+Polk County,2021,63309,Core,Sub-Acute Services,Subacute services-1-5 beds,,,,,,,
+Polk County,2021,64309,Core,Sub-Acute Services,Subacute services-6 and over beds,,,,,,,
+Polk County,2021,4422,Core,Core Evidence Based Treatment,Education & Training Services - provider competency,224092,,,,,,224092
+Polk County,2021,32396,Core,Core Evidence Based Treatment,Supported housing,2671811,3615,25850,,,,2701276
+Polk County,2021,42398,Core,Core Evidence Based Treatment,Assertive community treatment (ACT),638816,,,,,,638816
+Polk County,2021,45373,Core,Core Evidence Based Treatment,Family psychoeducation,,,,,,,
+Polk County,2021,46319,Mandated,,Oakdale,,,,,,,
+Polk County,2021,72319,Mandated,,State resource centers,,,,,,,
+Polk County,2021,74XXX,Mandated,,Commitment related (except 301),109401,1705,338,,,,111443
+Polk County,2021,75XXX,Mandated,,Mental health advocate,140728,,,,,,140728
+Polk County,2021,25xxx,Core Plus,Justice System Involved Services,Coordination services,,,,,,,
+Polk County,2021,44346,Core Plus,Justice System Involved Services,24 hour crisis line*,,,,,,,
+Polk County,2021,44366,Core Plus,Justice System Involved Services,Warm line*,,,,,,,
+Polk County,2021,46305,Core Plus,Justice System Involved Services,Mental health services in jails,,,,,,,
+Polk County,2021,46399,Core Plus,Justice System Involved Services,Justice system-involved services-other,,,,,,,
+Polk County,2021,46422,Core Plus,Justice System Involved Services,Crisis prevention training,,,,,,,
+Polk County,2021,46425,Core Plus,Justice System Involved Services,Mental health court related costs,,,,,,,
+Polk County,2021,74301,Core Plus,Justice System Involved Services,Civil commitment prescreening evaluation,100000,,,,,,100000
+Polk County,2021,42366,Core Plus,Additional Core Evidence Based Treatment,Peer self-help drop-in centers,,,,,,,
+Polk County,2021,42397,Core Plus,Additional Core Evidence Based Treatment,Psychiatric rehabilitation (IPR),,,,,,,
+Polk County,2021,3371,Other Informational Services,,Information & referral,27291,,,,,,27291
+Polk County,2021,4372,Other Informational Services,,"Planning, consultation &/or early intervention (client related) **",59824,,,,,,59824
 Polk County,2021,4377,Other Informational Services,,Provider Incentive Payment,,,,,,,
 Polk County,2021,4399,Other Informational Services,,Consultation Other,,,,,,,
-Polk County,2021,4429,Other Informational Services,,Planning and Management Consultants (non-client related),105356,,,,,105356,
-Polk County,2021,5373,Other Informational Services,,"Public education, prevention and education **",271358,,,,,271358,
-Polk County,2021,6399,Community Living Supports,,Academic services,,,,,,,
-Polk County,2021,22XXX,Community Living Supports,,Services management,801050,200214,523218,,,1524482,
-Polk County,2021,23376,Community Living Supports,,Crisis care coordination,281721,,,,,281721,
-Polk County,2021,23399,Community Living Supports,,Crisis care coordination other,,,,,,,
-Polk County,2021,24399,Community Living Supports,,Health home other,,,,,,,
-Polk County,2021,31XXX,Community Living Supports,,Transportation,,,,,,,
-Polk County,2021,32321,Community Living Supports,,Chore services,,,,,,,
-Polk County,2021,32326,Community Living Supports,,Guardian/conservator,,,,,,,
-Polk County,2021,32327,Community Living Supports,,Representative payee,,,,,,,
-Polk County,2021,32335,Community Living Supports,,CDAC,136782,,20936,,,157718,
-Polk County,2021,32399,Community Living Supports,,Other support,299420,70,100,,,299590,
-Polk County,2021,33330,Community Living Supports,,Mobile meals,,,,,,,
-Polk County,2021,33340,Community Living Supports,,Rent payments (time limited),,,,,,,
-Polk County,2021,33345,Community Living Supports,,Ongoing rent subsidy,,,,,,,
-Polk County,2021,33399,Community Living Supports,,Other basic needs,313985,,,,,313985,
-Polk County,2021,41305,Community Living Supports,,Physiological outpatient treatment,,,,,,,
-Polk County,2021,41306,Community Living Supports,,Prescription meds,1032,,,,,1032,
-Polk County,2021,41307,Community Living Supports,,In-home nursing,,,,,,,
-Polk County,2021,41308,Community Living Supports,,Health supplies,,,,,,,
-Polk County,2021,41399,Community Living Supports,,Other physiological treatment,,,,,,,
-Polk County,2021,42309,Community Living Supports,,Partial hospitalization,,,,,,,
-Polk County,2021,42310,Community Living Supports,,Transitional living program,,,,,,,
-Polk County,2021,42363,Community Living Supports,,Day treatment,,,,,,,
-Polk County,2021,42396,Community Living Supports,,Community support programs,,,,,,,
-Polk County,2021,42399,Community Living Supports,,Other psychotherapeutic treatment,,,,,,,
-Polk County,2021,43399,Community Living Supports,,Other non-crisis evaluation,,,,,,,
-Polk County,2021,44304,Community Living Supports,,Emergency care,,,,,,,
-Polk County,2021,44399,Community Living Supports,,Other crisis services,,,,,,,
-Polk County,2021,45399,Community Living Supports,,Other family & peer support,,,,,,,
-Polk County,2021,46306,Community Living Supports,,Psychiatric medications in jail,,,,,,,
-Polk County,2021,50361,Community Living Supports,,Vocational skills training,242894,28230,,,,271124,
-Polk County,2021,50365,Community Living Supports,,Supported education,5019,6961,47699,,,59679,
-Polk County,2021,50399,Community Living Supports,,Other vocational & day services,,,,,,,
-Polk County,2021,63XXX,Community Living Supports,,"RCF 1-5 beds (63314, 63315 & 63316)",,,,,,,
-Polk County,2021,63XXX,Community Living Supports,,ICF 1-5 beds (63317 & 63318),,,,,,,
-Polk County,2021,63329,Community Living Supports,,SCL 1-5 beds,,,,,,,
-Polk County,2021,63399,Community Living Supports,,Other 1-5 beds,,,,,,,
-Polk County,2021,50360,Other Congregate Services,,Work services (work activity/sheltered work),,,,,,,
-Polk County,2021,64XXX,Other Congregate Services,,"RCF 6 and over beds (64314, 64315 & 64316)",840639,,,,,840639,
-Polk County,2021,64329,Other Congregate Services,,SCL 6 and over beds,,,,,,,
-Polk County,2021,64399,Other Congregate Services,,Other 6 and over beds,,,,,,,
-Polk County,2021,11XXX,Administration,,Direct Administration,,,,,2200772,2200772,
-Polk County,2021,12XXX,Administration,,Purchased Administration,,,,,90466,90466,
+Polk County,2021,4429,Other Informational Services,,Planning and Management Consultants (non-client related),105356,,,,,,105356
+Polk County,2021,5373,Other Informational Services,,"Public education, prevention and education **",271358,,,,,,271358
+Polk County,2021,6399,Community Living Support Services,,Academic services,,,,,,,
+Polk County,2021,22XXX,Community Living Support Services,,Services management,801050,200214,523218,,,,1524482
+Polk County,2021,23376,Community Living Support Services,,Crisis care coordination,281721,,,,,,281721
+Polk County,2021,23399,Community Living Support Services,,Crisis care coordination other,,,,,,,
+Polk County,2021,24399,Community Living Support Services,,Health home other,,,,,,,
+Polk County,2021,31XXX,Community Living Support Services,,Transportation,,,,,,,
+Polk County,2021,32321,Community Living Support Services,,Chore services,,,,,,,
+Polk County,2021,32326,Community Living Support Services,,Guardian/conservator,,,,,,,
+Polk County,2021,32327,Community Living Support Services,,Representative payee,,,,,,,
+Polk County,2021,32335,Community Living Support Services,,CDAC,136782,,20936,,,,157718
+Polk County,2021,32399,Community Living Support Services,,Other support,299420,70,100,,,,299590
+Polk County,2021,33330,Community Living Support Services,,Mobile meals,,,,,,,
+Polk County,2021,33340,Community Living Support Services,,Rent payments (time limited),,,,,,,
+Polk County,2021,33345,Community Living Support Services,,Ongoing rent subsidy,,,,,,,
+Polk County,2021,33399,Community Living Support Services,,Other basic needs,313985,,,,,,313985
+Polk County,2021,41305,Community Living Support Services,,Physiological outpatient treatment,,,,,,,
+Polk County,2021,41306,Community Living Support Services,,Prescription meds,1032,,,,,,1032
+Polk County,2021,41307,Community Living Support Services,,In-home nursing,,,,,,,
+Polk County,2021,41308,Community Living Support Services,,Health supplies,,,,,,,
+Polk County,2021,41399,Community Living Support Services,,Other physiological treatment,,,,,,,
+Polk County,2021,42309,Community Living Support Services,,Partial hospitalization,,,,,,,
+Polk County,2021,42310,Community Living Support Services,,Transitional living program,,,,,,,
+Polk County,2021,42363,Community Living Support Services,,Day treatment,,,,,,,
+Polk County,2021,42396,Community Living Support Services,,Community support programs,,,,,,,
+Polk County,2021,42399,Community Living Support Services,,Other psychotherapeutic treatment,,,,,,,
+Polk County,2021,43399,Community Living Support Services,,Other non-crisis evaluation,,,,,,,
+Polk County,2021,44304,Community Living Support Services,,Emergency care,,,,,,,
+Polk County,2021,44399,Community Living Support Services,,Other crisis services,,,,,,,
+Polk County,2021,45399,Community Living Support Services,,Other family & peer support,,,,,,,
+Polk County,2021,46306,Community Living Support Services,,Psychiatric medications in jail,,,,,,,
+Polk County,2021,50361,Community Living Support Services,,Vocational skills training,242894,28230,,,,,271124
+Polk County,2021,50365,Community Living Support Services,,Supported education,5019,6961,47699,,,,59679
+Polk County,2021,50399,Community Living Support Services,,Other vocational & day services,,,,,,,
+Polk County,2021,63XXX,Community Living Support Services,,"RCF 1-5 beds (63314, 63315 & 63316)",,,,,,,
+Polk County,2021,63XXX,Community Living Support Services,,ICF 1-5 beds (63317 & 63318),,,,,,,
+Polk County,2021,63329,Community Living Support Services,,SCL 1-5 beds,,,,,,,
+Polk County,2021,63399,Community Living Support Services,,Other 1-5 beds,,,,,,,
+Polk County,2021,50360,Congregate Services,,Work services (work activity/sheltered work),,,,,,,
+Polk County,2021,64XXX,Congregate Services,,"RCF 6 and over beds (64314, 64315 & 64316)",840639,,,,,,840639
+Polk County,2021,64329,Congregate Services,,SCL 6 and over beds,,,,,,,
+Polk County,2021,64XXX,Congregate Services,,ICF-6 and over beds,102979,,,,,,102979
+Polk County,2021,64399,Congregate Services,,Other 6 and over beds,,,,,,,
+Polk County,2021,11XXX,Administration,,Direct Administration,,,,,2200772,,2200772
+Polk County,2021,12XXX,Administration,,Purchased Administration,,,,,90466,,90466
 MHDS of East Central Region,2021,42305,Core,Treatment,Psychotherapeutic Treatment - Outpatient,312615.7,,,,,,312615.7
 MHDS of East Central Region,2021,42306,Core,Treatment,Psychotherapeutic Treatment - Medication Prescribing,73215.51,,,,,,73215.51
 MHDS of East Central Region,2021,43301,Core,Treatment,Evaluation (Non Crisis) - Assessment and Evaluation,,,,,,,

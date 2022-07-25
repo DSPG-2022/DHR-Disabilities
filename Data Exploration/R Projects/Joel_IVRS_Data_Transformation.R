@@ -2,14 +2,17 @@ library(tidyr)
 library(dplyr)
 library(stringr)
 library(zipcodeR)
+library(tibble)
 
-IVRS_data <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
+IVRS_data_old <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
+IVRS_data_new_2020 <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
+IVRS_data_new_2021 <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
 IVRS_County_Office <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
 county_pop <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
 
 
 # Initial split on comma to get City
-    IVRS_data_transformed <- IVRS_data %>%
+    IVRS_data_transformed <- IVRS_data_old %>%
                               separate('Client Location', c('Client City', 'Client State Zip Code'), ',')
     
     # Remove any leading and trailing whitespace
@@ -36,52 +39,99 @@ county_pop <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check
 # Remove any leading and trailing whitespace
     IVRS_data_transformed$'Client Zip Code Extra Info' <- str_trim(IVRS_data_transformed$'Client Zip Code Extra Info')
     
-# Renames Iowa county O'Brien to have ' instead of Oâ€™Brien
+    # remove un-needed columns from new IVRS data
+    IVRS_data_new_2020_cleaned <- subset(IVRS_data_new_2020, select = -c(39))
+    IVRS_data_new_2021_cleaned <- subset(IVRS_data_new_2021, select = -c(39))
+    
+    # add needed columns to old and new IVRS data
+    ClientZipCodeExtraInfo <- rep(NA, dim(IVRS_data_new_2020_cleaned)[1])
+    ClientLocationPoint <- rep(NA, dim(IVRS_data_new_2020_cleaned)[1])
+    IVRS_data_new_2020_cleaned <- add_column(IVRS_data_new_2020_cleaned, ClientZipCodeExtraInfo, .after = 41) 
+    IVRS_data_new_2020_cleaned <- add_column(IVRS_data_new_2020_cleaned, ClientLocationPoint, .after = 42)
+    
+    ClientZipCodeExtraInfo <- rep(NA, dim(IVRS_data_new_2021_cleaned)[1])
+    ClientLocationPoint <- rep(NA, dim(IVRS_data_new_2021_cleaned)[1])
+    IVRS_data_new_2021_cleaned <- add_column(IVRS_data_new_2021_cleaned, ClientZipCodeExtraInfo, .after = 41)
+    IVRS_data_new_2021_cleaned <- add_column(IVRS_data_new_2021_cleaned, ClientLocationPoint, .after = 42)
+    
+    HighSchoolDiplomaDateDuringParticipation<- rep(NA, dim(IVRS_data_transformed)[1])
+    HighSchoolEquivalencyDateDuringParticipation<- rep(NA, dim(IVRS_data_transformed)[1])
+    SpecialEducationCertificateDateDuringParticipation<- rep(NA, dim(IVRS_data_transformed)[1])
+    VocationalTechnicalLicenseDateDuringParticipation<- rep(NA, dim(IVRS_data_transformed)[1])
+    VocationalTechnicalCertificateDateDuringParticipation<- rep(NA, dim(IVRS_data_transformed)[1])
+    OtherDiplomaDegreeCertificateDuringParticipation<- rep(NA, dim(IVRS_data_transformed)[1])
+    AssociateDegreeDateDuringParticipation<- rep(NA, dim(IVRS_data_transformed)[1])
+    BachelorsDegreeDateDuringParticipation<- rep(NA, dim(IVRS_data_transformed)[1])
+    MastersDegreeDateDuringParticipation<- rep(NA, dim(IVRS_data_transformed)[1])
+    GraduateDegreeDuringParticipation<- rep(NA, dim(IVRS_data_transformed)[1])
+    NumberofBarrierstoEmployment<- rep(NA, dim(IVRS_data_transformed)[1])
+    
+    
+    temp <- add_column(IVRS_data_transformed, HighSchoolDiplomaDateDuringParticipation, .after = 43) 
+    temp <- add_column(temp, HighSchoolEquivalencyDateDuringParticipation, .after = 44) 
+    temp <- add_column(temp, SpecialEducationCertificateDateDuringParticipation, .after = 45) 
+    temp <- add_column(temp, VocationalTechnicalLicenseDateDuringParticipation, .after = 46) 
+    temp <- add_column(temp, VocationalTechnicalCertificateDateDuringParticipation, .after = 47) 
+    temp <- add_column(temp, OtherDiplomaDegreeCertificateDuringParticipation, .after = 48) 
+    temp <- add_column(temp, AssociateDegreeDateDuringParticipation, .after = 49) 
+    temp <- add_column(temp, BachelorsDegreeDateDuringParticipation, .after = 50) 
+    temp <- add_column(temp, MastersDegreeDateDuringParticipation, .after = 51) 
+    temp <- add_column(temp, GraduateDegreeDuringParticipation, .after = 52) 
+    temp <- add_column(temp, NumberofBarrierstoEmployment, .after = 53)
+    
+    IVRS_data_transformed <- temp
+    
+    # append data
+    colnames(IVRS_data_new_2020_cleaned) <- colnames(IVRS_data_transformed)
+    colnames(IVRS_data_new_2021_cleaned) <- colnames(IVRS_data_transformed)
+    IVRS_Appended_temp <- rbind(IVRS_data_transformed, IVRS_data_new_2020_cleaned)
+    IVRS_Appended <- rbind(IVRS_Appended_temp, IVRS_data_new_2021_cleaned)
+    
+# Renames Iowa county O'Brien to have ' instead of O�???TBrien (Double check wording in the data as these characters consistently incorrectly save)
     # !!IMPORTANT!! File needs to be saved using UTF-8 encoding for the special characters to not disappear. 
     #               This can be changed in File -> Save with encoding -> Choose Encoding -> UTF-8
-    IVRS_data_transformed$'Client County'[IVRS_data_transformed$'Client County' == 'Oâ€™Brien'] <- "O'Brien"   
+    IVRS_Appended$'Client County'[IVRS_Appended$'Client County' == 'O�???TBrien'] <- "O'Brien"   
     
-## !!!NOT WORKING!!! ##
 # Changes state names to abbreviations
 
-    stateAbbreviations <- rep(NA, dim(IVRS_data_transformed)[1])
+    stateNames <- rep(NA, dim(IVRS_Appended)[1])
     
     index <- 0
     
-    for(state in IVRS_data_transformed$'Client State'){
+    for(state in IVRS_Appended$'Client State'){
       
       state <- str_trim(state)
       index <- index + 1
       
       if(is.na(state)){
-        stateAbbreviations[index] <- NA
+        stateNames[index] <- NA
       }
       else if(state == 'ArKS'){
-        stateAbbreviations[index] <- 'AR'
+        stateNames[index] <- 'Arkansas'
       }
       else if(state == 'ARKS'){
-        stateAbbreviations[index] <- 'AR'
+        stateNames[index] <- 'Arkansas'
       }
       else if(state == 'District of Columbia'){
-        stateAbbreviations[index] <- 'DC'
+        stateNames[index] <- state
       }
       else if(state == 'Puerto Rico'){
-        stateAbbreviations[index] <- NA
+        stateNames[index] <- NA
       }
       else if(state == 'West VA'){
-        stateAbbreviations[index] <- 'WV'
+        stateNames[index] <- 'West Virginia'
       }
       else if(nchar(state) > 2){
-        stateAbbreviations[index] <- state.abb[grep(state, state.name)]
+        stateNames[index] <- state
       }
       else {
-        stateAbbreviations[index] <- state
+        stateNames[index] <- state.name[grep(state, state.abb)]
       }
     }
 
- IVRS_data_transformed$'Client State' <- stateAbbreviations
+    IVRS_Appended$'Client State' <- stateNames
     
-    
+ 
 # Change wage at application and closure values to correctly calculate wage change
     #
     # Note: Wage change is computed by the formula (Wage (Closure) - Wage (Application) = Wage Change).
@@ -97,60 +147,54 @@ county_pop <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check
     #       resulted in unemployment.
     #
     
+    # change columns to numeric
+    IVRS_Appended$'Hourly Wage (Application)' <- as.integer(IVRS_Appended$'Hourly Wage (Application)')
+    IVRS_Appended$'Hourly Wage (Closure)' <- as.integer(IVRS_Appended$'Hourly Wage (Closure)')
+    IVRS_Appended$'Monthly Wage (Application)' <- as.integer(IVRS_Appended$'Monthly Wage (Application)')
+    IVRS_Appended$'Monthly Wage (Closure)' <- as.integer(IVRS_Appended$'Monthly Wage (Closure)')
+    IVRS_Appended$'Annual Wage (Application)' <- as.integer(IVRS_Appended$'Annual Wage (Application)')
+    IVRS_Appended$'Annual Wage (Closure)' <- as.integer(IVRS_Appended$'Annual Wage (Closure)')
+    IVRS_Appended$'Hourly Wage Change' <- as.integer(IVRS_Appended$'Hourly Wage Change')
+    IVRS_Appended$'Monthly Wage Change' <- as.integer(IVRS_Appended$'Monthly Wage Change')
+    IVRS_Appended$'Annual Wage Change' <- as.integer(IVRS_Appended$'Annual Wage Change')
+    
     # hourly
-    IVRS_data_transformed$'Hourly Wage (Application)'[is.na(IVRS_data_transformed$'Hourly Wage (Application)')] <- 0
-    IVRS_data_transformed$'Hourly Wage (Closure)'[IVRS_data_transformed$'Hourly Wage (Closure)' == 0] <- NA
+    IVRS_Appended$'Hourly Wage (Application)'[is.na(IVRS_Appended$'Hourly Wage (Application)')] <- 0
+    IVRS_Appended$'Hourly Wage (Closure)'[IVRS_Appended$'Hourly Wage (Closure)' == 0] <- NA
     
     #monthly
-    IVRS_data_transformed$'Monthly Wage (Application)'[is.na(IVRS_data_transformed$'Monthly Wage (Application)')] <- 0
-    IVRS_data_transformed$'Monthly Wage (Closure)'[IVRS_data_transformed$'Monthly Wage (Closure)' == 0] <- NA
+    IVRS_Appended$'Monthly Wage (Application)'[is.na(IVRS_Appended$'Monthly Wage (Application)')] <- 0
+    IVRS_Appended$'Monthly Wage (Closure)'[IVRS_Appended$'Monthly Wage (Closure)' == 0] <- NA
     
     #annually
-    IVRS_data_transformed$'Annual Wage (Application)'[is.na(IVRS_data_transformed$'Annual Wage (Application)')] <- 0
-    IVRS_data_transformed$'Annual Wage (Closure)'[IVRS_data_transformed$'Annual Wage (Closure)' == 0] <- NA
+    IVRS_Appended$'Annual Wage (Application)'[is.na(IVRS_Appended$'Annual Wage (Application)')] <- 0
+    IVRS_Appended$'Annual Wage (Closure)'[IVRS_Appended$'Annual Wage (Closure)' == 0] <- NA
     
 # Recalculated wage change fields
-    IVRS_data_transformed$'Hourly Wage Change' <- IVRS_data_transformed$'Hourly Wage (Closure)' - IVRS_data_transformed$'Hourly Wage (Application)'
-    IVRS_data_transformed$'Monthly Wage Change' <- IVRS_data_transformed$'Monthly Wage (Closure)' - IVRS_data_transformed$'Monthly Wage (Application)'
-    IVRS_data_transformed$'Annual Wage Change' <- IVRS_data_transformed$'Annual Wage (Closure)' - IVRS_data_transformed$'Annual Wage (Application)'
+    IVRS_Appended$'Hourly Wage Change' <- IVRS_Appended$'Hourly Wage (Closure)' - IVRS_Appended$'Hourly Wage (Application)'
+    IVRS_Appended$'Monthly Wage Change' <- IVRS_Appended$'Monthly Wage (Closure)' - IVRS_Appended$'Monthly Wage (Application)'
+    IVRS_Appended$'Annual Wage Change' <- IVRS_Appended$'Annual Wage (Closure)' - IVRS_Appended$'Annual Wage (Application)'
 
 # Creates new columns for whether there was a wage increase, no change, decrease, or unemployed
-    IVRS_data_transformed <- mutate(IVRS_data_transformed, 'Hourly Wage Change Category' = case_when(
-                                                                                            IVRS_data_transformed$'Hourly Wage Change' < 0 ~ "Decrease",
-                                                                                            IVRS_data_transformed$'Hourly Wage Change' == 0 ~ "No Change",
-                                                                                            IVRS_data_transformed$'Hourly Wage Change' > 0 ~ "Increase",
-                                                                                            is.na(IVRS_data_transformed$'Hourly Wage Change') ~ "Unemployed"))
-    IVRS_data_transformed <- mutate(IVRS_data_transformed, 'Monthly Wage Change Category' = case_when(
-                                                                                            IVRS_data_transformed$'Monthly Wage Change' < 0 ~ "Decrease",
-                                                                                            IVRS_data_transformed$'Monthly Wage Change' == 0 ~ "No Change",
-                                                                                            IVRS_data_transformed$'Monthly Wage Change' > 0 ~ "Increase",
-                                                                                            is.na(IVRS_data_transformed$'Monthly Wage Change') ~ "Unemployed"))
-    IVRS_data_transformed <- mutate(IVRS_data_transformed, 'Annual Wage Change Category' = case_when(
-                                                                                            IVRS_data_transformed$'Annual Wage Change' < 0 ~ "Decrease",
-                                                                                            IVRS_data_transformed$'Annual Wage Change' == 0 ~ "No Change",
-                                                                                            IVRS_data_transformed$'Annual Wage Change' > 0 ~ "Increase",
-                                                                                            is.na(IVRS_data_transformed$'Annual Wage Change') ~ "Unemployed"))
-    
-# drop uneeded population columns
-    county_pop_transformed <- subset(county_pop, select = -c(9:65,68))
-
-# change population data to long
-    county_pop_transformed <- county_pop_transformed %>%
-      pivot_longer(
-        -c(1:7),
-        names_to = "Census",
-        values_to = "Population"
-      )
-    
-# split to get Year from Category
-    county_pop_transformed <- county_pop_transformed %>%
-      separate(Census,c('Census', 'Year'),sep="(?<=\\w)(?=[0-9]{4})")
+    IVRS_Appended <- mutate(IVRS_Appended, 'Hourly Wage Change Category' = case_when(
+      IVRS_Appended$'Hourly Wage Change' < 0 ~ "Decrease",
+      IVRS_Appended$'Hourly Wage Change' == 0 ~ "No Change",
+      IVRS_Appended$'Hourly Wage Change' > 0 ~ "Increase",
+                                                                                            is.na(IVRS_Appended$'Hourly Wage Change') ~ "Unemployed"))
+    IVRS_Appended <- mutate(IVRS_Appended, 'Monthly Wage Change Category' = case_when(
+      IVRS_Appended$'Monthly Wage Change' < 0 ~ "Decrease",
+      IVRS_Appended$'Monthly Wage Change' == 0 ~ "No Change",
+      IVRS_Appended$'Monthly Wage Change' > 0 ~ "Increase",
+                                                                                            is.na(IVRS_Appended$'Monthly Wage Change') ~ "Unemployed"))
+    IVRS_Appended <- mutate(IVRS_Appended, 'Annual Wage Change Category' = case_when(
+      IVRS_Appended$'Annual Wage Change' < 0 ~ "Decrease",
+      IVRS_Appended$'Annual Wage Change' == 0 ~ "No Change",
+      IVRS_Appended$'Annual Wage Change' > 0 ~ "Increase",
+                                                                                            is.na(IVRS_Appended$'Annual Wage Change') ~ "Unemployed"))
 
 # remove numbers from office areas
-    IVRS_data_transformed$`Office Area` = substr(IVRS_data_transformed$`Office Area`,1,nchar(IVRS_data_transformed$`Office Area`)-6)
+    IVRS_Appended$`Office Area` = substr(IVRS_Appended$`Office Area`,1,nchar(IVRS_Appended$`Office Area`)-6)
 
     
 # write to file
-    write.csv(IVRS_data_transformed, "C:/Users/joelm/Documents/GitHub/DHR-Disabilities/Data Exploration/Datasets/Cleaned_Closed_Iowa_Vocational_Rehabilitation_Cases.csv", row.names = FALSE)
-    write.csv(county_pop_transformed, "C:/Users/joelm/Documents/GitHub/DHR-Disabilities/Data Exploration/Datasets/2008_2019_county_pop_long.csv", row.names = FALSE)
-    
+    write.csv(IVRS_Appended, "C:/Users/joelm/Documents/GitHub/DHR-Disabilities/Data Exploration/Datasets/Cleaned_Closed_Iowa_Vocational_Rehabilitation_Cases.csv", row.names = FALSE)
