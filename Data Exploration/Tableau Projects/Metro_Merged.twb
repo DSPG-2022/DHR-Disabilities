@@ -1,0 +1,1383 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0415.1144                               -->
+<workbook original-version='18.1' source-build='2022.1.1 (20221.22.0415.1144)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sanika-Merged_table_county-level' inline='true' name='federated.185ee1w1inmts90zjlhe0011t866' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Sanika-Merged_table_county-level' name='textscan.02437kj1v9uiop157sfg41pmkidp'>
+            <connection class='textscan' directory='S:/misc/clg/DSPG2022/ProjectA' filename='Sanika-Merged_table_county-level.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.02437kj1v9uiop157sfg41pmkidp' name='Sanika-Merged_table_county-level.csv' table='[Sanika-Merged_table_county-level#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='GEOID' ordinal='0' />
+            <column datatype='string' name='County.x' ordinal='1' />
+            <column datatype='integer' name='In the Labor Force, Employed with Disability (Estimate)' ordinal='2' />
+            <column datatype='integer' name='In the Labor Force, Employed with Disability (MOE)' ordinal='3' />
+            <column datatype='integer' name='In the Labor Force, Unemployed with Disability (Estimate)' ordinal='4' />
+            <column datatype='integer' name='In the Labor Force, Unemployed with Disability (MOE)' ordinal='5' />
+            <column datatype='integer' name='Not in the Labor Force, with Disability (Estimate)' ordinal='6' />
+            <column datatype='integer' name='Not in the Labor Force, with Disability (MOE)' ordinal='7' />
+            <column datatype='integer' name='In the Labor Force, Employed with NO Disability (Estimate)' ordinal='8' />
+            <column datatype='integer' name='In the Labor Force, Employed with NO Disability (MOE)' ordinal='9' />
+            <column datatype='integer' name='In the Labor Force, Unemployed with NO Disability (Estimate)' ordinal='10' />
+            <column datatype='integer' name='In the Labor Force, Unemployed with NO Disability (MOE)' ordinal='11' />
+            <column datatype='integer' name='Not in the Labor Force, with NO Disability (Estimate)' ordinal='12' />
+            <column datatype='integer' name='Not in the Labor Force, with NO Disability (MOE)' ordinal='13' />
+            <column datatype='integer' name='disability_total' ordinal='14' />
+            <column datatype='integer' name='no_disability_total' ordinal='15' />
+            <column datatype='string' name='CV_employed_disabled' ordinal='16' />
+            <column datatype='string' name='CV_unemployed_disabled' ordinal='17' />
+            <column datatype='string' name='CV_not_in_Labor_force_disabled' ordinal='18' />
+            <column datatype='string' name='CV_employed_not_disabled' ordinal='19' />
+            <column datatype='string' name='CV_unemployed_not_disabled' ordinal='20' />
+            <column datatype='string' name='CV_not_in_Labor_force_not_disabled' ordinal='21' />
+            <column datatype='real' name='percent_in_labor_force_employed_disabled' ordinal='22' />
+            <column datatype='real' name='percent_in_labor_force_employed_not_disabled' ordinal='23' />
+            <column datatype='real' name='percent_in_labor_force_unemployed_disabled' ordinal='24' />
+            <column datatype='real' name='percent_in_labor_force_unemployed_not_disabled' ordinal='25' />
+            <column datatype='real' name='percent_not_in_labor_force_disabled' ordinal='26' />
+            <column datatype='real' name='percent_not_in_labor_force_not_disabled' ordinal='27' />
+            <column datatype='real' name='percent_in_labor_force_employed_gap' ordinal='28' />
+            <column datatype='real' name='percent_in_labor_force_unemployed_gap' ordinal='29' />
+            <column datatype='real' name='percent_not_in_labor_force_gap' ordinal='30' />
+            <column datatype='string' name='compared_to_state_avg_end' ordinal='31' />
+            <column datatype='string' name='compared_to_state_avg_ed' ordinal='32' />
+            <column datatype='string' name='compared_to_state_avg_ud' ordinal='33' />
+            <column datatype='string' name='compared_to_state_avg_nd' ordinal='34' />
+            <column datatype='string' name='County.y' ordinal='35' />
+            <column datatype='string' name='stateName' ordinal='36' />
+            <column datatype='string' name='state' ordinal='37' />
+            <column datatype='integer' name='pop2010' ordinal='38' />
+            <column datatype='string' name='noaa_long' ordinal='39' />
+            <column datatype='string' name='noaa_short' ordinal='40' />
+            <column datatype='integer' name='RUCC_2013' ordinal='41' />
+            <column datatype='string' name='OMB_popDivision' ordinal='42' />
+            <column datatype='string' name='igfi_popDivision' ordinal='43' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.02437kj1v9uiop157sfg41pmkidp' name='Sanika-Merged_table_county-level.csv' table='[Sanika-Merged_table_county-level#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='GEOID' ordinal='0' />
+            <column datatype='string' name='County.x' ordinal='1' />
+            <column datatype='integer' name='In the Labor Force, Employed with Disability (Estimate)' ordinal='2' />
+            <column datatype='integer' name='In the Labor Force, Employed with Disability (MOE)' ordinal='3' />
+            <column datatype='integer' name='In the Labor Force, Unemployed with Disability (Estimate)' ordinal='4' />
+            <column datatype='integer' name='In the Labor Force, Unemployed with Disability (MOE)' ordinal='5' />
+            <column datatype='integer' name='Not in the Labor Force, with Disability (Estimate)' ordinal='6' />
+            <column datatype='integer' name='Not in the Labor Force, with Disability (MOE)' ordinal='7' />
+            <column datatype='integer' name='In the Labor Force, Employed with NO Disability (Estimate)' ordinal='8' />
+            <column datatype='integer' name='In the Labor Force, Employed with NO Disability (MOE)' ordinal='9' />
+            <column datatype='integer' name='In the Labor Force, Unemployed with NO Disability (Estimate)' ordinal='10' />
+            <column datatype='integer' name='In the Labor Force, Unemployed with NO Disability (MOE)' ordinal='11' />
+            <column datatype='integer' name='Not in the Labor Force, with NO Disability (Estimate)' ordinal='12' />
+            <column datatype='integer' name='Not in the Labor Force, with NO Disability (MOE)' ordinal='13' />
+            <column datatype='integer' name='disability_total' ordinal='14' />
+            <column datatype='integer' name='no_disability_total' ordinal='15' />
+            <column datatype='string' name='CV_employed_disabled' ordinal='16' />
+            <column datatype='string' name='CV_unemployed_disabled' ordinal='17' />
+            <column datatype='string' name='CV_not_in_Labor_force_disabled' ordinal='18' />
+            <column datatype='string' name='CV_employed_not_disabled' ordinal='19' />
+            <column datatype='string' name='CV_unemployed_not_disabled' ordinal='20' />
+            <column datatype='string' name='CV_not_in_Labor_force_not_disabled' ordinal='21' />
+            <column datatype='real' name='percent_in_labor_force_employed_disabled' ordinal='22' />
+            <column datatype='real' name='percent_in_labor_force_employed_not_disabled' ordinal='23' />
+            <column datatype='real' name='percent_in_labor_force_unemployed_disabled' ordinal='24' />
+            <column datatype='real' name='percent_in_labor_force_unemployed_not_disabled' ordinal='25' />
+            <column datatype='real' name='percent_not_in_labor_force_disabled' ordinal='26' />
+            <column datatype='real' name='percent_not_in_labor_force_not_disabled' ordinal='27' />
+            <column datatype='real' name='percent_in_labor_force_employed_gap' ordinal='28' />
+            <column datatype='real' name='percent_in_labor_force_unemployed_gap' ordinal='29' />
+            <column datatype='real' name='percent_not_in_labor_force_gap' ordinal='30' />
+            <column datatype='string' name='compared_to_state_avg_end' ordinal='31' />
+            <column datatype='string' name='compared_to_state_avg_ed' ordinal='32' />
+            <column datatype='string' name='compared_to_state_avg_ud' ordinal='33' />
+            <column datatype='string' name='compared_to_state_avg_nd' ordinal='34' />
+            <column datatype='string' name='County.y' ordinal='35' />
+            <column datatype='string' name='stateName' ordinal='36' />
+            <column datatype='string' name='state' ordinal='37' />
+            <column datatype='integer' name='pop2010' ordinal='38' />
+            <column datatype='string' name='noaa_long' ordinal='39' />
+            <column datatype='string' name='noaa_short' ordinal='40' />
+            <column datatype='integer' name='RUCC_2013' ordinal='41' />
+            <column datatype='string' name='OMB_popDivision' ordinal='42' />
+            <column datatype='string' name='igfi_popDivision' ordinal='43' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEOID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GEOID]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>GEOID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County.x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County.x]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>County.x</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor Force, Employed with Disability (Estimate)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor Force, Employed with Disability (Estimate)]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>In the Labor Force, Employed with Disability (Estimate)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor Force, Employed with Disability (MOE)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor Force, Employed with Disability (MOE)]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>In the Labor Force, Employed with Disability (MOE)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor Force, Unemployed with Disability (Estimate)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor Force, Unemployed with Disability (Estimate)]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>In the Labor Force, Unemployed with Disability (Estimate)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor Force, Unemployed with Disability (MOE)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor Force, Unemployed with Disability (MOE)]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>In the Labor Force, Unemployed with Disability (MOE)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Not in the Labor Force, with Disability (Estimate)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Not in the Labor Force, with Disability (Estimate)]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>Not in the Labor Force, with Disability (Estimate)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Not in the Labor Force, with Disability (MOE)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Not in the Labor Force, with Disability (MOE)]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>Not in the Labor Force, with Disability (MOE)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor Force, Employed with NO Disability (Estimate)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor Force, Employed with NO Disability (Estimate)]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>In the Labor Force, Employed with NO Disability (Estimate)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor Force, Employed with NO Disability (MOE)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor Force, Employed with NO Disability (MOE)]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>In the Labor Force, Employed with NO Disability (MOE)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor Force, Unemployed with NO Disability (Estimate)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor Force, Unemployed with NO Disability (Estimate)]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>In the Labor Force, Unemployed with NO Disability (Estimate)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In the Labor Force, Unemployed with NO Disability (MOE)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In the Labor Force, Unemployed with NO Disability (MOE)]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>In the Labor Force, Unemployed with NO Disability (MOE)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Not in the Labor Force, with NO Disability (Estimate)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Not in the Labor Force, with NO Disability (Estimate)]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>Not in the Labor Force, with NO Disability (Estimate)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Not in the Labor Force, with NO Disability (MOE)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Not in the Labor Force, with NO Disability (MOE)]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>Not in the Labor Force, with NO Disability (MOE)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>disability_total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[disability_total]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>disability_total</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>no_disability_total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[no_disability_total]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>no_disability_total</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CV_employed_disabled</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CV_employed_disabled]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>CV_employed_disabled</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CV_unemployed_disabled</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CV_unemployed_disabled]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>CV_unemployed_disabled</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CV_not_in_Labor_force_disabled</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CV_not_in_Labor_force_disabled]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>CV_not_in_Labor_force_disabled</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CV_employed_not_disabled</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CV_employed_not_disabled]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>CV_employed_not_disabled</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CV_unemployed_not_disabled</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CV_unemployed_not_disabled]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>CV_unemployed_not_disabled</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CV_not_in_Labor_force_not_disabled</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CV_not_in_Labor_force_not_disabled]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>CV_not_in_Labor_force_not_disabled</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_in_labor_force_employed_disabled</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_in_labor_force_employed_disabled]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>percent_in_labor_force_employed_disabled</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_in_labor_force_employed_not_disabled</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_in_labor_force_employed_not_disabled]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>percent_in_labor_force_employed_not_disabled</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_in_labor_force_unemployed_disabled</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_in_labor_force_unemployed_disabled]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>percent_in_labor_force_unemployed_disabled</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_in_labor_force_unemployed_not_disabled</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_in_labor_force_unemployed_not_disabled]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>percent_in_labor_force_unemployed_not_disabled</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_not_in_labor_force_disabled</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_not_in_labor_force_disabled]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>percent_not_in_labor_force_disabled</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_not_in_labor_force_not_disabled</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_not_in_labor_force_not_disabled]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>percent_not_in_labor_force_not_disabled</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_in_labor_force_employed_gap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_in_labor_force_employed_gap]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>percent_in_labor_force_employed_gap</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_in_labor_force_unemployed_gap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_in_labor_force_unemployed_gap]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>percent_in_labor_force_unemployed_gap</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_not_in_labor_force_gap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_not_in_labor_force_gap]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>percent_not_in_labor_force_gap</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>compared_to_state_avg_end</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[compared_to_state_avg_end]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>compared_to_state_avg_end</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>compared_to_state_avg_ed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[compared_to_state_avg_ed]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>compared_to_state_avg_ed</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>compared_to_state_avg_ud</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[compared_to_state_avg_ud]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>compared_to_state_avg_ud</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>compared_to_state_avg_nd</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[compared_to_state_avg_nd]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>compared_to_state_avg_nd</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County.y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County.y]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>County.y</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stateName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stateName]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>stateName</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pop2010</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pop2010]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>pop2010</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>noaa_long</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[noaa_long]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>noaa_long</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>noaa_short</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[noaa_short]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>noaa_short</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RUCC_2013</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RUCC_2013]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>RUCC_2013</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OMB_popDivision</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OMB_popDivision]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>OMB_popDivision</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>igfi_popDivision</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[igfi_popDivision]</local-name>
+            <parent-name>[Sanika-Merged_table_county-level.csv]</parent-name>
+            <remote-alias>igfi_popDivision</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='CV employed disabled' datatype='string' name='[CV_employed_disabled]' role='dimension' type='nominal' />
+      <column caption='CV employed not disabled' datatype='string' name='[CV_employed_not_disabled]' role='dimension' type='nominal' />
+      <column caption='CV not in Labor force disabled' datatype='string' name='[CV_not_in_Labor_force_disabled]' role='dimension' type='nominal' />
+      <column caption='CV not in Labor force not disabled' datatype='string' name='[CV_not_in_Labor_force_not_disabled]' role='dimension' type='nominal' />
+      <column caption='CV unemployed disabled' datatype='string' name='[CV_unemployed_disabled]' role='dimension' type='nominal' />
+      <column caption='CV unemployed not disabled' datatype='string' name='[CV_unemployed_not_disabled]' role='dimension' type='nominal' />
+      <column datatype='string' name='[County.x]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[County.y]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Geoid' datatype='integer' name='[GEOID]' role='measure' type='quantitative' />
+      <column caption='OMB popDivision' datatype='string' name='[OMB_popDivision]' role='dimension' type='nominal' />
+      <column caption='Rucc 2013' datatype='integer' name='[RUCC_2013]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sanika-Merged_table_county-level.csv' datatype='table' name='[__tableau_internal_object_id__].[Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552]' role='measure' type='quantitative' />
+      <column caption='Compared To State Avg Ed' datatype='string' name='[compared_to_state_avg_ed]' role='dimension' semantic-role='' type='nominal' />
+      <column caption='Compared To State Avg End' datatype='string' name='[compared_to_state_avg_end]' role='dimension' semantic-role='' type='nominal' />
+      <column caption='Compared To State Avg Nd' datatype='string' name='[compared_to_state_avg_nd]' role='dimension' semantic-role='' type='nominal' />
+      <column caption='Compared To State Avg Ud' datatype='string' name='[compared_to_state_avg_ud]' role='dimension' semantic-role='' type='nominal' />
+      <column caption='Disability Total' datatype='integer' name='[disability_total]' role='measure' type='quantitative' />
+      <column caption='igfi popDivision' datatype='string' name='[igfi_popDivision]' role='dimension' type='nominal' />
+      <column caption='No Disability Total' datatype='integer' name='[no_disability_total]' role='measure' type='quantitative' />
+      <column caption='Noaa Long' datatype='string' name='[noaa_long]' role='dimension' type='nominal' />
+      <column caption='Noaa Short' datatype='string' name='[noaa_short]' role='dimension' type='nominal' />
+      <column caption='Percent In Labor Force Employed Disabled' datatype='real' name='[percent_in_labor_force_employed_disabled]' role='measure' type='quantitative' />
+      <column caption='Percent In Labor Force Employed Gap' datatype='real' name='[percent_in_labor_force_employed_gap]' role='measure' type='quantitative' />
+      <column caption='Percent In Labor Force Employed Not Disabled' datatype='real' name='[percent_in_labor_force_employed_not_disabled]' role='measure' type='quantitative' />
+      <column caption='Percent In Labor Force Unemployed Disabled' datatype='real' name='[percent_in_labor_force_unemployed_disabled]' role='measure' type='quantitative' />
+      <column caption='Percent In Labor Force Unemployed Gap' datatype='real' name='[percent_in_labor_force_unemployed_gap]' role='measure' type='quantitative' />
+      <column caption='Percent In Labor Force Unemployed Not Disabled' datatype='real' name='[percent_in_labor_force_unemployed_not_disabled]' role='measure' type='quantitative' />
+      <column caption='Percent Not In Labor Force Disabled' datatype='real' name='[percent_not_in_labor_force_disabled]' role='measure' type='quantitative' />
+      <column caption='Percent Not In Labor Force Gap' datatype='real' name='[percent_not_in_labor_force_gap]' role='measure' type='quantitative' />
+      <column caption='Percent Not In Labor Force Not Disabled' datatype='real' name='[percent_not_in_labor_force_not_disabled]' role='measure' type='quantitative' />
+      <column caption='Pop2010' datatype='integer' name='[pop2010]' role='measure' type='quantitative' />
+      <column caption='State Name' datatype='string' name='[stateName]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[igfi_popDivision]' derivation='None' name='[none:igfi_popDivision:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:igfi_popDivision:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Metropolitan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Non-Metro&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Micropolitan&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+        <semantic-value key='[County].[Name]' value='%null%' />
+        <semantic-value key='[State].[Name]' value='&quot;Iowa&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sanika-Merged_table_county-level.csv' id='Sanika-Merged_table_county-level.csv_901E619E9DD6452686F917551DA83552'>
+            <properties context=''>
+              <relation connection='textscan.02437kj1v9uiop157sfg41pmkidp' name='Sanika-Merged_table_county-level.csv' table='[Sanika-Merged_table_county-level#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='GEOID' ordinal='0' />
+                  <column datatype='string' name='County.x' ordinal='1' />
+                  <column datatype='integer' name='In the Labor Force, Employed with Disability (Estimate)' ordinal='2' />
+                  <column datatype='integer' name='In the Labor Force, Employed with Disability (MOE)' ordinal='3' />
+                  <column datatype='integer' name='In the Labor Force, Unemployed with Disability (Estimate)' ordinal='4' />
+                  <column datatype='integer' name='In the Labor Force, Unemployed with Disability (MOE)' ordinal='5' />
+                  <column datatype='integer' name='Not in the Labor Force, with Disability (Estimate)' ordinal='6' />
+                  <column datatype='integer' name='Not in the Labor Force, with Disability (MOE)' ordinal='7' />
+                  <column datatype='integer' name='In the Labor Force, Employed with NO Disability (Estimate)' ordinal='8' />
+                  <column datatype='integer' name='In the Labor Force, Employed with NO Disability (MOE)' ordinal='9' />
+                  <column datatype='integer' name='In the Labor Force, Unemployed with NO Disability (Estimate)' ordinal='10' />
+                  <column datatype='integer' name='In the Labor Force, Unemployed with NO Disability (MOE)' ordinal='11' />
+                  <column datatype='integer' name='Not in the Labor Force, with NO Disability (Estimate)' ordinal='12' />
+                  <column datatype='integer' name='Not in the Labor Force, with NO Disability (MOE)' ordinal='13' />
+                  <column datatype='integer' name='disability_total' ordinal='14' />
+                  <column datatype='integer' name='no_disability_total' ordinal='15' />
+                  <column datatype='string' name='CV_employed_disabled' ordinal='16' />
+                  <column datatype='string' name='CV_unemployed_disabled' ordinal='17' />
+                  <column datatype='string' name='CV_not_in_Labor_force_disabled' ordinal='18' />
+                  <column datatype='string' name='CV_employed_not_disabled' ordinal='19' />
+                  <column datatype='string' name='CV_unemployed_not_disabled' ordinal='20' />
+                  <column datatype='string' name='CV_not_in_Labor_force_not_disabled' ordinal='21' />
+                  <column datatype='real' name='percent_in_labor_force_employed_disabled' ordinal='22' />
+                  <column datatype='real' name='percent_in_labor_force_employed_not_disabled' ordinal='23' />
+                  <column datatype='real' name='percent_in_labor_force_unemployed_disabled' ordinal='24' />
+                  <column datatype='real' name='percent_in_labor_force_unemployed_not_disabled' ordinal='25' />
+                  <column datatype='real' name='percent_not_in_labor_force_disabled' ordinal='26' />
+                  <column datatype='real' name='percent_not_in_labor_force_not_disabled' ordinal='27' />
+                  <column datatype='real' name='percent_in_labor_force_employed_gap' ordinal='28' />
+                  <column datatype='real' name='percent_in_labor_force_unemployed_gap' ordinal='29' />
+                  <column datatype='real' name='percent_not_in_labor_force_gap' ordinal='30' />
+                  <column datatype='string' name='compared_to_state_avg_end' ordinal='31' />
+                  <column datatype='string' name='compared_to_state_avg_ed' ordinal='32' />
+                  <column datatype='string' name='compared_to_state_avg_ud' ordinal='33' />
+                  <column datatype='string' name='compared_to_state_avg_nd' ordinal='34' />
+                  <column datatype='string' name='County.y' ordinal='35' />
+                  <column datatype='string' name='stateName' ordinal='36' />
+                  <column datatype='string' name='state' ordinal='37' />
+                  <column datatype='integer' name='pop2010' ordinal='38' />
+                  <column datatype='string' name='noaa_long' ordinal='39' />
+                  <column datatype='string' name='noaa_short' ordinal='40' />
+                  <column datatype='integer' name='RUCC_2013' ordinal='41' />
+                  <column datatype='string' name='OMB_popDivision' ordinal='42' />
+                  <column datatype='string' name='igfi_popDivision' ordinal='43' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Comparison of Metropolitan Counties by State Average</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sanika-Merged_table_county-level' name='federated.185ee1w1inmts90zjlhe0011t866' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.185ee1w1inmts90zjlhe0011t866'>
+            <column datatype='string' name='[County.x]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Compared To State Avg Ed' datatype='string' name='[compared_to_state_avg_ed]' role='dimension' semantic-role='' type='nominal' />
+            <column caption='igfi popDivision' datatype='string' name='[igfi_popDivision]' role='dimension' type='nominal' />
+            <column-instance column='[County.x]' derivation='None' name='[none:County.x:nk]' pivot='key' type='nominal' />
+            <column-instance column='[compared_to_state_avg_ed]' derivation='None' name='[none:compared_to_state_avg_ed:nk]' pivot='key' type='nominal' />
+            <column-instance column='[igfi_popDivision]' derivation='None' name='[none:igfi_popDivision:nk]' pivot='key' type='nominal' />
+            <column caption='Percent In Labor Force Employed Disabled' datatype='real' name='[percent_in_labor_force_employed_disabled]' role='measure' type='quantitative' />
+            <column-instance column='[percent_in_labor_force_employed_disabled]' derivation='Sum' name='[sum:percent_in_labor_force_employed_disabled:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.185ee1w1inmts90zjlhe0011t866].[none:compared_to_state_avg_ed:nk]'>
+            <groupfilter function='level-members' level='[none:compared_to_state_avg_ed:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.185ee1w1inmts90zjlhe0011t866].[none:igfi_popDivision:nk]'>
+            <groupfilter function='level-members' level='[none:igfi_popDivision:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.185ee1w1inmts90zjlhe0011t866].[none:compared_to_state_avg_ed:nk]</column>
+            <column>[federated.185ee1w1inmts90zjlhe0011t866].[none:igfi_popDivision:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.185ee1w1inmts90zjlhe0011t866].[none:igfi_popDivision:nk]' />
+              <size column='[federated.185ee1w1inmts90zjlhe0011t866].[sum:percent_in_labor_force_employed_disabled:qk]' />
+              <text column='[federated.185ee1w1inmts90zjlhe0011t866].[none:County.x:nk]' />
+              <lod column='[federated.185ee1w1inmts90zjlhe0011t866].[none:County.x:nk]' />
+              <lod column='[federated.185ee1w1inmts90zjlhe0011t866].[none:compared_to_state_avg_ed:nk]' />
+              <geometry column='[federated.185ee1w1inmts90zjlhe0011t866].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.185ee1w1inmts90zjlhe0011t866].[Latitude (generated)]</rows>
+        <cols>[federated.185ee1w1inmts90zjlhe0011t866].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{9E245EB5-B1F6-443B-AABF-2981B9C642C8}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='48'>
+            <card type='columns' />
+          </strip>
+          <strip size='48'>
+            <card type='rows' />
+          </strip>
+          <strip size='46'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.185ee1w1inmts90zjlhe0011t866].[none:igfi_popDivision:nk]' type='filter' />
+            <card param='[federated.185ee1w1inmts90zjlhe0011t866].[none:compared_to_state_avg_ed:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.185ee1w1inmts90zjlhe0011t866].[none:igfi_popDivision:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.185ee1w1inmts90zjlhe0011t866].[none:CV_employed_disabled:nk]</field>
+            <field>[federated.185ee1w1inmts90zjlhe0011t866].[none:County.x:nk]</field>
+            <field>[federated.185ee1w1inmts90zjlhe0011t866].[none:compared_to_state_avg_ed:nk]</field>
+            <field>[federated.185ee1w1inmts90zjlhe0011t866].[none:igfi_popDivision:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6A7F380D-177A-43D3-B6BB-4AB92E61587B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      Ai9Mz/CTnT3mY3rfu59dvUlUeOzXG+xVTa4lI+xWbVbiEbZrNnMRlZKrs2wIdkzJjUwSV0p+
+      EEwGnVTSoOTNks4kOSmeMD2To1Csk59bALdKKpvA82okkzEq9e7NahiMZIKdhx8xt3qH4611
+      4pkcRiJBTLNQCx6J7BSVUrHtXnha/wBY1WM8LY2sFzEMFdsReKUtGpZCMjv4HONB9JLLp3gp
+      qXFrIUkmqvKiA0fHFRaW07yxlqbqCqYS2kBZf9PwQXB9bolbmobn2mxV6nwqFafqyMsJj64o
+      SntGGFVSEyb2C767s7PL//6f3odI+Oh9HpX6C3s/4+86pdMfDMmvN69HjsMNTRt7Y+1Iyf+c
+      uIabW+tKvxdhS87gtfZnZQ8lNd/3XG8dfJfXsPs+vMo+SuvQ8GA+QgisRh0jGsOsHFI6Mcnk
+      MiiKiuvYRBOZPkKVnsuvK/+O13JhAWXOj6OGQvH+NWauMjy6T/yqqrYb2PM8NE3rc8YZBUII
+      fvCjn4A+fES5TG3vUCaT8kyWpcE3him/eu+FMf8o2+yx2qxH3Ojno0eaM3IkOc1ssvveleCy
+      pUBh8Edvz/PakQKAgfsEX8Po/4U1oCWicEGnGO7qSb4u4vwBkZbp8dkREfCRbfEzy6Qxho2U
+      AizWD8gf3kXaw7XdI4kepYtX3kXazSgQ4+hM+qBquJU9ZK+JcSDd0Yle8LCaObdJxyDoiqSA
+      3Xfdz0vxf1wFfF/k0xCUMft/f+tXv0BauRhjuEr+Jh8vfpb3p1+mcc62WVY1XjEiTKnqWMyk
+      CMGvyxq/Xt9tWnJyPitbJb2EiOfbRwb12uT0EuAwUwQRzTWvteIsjWKTNOi+UBTuyVvNZy5A
+      K5yOSJzI4AGkzQBXwQSWZY2tQfSfTadSrGUu1ur0eVKIBXEui8kRXzlVGSZES4QZKIvo3A/a
+      CvWmdRq9TZwWQ+rsl1m5aqvIs67Vbdtm56g5A0gpsWplpNcfO/Ky9wLPAy5izT1oBO/6Lbuv
+      hc0oA99tJ3F6X40y44yKK40OLYRA1/WROyw4Leu6Ti6TQLoWilXiN39lDc3udpYPNtBZ6ve8
+      +PMOw0AZf8j1plro/Lb2g0wMhmpkA4wwUKI14vTUpoMBhoIhJW6Xoff5tkvkVe3UG41GWzI0
+      ShmCe4F/8Gt/lT/9/o/Y2G7wwgsvoHzrp1hOQBri/xM9jSva/8Jy6Lxv19jyJCfSg4BTeEe/
+      KOgcutr57v8pgedLnocjBMLt1CM8125UpQTXbG9eR8FAcnBtpGu102oTgggcfhow0Rcte9R2
+      uq7ddHuUHrJ+jOs2QAyIhio634VQEIrSTEkoIFSkFkXoUZBge4L7xxF6W0F2fRHd1wLlbTel
+      BEdIdLX7qYL0WBf1pm1UmxFbZbvsY1J74a8T/fAqpyGM413XZX19nd/93sfYekCxJTujeGja
+      I80K45jttkYaz+Pn9t/lFVwGuK0OeLO7WBKoSUlFyq7YlmHpyAHfg78bUvL/pq8jopmeB3ve
+      CGsXoYBqNK1vtQhuZR81nkeoRnh9+tJobpql57QZCD2B8BzilV3+iXPczrZL/Bu4INr/O1za
+      26v31TKfvb0fHMbagRG60mylceXRoX2PonE3w0FomoZt23gooGhIoXX8nAPPXdos57kkFJWp
+      CWRX8TwiUp7Jr7gXVemhGElELNyHIsyg7UxLx9B3BCgaQmmRnBoB10RoGRS7RtLrVjz2GuR1
+      l2tww2pAVD29zH4RR2IAv0KapmEYRlcFbdvuUnQNs+AMQ3AJpus6lmWd+nzYRuyVV15hdXWV
+      J8+22T+u8KMHBbxIpk9BdHlLved//+BjkBINhq3ZRejzQ/MILLWEooLSCWrQZcUqRFfEwbDw
+      mwN9BEYqTef9UxnAX3JomoaqqtTr9b71uqqq7QIrioKqqriui+d56LqOruu4bjOsuU/g/gjt
+      V8xXko2iHR7EBKlUik+9codarcaPH3zv6qQ/58x3mOTkKhAUPrSvjfhuew8RJP6Q9PzfPg35
+      dOQ/7w+y7fAwE4IWVhAfPmH7BTNNs+u+/57jOF1aXSE6AXcty+oa1X1mCJslPM/Ddd02A50m
+      4QgbuaSUFIpFHNFcm/rxYwSXSFDPB92OjGGSmeCs2aUca345Pe2exhhE/L1lCc4I0Fld9Er1
+      ztun2qCCRCIRpJTtkbt3Guq1N+ktSFiIdaDtLGMYBpZlhU5t/qbY3xuEIUw77JfrpFxDCr3Z
+      9C0pwaWOpvLqeWAcAjltpgy/3wlNdZquZdR9RdhzvfXwTWOCNNn13piTr2YYRtehF/76y7bt
+      kWTo42ok/TWdZVnE43FM02yHUvThOE6XVeKo8Mtp2Q4icMJN8N7zsqwYhkmbkl9MnUWXTmEQ
+      E4wk2h4hN58ZgrZhoYe1jFlXxXGcpgSltfxwHKdrZA5THgQ3K2dtXCkl1WoVIQSRSP/BdaOK
+      Zv2y+etE13XJZlJIN3wz/Z+bVhgu0NTllK4fVfuLGL4s8q/7NOFbE08Cmk88g0RgYUuUSY0o
+      UkpM02yfABPMy19CnTaCea3QIZ7T3FeUy2V+64/fRYnMtNNrHG2xsb1OKrNCJpNGVxsUSgrS
+      KZKfX8Nu1Ikm003jLqHiuSaOIykfbRJPZ6lVbTK5NKhRcBt4nkTRIjhmranJ1mMYRo883F8f
+      9OCnzx5TJcKnpzOgGkjHQtMMKmaDmWRy5LPEpGfxnad7/Mq1FWzb5tCyWEgkqDVqCCNOdIDa
+      Q8rmF6uwy5PdHaYidarqdaayOrFUnvrJYyrFCJm5HI5lEYvFMC0bXVewbY94MtVdxxZK+5sY
+      cYNSwSQaVclML4TkP5zAfZycFPiTwyIv6hYH6ix30jrZWIyaZdNwbJK6ilR0PMdCKhrZSLgu
+      4qMH+yQXp3jv7h5//Y0FVEXw5KDKtZlER7I5rDDD1vm967OzMIX/jn/ijH/oRjDNMElB8F1F
+      KCAkHi6KopBKpZiLWWw6DkJR8Ty/1xXskz1KXhWndoynr4Jdol7c5tEHb5FbfA2FCo6jEY9J
+      nj3dY35+mkgsSqNmUj98wImpk01HsWyHSDyLis3hs7vE51/hhZde7ancgEorBr+wuMC37n3A
+      rquTo0E+M82H2zv83TfeZEofrR33SiXwHJ6UCny0s89UKsq//slP+OraTfREiRNb5RcWu51W
+      egqCpkhsqSDsEx69+w6x1HWSMzHsco0iBXa3D5jKZ5sCCVVBSpVrL73e6Qv8toW47rDxtEgk
+      KhBS5/1v/9+kF2/RcDTiuotmaKy//xNW7nwOs1Zk7sUvk05oXX3d6WOFiCKpSoHiNvjDux8z
+      lZohl8wSkVXKdRc0FeFaGEaML68sB/aDnUFTGBrPNgtsliw2No/53358yNfupHnryQm304Kv
+      P6p1S4GGbU4uau0c3OX3MkAvU7Ru4HouQraIP7AEgqau4h/9vb/JvQcPebZzxA83HNRoirU7
+      n0P36jx7dJ/plZcp7OwTS2dwPJWpxZtMLcxRq2WRrklE85heNEhn4qAlUaigp2dQiZLLd5xw
+      XMcC6aCnQhxzBswAs1GdP9vcYTqZJikMEiKBpke4PZ0fyzljt1rFlTZPCyWEolKxbD41P4vp
+      OMS0GG9MdcoUNpCokThz83OYJkQQSOcm0fgUtcoBqalVtKgka0qS6QSlcp387MJQ10gtu4z7
+      +IdEDA0tfpPI1CqqdJhZ+xTU94kZMHfj08STSWaWFrDdwaYvEcPg9akMJVuQ8STe1BzZWJob
+      U1McVzU0WQQjyULMaLdxm+gDyylD1/EqFW4tpimZLq/Nxcnmk8wDhWKV6/lI9zGpg9C7Hh+0
+      JwjDqJtPX3RqWVb72TAG8Mvi71vC0jVNk+9///vcvHmT3/rOQ7xI9tRyThLSdfjKzg/5jDj/
+      OrXieZxIyWJLJn7WTa2UzTDt/zL3CqId2vzscCv7qLEsDDCFGIbe8ieKG/yz6sap0qHT9jFC
+      CD4UFb748nZoPr2QUjaN4Xqt+IIby3GZIwyu9NBCjaY68DwP27bbRC+E6FOIhZU1DKqq8tHj
+      Pe7uu3hqvE+OffGQA2eAc6V6zo3sOMUZRV4/rsTFx7gmF+NomyWni2V9CCGaS6A+y8QxRIej
+      jkinPecXOijmClbCv+5Lqoalp+s6ualZnpo5xPmC1J0JF0D750azrWRbJzKqLP6ThCDdDJNA
+      Be8NHL59hVRYQuPK/duaw1OgKAqaFggq1VoW+fBFtqeVQUrJ2uJU1++/RDfOS+hNadLZ0rko
+      JusV4IQp0nqfO7cd9CjEpSnqyCNiMLiuoihtMwrHcTBtC0+Odi6x55hXsPS5eEyyLmFL3CDh
+      DFeA0nZIGRejpD9qeUOeGphfGBOMxAC+2tn/u5iCd+/k/dPog1KiiG4MPJEkWCbbtrm/sX9u
+      Me3zhouWxAXhx5QOtQO94LY876ojDINmgjPNAL0SoEmiXq+3lz1BbZ+Usm1D5CO4AffNtP14
+      Q0vTaebYZjlWwTIbXelczpLok7Xs6tPstxRmYfUYdUk7CsL6YtC1kfpuyO2wd8/tEHMRo8Eg
+      Nbfnebiei6KqKAF7kLZWrzVrSCn52l/9RRCC9372Hodvr9NQm1HRfHNaeaZytzZZrXhE/W6W
+      rS+n6FXGQSuliTLtWGlJX+HlIT0XpAueh7TrSKEgFV/KINrHEfn2t74wPLqPaAAAF3VJREFU
+      oG3A3NqIt9ux9abj2hx6wRhRgjBK1ocaGTaZsi48ig0R7Ib2Z8e9TDQVZjCaS+QwzruI5YU/
+      A/QayUkpcT0PtWdz3ms455tbl0ol/pff+iYymmtLJgPdcSbEKrv8WmN/pGdl+1MGvneuP3Mc
+      VgOeXr0tLFv/3BGMHQ9cl2m1udfq7irZ9a2m6G3mD/rLBV/ZdV2WVQVDes0/mnGKmqQDqgCd
+      FpHLkLqJTnpbrtvSYYiOCbVoUqdscYtAYrR7hzaP+OkDOEi2PI8ltXfM7lB3OBn2mPIgcIGD
+      3AEv5MzRZoAwsdlFrwMHSaB6iR/6ZwyfgXK5HPl8jgLTzf1F4Jmzll+3ytxwJuNJanseL+qD
+      FUnjtPlDYfOCpnfeE5yZ0d93HV5VDJpbRCVUrDuqrN30JCsD4nKOA1tKTBxWAgPGaWUYdN+W
+      Ei/SPJp15E3woGuXt6Yeb7YRomnWfW1+/DPE/kKgp0sGraFHkviEJX/GPj/PwNmcYQIzzjno
+      zq/zqQwwCoFPmgF8Z5lRMKhT/VlhPh9n0EbuecYkZ9z2YOX/XWHdx82707+y7eA0GQFDy3bs
+      PEmMai4xDoKh1EctQ/CzV/a/f3QC8grUwWfEJIgzXKzZvbUcxa7mrGXqyv8cpNElbQwUYZSl
+      3ag0OZGAQP6IO4nlkO8ULcTphzAbhkE0GiUajZJIJNB1nVgsRiKRwDAMqtUqHzw5DLVZEUJg
+      mXWQXltM6jo2rtMfSTgI2zLxpKQy4gw1DL2lmvTI7HoujpQ4ntcV1Os8+Qwymwn73ey74e8P
+      Qp+ofUyl5qi0eO7dXFDDNgn9gJSSRqPRFUkimJ6fXyQSwbbtdkCt3jK4rtv0a1b09ju9qvL7
+      b32bm6+9wcMHG6xcu0btpBlaMRrRieZXicf6T6F8+PA9dmcz/PsPPuI3XrnFniXJKh7HjmTj
+      YJfXltc4KBW4NjPLk6MjbmSzPCyVMATczOe5d1TkRi7DUaVCPR6jbFqkAg4dP3h4l9vXbjOt
+      CR4dH3Mznz9zWx4eH9FIZqicFIkrIIwE0rEQnk00nqFSKWLEUqwk411t1wshBB/uPOPQUZky
+      VF6dm2s/+6xwxGxmCkMMILaeokvZ9DN/Vi5zLTv4dJ52f0LoJrx8UuStco0VpcGJPsub08nT
+      mqO7SK3ijhQWZRycd63qN5CiKO3jVn3TZz99RVGo1+vt78H32+EzWqYU05kom7Vw46jpuWme
+      rm+RzWbaxA9QOtzEM/KhDDCdzvHek4eszc7yweExhoBdVDK6xmwmS61aJG5E+O7Dh7y8MMOf
+      PHrK4nQKTVP4o7sPsFSF/coJry8u8v892yA1u8rtFgNI16Ii4aPtLRpmHTSd7z34kNm5JRql
+      Gq6uspSI8fbONv/gjS8yHx0uXVEVgeW4NByXiuti2B6WWcZUU4jqFroSJeKetBmg05DdAxtA
+      Qyr80soiP97c5I8/eoeHVoRrEY94JMoHxxWEWeDDssd///k3ULuT6uoffyAyXZf3t7ZIaCpv
+      VS0+nY3xn95/j0+v3eAn24f8s8+/SUJTBi52XFdiOhYnwuK4dsTXj3fQFA/XdklGEjSk24wb
+      q+o83t9idmaNv/vCWl86pzLAqOKuYCX9984C/z3f6M3X/tq23db2DoobFGYqvTSVYLvef19K
+      SWbhDpFaFSPSTegVHCLR8DOIU7k5blEhaURw7Do7JrySTqAAlUaFimXx7957n7//xhvslk74
+      wuoiEUNHU2BuNca9Yonr+TwzEZ2y5XEzk+jkazaYS0/jSQschUhEQ51eIB2NMJf5/5u7tuY2
+      cuz8oS+keBNJibIutjUee+SLPFlnayqpuLJ5SGaqUsnLPiSVH5GXzU9K3vKWPG3lZbOZyma2
+      NrfaGu/YM77JlizZ1oWiJEq8dDewD02QaBDdjb5Q9jelMckGzjkADg4ODtDAEmASeG4fQ2cB
+      A9cFEN0BFhtNPN/ZwdriCiqG3y6OV8HBaQelWgsNuwC9u2OAeYvg6509rJbmwLx5bJRtbNRr
+      sA2g3RugV2jiYW16ruWvE4wXYcbblV8d7aNVruLl0SmW5ufBXBe319YxXyzj3kINQzBUBd0j
+      JHjpq12wcadWQtcr4UrBwH53iEa1jo16Hbsnp7i20MTjvTeAPYfN5TW06vJVWiOXKm4hLNSX
+      4ttq6bR7MRY4w2ggWnwe0pR3gsbR5+7Uz3/5Gzw+KgCjY/myuGrV45f4+4s3ifKIPMW6euwM
+      cb8wfSBAGjx3J+sAcTLE4XfDIT4fvaedld5T18GGGdzhq4OptR7G8NJz8ZllK6N+o0xac26X
+      MewsvcWDlfN0k2C+Wa1gF0IXrLJO6MS9Kdzqi51KtyKLxSK++tMfA87kLoEPATH6Mi6b+FyI
+      x89qbSWNQUorzzgfkCkSFCQa034p6kzLBfJpT4hTSgEXcKiTyzsDUXyz0OL5jo87YDBTVVBe
+      GEdhAmWZrtuZy5HApQ2ztEnbgwSOS4+Wi4m+kiavVO8kZFkH4MKKlanqKB8LBoP+2P3JjJTF
+      UzfSh6mrLDF+nidO6ZIo5VSnZAAjwY7gp0sipR5Sb4WQERcf/pBYXVtD2Rh8VDL5mLhzqr8k
+      SGt3lKO3Fr9phqoysIhnKlqBG2wYgqNCjNy6z8UnM9kOfRmKlmQ4rlYq+OpGCbv/9SsYxBBO
+      tURweRSQWl+8IcV/cOL08C38Y1mkuxqUiJJuz/PAhtO7FcPyE+EH+fe3HgWFbyXJmA5fJZf2
+      0PB/mfCZP2fAG88DdaYX+oI8Sags4uc9z4O6FlQ9VripJhA28p8dUA8eZePJrtwxCKcxIaIE
+      BXDYM1HsFPJZCBsLkPO2iKzgE7GTdhuVb77Bl4YBILjNghASraUSnoDiXk6RGzhD3LcLU3WY
+      CsTBbUUUSGdPkbxAyADctwux1SLTUpfDwT07B7kAFCjBZ5Y93iXg/86mFD3OHfcYgzXn4U5j
+      mK4DMMZAGQUhxvjFFAC4uLhApVIJbGPwPC/wYnsW6EQjVBX5+j++xl3hUm3VymIYvzCaeWFW
+      c6bMdNnkiBGRXpKtCH7a9HuOZN6MMv9QNJDx3QEiryQRK8419SSYEH+VTpwQA/4Clryhje/v
+      yQpVz9axnnZ9PjGvj2XH5GWMqPI2kyiOqg2QUXUVRi3NniBOTzSwYhQy6aItkKED8HMexMqw
+      LEt5ZnteHYDz4xD5hM1FGGNAqQQPgMU7qyafy+4EWQIJeYiqiuoJD5Fn1EqnbseWX/i/3C7j
+      jZjw31pLtGsBmh1AxVT8LCthlD8XOvtPGDZLkqfjunDhFzaJYs/K+kbxD6vbWEzpK0k/kiiS
+      EumBTFunTGlD5QSTDk4ZDUaKhDT8mTZYylMhpun4fhf3y+TTHPgcYNxbBT/tMqzs1fV1DEP4
+      JF7hzEMgBWbt6mj7xolGnWh6/vNsNRYIg5Jpl0oOoUZBZahzvyBYvMuJWzB5tVi1wjir5f+L
+      szP0f/FL1AgBpR7avR4c+vEt1snIGlFLW5eqfCf9PtwZGarYMo5CoHxuMnD62DuXLvpOwGfC
+      L8NKcBz4jZK8A4gb28ThUPwdyDfqwhhDt9vFy3/8J9zp+4tg7XYb3w4cbDaacJwhXGeAWqWG
+      d2cnsIiBlXoTe50jXGsu4k37CAXC8LzP8JfrayJlJb/Hb3fwutvDH63fRKuoV62q8j55t4Xf
+      Hrr4m80NFM1JvTze38fmlStT6VX49avnOHYNPLy6gtpcGSbU9coYw5P9fdxdXsZ2u43rzekj
+      2ofDAf57bwe2VcJmowLPKoEOz0GsIg7Pe6BeD1ahihv1eTDq4mIwQKlUxbyt3ql6cNqGa5j4
+      7qCL67Ui7rRa0ZEgaWVhu9PBuwGFOzjDy9M+rlaL2Dsf4rNGBTvnDhYsivcDipU5A23HQMP0
+      cMpslFgf1UoDB5021lorwOjkzET3BMelkXuZeBWqWEj5s1wBfHafBYwx7Gxvo9UXV4AZTvp9
+      vDh8j+u1Kn6xvYtPq2VU5psgtI+3r19gfr6F/3z5HNebSzjpHmOluRKkC+CEUtQl+fqOv0X7
+      ye4Wvt49xFc31rBz0kXZ9PDk1MHP/vgLyHdfuADOmb/tl2NzdRldb4jfvPgdftsF/mxlEaZh
+      oNvr4uc/tFGbK+LoYogvN25j3hZkEJqo5zgYeBZ2Osc4Hb7Hu/M+PqmW8OSkiwfNGv6/fYbN
+      egnvLly0amX8z/ZLbHcdXG/6BwiIYjIGfLqwhIOzDv795RYWalWUivO4Nufgu70d1Beu4mGz
+      iMeHbXjuGc6HFv78ZnjUrVks4N+29lCvVXDuOPjn//s1rlQqaNYW0RkO0T67QLNm4pudNv7h
+      Jw9RNSZGgIHh6eEBjofAHGmiZrh4dW6gQVw8OjjCs8MO/uTmOlaKJrbPu7AYwS6jABlgwIY4
+      uDjH/74/xZelOtf/2d0Uz/19jsgIg4C8rD8ArK2t4QCT1/LK5Rq+arYw6PexUJrDj1pdNMo1
+      LFSrMFDFsOriefsQn69eQ6NYxKBk4flpF2hOrgXasGy89rypDrA038CDRhNP373BF8uLYCBw
+      KUWr0cDDmhWwrLyM9ywbL1xH2hJtoj5ngdAKblsGKhhiONdCAxQDeo5qcQ7rC8tB5Zdws7WM
+      gePAIwRLxTI+bQDvT0/hUgaD+HJVCwXMuQaaxTkMhxS1oh/lkevfskzsHR9ivbWKhm3Ds0pg
+      w3P0WRHrC0v4pFnF67MeLK+PUmkeG4s15TVPvP3NQgVztombRYYzax5XGi08WKrjV287+GJ5
+      CcVGAzvDHn6yXg4oJ5frLz67C5sAz9ptVOpNzPe6KJUWcNcC/mBlDYulORgAVuarOPcIKgbF
+      BTNh0CHsQgm3W11Uy1V0mP8abOaDsXQw3hcSQifv7RQin90nT1D4l39FfXT+jmq0UckXFmly
+      GcOW62JDsbop4m3nCPsOwY9aCwgrissYnjpDbEasLG8dt/FJvTEljxyF+d51cFdaCRYDDe9P
+      j7HvAMsF4N0AeLAUPC6GLw4SQvDdcIDNiPOKkuAH18EdSS65Ts97XXRRwHKpEJBbTvfcdXBr
+      6mCsabryCjKR0lDGsLP4Hp+vnqY/GCsJ4sJgOsviSSC6Vdc2N/H49Ta8bx9hQfaBlZknfmfc
+      8nwUVhuLmL4mbhoM0eHOG42mFr+oYAshBCv1BayOeCzL9Z/xtLysqJSqqAjf07b/lF4FVhAQ
+      OGmO89F2tLlSZRFOV3l00uqeQkEIwf2//isM/u5v8cPGLfRC8o07aYTyA7MLg+ogyoDwo8rl
+      iJpOu6nKnDUKlQRRUcBcIoMs8E8AiTtAVoF0O1KccieNV39y4wY+/+lP8WZleSJHhHyhtLS5
+      6slFpO8qJZafq6C7tyk0v6j8OY4GMiWxE+saxbQ6Ny6HysUe0U0cagl7A2yKgULRVT52WqQZ
+      kQghMH78h2gjOAyK9OKQVweYNGq61dFphIxYOczfdH5LS0tGmKzyiKbNM3gc2Oi3CQwerdG5
+      fVu310Za0AgLJC+azWIIvn3/PvZrtQDPJAh6lQnyKSy7v9syPI+ufIQQpUSxo2zgLQGxs0zP
+      ycS/ifzql1V0cVnuJBH+m/BVLISFRRhEhEVxxIUt/puqQ4U1qmodQT4ZIg/s7e6iyxieVitg
+      nn/WPaEUoBTw/H8JoyCMgTCAjCaIBnxlHTKGNqXYc10YxK9Gg/8xP43/nUyejdwtk0yOGB+X
+      65Imn8p2C53vhLc5YwweAAoGyvyXSyjzX8ah8JXLA0AJQBnQYQx71OMne46Vno7C07wLUYbJ
+      2aUE/tHphADEAAwCYpo4KthgdgHEMmHYFohhAoYBGIaQl/hyGATMMMAMAzBMwDTBDAPEMmHZ
+      BbAKwQ9l0w+DipUgK3/YKp2qk4ghRf5dpdgijagIUNphT4bI58WLF7h169b493a7jYWFBS3X
+      jI1GSY9SuK4LOrqx0vM8UI+CUg/U88AoHacFG101RNlYrxhj8Fx39OcB1APzRn+jzsg8D4Qx
+      v1My5h9SPvJZyYiU+HdGKWoGCSiaOPD7jQwwkLGSEWKAEQJi+Erm914DnmnCNk0Q04RhWf7f
+      6PsolgLwzjzOb8AwDP/yEsOEaZkwTROGacIc/U4AmJY1XuTkzonYvqq5GZX0wDTNwF1ychtH
+      GVmuj1wGC5hcNSRvTZDBhz8VA1UoL5WLoVDEPLdIlMtlDAYDlEolbG1toVKpYG9vD1evXo2X
+      19Q75z4s7Bu1BqGiobLa4uq6+F3mE+Wmyvnl9FH1kNeaUBgt0c0ayyjJUiwW0ev1tMLnYW79
+      mDb/olL+MIsd5dqEVZx4uR6nEddIUQVLC0opTk9Psbu7i7OzM6ysrKDf7+f2vgKHyjKFpUui
+      ULKhUYWDdemlqdc83FHZM5CfxemG67rjYzNluWT5VKFdsb4sOaFOr0pbAbJSz7KhwnD9+nWc
+      nZ2NT5L+/vvv0WxOFpvCGkYHlNLAKBkGWWF1XEM5XVh76SCJEqs6FjcWaXgnMWwqHSGEYDgc
+      oljUey9bdr/l0dJSDX1xkZosSFNpeU6GKaWoVPx1x+3tbdy7d2/q9c00IVYOxuI38ukqv+zu
+      yPOp7KHTCQLRHYUrNYuIXBjiOphpmonukJANh0h3agRIax3S9OakCPOto/hHjTqqyziyNHiY
+      4ofVqSrIIPOXZZaVVEUz6rmYLm5EnoXyi3xUmyV1eMkuVFhZ47wZxoSFsLSTG508urSTFF70
+      faPoy5M9cZ1hfX0djx49Cpw2PQvLmlWBVA0XhiyT1CQT3yxlUvnlvG2SzpniyhqlI4RkeCNM
+      tA46laFbYbqdQPWbqrBRlteyLNy9exc7OzuJyzNryEpijMKMecmmsvayYula1iRQRQoBxE58
+      Zf584TbKAOq0pZW3dYpLw4euMCXOg38S14z7kyore9kdQfbDwzpvniMU5xXFJw1P+e5mDtVv
+      slsaJReXR6YX1la8E4TxtXiiuIqPEkIXYo/MqxFleklGGl5WcR4g0ptVJ5AjEzJs21aGN+V5
+      gWxYZgGVuyJ+n8UokUQuOaypSqP6PHaN+Q8fwtrl1dFk10c3isMrolqtotfrhdLNG1GyEeLf
+      f6aaHPNhX4zWRcmYpU3DJt5R9SG6aHEKyRG1/yzu4hZOU+Yb5yIHeIjC5eljxiFppEl3gpZG
+      aWu1GtrtdkC2uAqNgks9uNSDF7O5UAWdETJu06JIJ02aqLy8I4bl0Yk+RUEOcoS5uGK76MwJ
+      ZRnGE28Agd2geVo83QiNLq2sNGTwTl+r1XBxcZFo7hCFCZ10snmeFzj7UmWcsrZTklFShbhJ
+      dBzfMJqyYsfRFF1FSunI8HiB/FET5PEcgGfIM8qQ1C/PC0n4MsbQ6XTGVzCJkP1L3XLwvStp
+      d3oOBoOADOJn1QRQTqujOLIPLSJt59LJp5pY5zqxZwi8ZirOl1TtF5gDpFFUnV6WZqi9DHCZ
+      X716Bcuy8OzZs4DypYVpmDANM/f9RTIuo/5URjGLvoQhjJ7KK+EjIv/M0/mWn0G0O1HKD0Dv
+      VAgZKouRpkJmNcnkiJOJ8+aH9zLG8ObNG/R6Pdy5c2f8jGPWCp0GcZPgMP+X5w0LEYpQLVDJ
+      E/GkEC2zPMKK9Lhsct3LZXNcFwhcZ0JgCnkiRwAdyJOKOP9eB7OwJDJ9Hf7icY4rq6swTTPg
+      InyIKFleiHKhgPhojaoeRMVPUy9J6jMsrdhpCCEo2DZsy4Zl+JchqsqpKmtkBxBDb1Ez6jDh
+      4pjn0YnCkLRhJhXNUCqX8OzZMxwdHcFxnECjf2yQFURlKWWIyivn143SxPGIk1mkp5s2Ks04
+      qmMYsC176h2CMFhciDx6srgdWBY+zwl2nEwy7yQwDRNLS1dAKUW/18OrV6+wtraGarU6pTh5
+      Icy9SIIwqx3GRzUJlV0QWY48DEBaPZO/hxlUOb1cFrENDcOYbIdOUziVNQiLz/LRRJduVmSh
+      YRoGTMOAXauhUqng+PgY5XI5QDfv0UBWRpFPEqWR61zuWFGKE9Zuqs9Rz+NGSxUfMU+SaFIY
+      vbA8ct3+Hquu+IF+xVwiAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
