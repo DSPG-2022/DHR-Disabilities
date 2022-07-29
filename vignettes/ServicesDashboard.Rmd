@@ -1,0 +1,19 @@
+---
+title: "Publicly Funded Services"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Publicly Funded Services}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(DSPGDisability)
+```

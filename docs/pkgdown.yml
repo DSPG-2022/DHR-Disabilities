@@ -2,6 +2,15 @@ pandoc: '2.18'
 pkgdown: 2.0.6
 pkgdown_sha: ~
 articles:
-  HomeVignette: HomeVignette.html
-last_built: 2022-07-29T15:07Z
+  DataLiteratureReview: Dashboard_Development/DataLiteratureReview.html
+  Demographics: Dashboard_Development/Demographics.html
+  EmploymentAndLabor: Dashboard_Development/EmploymentAndLabor.html
+  Expenditures: Dashboard_Development/Expenditures.html
+  HomeVignette: Dashboard_Development/HomeVignette.html
+  Services: Dashboard_Development/Services.html
+  DemographicDashboard: DemographicDashboard.html
+  EmploymentLaborDashboard: EmploymentLaborDashboard.html
+  ExpendituresDashboard: ExpendituresDashboard.html
+  ServicesDashboard: ServicesDashboard.html
+last_built: 2022-07-29T17:50Z
 
