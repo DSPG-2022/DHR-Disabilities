@@ -1,0 +1,18 @@
+---
+title: "Successful Employment for Iowans With Disabilities"
+author: "DSPG DHR Disabilities Team 2022"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Successful Employment for Iowans With Disabilities}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+Landing page for the DHR team...

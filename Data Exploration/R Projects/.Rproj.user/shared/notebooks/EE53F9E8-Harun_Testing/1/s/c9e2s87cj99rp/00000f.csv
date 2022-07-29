@@ -1,0 +1,12 @@
+"0","White <- get_acs(geography = ""county"","
+"0","                           variables = c(White = DisabledWhite, Black = DisabledBlack),"
+"0","                           year = 2020,"
+"0","                           state = ""IA"")"
+"2","Getting data from the 2016-2020 5-year ACS
+"
+"2","Using FIPS code '19' for state 'IA'
+"
+"0","White <- White %>% group_by(NAME) %>%"
+"0","  mutate(Percentage = estimate / sum(estimate) * 100)"
+"0",""
+"0","View(White)"

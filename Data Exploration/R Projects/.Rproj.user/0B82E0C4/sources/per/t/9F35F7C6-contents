@@ -1,0 +1,6 @@
+
+
+```{r}
+usethis::use_vignette("my-vignette")
+```
+
