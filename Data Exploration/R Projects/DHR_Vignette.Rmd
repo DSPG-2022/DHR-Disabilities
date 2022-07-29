@@ -1,0 +1,11 @@
+---
+title: "Dataset Literature Review"
+author: "by DSPGs DHR Disabilities Team"
+---
+
+The initial phases of the "Successful Employment for Iowans with Disabilities" project focused heavily on surveying all of the potential data sets that contained information on persons with disabilities in Iowa. Relying on the data matrix provided by the DHR team and our own exploration of national data sets, we've compiled a list of data sources as well as annotations which match the requirements of the project. 
+
+For all of the data sets collected, these requirements were essential for use in this project:
+
+- Median to High Reliability of Data
+- Geographically granular data (preferably county level)

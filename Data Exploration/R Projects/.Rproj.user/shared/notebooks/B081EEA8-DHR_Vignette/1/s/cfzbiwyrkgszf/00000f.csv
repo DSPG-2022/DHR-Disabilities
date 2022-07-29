@@ -1,0 +1,5 @@
+"0","usethis::use_vignette(""my-vignette"")"
+"2","[32m√[39m Setting active project to [34m'C:/Users/harun/Desktop/GitHubRepos/DHR-Disabilities/Data Exploration/R Projects'[39m"
+"2","Error: [90m`use_vignette()`[39m is designed to work with packages.
+Project [34m'R Projects'[39m is not an R package.
+"

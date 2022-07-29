@@ -1,0 +1,14 @@
+"0","library(tidycensus)"
+"0","library(sf)"
+"0","library(tidyverse)"
+"0","library(scales)"
+"0",""
+"0",""
+"0","census_api_key(""f455269d8b80b427e28a1574cf5bb617a086fa46"", install = TRUE)"
+"2","Your API key has been stored in your .Renviron and can be accessed by Sys.getenv(""CENSUS_API_KEY""). 
+To use now, restart R or run `readRenviron(""~/.Renviron"")`
+"
+"1","[1]"
+"1"," ""f455269d8b80b427e28a1574cf5bb617a086fa46"""
+"1","
+"

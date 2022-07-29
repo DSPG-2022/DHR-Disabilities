@@ -1,0 +1,9 @@
+"0","zcodes <- IVRS_data$`Client Zip Code` %>%"
+"0","  na.omit(zcodes)"
+"0",""
+"0","for (i in 1:length(zcodes)) {"
+"0","  IVRS_data$AAA_newzip <- reverse_zipcode(zcodes[i])$state"
+"0","}"
+"2","Error in reverse_zipcode(zcodes[i]) : 
+  Invalid ZIP code detected, expected 5 digit ZIP code, got 4
+"
