@@ -1,17 +1,16 @@
+Successful Employment for Iowans with Disabilities
+================
+DSPG DHR Disabilities Team 2022
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-# DSPGDisability
-
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of DSPGDisability is to …
+## Navigation
 
-## Installation
-
-You can install the development version of DSPGDisability from
-[GitHub](https://github.com/) with:
+Welcome to the Successful Employment for Iowans with Disabilities
+project page! This is the home for all of the dashboards and
+documentation that the DSPG 2022 team worked to complete.
 
 ``` r
 # install.packages("devtools")
