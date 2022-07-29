@@ -21,7 +21,7 @@ navbar:
       text: Dashboards
       menu:
       - text: Demographics
-        href: articles/DemographicsDashboard.html
+        href: articles/DemographicDashboard.html
       - text: Employment and Labor Services
         href: articles/EmploymentLaborDashboard.html
       - text: Publicly Funded Services
