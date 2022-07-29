@@ -1,0 +1,49 @@
+toc:
+  depth: 4
+
+home:
+  title: Just the Facts on Workforce and Economic Development
+
+navbar:
+  structure:
+    left:
+    - home
+    - dashboards
+    - process
+    - reference
+    right:
+    - github
+  components:
+    home:
+      icon: fa-home fa-lg
+      href: index.html
+    dashboards:
+      text: Dashboards
+      menu:
+      - text: Demographics
+        href: articles/DemographicDashboard.html
+      - text: Employment and Labor Services
+        href: articles/EmploymentLaborDashboard.html
+      - text: Publicly Funded Services
+        href: articles/ServicesDashboard.html
+      - text: Public Expenditures
+        href: articles/ExpendituresDashboard.html
+    process:
+      text: Dashboard Development and Supplements
+      menu:
+      - text: Data Sources and Literature Review
+        href: articles/Dashboard_Development/DataLiteratureReview.html
+      - text: Demographic Information
+        href: articles/Dashboard_Development/Demographics.html
+      - text: Employment and Labor Participation
+        href: articles/Dashboard_Development/EmploymentAndLabor.html
+      - text: Services
+        href: articles/Dashboard_Development/Services.html
+      - text: Expenditures
+        href: articles/Dashboard_Development/Expenditures.html
+    reference:
+      text: Reference
+      href: reference/index.html
+    github:
+      icon: fa-github fa-lg
+      href: https://github.com/DSPG2021/DHR-Disabilities/

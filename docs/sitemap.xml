@@ -4,10 +4,37 @@
     <loc>/404.html</loc>
   </url>
   <url>
-    <loc>/articles/HomeVignette.html</loc>
+    <loc>/articles/Dashboard_Development/DataLiteratureReview.html</loc>
+  </url>
+  <url>
+    <loc>/articles/Dashboard_Development/Demographics.html</loc>
+  </url>
+  <url>
+    <loc>/articles/Dashboard_Development/EmploymentAndLabor.html</loc>
+  </url>
+  <url>
+    <loc>/articles/Dashboard_Development/Expenditures.html</loc>
+  </url>
+  <url>
+    <loc>/articles/Dashboard_Development/HomeVignette.html</loc>
+  </url>
+  <url>
+    <loc>/articles/Dashboard_Development/Services.html</loc>
+  </url>
+  <url>
+    <loc>/articles/DemographicDashboard.html</loc>
+  </url>
+  <url>
+    <loc>/articles/EmploymentLaborDashboard.html</loc>
+  </url>
+  <url>
+    <loc>/articles/ExpendituresDashboard.html</loc>
   </url>
   <url>
     <loc>/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>/articles/ServicesDashboard.html</loc>
   </url>
   <url>
     <loc>/authors.html</loc>
