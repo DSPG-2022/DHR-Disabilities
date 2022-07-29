@@ -1,20 +1,16 @@
-pandoc: '2.18'
-pkgdown: 2.0.6
-pkgdown_sha: ~
-articles:
-  DataLiteratureReview: DataLiteratureReview.html
-  Demographics: Demographics.html
-  EmploymentAndLabor: EmploymentAndLabor.html
-  Expenditures: Expenditures.html
-  HomeVignette: HomeVignette.html
-  Services: Services.html
-last_built: 2022-07-29T16:36Z
+toc:
+  depth: 4
+
+home:
+  title: Just the Facts on Workforce and Economic Development
+
 navbar:
   structure:
     left:
     - home
     - dashboards
     - process
+    - reference
     right:
     - github
   components:
@@ -45,6 +41,9 @@ navbar:
         href: articles/Dashboard_Development/Services.html
       - text: Expenditures
         href: articles/Dashboard_Development/Expenditures.html
+    reference:
+      text: Reference
+      href: reference/index.html
     github:
       icon: fa-github fa-lg
       href: https://github.com/DSPG2021/work/
