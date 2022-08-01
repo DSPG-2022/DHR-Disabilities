@@ -1,100 +1,100 @@
-"County","Office_Area"
-"Adair","Council Bluffs"
-"Adams","Council Bluffs"
-"Allamakee","Mason City"
-"Appanoose","Ottumwa"
-"Audubon","Ames"
-"Benton","Cedar Rapids"
-"Black Hawk","Waterloo"
-"Boone","Ames"
-"Bremer","Waterloo"
-"Buchanan","Waterloo"
-"Buena Vista","Fort Dodge"
-"Butler","Waterloo"
-"Calhoun","Fort Dodge"
-"Carroll","Ames"
-"Cass","Council Bluffs"
-"Cedar","Iowa City"
-"Cerro Gordo","Mason City"
-"Cherokee","Fort Dodge"
-"Chickasaw","Waterloo"
-"Clarke","Council Bluffs"
-"Clay","Fort Dodge"
-"Clayton","Dubuque"
-"Clinton","Davenport"
-"Crawford","Ames"
-"Dallas","Des Moines"
-"Davis","Ottumwa"
-"Decatur","Council Bluffs"
-"Delaware","Dubuque"
-"Des Moines","Burlington"
-"Dickinson","Fort Dodge"
-"Dubuque","Dubuque"
-"Emmet","Fort Dodge"
-"Fayette","Waterloo"
-"Floyd","Mason City"
-"Franklin","Mason City"
-"Fremont","Council Bluffs"
-"Greene","Ames"
-"Grundy","Waterloo"
-"Guthrie","Ames"
-"Hamilton","Fort Dodge"
-"Hancock","Mason City"
-"Hardin","Ames"
-"Harrison","Council Bluffs"
-"Henry","Burlington"
-"Howard","Mason City"
-"Humboldt","Fort Dodge"
-"Ida","Sioux City"
-"Iowa","Iowa City"
-"Jackson","Davenport"
-"Jasper","Ames"
-"Jefferson","Ottumwa"
-"Johnson","Iowa City"
-"Jones","Cedar Rapids"
-"Keokuk","Ottumwa"
-"Kossuth","Fort Dodge"
-"Lee","Burlington"
-"Linn","Cedar Rapids"
-"Louisa","Burlington"
-"Lucas","Ottumwa"
-"Lyon","Sioux City"
-"Madison","Council Bluffs"
-"Mahaska","Ottumwa"
-"Marion","Ottumwa"
-"Marshall","Ames"
-"Mills","Council Bluffs"
-"Mitchell","Mason City"
-"Monona","Sioux City"
-"Monroe","Ottumwa"
-"Montgomery","Council Bluffs"
-"Muscatine","Davenport"
-"O'Brien","Sioux City"
-"Osceola","Sioux City"
-"Page","Council Bluffs"
-"Palo Alto","Fort Dodge"
-"Plymouth","Sioux City"
-"Pocahontas","Fort Dodge"
-"Polk","Des Moines"
-"Pottawattamie","Council Bluffs"
-"Poweshiek","Ames"
-"Ringgold","Council Bluffs"
-"Sac","Fort Dodge"
-"Scott","Davenport"
-"Shelby","Council Bluffs"
-"Sioux","Sioux City"
-"Story","Ames"
-"Tama","Ames"
-"Taylor","Council Bluffs"
-"Union","Council Bluffs"
-"Van Buren","Ottumwa"
-"Wapello","Ottumwa"
-"Warren","Ottumwa"
-"Washington","Iowa City"
-"Wayne","Ottumwa"
-"Webster","Fort Dodge"
-"Winnebago","Mason City"
-"Winneshiek","Mason City"
-"Woodbury","Sioux City"
-"Worth","Mason City"
-"Wright","Fort Dodge"
+County,Office_Area,Latitude,Longitude
+Adair,Council Bluffs,41.3297,-94.4707
+Adams,Council Bluffs,41.0282,-94.6995
+Allamakee,Mason City,43.2887,-91.3442
+Appanoose,Ottumwa,40.743,-92.868
+Audubon,Ames,41.6815,-94.9186
+Benton,Cedar Rapids,42.0802,-92.067
+Black Hawk,Waterloo,42.4762,-92.318
+Boone,Ames,42.037,-93.9317
+Bremer,Waterloo,42.7701,-92.3182
+Buchanan,Waterloo,42.4728,-91.845
+Buena Vista,Fort Dodge,42.7359,-95.1507
+Butler,Waterloo,42.7342,-92.7904
+Calhoun,Fort Dodge,42.3806,-94.6272
+Carroll,Ames,42.0384,-94.8606
+Cass,Council Bluffs,41.335,-94.9277
+Cedar,Iowa City,41.7722,-91.1322
+Cerro Gordo,Mason City,43.0793,-93.2608
+Cherokee,Fort Dodge,42.742,-95.6238
+Chickasaw,Waterloo,43.0488,-92.3177
+Clarke,Council Bluffs,41.0282,-93.7857
+Clay,Fort Dodge,43.0784,-95.1509
+Clayton,Dubuque,42.8621,-91.3526
+Clinton,Davenport,41.8816,-90.5324
+Crawford,Ames,42.0372,-95.3818
+Dallas,Des Moines,41.6806,-94.0474
+Davis,Ottumwa,40.7369,-92.4085
+Decatur,Council Bluffs,40.7401,-93.786
+Delaware,Dubuque,42.471,-91.3709
+Des Moines,Burlington,40.885,-91.1962
+Dickinson,Fort Dodge,43.3759,-95.1509
+Dubuque,Dubuque,42.485,-90.8953
+Emmet,Fort Dodge,43.3757,-94.6784
+Fayette,Waterloo,42.8639,-91.8442
+Floyd,Mason City,43.0597,-92.7887
+Franklin,Mason City,42.7302,-93.2624
+Fremont,Council Bluffs,40.7414,-95.6361
+Greene,Ames,42.0384,-94.397
+Grundy,Waterloo,42.3803,-92.7681
+Guthrie,Ames,41.6815,-94.5123
+Hamilton,Fort Dodge,42.3873,-93.6974
+Hancock,Mason City,43.0894,-93.7341
+Hardin,Ames,42.376,-93.2326
+Harrison,Council Bluffs,41.6861,-95.84
+Henry,Burlington,40.9933,-91.5447
+Howard,Mason City,43.3561,-92.3172
+Humboldt,Fort Dodge,42.7806,-94.2073
+Ida,Sioux City,42.3883,-95.4964
+Iowa,Iowa City,41.6805,-92.067
+Jackson,Davenport,42.2091,-90.6306
+Jasper,Ames,41.6847,-93.0574
+Jefferson,Ottumwa,41.036,-91.9487
+Johnson,Iowa City,41.645,-91.5998
+Jones,Cedar Rapids,42.1213,-91.1314
+Keokuk,Ottumwa,41.3368,-92.1791
+Kossuth,Fort Dodge,43.2073,-94.2065
+Lee,Burlington,40.5953,-91.5386
+Linn,Cedar Rapids,42.0798,-91.5998
+Louisa,Burlington,41.2473,-91.2998
+Lucas,Ottumwa,41.0271,-93.3276
+Lyon,Sioux City,43.3789,-96.1922
+Madison,Council Bluffs,41.3347,-94.0158
+Mahaska,Ottumwa,41.3323,-92.6409
+Marion,Ottumwa,41.3353,-93.0995
+Marshall,Ames,42.0363,-92.9991
+Mills,Council Bluffs,41.0311,-95.6218
+Mitchell,Mason City,43.3501,-92.7891
+Monona,Sioux City,42.0396,-95.9525
+Monroe,Ottumwa,41.0265,-92.8691
+Montgomery,Council Bluffs,41.0305,-95.1562
+Muscatine,Davenport,41.47,-91.0769
+O'Brien,Sioux City,43.0766,-95.6242
+Osceola,Sioux City,43.3805,-95.624
+Page,Council Bluffs,40.7362,-95.1569
+Palo Alto,Fort Dodge,43.0818,-94.6781
+Plymouth,Sioux City,42.7356,-96.2455
+Pocahontas,Fort Dodge,42.7329,-94.6786
+Polk,Des Moines,41.6673,-93.5815
+Pottawattamie,Council Bluffs,41.3347,-95.5518
+Poweshiek,Ames,41.6853,-92.5332
+Ringgold,Council Bluffs,40.7361,-94.2434
+Sac,Fort Dodge,42.3887,-95.0899
+Scott,Davenport,41.6065,-90.62
+Shelby,Council Bluffs,41.6806,-95.3254
+Sioux,Sioux City,43.0847,-96.1572
+Story,Ames,42.037,-93.4652
+Tama,Ames,42.0847,-92.533
+Taylor,Council Bluffs,40.734,-94.7
+Union,Council Bluffs,41.0298,-94.2429
+Van Buren,Ottumwa,40.7517,-91.9485
+Wapello,Ottumwa,41.0308,-92.4096
+Warren,Ottumwa,41.3336,-93.5592
+Washington,Iowa City,41.3304,-91.7158
+Wayne,Ottumwa,40.7372,-93.327
+Webster,Fort Dodge,42.4344,-94.1647
+Winnebago,Mason City,43.3803,-93.7342
+Winneshiek,Mason City,43.2932,-91.8426
+Woodbury,Sioux City,42.3866,-96.0407
+Worth,Mason City,43.3787,-93.2608
+Wright,Fort Dodge,42.7343,-93.7351
