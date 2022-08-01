@@ -13,3 +13,5 @@ project page! This is the home for all of the dashboards and
 documentation that the DSPG 2022 team worked to complete.
 
 ## Team Members
+
+![](vignettes/Images/DHR.jpg)
