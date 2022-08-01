@@ -10,7 +10,8 @@ DSPG DHR Disabilities Team 2022
 
 Welcome to the Successful Employment for Iowans with Disabilities
 project page! This is the home for all of the dashboards and
-documentation that the DSPG 2022 team worked to complete.
+documentation that the DSPG 2022 team worked to complete. Below you can
+find the Table of Contents to easily navigate the page. The Dashboard
 
 ## Team Members
 
