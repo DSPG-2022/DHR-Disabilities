@@ -20,7 +20,7 @@ directories of this repository.
     the cleaning of data sets can be accessed through the
     `Data Exploration` folder. This folder contains all of the data
     content of the project and would be the folder to look through for
-    any information on how the visualizations were
+    any information on how the visualizations were created.
     -   The `Datasets` folder contains all data sets used in this
         project. Some data sets are the result of cleaning, others also
         exist in raw form.

@@ -24,7 +24,7 @@ Welcome to the Successful Employment for Persons with Disabilities in Iowa's Git
 
 ### Structure
 
--  All of the work dealing with scripting in R, working in Tableau, and the cleaning of data sets can be accessed through the `Data Exploration` folder. This folder contains all of the data content of the project and would be the folder to look through for any information on how the visualizations were  
+-  All of the work dealing with scripting in R, working in Tableau, and the cleaning of data sets can be accessed through the `Data Exploration` folder. This folder contains all of the data content of the project and would be the folder to look through for any information on how the visualizations were created. 
     + The `Datasets` folder contains all data sets used in this project. Some data sets are the result of cleaning, others also exist in raw form.
     + The `R Projects` folder contains all of the R scripts used for experimenting and calculating date. All of the R files are connected to the `Data Exploration.Rproj` file.
     + The `Tableau Projects` folder contains all of the Tableau workbook files that were used to create the visualizations.
