@@ -1,7 +1,10 @@
 ---
 title: Successful Employment for Iowans with Disabilities
-output: github_document
-author: DSPG DHR Disabilities Team 2022
+output: 
+  github_document:
+    toc: true
+author: DSPG 2022
+
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -15,15 +18,23 @@ knitr::opts_chunk$set(
 )
 ```
 
-<!-- badges: start -->
-<!-- badges: end -->
+
+## Overview
+
+Welcome to the Successful Employment for Iowans with Disabilities project page! This is the home for all of the dashboards and documentation that the DSPG 2022 team worked hard to complete. Below you can find navigational links which will take you across the different sections of this webpage. Alternatively, you can use the top navigation bars to view information by theme.
+
 
 ## Navigation
 
-Welcome to the Successful Employment for Iowans with Disabilities project page! This is the home for all of the dashboards and documentation that the DSPG 2022 team worked to complete. Below you can find the Table of Contents to easily navigate the page. The Dashboard 
-
-This one actually has this sentence.
+- Dashboards
+    + [Demographics](https://dspg-2022.github.io/DHR-Disabilities/articles/DemographicDashboard.html)
+    + [Demographics for Working Age](https://dspg-2022.github.io/DHR-Disabilities/articles/DemographicsWorkingAge.html)
+    + [Employment and Labor Participation](https://dspg-2022.github.io/DHR-Disabilities/articles/EmploymentLaborDashboard.html)
+    + [Publicly Funded Services](https://dspg-2022.github.io/DHR-Disabilities/articles/ServicesDashboard.html)
+    + [Public Expenditures](https://dspg-2022.github.io/DHR-Disabilities/articles/ExpendituresDashboard.html)
 
 ## Team Members
 
-![](vignettes/Images/DHR.jpg)
+```{r, echo=FALSE}
+knitr::include_graphics("vignettes/images/DHR.jpg")
+```
