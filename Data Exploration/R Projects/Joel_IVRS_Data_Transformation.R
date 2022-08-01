@@ -4,9 +4,16 @@ library(stringr)
 library(zipcodeR)
 library(tibble)
 
+# load in IVRS adjusted inflation file
 IVRS_data_old <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
+
+#load in IVRS FFY2020 file
 IVRS_data_new_2020 <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE,fileEncoding="UTF-8-BOM")
+
+#load in IVRS FFY2021 file
 IVRS_data_new_2021 <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
+
+#load in IVRS county offices file
 IVRS_County_Office <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
 
 
@@ -103,17 +110,7 @@ IVRS_County_Office <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALS
     #       Also vice versa, any 0's in Wage (Closure) were changed to NA so that the formula would output NA to indicate that the wage change
     #       resulted in unemployment.
     #
-    
-    # change columns to numeric
-    IVRS_merged$'Hourly Wage (Application)' <- as.integer(IVRS_merged$'Hourly Wage (Application)')
-    IVRS_merged$'Hourly Wage (Closure)' <- as.integer(IVRS_merged$'Hourly Wage (Closure)')
-    IVRS_merged$'Monthly Wage (Application)' <- as.integer(IVRS_merged$'Monthly Wage (Application)')
-    IVRS_merged$'Monthly Wage (Closure)' <- as.integer(IVRS_merged$'Monthly Wage (Closure)')
-    IVRS_merged$'Annual Wage (Application)' <- as.integer(IVRS_merged$'Annual Wage (Application)')
-    IVRS_merged$'Annual Wage (Closure)' <- as.integer(IVRS_merged$'Annual Wage (Closure)')
-    IVRS_merged$'Hourly Wage Change' <- as.integer(IVRS_merged$'Hourly Wage Change')
-    IVRS_merged$'Monthly Wage Change' <- as.integer(IVRS_merged$'Monthly Wage Change')
-    IVRS_merged$'Annual Wage Change' <- as.integer(IVRS_merged$'Annual Wage Change')
+
     
     # hourly
     IVRS_merged$'Hourly Wage (Application)'[is.na(IVRS_merged$'Hourly Wage (Application)')] <- 0
