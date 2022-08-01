@@ -23,9 +23,9 @@ directories of this repository.
     any information on how the visualizations were created.
     -   The `Datasets` folder contains all data sets used in this
         project. Some data sets are the result of cleaning, others also
-        exist in raw form.
+        exist in raw format.
     -   The `R Projects` folder contains all of the R scripts used for
-        experimenting and calculating date. All of the R files are
+        experimenting and calculating data. All of the R projects are
         connected to the `Data Exploration.Rproj` file.
     -   The `Tableau Projects` folder contains all of the Tableau
         workbook files that were used to create the visualizations.
@@ -45,6 +45,10 @@ directories of this repository.
     -   The `index.md` file serves as the Home page of the [DHR
         Disabilities Web
         Page](https://dspg-2022.github.io/DHR-Disabilities/)
+
+For any questions on the structure or the files in this repository, you
+can contact [Harun Celik](https://github.com/HarunCelikOtto) at
+<hcelik@iastate.edu>
 
 ### Team Members
 
