@@ -22,6 +22,8 @@ navbar:
       menu:
       - text: Demographics
         href: articles/DemographicDashboard.html
+      - text: Demographics for Working Age
+        href: articles/DemographicsWorkingAge.html
       - text: Employment and Labor Services
         href: articles/EmploymentLaborDashboard.html
       - text: Publicly Funded Services
