@@ -1,3 +1,7 @@
+---
+resource_files:
+  - vignettes/images/DHR.jpg
+---
 toc:
   depth: 4
 

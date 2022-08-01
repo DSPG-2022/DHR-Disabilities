@@ -2,8 +2,8 @@
 title: Successful Employment for Iowans with Disabilities
 output: 
   github_document:
-    toc: true
-author: DSPG 2022
+    toc: false
+<center>author: DSPG 2022</center>
 
 ---
 
@@ -23,18 +23,26 @@ knitr::opts_chunk$set(
 
 Welcome to the Successful Employment for Iowans with Disabilities project page! This is the home for all of the dashboards and documentation that the DSPG 2022 team worked hard to complete. Below you can find navigational links which will take you across the different sections of this webpage. Alternatively, you can use the top navigation bars to view information by theme.
 
+The __Dashboard__ section contains all of the finalized visualizations for this project categorized by their respective sections on demographics, employment, services, and expenditures. The __Dashboard Development__ section contains all of the methodology, processes, and review of the datasources that went into creating the visualizations for this project.
+
 
 ## Navigation
 
-- Dashboards
+- __Dashboards__
     + [Demographics](https://dspg-2022.github.io/DHR-Disabilities/articles/DemographicDashboard.html)
     + [Demographics for Working Age](https://dspg-2022.github.io/DHR-Disabilities/articles/DemographicsWorkingAge.html)
     + [Employment and Labor Participation](https://dspg-2022.github.io/DHR-Disabilities/articles/EmploymentLaborDashboard.html)
     + [Publicly Funded Services](https://dspg-2022.github.io/DHR-Disabilities/articles/ServicesDashboard.html)
     + [Public Expenditures](https://dspg-2022.github.io/DHR-Disabilities/articles/ExpendituresDashboard.html)
+- **Dashboard Development**
+    + [Data Sources and Literature Review](https://dspg-2022.github.io/DHR-Disabilities/articles/Dashboard_Development/DataLiteratureReview.html)
+    + [Demographic Information](https://dspg-2022.github.io/DHR-Disabilities/articles/Dashboard_Development/Demographics.html)
+    + [Employment and Labor Participation](https://dspg-2022.github.io/DHR-Disabilities/articles/Dashboard_Development/EmploymentAndLabor.html)
+    + [Services](https://dspg-2022.github.io/DHR-Disabilities/articles/Dashboard_Development/Services.html)
+    + [Expenditures](https://dspg-2022.github.io/DHR-Disabilities/articles/Dashboard_Development/Expenditures.html)
 
 ## Team Members
 
 ```{r, echo=FALSE}
-knitr::include_graphics("vignettes/images/DHR.jpg")
+knitr::include_graphics("man/figures/DHR.jpg")
 ```
