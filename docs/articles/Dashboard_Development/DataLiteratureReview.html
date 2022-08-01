@@ -33,7 +33,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../../index.html">DSPGDisability</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title=""></span>
       </span>
     </div>
 
@@ -54,6 +54,9 @@
   <ul class="dropdown-menu" role="menu">
 <li>
       <a href="../../articles/DemographicDashboard.html">Demographics</a>
+    </li>
+    <li>
+      <a href="../../articles/DemographicsWorkingAge.html">Demographics for Working Age</a>
     </li>
     <li>
       <a href="../../articles/EmploymentLaborDashboard.html">Employment and Labor Services</a>
@@ -131,8 +134,159 @@
 with Disabilities project was its focus on reviewing as many accessible
 data sources as potentially possible within the time-frame of the DSPG
 program. The result of this was a survey of data sets that focused on
-Iowans with disabilities testing whether they contained information
-comparable to ACS</p>
+Iowans with disabilities and exploring whether the information contained
+could be used to provide insight to persons with disabilities and
+employment in Iowa.</p>
+<div class="section level3">
+<h3 id="american-census-survey-acs">American Census Survey (ACS)<a class="anchor" aria-label="anchor" href="#american-census-survey-acs"></a>
+</h3>
+<p>Of all the data sources pertaining to persons with a disability (PWD)
+in Iowa, the ACS includes the most fundamental and complete data set for
+providing a contextual overview to PWDs. For this reason, this section
+will document how the ACS data is structured for this particular
+project.</p>
+<div class="section level4">
+<h4 id="difficulty-types">Difficulty Types<a class="anchor" aria-label="anchor" href="#difficulty-types"></a>
+</h4>
+<p>In the sections which pertain to disability, the ACS primary collects
+data on six different kinds of difficulty.</p>
+<ul>
+<li>Hearing</li>
+<li>Vision</li>
+<li>Cognitive</li>
+<li>Ambulatory</li>
+<li>Self-care</li>
+<li>Independent Living</li>
+</ul>
+</div>
+<div class="section level4">
+<h4 id="table-codes-and-corresponding-information">Table Codes and Corresponding Information<a class="anchor" aria-label="anchor" href="#table-codes-and-corresponding-information"></a>
+</h4>
+<p>On questions of Employment &amp; Income, B18120, B18121, B18140,
+contain information on:</p>
+<ul>
+<li>Employment Status by Disability Status and Type,</li>
+<li>Work Experience by Disability Status and Type,</li>
+<li>Median Earnings by Disability Status by Sex for the Civilian
+Noninstitutionalized Population with Earnings</li>
+</ul>
+<p>On questions of Poverty, B18130, B18131, B21007, B23024 contain
+information on:</p>
+<ul>
+<li>Age by Disability Status by Poverty Status</li>
+<li>Age by Ratio of Income to Poverty Level by Disability Status and
+Type</li>
+<li>Age by Veteran Status by Poverty Status by Disability Status for the
+Civilian Population 18 Years and Over</li>
+<li>Poverty Status by Disability Status by Employment Status for the
+Population 20 to 64 Years</li>
+</ul>
+<p>On questions of Insurance &amp; Service, B18135, B21100, B22010
+contain information on:</p>
+<ul>
+<li>Age by Disability Status by Health Insurance Coverage Status</li>
+<li>Service-connected Disability-rating Status and Ratings for Civilian
+Veterans 18 Years and Over</li>
+<li>Receipt of Food Stamps/SNAP by Disability Status for Households</li>
+</ul>
+<p>On questions regarding General Age and Sex can be found from B18101 –
+B18107. Additionally on the question of Age, B18108, B26108, B26208
+contain information on:</p>
+<ul>
+<li>Age by Number of Disabilities</li>
+<li>Group Quarters Type (3 Types) by Age by Disability Status</li>
+<li>Group Quarters Type (5 Types) by Age by Disability Status</li>
+</ul>
+<p>One Miscellaneous Category is B10052, which contains information
+on:</p>
+<ul>
+<li>Disability Status of Grandparents Living with Own Grandchildren by
+Responsibility for Own Grandchildren and Age of Grandparent</li>
+</ul>
+</div>
+<div class="section level4">
+<h4 id="questions-in-the-acs-questionnaires">Questions in the ACS Questionnaires<a class="anchor" aria-label="anchor" href="#questions-in-the-acs-questionnaires"></a>
+</h4>
+<p>Tables that are outside of the difficulties categories are created
+using a combination of different questions of the ACS Questionnaires.
+Employment information for Persons with Disabilities comes from a
+combination of the Employment, Poverty, Commute, and Disability answers
+that surveyors respond to when filling the questionnaire.</p>
+<div class="section level5">
+<h5 id="questions-on-disability-yesno-questions">Questions on Disability (Yes/No Questions)<a class="anchor" aria-label="anchor" href="#questions-on-disability-yesno-questions"></a>
+</h5>
+<ol start="18" style="list-style-type: decimal">
+<li>Question Set</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Is this person deaf or does he/she have serious difficulty
+hearing?</li>
+<li>Is this person blind or does he/she have serious difficulty seeing
+even when wearing glasses?</li>
+</ol>
+<ol start="19" style="list-style-type: decimal">
+<li>Question Set</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Because of a physical, mental, or emotional condition, does this
+person have serious difficulty concentrating, remembering, or making
+decisions?</li>
+<li>Does this person have serious difficulty walking or climbing
+stairs?</li>
+<li>Does this person have serious difficulty dressing or bathing?</li>
+</ol>
+<ol start="20" style="list-style-type: decimal">
+<li><p>Because of a physical, mental, or emotional condition, does this
+person have difficulty doing errands alone such as visiting a doctor’s
+office or shopping? Questions on Poverty (Fill Value
+Questions).</p></li>
+<li><p>Question Set</p></li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Wages, salary, commissions, bonuses, or tips from all jobs.</li>
+<li>Self-employment income from own nonfarm businesses or farm
+businesses, including proprietorships and partnerships.</li>
+<li>Interest, dividends, net rental income, royalty income, or income
+from estates and trusts.</li>
+<li>Social security or Railroad retirement.</li>
+<li>Supplemental Security Income (SSI).</li>
+<li>Any public assistance or welfare payments from the state or local
+welfare offices.</li>
+<li>Retirement income, pensions, survivor, or disability income.</li>
+<li>Any other sources of income received regularly such as Veteran’s
+(VA) payments, unemployment compensation, child support, or
+alimony.</li>
+</ol>
+<ol start="44" style="list-style-type: decimal">
+<li>What was this person’s total income during the PAST 12 MONTHS?</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="behavioral-risk-factor-surveillance-system">
+<a href="https://idph.iowa.gov/brfss/Data-by-County" class="external-link">Behavioral Risk
+Factor Surveillance System</a><a class="anchor" aria-label="anchor" href="#behavioral-risk-factor-surveillance-system"></a>
+</h3>
+<p>This data set was used as a comparative supplement to the ACS data
+set. It contains information matching ACS questionnaires on Disability
+Status, Age and Type. The geographic scope of this survey is by the
+county level and the survey is conducted through telephone.</p>
+</div>
+<div class="section level3">
+<h3 id="substance-abuse-and-mental-health-services-administration">
+<a href="https://www.datafiles.samhsa.gov/data-sources" class="external-link">Substance
+Abuse and Mental Health Services Administration</a><a class="anchor" aria-label="anchor" href="#substance-abuse-and-mental-health-services-administration"></a>
+</h3>
+<p>For the purposes of this project, we focused exxlusively on the
+survey questions that related to the Mental Health sections. This
+information was taken from the <em>National Survey on Drug Use and
+Health</em> and the geographic scope of this data was by sub-state
+regions rather than county.</p>
+</div>
+<div class="section level3">
+<h3 id="section"></h3>
+</div>
 </div>
   </div>
 
@@ -148,7 +302,7 @@ comparable to ACS</p>
 
       <footer><div class="copyright">
   <p></p>
-<p>Developed by The package maintainer.</p>
+<p>Developed by Harun Celik.</p>
 </div>
 
 <div class="pkgdown">

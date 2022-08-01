@@ -1,6 +1,8 @@
 ---
 title: "Data Sources and Literature Review"
-output: rmarkdown::html_vignette
+output: 
+  rmarkdown::html_vignette:
+    toc: true
 vignette: >
   %\VignetteIndexEntry{Data Sources and Literature Review}
   %\VignetteEngine{knitr::rmarkdown}
@@ -16,6 +18,98 @@ knitr::opts_chunk$set(
 
 ## General Introduction
 
-An important consideration of the Successful Employment for Iowans with Disabilities project was its focus on reviewing as many accessible data sources as potentially possible within the time-frame of the DSPG program. The result of this was a survey of data sets that focused on Iowans with disabilities testing whether they contained information comparable to ACS 
+An important consideration of the Successful Employment for Iowans with Disabilities project was its focus on reviewing as many accessible data sources as potentially possible within the time-frame of the DSPG program. The result of this was a survey of data sets that focused on Iowans with disabilities and exploring whether the information contained could be used to provide insight to persons with disabilities and employment in Iowa.
+
+### American Census Survey (ACS)
+
+Of all the data sources pertaining to persons with a disability (PWD) in Iowa, the ACS includes the most fundamental and complete data set for providing a contextual overview to PWDs. For this reason, this section will document how the ACS data is structured for this particular project.
+
+#### Difficulty Types
+In the sections which pertain to disability, the ACS primary collects data on six different kinds of difficulty.
+
+
+-	Hearing
+-	Vision
+-	Cognitive
+-	Ambulatory
+-	Self-care
+-	Independent Living 
+
+
+#### Table Codes and Corresponding Information
+On questions of Employment & Income, B18120, B18121, B18140, contain information on: 
+
+-	Employment Status by Disability Status and Type, 
+-	Work Experience by Disability Status and Type,
+-	Median Earnings by Disability Status by Sex for the Civilian Noninstitutionalized Population with Earnings
+
+On questions of Poverty, B18130, B18131, B21007, B23024 contain information on:
+
+-	Age by Disability Status by Poverty Status
+-	Age by Ratio of Income to Poverty Level by Disability Status and Type
+-	Age by Veteran Status by Poverty Status by Disability Status for the Civilian Population 18 Years and Over
+-	Poverty Status by Disability Status by Employment Status for the Population 20 to 64 Years
+
+On questions of Insurance & Service, B18135, B21100, B22010 contain information on: 
+
+-	Age by Disability Status by Health Insurance Coverage Status
+- Service-connected Disability-rating Status and Ratings for Civilian Veterans 18 Years and Over
+-	Receipt of Food Stamps/SNAP by Disability Status for Households
+
+On questions regarding General Age and Sex can be found from B18101 – B18107. Additionally on the question of Age, B18108, B26108, B26208 contain information on:
+
+-	 Age by Number of Disabilities
+-	Group Quarters Type (3 Types) by Age by Disability Status
+-	Group Quarters Type (5 Types) by Age by Disability Status
+
+One Miscellaneous Category is B10052, which contains information on:
+
+-	Disability Status of Grandparents Living with Own Grandchildren by Responsibility for Own Grandchildren and Age of Grandparent
+
+
+#### Questions in the ACS Questionnaires 
+
+Tables that are outside of the difficulties categories are created using a combination of different questions of the ACS Questionnaires. Employment information for Persons with Disabilities comes from a combination of the Employment, Poverty, Commute, and Disability answers that surveyors respond to when filling the questionnaire.
+
+##### Questions on Disability (Yes/No Questions)
+
+18.	Question Set
+a.	Is this person deaf or does he/she have serious difficulty hearing?
+b.	Is this person blind or does he/she have serious difficulty seeing even when wearing glasses?
+
+
+19.	Question Set
+a.	Because of a physical, mental, or emotional condition, does this person have serious difficulty concentrating, remembering, or making decisions?
+b.	Does this person have serious difficulty walking or climbing stairs?
+c.	Does this person have serious difficulty dressing or bathing?
+
+
+20.	Because of a physical, mental, or emotional condition, does this person have difficulty doing errands alone such as visiting a doctor’s office or shopping?
+Questions on Poverty (Fill Value Questions).
+
+
+43.	Question Set
+a.	Wages, salary, commissions, bonuses, or tips from all jobs.
+b.	Self-employment income from own nonfarm businesses or farm businesses, including proprietorships and partnerships.
+c.	Interest, dividends, net rental income, royalty income, or income from estates and trusts.
+d.	Social security or Railroad retirement.
+e.	Supplemental Security Income (SSI).
+f.	Any public assistance or welfare payments from the state or local welfare offices.
+g.	Retirement income, pensions, survivor, or disability income.
+h.	Any other sources of income received regularly such as Veteran’s (VA) payments, unemployment compensation, child support, or alimony.
+
+
+44.	What was this person’s total income during the PAST 12 MONTHS?
+
+### [Behavioral Risk Factor Surveillance System](https://idph.iowa.gov/brfss/Data-by-County)
+
+This data set was used as a comparative supplement to the ACS data set. It contains information matching ACS questionnaires on Disability Status, Age and Type. The geographic scope of this survey is by the county level and the survey is conducted through telephone.
+
+### [Substance Abuse and Mental Health Services Administration](https://www.datafiles.samhsa.gov/data-sources)
+
+For the purposes of this project, we focused exxlusively on the survey questions that related to the Mental Health sections. This information was taken from the _National Survey on Drug Use and Health_ and the geographic scope of this data was by sub-state regions rather than county.
+
+### 
+
 
 

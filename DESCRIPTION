@@ -1,12 +1,10 @@
 Package: DSPGDisability
-Type: Package
+Type: Webpage
 Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Version: 
+Author: Harun Celik
+Maintainer: Harun Celik <hcelik@iastate.edu>
+Description: This is the webpage for DSPGs Successful Employment for Persons with Disabilities in Iowa Project.
 Encoding: UTF-8
 LazyData: true
 Suggests: 
