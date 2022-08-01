@@ -16,6 +16,8 @@ knitr::opts_chunk$set(
 
 ## General Introduction
 
-An important consideration of the Successful Employment for Iowans with Disabilities project was its focus on reviewing as many accessible data sources as potentially possible within the time-frame of the DSPG program. The result of this was a survey of data sets that focused on Iowans with disabilities testing whether they contained information comparable to ACS 
+An important consideration of the Successful Employment for Iowans with Disabilities project was its focus on reviewing as many accessible data sources as potentially possible within the time-frame of the DSPG program. The result of this was a survey of data sets that focused on Iowans with disabilities and exploring whether the information contained could be used to provide insight to persons with disabilities and employment in Iowa.
+
+
 
 
