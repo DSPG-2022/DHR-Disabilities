@@ -3,7 +3,7 @@ title: Successful Employment for Iowans with Disabilities
 output: 
   github_document:
     toc: false
-<center>author: DSPG 2022</center>
+author: DSPG 2022
 
 ---
 
@@ -21,9 +21,9 @@ knitr::opts_chunk$set(
 
 ## Overview
 
-Welcome to the Successful Employment for Iowans with Disabilities project page! This is the home for all of the dashboards and documentation that the DSPG 2022 team worked hard to complete. Below you can find navigational links which will take you across the different sections of this webpage. Alternatively, you can use the top navigation bars to view information by theme.
+Welcome to the Successful Employment for Persons with Disabilities in Iowa project page! This is the home for all of the dashboards and documentation that the DSPG 2022 team worked hard to complete. Below you can find navigational links which will take you across the different sections of this webpage. Alternatively, you can use the top navigation bars to view information by themes.
 
-The __Dashboard__ section contains all of the finalized visualizations for this project categorized by their respective sections on demographics, employment, services, and expenditures. The __Dashboard Development__ section contains all of the methodology, processes, and review of the datasources that went into creating the visualizations for this project.
+The __Dashboard__ section contains all of the finalized visualizations for this project categorized by their respective sections on demographics, employment, services, and expenditures. The __Dashboard Development__ section contains all of the methodology, processes, and review of the data sources that went into creating the visualizations for this project.
 
 
 ## Navigation
