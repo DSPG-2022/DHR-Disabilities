@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 
 ## General Introduction
 
-An important consideration of the Successful Employment for Iowans with Disabilities project was its focus on reviewing as many accessible data sources as potentially possible within the time-frame of the DSPG program. The result of this was a survey of data sets that focused on Iowans with disabilities and exploring whether the information contained could be used to provide insight to persons with disabilities and employment in Iowa.
+An important objective of the Successful Employment for Persons with Disabilities in Iowa project was its focus on reviewing as many accessible data sources as potentially possible within the time-frame of the DSPG program. The result of this was a survey of data sets that focused on Iowans with disabilities and exploring whether the information contained could be used to provide insight to persons with disabilities and employment in Iowa.
 
 ## Datasets Utilized
 
@@ -135,11 +135,11 @@ As a public service, this data set provided us with numbers of people and amount
 
 ## Datasets Unutilized
 
-The following are data sets that were reviewed but not utilized due to data complexity, time or thematic differences to the Successful Employment for Persons with Disabilities in Iowa project.
+The following are data sets were reviewed but not utilized due to a number of reasons. Most prominently, data complexity, time-frame of the project, or thematic differences to employment affected our interest and ability to utilize the following data.
 
 ## Tier One
 
-These data sets are ones that matched the thematic interest of the project and would have been investigated given more available time for the project.
+`Tier One` data sets are ones that overall matched the thematic interest of the project and would have been investigated further given more available time for the project.
 
 ### [Current Population Survey](https://www.census.gov/data/datasets.html)
 
@@ -154,19 +154,39 @@ The PUMS data uses the information collected by the ACS data in order to allow f
 
 These data sets were ones that matched the thematic scope of the project in terms of disability, but did not necessarily contain information on employment, or data accessibility and complexity were a concern. 
 
-### [National Health Interview Survey](https://www.cdc.gov/nchs/nhis/2020nhis.htm)
+### [American Housing Survey (AHS)](https://www.census.gov/programs-surveys/ahs/data/interactive/ahstablecreator.html?s_areas=00000&s_year=2019&s_tablename=TABLE8B&s_bygroup1=1&s_bygroup2=1&s_filtergroup1=1&s_filtergroup2=1)
 
-This data set contains detailed questionnaires on health characteristics by demographic and socioeconomic characteristics, including information on people with disabilities. The difficulty in this data set was accessibility and the lack of geographic scope.
+This data set contains information on households with disabilities by disability type which contains potential for comparison with other sets of information in the ACS. The difficulties with this data set were that the survey information was only gathered for particular areas of states.
 
-###
+### [Survey of Income and Program Participation (SIPP)](https://www.census.gov/programs-surveys/sipp.html)
+
+The SIPP is a nationally representative longitudinal survey that provides information on income, employment, households and government participation programs. The code book for the questionnaires indicates that there are a number of disability related questions. The data set doesn't calculate weights and since this has to be done manually we decided to not utilize the data set for its complexity. 
+
+### [Iowa Department of Administrative Services - Employment Separations](https://data.iowa.gov/Government-Employees/Iowa-Executive-Branch-Voluntary-and-Involuntary-Em/fbgd-5egw)
+
+This data set contains a column of reasons for why employees were separated in the Iowa Executive Branch. One of the possible reasons indicated is Disability and Mental Health. The data set has no particular geographic scope and for lack of priority on other datasets, was not utilized.
+
+
+### [Iowa Civil Rights Commission - Closed Discrimination Complaint Cases](https://data.iowa.gov/Regulation/Closed-Discrimination-Complaint-Cases-in-Iowa/ha33-u9br) 
+
+This data set contains information on discrimination complaint cases processed by a local agency. Data includes type of closure, dates when case was opened and closed, and basis of complaints received. The clients indicate whether their cases are related to a disability or not. Data doesn't have a geography and no granular information besides the complaints are provided.
 
 ### [Medicaid HCBS Aggregate Employment Data](https://iastate.app.box.com/file/982370132843?s=yx3g2g9009kchgsrm3d6d61k2ygtykut)
 
 This Medicaid employment data table covers information from July and October of 2020 as well as April and October of 2021. There is no specific geographic scope for this data set and we were unable to look further into these tables for lack of time.
 
+### [National Health Interview Survey](https://www.cdc.gov/nchs/nhis/2020nhis.htm)
+
+This data set contains detailed questionnaires on health characteristics by demographic and socioeconomic characteristics, including information on people with disabilities. The difficulty in this data set was accessibility and the lack of geographic scope.
+
 ### [Bureau of Justice Statistics - Disabilities Reported by Prisoners](https://www.bjs.gov/index.cfm/content/dataonline/content/acf/index.cfm?ty=pbdetail&iid=7306)
 
 This data set contains numbers of federal prisoners in Iowa which are reported to have disabilities disaggregated by similar difficulty types to the ACS data. The data is from 2016 and with limited time for the program, this data set was not utilized for its lack of employment focus for this project.
+
+### [Bureau of Justics Statistics - Crime Against Persons with Disabilities](https://bjs.ojp.gov/library/publications/crime-against-persons-disabilities-2009-2019-statistical-tables)
+
+Contains a data set on Crime Against Persons with Disabilities from the years 2009 to 2019. Since it doesn't contain any information on employment and the geography is at a national level, this data set was not utilized.
+
 
 ### [Bureau of Labor Statistics (BLS)](https://beta.bls.gov/dataQuery/find?st=0&r=20&fq=cg:%5bGeography%5d&fq=cc:%5bCounties+and+Equivalents%5d&more=0&fq=ccd:%5bIowa%5d)
 
@@ -179,5 +199,8 @@ This data set has specific information about children from ages 3 - 21 in need o
 ### [Employment and Training Administration (ETA/US DOL)](https://www.dol.gov/agencies/eta)
 
 Data set was inaccessible until later, this data set was not utilized due to a lack of time.
+
+
+
 
 
