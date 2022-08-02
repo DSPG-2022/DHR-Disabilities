@@ -129,7 +129,55 @@ Another assessment of public services utilized the Successful Employment for Bli
 
 For county level expenditures, we focused on data that was provided by the Iowa Department of Management which listed both budgeted and actual expenditures for counties in Iowa. Since they were separate data tables, the process was to first clean and merge them together to later map. We focused on two variables for expenditures; Physical Health and Social Services.
 
+### [Social Security Administration - SSI & OASDI Recipitents, 2020](https://www.ssa.gov/policy/docs/statcomps/ssi_sc/2020/ia.html)
+
+As a public service, this data set provided us with numbers of people and amounts in dollars for all of the people that received OASDI benefits by county. This information is also disaggregated by workers, spouses and children with disabilities or to these respective demographics as a result of someone with a disability in the household. 
+
 ## Datasets Unutilized
 
-### 
+The following are data sets that were reviewed but not utilized due to data complexity, time or thematic differences to the Successful Employment for Persons with Disabilities in Iowa project.
+
+## Tier One
+
+These data sets are ones that matched the thematic interest of the project and would have been investigated given more available time for the project.
+
+### [Current Population Survey](https://www.census.gov/data/datasets.html)
+
+This data set is based off of the information provided by the Bureau of Labor Statistics and has the ASEC (Annual Social and Economic Supplement) Public Use Data Dictionary containing questions on income and employment for people with disabilities. This data set was not explored due to a lack of time and potential complexities in having to calculate weighted values.
+
+
+### [Public Use Microdata Sample (PUMS)](https://www.census.gov/programs-surveys/acs/microdata.html)
+
+The PUMS data uses the information collected by the ACS data in order to allow for users to cross-check information that pre-tabulated data products by the ACS don't depict. Due to sample size causing potential reliability errors and a learning curve with the PUMS API, we decided to focus more on the ACS with our limited time.
+
+## Tier Two
+
+These data sets were ones that matched the thematic scope of the project in terms of disability, but did not necessarily contain information on employment, or data accessibility and complexity were a concern. 
+
+### [National Health Interview Survey](https://www.cdc.gov/nchs/nhis/2020nhis.htm)
+
+This data set contains detailed questionnaires on health characteristics by demographic and socioeconomic characteristics, including information on people with disabilities. The difficulty in this data set was accessibility and the lack of geographic scope.
+
+###
+
+### [Medicaid HCBS Aggregate Employment Data](https://iastate.app.box.com/file/982370132843?s=yx3g2g9009kchgsrm3d6d61k2ygtykut)
+
+This Medicaid employment data table covers information from July and October of 2020 as well as April and October of 2021. There is no specific geographic scope for this data set and we were unable to look further into these tables for lack of time.
+
+### [Bureau of Justice Statistics - Disabilities Reported by Prisoners](https://www.bjs.gov/index.cfm/content/dataonline/content/acf/index.cfm?ty=pbdetail&iid=7306)
+
+This data set contains numbers of federal prisoners in Iowa which are reported to have disabilities disaggregated by similar difficulty types to the ACS data. The data is from 2016 and with limited time for the program, this data set was not utilized for its lack of employment focus for this project.
+
+### [Bureau of Labor Statistics (BLS)](https://beta.bls.gov/dataQuery/find?st=0&r=20&fq=cg:%5bGeography%5d&fq=cc:%5bCounties+and+Equivalents%5d&more=0&fq=ccd:%5bIowa%5d)
+
+The BLS collects only labor force data at the county level for states. Unfortunately, the information collected by the BLS doesn't include whether a person has disabilities or not. This was why the data was not utilized.
+
+### [Office of Special Education (OSpEd/DoEd)](https://www2.ed.gov/programs/osepidea/618-data/state-level-data-files/index.html)
+
+This data set has specific information about children from ages 3 - 21 in need of special education at the state level. Because of its geographic scope at the state level and its data not connecting to employment, we chose to prioritize other data sets.
+
+### [Employment and Training Administration (ETA/US DOL)](https://www.dol.gov/agencies/eta)
+
+Data set was inaccessible until later, this data set was not utilized due to a lack of time.
+
 
