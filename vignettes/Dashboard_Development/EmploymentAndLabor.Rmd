@@ -22,7 +22,7 @@ date: '2022-06-17'
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
+Downloading libraries Used To Gather, Clean and Merge Employment Data
 ```{r}
 library(tidyverse)
 library(tidycensus)
@@ -34,7 +34,14 @@ library(ggplot2)
 census_api_key("ab8b0fa7ef0993c579097beb76d0321bce5af443", install = TRUE)
 ```
 
-```{r}
+# Pulling Data
+
+## The sources from which the Data is retrieved include, ACS, and SSA (OASDI and SSI) for 2020
+
+Loaded county based data such as population, parameters with respect to Employment and Earnings for persons with Disability from ACS (American Community Survey)
+Followed by OASDI (Old-Age, Survivors, and Disability Insurance) and SSI (Supplemental Security Income) data from SSA (Social Security Administration)
+
+```{r, eval= FALSE}
 new_table= read.csv("lookup_county_regions.csv")
 View(new_table)
 pop_table <- read.csv("Population_by_County.csv")
@@ -45,14 +52,14 @@ oasdi_amount_table <- read.csv("oasdi_amount_2020.csv")
 View(oasdi_amount_table)
 ssi_table <- read.csv("SSI.csv")
 View(ssi_table)
+```
+Loading Variables from the ACS (5-year estimatesfor) for the year 2020
+
+
+```{r, eval= FALSE}
 var<-load_variables(2020,"acs5")
 View(var)
 ```
-
-```{r}
-colnames(pop_table)[1] <- "County"
-```
-
 
 ```{r}
 emp_stat_disability <-c("In the Labor Force,Employed with disability"= "C18120_004", "In the Labor force,unemployed with a disability" = "C18120_007",  "Not in the Labor force, with a disability" = "C18120_010")
