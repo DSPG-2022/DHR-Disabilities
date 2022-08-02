@@ -111,10 +111,23 @@ This data set was used as a comparative supplement to the ACS data set. It conta
 
 For the purposes of this project, we focused exclusively on the survey questions that related to the Mental Health sections. This information was taken from the _National Survey on Drug Use and Health_ and the geographic scope of this data was by sub-state regions rather than county.
 
-### IVRS 
+### [Iowa Vocational Rehabilitation Services (IVRS)](https://data.iowa.gov/Vocational-Rehabilitation/Closed-Iowa-Vocational-Rehabilitation-Cases/gcya-t3y9) 
 
-Data available on closed cases
-Educational degree attained or barriers to employment*
+For the assessment of public services, the IVRS data set on Closed Iowa Vocational Rehabilitation Cases was an invaluable resource. This data set had two potential geographic information provided about the clients of the IVRS. The first of these are the office locations that the clients were receiving services from. The second was the location of the client at the end of their services. By calculating the number of employment and the changes in wages for each client, we tried to assess how functional the offices were at helping clients with their employment. 
+
+More information on the IVRS data set can be found in the [Services](https://dspg-2022.github.io/DHR-Disabilities/articles/Dashboard_Development/Services.html) section of the documentation. 
+
+### [Iowa’s Mental Health and Disability Services (MHDS)](https://dhs.iowa.gov/mhds-providers/providers-regions/regions)
+
+For the assessment of public expenditures, we relied on the MDHS regional data sets to learn more about Expenditures, Persons Served, and Unduplicated Persons Served by Service. Due to the way that the data is organized, it took a lot of time to be able to collect all of the MHDS regions into one data table, preventing us from looking at all possible years. The geography of this data set is available for MHDS regions which are not as granular as county data but more so than SAMSHA or IVRS regions.
+
+### [Successful Employment for Blind Iowans by Federal Fiscal Year](https://data.iowa.gov/Vocational-Rehabilitation/Successful-Employment-for-Blind-Iowans-by-Federal-/twt2-zx5z)
+
+Another assessment of public services utilized the Successful Employment for Blind Iowans by Federal Fiscal Year data set from the Iowa Data portal. Unfortunately, the data was last updated for the years of 2016 since 2012, but much like the IVRS data, it contains information regarding hourly wage changes and earnings. The data set does not contain any geographical information.
+
+### Iowa Department of Management – [Budgeted](https://data.iowa.gov/Local-Government-Finance/County-Budgeted-Expenditures-By-Service-Area-By-Fi/gk9s-gz9c) and [Actual](https://data.iowa.gov/Local-Government-Finance/County-Actual-Expenditures-by-Service-Area-by-Fisc/fxbr-vb9c) Expenditures by County on Physical Health and Social Services
+
+For county level expenditures, we focused on data that was provided by the Iowa Department of Management which listed both budgeted and actual expenditures for counties in Iowa. Since they were separate data tables, the process was to first clean and merge them together to later map. We focused on two variables for expenditures; Physical Health and Social Services.
 
 
 
