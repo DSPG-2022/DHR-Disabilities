@@ -129,8 +129,6 @@ Another assessment of public services utilized the Successful Employment for Bli
 
 For county level expenditures, we focused on data that was provided by the Iowa Department of Management which listed both budgeted and actual expenditures for counties in Iowa. Since they were separate data tables, the process was to first clean and merge them together to later map. We focused on two variables for expenditures; Physical Health and Social Services.
 
-
-
 ## Datasets Unutilized
 
 ### 

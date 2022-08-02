@@ -28,7 +28,7 @@ navbar:
         href: articles/EmploymentLaborDashboard.html
       - text: Publicly Funded Services
         href: articles/ServicesDashboard.html
-      - text: Public Expenditures
+      - text: County Expenditures by Service Area and Fiscal Year
         href: articles/ExpendituresDashboard.html
     process:
       text: Dashboard Development and Supplements
