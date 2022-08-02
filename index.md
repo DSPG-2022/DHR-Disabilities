@@ -32,6 +32,8 @@ for this project.
         Services](https://dspg-2022.github.io/DHR-Disabilities/articles/ServicesDashboard.html)
     -   [County Expenditures by Service Area and Fiscal
         Year](https://dspg-2022.github.io/DHR-Disabilities/articles/ExpendituresDashboard.html)
+    -   [Mental Health and Disability
+        Services](https://dspg-2022.github.io/DHR-Disabilities/articles/MhdsServicesDashboard.html)
 -   **Dashboard Development**
     -   [Data Sources and Literature
         Review](https://dspg-2022.github.io/DHR-Disabilities/articles/Dashboard_Development/DataLiteratureReview.html)

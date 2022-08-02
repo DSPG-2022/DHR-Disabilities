@@ -34,6 +34,7 @@ The __Dashboard__ section contains all of the finalized visualizations for this 
     + [Employment and Labor Participation](https://dspg-2022.github.io/DHR-Disabilities/articles/EmploymentLaborDashboard.html)
     + [Publicly Funded Services](https://dspg-2022.github.io/DHR-Disabilities/articles/ServicesDashboard.html)
     + [County Expenditures by Service Area and Fiscal Year](https://dspg-2022.github.io/DHR-Disabilities/articles/ExpendituresDashboard.html)
+    + [Mental Health and Disability Services](https://dspg-2022.github.io/DHR-Disabilities/articles/MhdsServicesDashboard.html)
 - **Dashboard Development**
     + [Data Sources and Literature Review](https://dspg-2022.github.io/DHR-Disabilities/articles/Dashboard_Development/DataLiteratureReview.html)
     + [Demographic Information](https://dspg-2022.github.io/DHR-Disabilities/articles/Dashboard_Development/Demographics.html)
