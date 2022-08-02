@@ -20,7 +20,7 @@ date: '2022-06-17'
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 ```
 Downloading libraries Used To Gather, Clean and Merge Employment Data
 ```{r}
@@ -30,8 +30,8 @@ library(dplyr)
 library(ggplot2)
 ```
 
-```{r}
-census_api_key("ab8b0fa7ef0993c579097beb76d0321bce5af443", install = TRUE)
+```{r, echo=FALSE}
+census_api_key("ab8b0fa7ef0993c579097beb76d0321bce5af443", install = TRUE, overwrite = TRUE)
 ```
 
 # Pulling Data
