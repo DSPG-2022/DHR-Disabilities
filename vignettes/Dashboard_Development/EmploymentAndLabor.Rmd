@@ -55,12 +55,11 @@ View(ssi_table)
 ```
 Loading Variables from the ACS (5-year estimatesfor) for the year 2020
 
-
 ```{r, eval= FALSE}
 var<-load_variables(2020,"acs5")
 View(var)
 ```
-
+Categorized data based on Employment Status for persons with disability, and Employment Status for persons without disability. Used Table C18120 that gives data about Employment Status by Disability Status.
 ```{r}
 emp_stat_disability <-c("In the Labor Force,Employed with disability"= "C18120_004", "In the Labor force,unemployed with a disability" = "C18120_007",  "Not in the Labor force, with a disability" = "C18120_010")
 
@@ -70,14 +69,11 @@ emp_stat_no_disability <- c("In the Labor Force,Employed with no disability"= "C
 ```{r}
 empl_status_disability <- get_acs(
   geography= "state",
-  year = 2019,
-  variables = "B18121_001",
+  year = 2020,
+  variables = emp_stat_disability,
   output = "wide"
 )
 View(empl_status_disability)
-
-#empl_status_disability= empl_status_disability %>% mutate(sum_of_estimates = sum (estimate),overall_perc= 100* (estimate/sum(estimate)) )
-#View(empl_status_disability)
 
 empl_status_no_disability <- get_acs(
   geography= "county",
