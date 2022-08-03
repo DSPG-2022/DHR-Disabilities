@@ -52,4 +52,4 @@ can contact [Harun Celik](https://github.com/HarunCelikOtto) at
 
 ### Team Members
 
-![](vignettes/Images/DHR.jpg)
+![](man/figures/DHR.jpg)

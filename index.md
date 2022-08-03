@@ -1,4 +1,4 @@
-Successful Employment for Iowans with Disabilities
+Successful Employment for Persons with Disabilities in Iowa
 ================
 DSPG 2022
 
@@ -6,19 +6,19 @@ DSPG 2022
 
 ## Overview
 
-Welcome to the Successful Employment for Iowans with Disabilities
-project page! This is the home for all of the dashboards and
+Welcome to the Successful Employment for Persons with Disabilities in
+Iowa project page! This is the home for all of the dashboards and
 documentation that the DSPG 2022 team worked hard to complete. Below you
 can find navigational links which will take you across the different
 sections of this webpage. Alternatively, you can use the top navigation
-bars to view information by theme.
+bars to view information by themes.
 
 The **Dashboard** section contains all of the finalized visualizations
 for this project categorized by their respective sections on
 demographics, employment, services, and expenditures. The **Dashboard
 Development** section contains all of the methodology, processes, and
-review of the datasources that went into creating the visualizations for
-this project.
+review of the data sources that went into creating the visualizations
+for this project.
 
 ## Navigation
 
@@ -30,8 +30,10 @@ this project.
         Participation](https://dspg-2022.github.io/DHR-Disabilities/articles/EmploymentLaborDashboard.html)
     -   [Publicly Funded
         Services](https://dspg-2022.github.io/DHR-Disabilities/articles/ServicesDashboard.html)
-    -   [Public
-        Expenditures](https://dspg-2022.github.io/DHR-Disabilities/articles/ExpendituresDashboard.html)
+    -   [County Expenditures by Service Area and Fiscal
+        Year](https://dspg-2022.github.io/DHR-Disabilities/articles/ExpendituresDashboard.html)
+    -   [Mental Health and Disability
+        Services](https://dspg-2022.github.io/DHR-Disabilities/articles/MhdsServicesDashboard.html)
 -   **Dashboard Development**
     -   [Data Sources and Literature
         Review](https://dspg-2022.github.io/DHR-Disabilities/articles/Dashboard_Development/DataLiteratureReview.html)

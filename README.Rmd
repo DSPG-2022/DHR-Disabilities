@@ -40,4 +40,4 @@ For any questions on the structure or the files in this repository, you can cont
 
 ### Team Members
 
-![](vignettes/Images/DHR.jpg)
+![](man/figures/DHR.jpg)
