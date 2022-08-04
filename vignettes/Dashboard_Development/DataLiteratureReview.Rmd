@@ -1,5 +1,6 @@
 ---
 title: "Data Sources and Literature Review"
+author: "Harun Celik"
 output: 
   rmarkdown::html_vignette:
     toc: true
@@ -107,7 +108,7 @@ h.	Any other sources of income received regularly such as Veteran’s (VA) payme
 
 This data set was used as a comparative supplement to the ACS data set. It contains information matching ACS questionnaires on Disability Status, Age and Type. The geographic scope of this survey is by the county level and the survey is conducted through telephone.
 
-### [Substance Abuse and Mental Health Services Administration](https://www.datafiles.samhsa.gov/data-sources)
+### [Substance Abuse and Mental Health Services Administration (NSDUH)](https://www.datafiles.samhsa.gov/data-sources)
 
 For the purposes of this project, we focused exclusively on the survey questions that related to the Mental Health sections. This information was taken from the _National Survey on Drug Use and Health_ and the geographic scope of this data was by sub-state regions rather than county.
 
