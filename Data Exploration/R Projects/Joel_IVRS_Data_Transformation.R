@@ -13,9 +13,6 @@ IVRS_data_new_2020 <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALS
 #load in IVRS FFY2021 file
 IVRS_data_new_2021 <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
 
-#load in IVRS county offices file
-IVRS_County_Office <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
-
 
 # Initial split on comma to get City
     IVRS_data_transformed <- IVRS_data_old %>%
@@ -147,8 +144,8 @@ IVRS_County_Office <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALS
                                                                                             is.na(IVRS_merged$'Annual Wage Change') ~ "Unemployed"))
 
 # remove numbers from office areas
-    IVRS_merged$`Office Area` = substr(IVRS_merged$`Office Area`,1,nchar(IVRS_merged$`Office Area`)-6)
+    IVRS_merged$`Office Area` <- gsub("\\s*\\([^\\)]+\\)","",IVRS_merged$`Office Area`)
 
     
 # write to file
-    write.csv(IVRS_merged, "C:/Users/joelm/Documents/GitHub/DHR-Disabilities/Data Exploration/Datasets/IVRS Data/Cleaned_Closed_Iowa_Vocational_Rehabilitation_Cases_New_Data.csv", row.names = FALSE)
+    write.csv(IVRS_merged, "C:/Users/joelm/Documents/GitHub/DHR-Disabilities/Data Exploration/Datasets/IVRS Data/Cleaned_Closed_Iowa_Vocational_Rehabilitation_Cases.csv", row.names = FALSE)
