@@ -15,6 +15,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-<center>
-### Under Development
-</center>
+This vignette explains the process done to get the data being used in the Mental Health and Disability Services dashboard.
+
+## Under Development
+
