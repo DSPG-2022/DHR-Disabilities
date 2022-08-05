@@ -20,6 +20,10 @@ Development** section contains all of the methodology, processes, and
 review of the data sources that went into creating the visualizations
 for this project.
 
+The presentation slides can be accessed
+<a href=./man/figures/PresSlides.pdf>here</a> and the recorded final
+presentation [here](https://www.youtube.com/watch?v=Jipm57lfEQ0)
+
 ## Navigation
 
 -   **Dashboards**
