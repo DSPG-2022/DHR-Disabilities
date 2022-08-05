@@ -67,12 +67,13 @@ emp_stat_disability <-c("In the Labor Force,Employed with disability"= "C18120_0
 
 emp_stat_no_disability <- c("In the Labor Force,Employed with no disability"= "C18120_005", "In the Labor force,unemployed with no disability" = "C18120_008", "Not in the Labor Force, with no disability" = "C18120_011")
 ```
-
+Getting data from ACS about Employment Status for Persons with and Without Disability, for all Counties in Iowa, 2020
 ```{r}
 empl_status_disability <- get_acs(
-  geography= "state",
+  geography= "county",
   year = 2020,
   variables = emp_stat_disability,
+  state = "IA",
   output = "wide"
 )
 View(empl_status_disability)
@@ -89,31 +90,25 @@ View(empl_status_no_disability)
 #empl_status_no_disability= empl_status_no_disability %>% mutate(sum_of_estimates= sum(estimate),overall_perc= 100* (estimate/sum(estimate))) 
 #View(empl_status_no_disability)
 ```
-
+Joing the two datasets i.e. Employment Status for Persons with Disability and Employment Status for Persons without Disability
 ```{r}
-#Joining tables
 all_emp_stat= full_join(empl_status_disability,empl_status_no_disability)
 View(all_emp_stat)
 
 ```
+# Calculating values
 
-
-```{r}
-#Removing MOE
-#all_emp_stat = subset(all_emp_stat, select = -c(`In the Labor Force,Employed with disabilityM`, `In the Labor force,unemployed with a disabilityM`, `Not in the Labor force, with a disabilityM`, `In the Labor Force,Employed with no disabilityM`, `In the Labor force,unemployed with no disabilityM`, `Not in the Labor Force, with no disabilityM`) )
-```
+Calculating the Disabled Population Total and Non Disabled Population Total for all counties in Iowa, and for the entire state.
 
 ```{r}
-#Finding disability and non disability total
 all_emp_stat$disability_total <- (all_emp_stat$`In the Labor Force,Employed with disabilityE`+ all_emp_stat$`Not in the Labor force, with a disabilityE`+ all_emp_stat$`In the Labor force,unemployed with a disabilityE`)
 all_emp_stat$no_disability_total <- (all_emp_stat$`In the Labor Force,Employed with no disabilityE`+ all_emp_stat$`In the Labor force,unemployed with no disabilityE`+all_emp_stat$`Not in the Labor Force, with no disabilityE`)
 ```
-
-
+Checking Reliability of estimates based on Margin of Error for Employed persosn with Disability. First by Calculating the Confidence Interval, then checking
+- If it is greater than or equal to 30, then it has low reliability
+- If it is betwween 15 and 30, then it has median reliability
+- If it is lower than or equal to 15, then it has high reliability
 ```{r}
-#Checking if the estimates are reliable based on MOE disabled
-
-
 CV_employed_disabled = ((all_emp_stat$`In the Labor Force,Employed with disabilityM`/1.645)/all_emp_stat$`In the Labor Force,Employed with disabilityE`)*100
 
 CV_unemployed_disabled = ((all_emp_stat$`In the Labor force,unemployed with a disabilityM`/1.645)/all_emp_stat$`Not in the Labor force, with a disabilityE`)*100
@@ -131,8 +126,12 @@ all_emp_stat$CV_unemployed_disabled = ifelse(CV_unemployed_disabled > 30 , " low
 all_emp_stat$CV_not_in_Labor_force_disabled = ifelse(CV_not_in_Labor_force_disabled > 30 , " low reliability",
                   ifelse(CV_not_in_Labor_force_disabled <= 15, "high reliability",
                          "median reliability"))
-
-#Checking if the estimates are reliable based on MOE not disabled
+```
+Checking Reliability of estimates based on Margin of Error for Employed persosn with No Disability. First by Calculating the Confidence Interval, then checking
+- If it is greater than or equal to 30, then it has low reliability
+- If it is betwween 15 and 30, then it has median reliability
+- If it is lower than or equal to 15, then it has high reliability
+```{r}
 
 CV_employed_not_disabled = ((all_emp_stat$`In the Labor Force,Employed with no disabilityM`/1.645)/all_emp_stat$`In the Labor Force,Employed with no disabilityE`)*100
 
@@ -154,9 +153,8 @@ all_emp_stat$CV_not_in_Labor_force_not_disabled = ifelse(CV_not_in_Labor_force_n
 
 View(all_emp_stat)
 ```
-
+Calculating the percentage of Employed, Unemployed and Not In Labor Force Persons with and Without a Disability, for all Counties im Iowa
 ```{r}
-#Finding percentage gap
 
 all_emp_stat = all_emp_stat %>% mutate(percent_in_labor_force_employed_disabled = 100 * (all_emp_stat$`In the Labor Force,Employed with disabilityE`/all_emp_stat$disability_total),
 percent_in_labor_force_employed_not_disabled = 100 * (all_emp_stat$`In the Labor Force,Employed with no disabilityE`/all_emp_stat$no_disability_total), percent_in_labor_force_unemployed_disabled = 100 * (all_emp_stat$`In the Labor force,unemployed with a disabilityE`/all_emp_stat$disability_total),
@@ -168,9 +166,8 @@ percent_not_in_labor_force_not_disabled = 100 * (all_emp_stat$`Not in the Labor 
 all_emp_stat = all_emp_stat %>% mutate(percent_in_labor_force_employed_gap = percent_in_labor_force_employed_not_disabled - percent_in_labor_force_employed_disabled, percent_in_labor_force_unemployed_gap = percent_in_labor_force_unemployed_not_disabled - percent_in_labor_force_unemployed_disabled , percent_not_in_labor_force_gap =    percent_not_in_labor_force_not_disabled - percent_not_in_labor_force_disabled )
 View(all_emp_stat)
 ```
-
+Comparing the Percent of Employment for persons with No Disability to the State Average
 ```{r}
-#State Avg Employed Not Disabled
 max(all_emp_stat$percent_in_labor_force_employed_not_disabled)
 state_avg=mean(all_emp_stat$percent_in_labor_force_employed_not_disabled)
 min(all_emp_stat$percent_in_labor_force_employed_not_disabled)
@@ -178,9 +175,12 @@ min(all_emp_stat$percent_in_labor_force_employed_not_disabled)
 all_emp_stat$compared_to_state_avg_end= ifelse( all_emp_stat$percent_in_labor_force_employed_not_disabled > state_avg , "above average",
                   ifelse(all_emp_stat$percent_in_labor_force_employed_not_disabled < state_avg, "below average",
                          "average"))
-
-
-#State Avg Employed Disabled
+```
+Comparing the Percent of Employment for persons with Disability to the State Average
+- If County percent is greater than 46%, it is above state average
+- If County percent is equal to 46%, it is equal to state average
+- If County percent is lower than 46%, it is below state average
+```{r}
 max(all_emp_stat$percent_in_labor_force_employed_disabled)
 state_avg2=mean(all_emp_stat$percent_in_labor_force_employed_disabled)
 min(all_emp_stat$percent_in_labor_force_employed_disabled)
@@ -188,8 +188,9 @@ min(all_emp_stat$percent_in_labor_force_employed_disabled)
 all_emp_stat$compared_to_state_avg_ed= ifelse( all_emp_stat$percent_in_labor_force_employed_disabled > state_avg2 , "above average",
                   ifelse(all_emp_stat$percent_in_labor_force_employed_disabled < state_avg2, "below average",
                          "average"))
-
-#State Avg Unemployed Disabled
+```
+Comparing the Percent of Unemployment for persons with Disability to the State Average
+```{r}
 max(all_emp_stat$percent_in_labor_force_unemployed_disabled)
 state_avg3=mean(all_emp_stat$percent_in_labor_force_unemployed_disabled)
 min(all_emp_stat$percent_in_labor_force_unemployed_disabled)
@@ -197,8 +198,9 @@ min(all_emp_stat$percent_in_labor_force_unemployed_disabled)
 all_emp_stat$compared_to_state_avg_ud= ifelse(all_emp_stat$percent_in_labor_force_unemployed_disabled > state_avg3 , "above average",
                   ifelse(all_emp_stat$percent_in_labor_force_unemployed_disabled < state_avg3, "below average",
                          "average"))
-
-#State Avg Not in Lab force disabled
+```
+Comparing the Percent Not in Labor Force persons with Disability to the State Average
+```{r}
 max(all_emp_stat$percent_not_in_labor_force_disabled)
 state_avg4=mean(all_emp_stat$percent_not_in_labor_force_disabled)
 min(all_emp_stat$percent_not_in_labor_force_disabled)
@@ -208,8 +210,9 @@ all_emp_stat$compared_to_state_avg_nd = ifelse(all_emp_stat$percent_not_in_labor
                          "average"))
 View(all_emp_stat)
 ```
+#Cleaning and Formatting
 
-
+Re-naming Columns for clear and easy understanding
 ```{r}
 colnames(all_emp_stat)[2] <-"County"
 colnames(all_emp_stat)[3] <- "In the Labor Force, Employed with Disability (Estimate)"
@@ -226,57 +229,53 @@ colnames(all_emp_stat)[13] <- "Not in the Labor Force, with NO Disability (Estim
 colnames(all_emp_stat)[14] <- "Not in the Labor Force, with NO Disability (MOE)"
 ```
 
-
+Formatting the county names. Example- Changing "Adams County, Iowa" to "Adams"
 ```{r}
 all_emp_stat$County<-gsub("County, Iowa","",as.character(all_emp_stat$County))
 ```
+#Merging and Loading Datasets
 
+Merging the Employment Status Table to Counties of Iowa based on
+- Metropolitan
+- Micropolitan
+- Non-Metropolitan
 ```{r}
-#Joining table to Metropolitan table
 new_all_emp_stat = merge(x = all_emp_stat, y = new_table, by = "GEOID", all.x = TRUE)
 View(new_all_emp_stat)
-
-#Joining OASDI table to Metropolitan Table
+```
+Loading the OASDI dataset from SSA
+Merging the OASDI dataset with Counties of Iowa based on
+- Metropolitan
+- Micropolitan
+- Non-Metropolitan
+```{r}
 oasdi_metro_stat = merge(x = oasdi_table, y = new_table, by = "GEOID", all.x =  TRUE)
 view(oasdi_metro_stat)
 ```
-
+Merging the OASDI Amount dataset with Employment Status Dataset
 ```{r}
-merged_pop_table = merge(x = all_emp_stat, y = pop_table, by = "GEOID", all.x = TRUE)
-View(merged_pop_table)
-```
-
-```{r}
-#Merging OASDI Table (Number and Amount)
-merged_oasdi_table = merge(x = all_emp_stat, y = oasdi_table, by = "GEOID", all.x = TRUE)
-View(merged_oasdi_table)
-
 merged_oasdi_amount_table = merge(x = all_emp_stat, y = oasdi_amount_table, by = "GEOID", all.x = TRUE)
 View(merged_oasdi_amount_table)
 ```
-
+Loading the SSI dataset from SSA
+Merging the SSI dataset with Employment Status Dataset
 ```{r}
 merged_ssi_table = merge(x = all_emp_stat, y = ssi_table, by = "GEOID", all.x = TRUE)
 View(merged_ssi_table)
-
-mean(all_emp_stat$percent_in_labor_force_employed_disabled)
-#mean(all_emp_stat$percent_in_labor_force_unemployed_disabled)
 ```
-
-
+Converting all the datasets into csv files, and saving them to the Local Directory
 ```{r}
-#Converting into a csv 
-write.csv(all_emp_stat, "S:/misc/clg/DSPG2022/ProjectA/Sanika-Labor_Force_gaps_county-level.csv", row.names = FALSE)
-write.csv(new_all_emp_stat, "S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_table_county-level.csv", row.names = FALSE)
-write.csv(merged_pop_table, "S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_table_pop_county_level.csv", row.names = FALSE)
+write.csv(all_emp_stat, "S:/DSPG2022/ProjectA/Sanika-Labor_Force_gaps_county-level.csv", row.names = FALSE)
+write.csv(new_all_emp_stat, "S:/DSPG2022/ProjectA/Sanika-Merged_table_county-level.csv", row.names = FALSE)
+write.csv(merged_pop_table, "S:/DSPG2022/ProjectA/Sanika-Merged_table_pop_county_level.csv", row.names = FALSE)
 
-write.csv(merged_oasdi_table, "S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_OASDI_table.csv", row.names = FALSE)
+write.csv(merged_oasdi_table, "S:/DSPG2022/ProjectA/Sanika-Merged_OASDI_table.csv", row.names = FALSE)
 
-write.csv(merged_oasdi_amount_table, "S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_OASDI_amount_table.csv", row.names = FALSE)
+write.csv(merged_oasdi_amount_table, "S:/DSPG2022/ProjectA/Sanika-Merged_OASDI_amount_table.csv", row.names = FALSE)
 
-write.csv(merged_ssi_table, "S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_SSI_table.csv", row.names = FALSE)
+write.csv(merged_ssi_table, "S:/DSPG2022/ProjectA/Sanika-Merged_SSI_table.csv", row.names = FALSE)
 
-write.csv(oasdi_metro_stat, "S:/misc/clg/DSPG2022/ProjectA/Sanika-oasdi_metro_stat.csv", row.names = FALSE)
+write.csv(oasdi_metro_stat, "S:/DSPG2022/ProjectA/Sanika-oasdi_metro_stat.csv", row.names = FALSE)
 
 ```
 
