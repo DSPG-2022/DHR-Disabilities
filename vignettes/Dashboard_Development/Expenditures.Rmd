@@ -1,6 +1,9 @@
 ---
 title: "Public Expenditures"
-output: rmarkdown::html_vignette
+author: "Joel Martin"
+output: 
+  rmarkdown::html_vignette:
+    toc: true
 vignette: >
   %\VignetteIndexEntry{Public Expenditures}
   %\VignetteEngine{knitr::rmarkdown}
@@ -17,5 +20,64 @@ knitr::opts_chunk$set(
 
 This vignette explains the process done to get the data being used in the Mental Health and Disability Services dashboard.
 
-## Under Development
+## Step 1: PDF Acquisition
 
+The first step was downloading all region expenditure PDFs for 2021.
+
+PDF Example:
+
+```{r, echo=FALSE}
+knitr::include_graphics("man/figures/MHDS_Region_Expenditure_PDF_Example.jpg")
+```
+
+
+## Step 2: PDF Convertion to CSV
+
+The next step was converting the PDFs to a CSV file.
+
+After going through many different applications including excels import PDF, I found smallpdf.com that has a tool that correctly converted the PDFs to CSV files.
+
+Here is an example of the smallpdf.com csv conversion file:
+
+```{r, echo=FALSE}
+knitr::include_graphics("man/figures/MHDS_Region_Expenditures_CSV_Conversion_Example.jpg")
+```
+
+## Step 3: Manual Cleaning
+
+Unfortunately I was unable to come up with a solution to automating the cleaning of these PDFs in the period of time allotted for working on the MHDS expenditure data.
+The quickest way for me to clean them was manually. Here is the process done to each converted CSV file.
+
+### Step 3a: Select entire table and unmerge merged cells.
+
+### Step 3b: Create four new columns.
+
+Columns were created for region, year, category, sub category 1, and sub category 2.
+
+```{r, echo=FALSE}
+knitr::include_graphics("man/figures/MHDS_Region_Expenditures_Add_Columns.jpg")
+```
+
+### Step 3c: Population Columns
+
+Next I populated the columns with the respective information. I used the dark colored bold lettered rows as the category, the lightly colored bold lettered rows as the sub category 1, and lastly the regular rows as sub category 2.
+
+```{r, echo=FALSE}
+knitr::include_graphics("man/figures/MHDS_Region_Expenditures_Fill_Columns.jpg")
+```
+
+### Step 3d: Remove Rows and Columns
+
+Next I removed the un-needed titles and subtotal rows and the combined categories column.
+
+```{r, echo=FALSE}
+knitr::include_graphics("man/figures/MHDS_Region_Expenditures_Remove_Rows_Columns.jpg")
+```
+
+### Step 3e: Formatting
+
+Lastly I formatted the table to by removing any formatting done to cells, reset cells widths and lengths, and changed font of all cells to Calibri.
+
+```{r, echo=FALSE}
+knitr::include_graphics("man/figures/MHDS_Region_Expenditures_Formatting.jpg")
+```
