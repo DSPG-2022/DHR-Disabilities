@@ -1,6 +1,9 @@
 ---
 title: "Publicly Funded Services"
-output: rmarkdown::html_vignette
+author: "Joel Martin"
+output: 
+  rmarkdown::html_vignette:
+    toc: true
 vignette: >
   %\VignetteIndexEntry{Publicly Funded Services}
   %\VignetteEngine{knitr::rmarkdown}
