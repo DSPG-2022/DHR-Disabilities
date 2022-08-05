@@ -48,9 +48,9 @@ knitr::include_graphics("../../man/figures/MHDS_Region_Expenditures_CSV_Conversi
 Unfortunately I was unable to come up with a solution to automating the cleaning of these PDFs in the period of time allotted for working on the MHDS expenditure data.
 The quickest way for me to clean them was manually. Here is the process done to each converted CSV file.
 
-### Step 3a: Select entire table and unmerge merged cells.
+### Step 3a: Select Entire Table and Unmerge Merged Cells
 
-### Step 3b: Create four new columns.
+### Step 3b: Create Four New Columns
 
 Columns were created for region, year, category, sub category 1, and sub category 2.
 
