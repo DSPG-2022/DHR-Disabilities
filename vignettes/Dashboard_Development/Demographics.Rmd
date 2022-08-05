@@ -15,12 +15,13 @@ knitr::opts_chunk$set(
 )
 ```
 
+## The following code chucks are utilized for pulling demographic information from the ACS database built into (`tidycensus`)[https://walker-data.com/tidycensus/articles/basic-usage.html] and test reliability to provide neat data sources for further calculations and visualizations.
+
 ### Loading libraries and variables
 ```{r Loading libraries}
 library(tidycensus)
 library(tidyverse)
 library(stringr)
-library(openxlsx)
 ```
 
 ```{r Loading variables}
