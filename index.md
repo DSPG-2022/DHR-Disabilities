@@ -21,8 +21,9 @@ review of the data sources that went into creating the visualizations
 for this project.
 
 The presentation slides can be accessed
-<a href=./man/figures/PresSlides.pdf>here</a> and the recorded final
-presentation [here](https://www.youtube.com/watch?v=Jipm57lfEQ0)
+<a href=https://github.com/DSPG-2022/DHR-Disabilities/blob/main/man/figures/PresSlides.pdf>here</a>
+and the recorded final presentation
+[here](https://www.youtube.com/watch?v=Jipm57lfEQ0)
 
 ## Navigation
 
