@@ -87,8 +87,6 @@ empl_status_no_disability <- get_acs(
 )
 View(empl_status_no_disability)
 
-#empl_status_no_disability= empl_status_no_disability %>% mutate(sum_of_estimates= sum(estimate),overall_perc= 100* (estimate/sum(estimate))) 
-#View(empl_status_no_disability)
 ```
 Joing the two datasets i.e. Employment Status for Persons with Disability and Employment Status for Persons without Disability
 ```{r}
