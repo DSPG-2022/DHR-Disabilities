@@ -18,3 +18,282 @@ knitr::opts_chunk$set(
 <center>
 ### Under Development
 </center>
+
+```{r Loading libraries}
+library(tidycensus)
+library(tidyverse)
+library(stringr)
+library(openxlsx)
+```
+
+```{r Pulling variables}
+acs5 <- load_variables(2020, "acs5")
+view(acs5)
+```
+
+Population with a disability by age group  
+```{r Percent of the Population with a Disability by Age Group}
+Total <- c(Total = "B18101_001")
+DisabledMale <- c("Under 5 years" = "B18101_004", "5 to 17 years" = "B18101_007", "18 to 34 years" = "B18101_010", "35 to 64 years" = "B18101_013", "65 to 74 years" = "B18101_016", "75 years and over" = "B18101_019")
+DisabledFemale <- c("Under 5 years" = "B18101_023", "5 to 17 years" = "B18101_026", "18 to 34 years" = "B18101_029", "35 to 64 years" = "B18101_032", "65 to 74 years" = "B18101_035", "75 years and over" = "B18101_035")
+
+DisabledPop <- get_acs(geography = "county",
+                       variables = c(Total, DisabledMale, DisabledFemale),
+                       year = 2020,
+                       state = "IA")
+
+DisabledPop <- DisabledPop %>%
+  group_by(NAME, variable) %>%
+  summarise(estimate = sum(estimate),
+            moe = sum(moe)) %>%
+  pivot_wider(names_from = variable, values_from = c(estimate, moe))
+
+DisabledPop$NAME <- gsub(" County, Iowa", "", DisabledPop$NAME)
+names(DisabledPop)[names(DisabledPop) == "NAME"] <- "County"
+```
+Reliability test for population with a disability by age group  
+```{r Reliability test for population with a disability by age group}
+CV_Under5 <- ((DisabledPop$`moe_Under 5 years` / 1.645) / DisabledPop$`estimate_Under 5 years`) * 100
+CV_5to17 <- ((DisabledPop$`moe_5 to 17 years` / 1.645) / DisabledPop$`estimate_5 to 17 years`) * 100
+CV_18to34 <- ((DisabledPop$`moe_18 to 34 years` / 1.645) / DisabledPop$`estimate_18 to 34 years`) * 100
+CV_35to64 <- ((DisabledPop$`moe_35 to 64 years` / 1.645) / DisabledPop$`estimate_35 to 64 years`) * 100
+CV_65to74 <- ((DisabledPop$`moe_65 to 74 years` / 1.645) / DisabledPop$`estimate_65 to 74 years`) * 100
+CV_75andOver <- ((DisabledPop$`moe_75 years and over` / 1.645) / DisabledPop$`estimate_75 years and over`) * 100
+
+DisabledPop$CV_Under5 <- ifelse(CV_Under5 > 30, "Low reliability",
+                                ifelse(CV_Under5 <= 15, "High reliability",
+                                       "Median reliability"))
+DisabledPop$CV_5to17 <- ifelse(CV_5to17 > 30, "Low reliability",
+                                ifelse(CV_5to17 <= 15, "High reliability",
+                                       "Median reliability"))
+DisabledPop$CV_18to34 <- ifelse(CV_18to34 > 30, "Low reliability",
+                                ifelse(CV_18to34 <= 15, "High reliability",
+                                       "Median reliability"))
+DisabledPop$CV_35to64 <- ifelse(CV_35to64 > 30, "Low reliability",
+                                ifelse(CV_35to64 <= 15, "High reliability",
+                                       "Median reliability"))
+DisabledPop$CV_65to74 <- ifelse(CV_65to74 > 30, "Low reliability",
+                                ifelse(CV_65to74 <= 15, "High reliability",
+                                       "Median reliability"))
+DisabledPop$CV_75andOver <- ifelse(CV_75andOver > 30, "Low reliability",
+                                ifelse(CV_75andOver <= 15, "High reliability",
+                                       "Median reliability"))
+```
+
+Population by difficulty type for all ages  
+```{r Population by Difficulty Type For All Ages}
+DisabledHearing <- c("Under 5 years" = c("B18102_004", "B18102_023"), "5 to 17 years" = c("B18102_007", "B18102_026"), "18 to 34 years" = c("B18102_010", "B18102_029"), "35 to 64 years" = c("B18102_013", "B18102_032"), "65 to 74 years" = c("B18102_016", "B18102_035"), "75 and over" = c("B18102_019", "B18102_038"))
+DisabledVision <- c("Under 5 years" = c("B18103_004", "B18103_023"), "5 to 17 years" = c("B18103_007", "B18103_026"), "18 to 34 years" = c("B18103_010", "B18103_029"), "35 to 64 years" = c("B18103_013", "B18103_032"), "65 to 74 years" = c("B18103_016", "B18103_035"), "75 and over" = c("B18103_019", "B18103_038"))
+DisabledCognitive <- c("5 to 17 years" = c("B18104_004", "B18104_020"), "18 to 34 years" = c("B18104_007", "B18104_023"), "35 to 64 years" = c("B18104_010", "B18104_026"), "65 to 74 years" = c("B18104_013", "B18104_029"), "75 and over" = c("B18104_016", "B18104_032"))
+DisabledAmbulatory <- c("5 to 17 years" = c("B18105_004", "B18105_020"), "18 to 34 years" = c("B18105_007", "B18105_023"), "35 to 64 years" = c("B18105_010", "B18105_026"), "65 to 74 years" = c("B18105_013", "B18105_029"), "75 and over" = c("B18105_016", "B18105_032"))
+DisabledSelfCare <- c("5 to 17 years" = c("B18106_004", "B18106_020"), "18 to 34 years" = c("B18106_007", "B18106_023"), "35 to 64 years" = c("B18106_010", "B18106_026"), "65 to 74 years" = c("B18106_013", "B18106_029"), "75 and over" = c("B18106_016", "B18106_032"))
+DisabledIndependentLiving <- c("18 to 34 years" = c("B18107_007", "B18107_023"), "35 to 64 years" = c("B18107_010", "B18107_026"), "65 to 74 years" = c("B18107_010", "B18107_023"), "75 and over" = c("B18107_013", "B18107_026"))
+
+DisabledType <- get_acs(geography = "county",
+                        variables = c(Hearing = DisabledHearing, Vision = DisabledVision, Cognitive = DisabledCognitive, Ambulatory = DisabledAmbulatory, "Self-care" = DisabledSelfCare, "Independent living" = DisabledIndependentLiving),
+                        year = 2020,
+                        state = "IA")
+
+DisabledType$variable <- gsub("(years|over).*", "\\1", DisabledType$variable)
+
+DisabledType <- DisabledType %>%
+  group_by(NAME, variable) %>%
+  summarise(estimate = sum(estimate),
+            moe = sum(moe))
+
+DisabledType_estimate <- aggregate(estimate ~ NAME, data = DisabledType, sum) %>%
+  slice(rep(1:n(), each = 6))
+DisabledType_moe <- aggregate(moe ~ NAME, data = DisabledType, sum) %>%
+  slice(rep(1:n(), each = 6))
+
+DisabledType_pivot <- DisabledType %>% separate(variable, into = c("Type", "Age"), sep = "\\.") %>%
+  pivot_wider(names_from = Age, values_from = c(estimate, moe)) %>%
+  ungroup() %>%
+  mutate(estimate_total = DisabledType_estimate$estimate,
+         moe_total = DisabledType_moe$moe) %>%
+  mutate(Percentage = rowSums(DisabledType_pivot[3:8], na.rm = TRUE) / DisabledType_estimate$estimate * 100)
+
+names(DisabledType_pivot) <- gsub("estimate_", "", names(DisabledType_pivot))
+DisabledType_pivot$NAME <- gsub(" County, Iowa", "", DisabledType_pivot$NAME)
+names(DisabledType_pivot)[names(DisabledType_pivot) == "NAME"] <- "County"
+```
+Reliability test for total population of the difficulty types  
+```{r Reliability test for total population of the difficulty types}
+CV_Total <- ((DisabledType_pivot$moe_total / 1.645) / DisabledType_pivot$total) * 100
+
+DisabledType_pivot$CV_Total <- ifelse(CV_Total > 30, "Low reliability",
+                                      ifelse(CV_Total <= 15, "High reliability",
+                                             "Median reliability"))
+```
+
+Disabled population aged 18 to 64 by age group  
+```{r The Disabled Population Aged 18 to 64 by Age Group}
+Aged18to34 <- c(Total = c("B18101_009", "B18101_028"), Disabled = c("B18101_010", "B18101_029"))
+Aged35to64 <- c(Total = c("B18101_012", "B18101_031"), Disabled = c("B18101_013", "B18101_032"))
+
+population <- get_acs(geography = "county",
+                      variables = c("18 to 34 years" = Aged18to34, "35 to 64 years" = Aged35to64),
+                      year = 2020,
+                      state = "IA")
+
+population$variable <- str_sub(population$variable, end = -2)
+
+population <- population %>%
+  group_by(NAME, variable) %>%
+  summarise(estimate = sum(estimate),
+            moe = sum(moe)) %>%
+  pivot_wider(names_from = variable,
+              values_from = c(estimate, moe))
+
+names(population) <- gsub("estimate_", "", names(population))
+population$NAME <- gsub(" County, Iowa", "", population$NAME)
+names(population)[names(population) == "NAME"] <- "County"
+```
+Reliability test for the disabled population aged 18 to 64 by age group
+```{r Reliability test for the Disabled Population Aged 18 to 64 by Age Group}
+CV_18_to_34_Disabled <- ((population$`moe_18 to 34 years.Disabled` / 1.645) / population$`18 to 34 years.Disabled`) * 100
+CV_35_to_64_Disabled <- ((population$`moe_35 to 64 years.Disabled` / 1.645) / population$`35 to 64 years.Disabled`) * 100
+
+population$CV_18_to_34_Disabled <- ifelse(CV_18_to_34_Disabled > 30, "Low reliability",
+                                          ifelse(CV_18_to_34_Disabled <= 15, "High reliability",
+                                                 "Median reliability"))
+population$CV_35_to_64_Disabled <- ifelse(CV_35_to_64_Disabled > 30, "Low reliability",
+                                          ifelse(CV_35_to_64_Disabled <= 15, "High reliability",
+                                                 "Median reliability"))
+```
+
+Population by age group and difficulty type  
+```{r Population by Age Group and Difficulty Type}
+DisabledHearing <- c("18 to 34 years" = c("B18102_010", "B18102_029"), "35 to 64 years" = c("B18102_013", "B18102_032"))
+DisabledVision <- c("18 to 34 years" = c("B18103_010", "B18103_029"), "35 to 64 years" = c("B18103_007", "B18103_032"))
+DisabledCognitive <- c("18 to 34 years" = c("B18104_007", "B18104_023"), "35 to 64 years" = c("B18104_010", "B18104_026"))
+DisabledAmbulatory <- c("18 to 34 years" = c("B18105_007", "B18105_023"), "35 to 64 years" = c("B18105_010", "B18105_026"))
+DisabledSelfCare <- c("18 to 34 years" = c("B18106_007", "B18106_023"), "35 to 64 years" = c("B18106_010", "B18106_026"))
+DisabledIndependentLiving <- c("18 to 34 years" = c("B18107_007", "B18107_023"), "35 to 64 years" = c("B18107_010", "B18107_026"))
+
+DisabledType <- get_acs(geography = "county",
+                        variables = c(Hearing = DisabledHearing, Vision = DisabledVision, Cognitive = DisabledCognitive, Ambulatory = DisabledAmbulatory, "Self-care" = DisabledSelfCare, "Independent living" = DisabledIndependentLiving),
+                        year = 2020,
+                        state = "IA")
+
+DisabledType$variable <- gsub("(years).*", "\\1", DisabledType$variable)
+
+DisabledType <- DisabledType %>%
+  group_by(NAME, variable) %>%
+  summarise(estimate = sum(estimate),
+            moe = sum(moe))
+
+DisabledType_pivot <- DisabledType %>% separate(variable, into = c("Type", "Age"), sep = "\\.") %>%
+  pivot_wider(names_from = Type, values_from = c(estimate, moe))
+
+DisabledType_sum <- aggregate(estimate ~ NAME, data = DisabledType, sum) %>%
+  slice(rep(1:n(), each = 2))
+
+DisabledType_pivot <- DisabledType_pivot %>%
+  ungroup() %>%
+  mutate(Percentage = rowSums(DisabledType_pivot[3:8] / DisabledType_sum$estimate) * 100)
+
+names(DisabledType_pivot) <- gsub("estimate_", "", names(DisabledType_pivot))
+DisabledType_pivot$NAME <- gsub(" County, Iowa", "", DisabledType_pivot$NAME)
+names(DisabledType_pivot)[names(DisabledType_pivot) == "NAME"] <- "County"
+```
+Reliability test for population by age group and difficulty type  
+```{r Reliability test for Population by Age Group and Difficulty Type}
+CV_Cognitive <- ((DisabledType_pivot$moe_Cognitive / 1.645) / DisabledType_pivot$Cognitive) * 100
+CV_Hearing <- ((DisabledType_pivot$moe_Hearing / 1.645) / DisabledType_pivot$Hearing) * 100
+CV_IndependentLiving  <- ((DisabledType_pivot$`moe_Independent living` / 1.645) / DisabledType_pivot$`Independent living`) * 100
+CV_Selfcare <- ((DisabledType_pivot$`moe_Self-care` / 1.645) / DisabledType_pivot$`Self-care`) * 100
+CV_Vision <- ((DisabledType_pivot$moe_Vision / 1.645) / DisabledType_pivot$Vision) * 100
+CV_Ambulatory <- ((DisabledType_pivot$moe_Ambulatory / 1.645) / DisabledType_pivot$Ambulatory) * 100
+
+DisabledType_pivot$CV_Cognitive <- ifelse(CV_Cognitive > 30, "Low reliability",
+                                          ifelse(CV_Cognitive <= 15, "High reliability",
+                                                 "Median reliability"))
+DisabledType_pivot$CV_Hearing <- ifelse(CV_Hearing > 30, "Low reliability",
+                                        ifelse(CV_Hearing <= 15, "High reliability",
+                                               "Median reliability"))
+DisabledType_pivot$CV_IndependentLiving <- ifelse(CV_IndependentLiving > 30, "Low reliability",
+                                                  ifelse(CV_IndependentLiving <= 15, "High reliability",
+                                                         "Median reliability"))
+DisabledType_pivot$CV_Selfcare <- ifelse(CV_Selfcare > 30, "Low reliability",
+                                         ifelse(CV_Selfcare <= 15, "High reliability",
+                                                "Median reliability"))
+DisabledType_pivot$CV_Vision <- ifelse(CV_Vision > 30, "Low reliability",
+                                       ifelse(CV_Vision <= 15, "High reliability",
+                                              "Median reliability"))
+DisabledType_pivot$CV_Ambulatory <- ifelse(CV_Ambulatory > 30, "Low reliability",
+                                       ifelse(CV_Ambulatory <= 15, "High reliability",
+                                              "Median reliability"))
+```
+
+Race and ethnicity of the disabled population aged 18-64  
+```{r Race and ethnicity of the disabled population aged 18-64}
+White <- c("Total White"= "B18101A_005", "Disabled White" = "B18101A_006")
+Black <- c("Total Black" ="B18101B_005", "Disabled Black" = "B18101B_006")
+IndianAlaska <- c("Total American Indian and Alaska Native" = "B18101C_005", "Disabled American Indian and Alaska Native" = "B18101C_006")
+Asian <- c("Total Asian" = "B18101D_005", "Disabled Asian" = "B18101D_006")
+HawaiianPacific <- c("Total Native Hawaiian and Other Pacific Islander" = "B18101E_005", "Disabled Native Hawaiian and Other Pacific Islander" = "B18101E_006")
+OtherAlone <- c("Total Some Other Race Alone" = "B18101F_005", "Disabled Some Other Race Alone" = "B18101F_006")
+TwoMore <- c("Total Two Or More Races" = "B18101G_005", "Disabled Two Or More Races" = "B18101G_006")
+WhiteAlone <- c("Total White Alone" = "B18101H_005", "Disabled White Alone" = "B18101H_006")
+HispanicLatino <- c("Total Hispanic Or Latino" = "B18101I_005", "Disabled Hispanic Or Latino" = "B18101I_006")
+
+RaceEthnic_State <- get_acs(geography = "state",
+                             variables = c(White, Black, IndianAlaska, Asian, HawaiianPacific, OtherAlone, TwoMore, WhiteAlone, HispanicLatino),
+                             year = 2020,
+                             state = "IA")
+RaceEthnic_County <- get_acs(geography = "county",
+                             variables = c(White, Black, IndianAlaska, Asian, HawaiianPacific, OtherAlone, TwoMore, WhiteAlone, HispanicLatino),
+                             year = 2020,
+                             state = "IA")
+
+RaceEthnic <- rbind(RaceEthnic_State, RaceEthnic_County)
+
+RaceEthnic <- RaceEthnic %>%
+  pivot_wider(names_from = variable,
+              values_from = c(estimate, moe))
+
+names(RaceEthnic) <- gsub("estimate_", "", names(RaceEthnic))
+RaceEthnic$NAME <- gsub(" County, Iowa", "", RaceEthnic$NAME)
+names(RaceEthnic)[names(RaceEthnic) == "NAME"] <- "County"
+```
+Reliability test for race and ethnicity of the disabled population aged 18-64  
+```{r Reliability test for race and ethnicity of the disabled population aged 18-64}
+CV_White_Disabled <- ((RaceEthnic$`moe_Disabled White` / 1.645) / RaceEthnic$`Disabled White`) * 100
+CV_Black_Disabled <- ((RaceEthnic$`moe_Disabled Black` / 1.645) / RaceEthnic$`Disabled Black`) * 100
+CV_IndianAlaska_Disabled <- ((RaceEthnic$`moe_Disabled American Indian and Alaska Native` / 1.645) / RaceEthnic$`Disabled American Indian and Alaska Native`) * 100
+CV_Asian_Disabled <- ((RaceEthnic$`moe_Disabled Asian` / 1.645) / RaceEthnic$`Disabled Asian`) * 100
+CV_HawaiianPacific_Disabled <- ((RaceEthnic$`moe_Disabled Native Hawaiian and Other Pacific Islander` / 1.645) / RaceEthnic$`Disabled Native Hawaiian and Other Pacific Islander`) * 100
+CV_OtherAlone_Disabled <- ((RaceEthnic$`moe_Disabled Some Other Race Alone` / 1.645) / RaceEthnic$`Disabled Some Other Race Alone`) * 100
+CV_TwoMore_Disabled <- ((RaceEthnic$`moe_Disabled Two Or More Races` / 1.645) / RaceEthnic$`Disabled Two Or More Races`) * 100
+CV_WhiteAlone_Disabled <- ((RaceEthnic$`moe_Disabled White Alone` / 1.645) / RaceEthnic$`Disabled White Alone`) * 100
+CV_HispanicLatino_Disabled <- ((RaceEthnic$`moe_Disabled Hispanic Or Latino` / 1.645) / RaceEthnic$`Disabled Hispanic Or Latino`) * 100
+
+RaceEthnic$CV_White_Disabled <- ifelse(CV_White_Disabled > 30, "Low reliability",
+                                       ifelse(CV_White_Disabled <= 15, "High reliability",
+                                              "Median reliability"))
+RaceEthnic$CV_Black_Disabled <- ifelse(CV_Black_Disabled > 30, "Low reliability",
+                                       ifelse(CV_Black_Disabled <= 15, "High reliability",
+                                              "Median reliability"))
+RaceEthnic$CV_IndianAlaska_Disabled <- ifelse(CV_IndianAlaska_Disabled > 30, "Low reliability",
+                                       ifelse(CV_IndianAlaska_Disabled <= 15, "High reliability",
+                                              "Median reliability"))
+RaceEthnic$CV_Asian_Disabled <- ifelse(CV_Asian_Disabled > 30, "Low reliability",
+                                       ifelse(CV_Asian_Disabled <= 15, "High reliability",
+                                              "Median reliability"))
+RaceEthnic$CV_HawaiianPacific_Disabled <- ifelse(CV_HawaiianPacific_Disabled > 30, "Low reliability",
+                                       ifelse(CV_HawaiianPacific_Disabled <= 15, "High reliability",
+                                              "Median reliability"))
+RaceEthnic$CV_OtherAlone_Disabled <- ifelse(CV_OtherAlone_Disabled > 30, "Low reliability",
+                                       ifelse(CV_OtherAlone_Disabled <= 15, "High reliability",
+                                              "Median reliability"))
+RaceEthnic$CV_TwoMore_Disabled <- ifelse(CV_TwoMore_Disabled > 30, "Low reliability",
+                                       ifelse(CV_TwoMore_Disabled <= 15, "High reliability",
+                                              "Median reliability"))
+RaceEthnic$CV_WhiteAlone_Disabled <- ifelse(CV_WhiteAlone_Disabled > 30, "Low reliability",
+                                       ifelse(CV_WhiteAlone_Disabled <= 15, "High reliability",
+                                              "Median reliability"))
+RaceEthnic$CV_HispanicLatino_Disabled <- ifelse(CV_HispanicLatino_Disabled > 30, "Low reliability",
+                                       ifelse(CV_HispanicLatino_Disabled <= 15, "High reliability",
+                                              "Median reliability"))
+```

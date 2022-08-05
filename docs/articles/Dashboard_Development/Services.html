@@ -130,18 +130,229 @@
 
     
     
-<center>
-<div class="section level3">
-<h3 id="under-development">Under Development<a class="anchor" aria-label="anchor" href="#under-development"></a>
-</h3>
-
+<p>This vignette explains the R script used to transform the IVRS data
+used in the Publicly Funded Services dashboard.</p>
+<div class="section level2">
+<h2 id="libraries-and-datasets">Libraries and Datasets<a class="anchor" aria-label="anchor" href="#libraries-and-datasets"></a>
+</h2>
+<p>Here tidyverse is used for functions used such as dplyr and mutate.
+Also the respective data files are loaded in as well.</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org" class="external-link">tidyverse</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># load in IVRS adjusted inflation file</span></span>
+<span><span class="va">IVRS_data_old</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/read.table.html" class="external-link">read.csv</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.choose.html" class="external-link">file.choose</a></span><span class="op">(</span><span class="op">)</span>, header<span class="op">=</span><span class="cn">TRUE</span>, stringsAsFactors<span class="op">=</span><span class="cn">FALSE</span>, check.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co">#load in IVRS FFY2020 file</span></span>
+<span><span class="va">IVRS_data_new_2020</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/read.table.html" class="external-link">read.csv</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.choose.html" class="external-link">file.choose</a></span><span class="op">(</span><span class="op">)</span>, header<span class="op">=</span><span class="cn">TRUE</span>, stringsAsFactors<span class="op">=</span><span class="cn">FALSE</span>, check.names <span class="op">=</span> <span class="cn">FALSE</span>,fileEncoding<span class="op">=</span><span class="st">"UTF-8-BOM"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co">#load in IVRS FFY2021 file</span></span>
+<span><span class="va">IVRS_data_new_2021</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/read.table.html" class="external-link">read.csv</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.choose.html" class="external-link">file.choose</a></span><span class="op">(</span><span class="op">)</span>, header<span class="op">=</span><span class="cn">TRUE</span>, stringsAsFactors<span class="op">=</span><span class="cn">FALSE</span>, check.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
 </div>
-  </center>
+<div class="section level2">
+<h2 id="client-location-cleaning">Client Location Cleaning<a class="anchor" aria-label="anchor" href="#client-location-cleaning"></a>
+</h2>
+<p>One of the things done to this data set is parsing out location
+information from the Client Location column. The column is initially in
+the format of “city, state, zip code”.</p>
+<p>After parsing, we now have the new columns, Client City, Client
+State, Client Zip Code, and Client Zip Code Extra Info for zip codes
+that were longer than 5 digits.</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Initial split on comma to get City</span></span>
+<span>    <span class="va">IVRS_data_transformed</span> <span class="op">&lt;-</span> <span class="va">IVRS_data_old</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>                              <span class="fu"><a href="https://tidyr.tidyverse.org/reference/separate.html" class="external-link">separate</a></span><span class="op">(</span><span class="st">'Client Location'</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'Client City'</span>, <span class="st">'Client State Zip Code'</span><span class="op">)</span>, <span class="st">','</span><span class="op">)</span></span>
+<span>    </span>
+<span>    <span class="co"># Remove any leading and trailing whitespace</span></span>
+<span>    <span class="va">IVRS_data_transformed</span><span class="op">$</span><span class="st">'Client City'</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://stringr.tidyverse.org/reference/str_trim.html" class="external-link">str_trim</a></span><span class="op">(</span><span class="va">IVRS_data_transformed</span><span class="op">$</span><span class="st">'Client City'</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Secondary split to get State and Zipcode</span></span>
+<span>    <span class="va">IVRS_data_transformed</span> <span class="op">&lt;-</span> <span class="va">IVRS_data_transformed</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>                              <span class="fu"><a href="https://tidyr.tidyverse.org/reference/separate.html" class="external-link">separate</a></span><span class="op">(</span><span class="st">'Client State Zip Code'</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'Client State'</span>,<span class="st">'Client Zip Code'</span><span class="op">)</span>,sep<span class="op">=</span><span class="st">"\\s+(?=\\S*$)"</span><span class="op">)</span></span>
+<span>    </span>
+<span>    <span class="co"># Remove any leading and trailing whitespace</span></span>
+<span>    <span class="va">IVRS_data_transformed</span><span class="op">$</span><span class="st">'Client State'</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://stringr.tidyverse.org/reference/str_trim.html" class="external-link">str_trim</a></span><span class="op">(</span><span class="va">IVRS_data_transformed</span><span class="op">$</span><span class="st">'Client State'</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Split Zip code into 5 digit format and extra information</span></span>
+<span>    <span class="va">IVRS_data_transformed</span> <span class="op">&lt;-</span> <span class="va">IVRS_data_transformed</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>                              <span class="fu"><a href="https://tidyr.tidyverse.org/reference/separate.html" class="external-link">separate</a></span><span class="op">(</span><span class="st">'Client Zip Code'</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'Client Zip Code'</span>,<span class="st">'Client Zip Code Extra Info'</span><span class="op">)</span>,sep<span class="op">=</span><span class="fl">5</span><span class="op">)</span></span>
+<span>    </span>
+<span>    <span class="co"># Remove any leading and trailing whitespace</span></span>
+<span>    <span class="va">IVRS_data_transformed</span><span class="op">$</span><span class="st">'Client Zip Code'</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://stringr.tidyverse.org/reference/str_trim.html" class="external-link">str_trim</a></span><span class="op">(</span><span class="va">IVRS_data_transformed</span><span class="op">$</span><span class="st">'Client Zip Code'</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Remove '-' from extra zip code info</span></span>
+<span>    <span class="va">IVRS_data_transformed</span><span class="op">$</span><span class="st">'Client Zip Code Extra Info'</span> <span class="op">&lt;-</span> </span>
+<span>      <span class="fu"><a href="https://stringr.tidyverse.org/reference/str_replace.html" class="external-link">str_replace_all</a></span><span class="op">(</span><span class="va">IVRS_data_transformed</span><span class="op">$</span><span class="st">'Client Zip Code Extra Info'</span>, <span class="st">"[^[:alnum:]]"</span>, <span class="st">""</span><span class="op">)</span></span>
+<span>    </span>
+<span><span class="co"># Remove any leading and trailing whitespace</span></span>
+<span>    <span class="va">IVRS_data_transformed</span><span class="op">$</span><span class="st">'Client Zip Code Extra Info'</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://stringr.tidyverse.org/reference/str_trim.html" class="external-link">str_trim</a></span><span class="op">(</span><span class="va">IVRS_data_transformed</span><span class="op">$</span><span class="st">'Client Zip Code Extra Info'</span><span class="op">)</span></span></code></pre></div>
 </div>
+<div class="section level2">
+<h2 id="joining-extra-information-for-cases">Joining Extra Information for Cases<a class="anchor" aria-label="anchor" href="#joining-extra-information-for-cases"></a>
+</h2>
+<p>The next thing done is joining extra information that was obtained
+for cases in 2020 - 2021, such as academic participation, to the data
+set.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Append 2021 to 2020 data</span></span>
+<span>    <span class="va">appended</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/cbind.html" class="external-link">rbind</a></span><span class="op">(</span><span class="va">IVRS_data_new_2021</span>, <span class="va">IVRS_data_new_2020</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># left join data including only new columns</span></span>
+<span>    <span class="va">IVRS_merged</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html" class="external-link">left_join</a></span><span class="op">(</span><span class="va">IVRS_data_transformed</span>, <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">IVRS_data_new_2020</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span>,<span class="fl">43</span><span class="op">:</span><span class="fl">53</span><span class="op">)</span><span class="op">)</span>, by <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Case ID"</span> <span class="op">=</span> <span class="st">"CaseID"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="dealing-with-county-formatting">Dealing with county formatting<a class="anchor" aria-label="anchor" href="#dealing-with-county-formatting"></a>
+</h2>
+<p>One of Iowa’s counties is O’Brien county which has a pesky apostrophe
+that gets dropped or displayed as strange characters when importing and
+saving data sets.</p>
+<p>To solve this, the incorrect name is restored to the correct name and
+the R script is saved with UTF-8 encoding as to not lose the strange
+characters typed into the R script.</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Renames Iowa county O'Brien to have ' instead of Oâ€™Brien (Double check wording in the data as these characters consistently incorrectly save)</span></span>
+<span>    <span class="co"># !!IMPORTANT!! File needs to be saved using UTF-8 encoding for the special characters to not disappear. </span></span>
+<span>    <span class="co">#               This can be changed in File -&gt; Save with encoding -&gt; Choose Encoding -&gt; UTF-8</span></span>
+<span>    <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Client County'</span><span class="op">[</span><span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Client County'</span> <span class="op">==</span> <span class="st">'Oâ€™Brien'</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="st">"O'Brien"</span>   </span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="updating-state-column">Updating State Column<a class="anchor" aria-label="anchor" href="#updating-state-column"></a>
+</h2>
+<p>There are a number of inconsistencies in the data when it comes to
+state naming conventions.</p>
+<p>Some states are full names, others are abbreviations, and some are a
+strange combination of the two.</p>
+<p>This section deals with those inconsistencies and would potentially
+need updating in the future for other cases.</p>
+<p>In the end, states are converted to be the full state name.</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Changes state names to abbreviations</span></span>
+<span></span>
+<span>    <span class="va">stateNames</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/rep.html" class="external-link">rep</a></span><span class="op">(</span><span class="cn">NA</span>, <span class="fu"><a href="https://rdrr.io/r/base/dim.html" class="external-link">dim</a></span><span class="op">(</span><span class="va">IVRS_merged</span><span class="op">)</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span><span class="op">)</span></span>
+<span>    </span>
+<span>    <span class="va">index</span> <span class="op">&lt;-</span> <span class="fl">0</span></span>
+<span>    </span>
+<span>    <span class="kw">for</span><span class="op">(</span><span class="va">state</span> <span class="kw">in</span> <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Client State'</span><span class="op">)</span><span class="op">{</span></span>
+<span>      </span>
+<span>      <span class="va">state</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://stringr.tidyverse.org/reference/str_trim.html" class="external-link">str_trim</a></span><span class="op">(</span><span class="va">state</span><span class="op">)</span></span>
+<span>      <span class="va">index</span> <span class="op">&lt;-</span> <span class="va">index</span> <span class="op">+</span> <span class="fl">1</span></span>
+<span>      </span>
+<span>      <span class="kw">if</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="va">state</span><span class="op">)</span><span class="op">)</span><span class="op">{</span></span>
+<span>        <span class="va">stateNames</span><span class="op">[</span><span class="va">index</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="cn">NA</span></span>
+<span>      <span class="op">}</span></span>
+<span>      <span class="kw">else</span> <span class="kw">if</span><span class="op">(</span><span class="va">state</span> <span class="op">==</span> <span class="st">'ArKS'</span><span class="op">)</span><span class="op">{</span></span>
+<span>        <span class="va">stateNames</span><span class="op">[</span><span class="va">index</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="st">'Arkansas'</span></span>
+<span>      <span class="op">}</span></span>
+<span>      <span class="kw">else</span> <span class="kw">if</span><span class="op">(</span><span class="va">state</span> <span class="op">==</span> <span class="st">'ARKS'</span><span class="op">)</span><span class="op">{</span></span>
+<span>        <span class="va">stateNames</span><span class="op">[</span><span class="va">index</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="st">'Arkansas'</span></span>
+<span>      <span class="op">}</span></span>
+<span>      <span class="kw">else</span> <span class="kw">if</span><span class="op">(</span><span class="va">state</span> <span class="op">==</span> <span class="st">'District of Columbia'</span><span class="op">)</span><span class="op">{</span></span>
+<span>        <span class="va">stateNames</span><span class="op">[</span><span class="va">index</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="va">state</span></span>
+<span>      <span class="op">}</span></span>
+<span>      <span class="kw">else</span> <span class="kw">if</span><span class="op">(</span><span class="va">state</span> <span class="op">==</span> <span class="st">'Puerto Rico'</span><span class="op">)</span><span class="op">{</span></span>
+<span>        <span class="va">stateNames</span><span class="op">[</span><span class="va">index</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="cn">NA</span></span>
+<span>      <span class="op">}</span></span>
+<span>      <span class="kw">else</span> <span class="kw">if</span><span class="op">(</span><span class="va">state</span> <span class="op">==</span> <span class="st">'West VA'</span><span class="op">)</span><span class="op">{</span></span>
+<span>        <span class="va">stateNames</span><span class="op">[</span><span class="va">index</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="st">'West Virginia'</span></span>
+<span>      <span class="op">}</span></span>
+<span>      <span class="kw">else</span> <span class="kw">if</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/nchar.html" class="external-link">nchar</a></span><span class="op">(</span><span class="va">state</span><span class="op">)</span> <span class="op">&gt;</span> <span class="fl">2</span><span class="op">)</span><span class="op">{</span></span>
+<span>        <span class="va">stateNames</span><span class="op">[</span><span class="va">index</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="va">state</span></span>
+<span>      <span class="op">}</span></span>
+<span>      <span class="kw">else</span> <span class="op">{</span></span>
+<span>        <span class="va">stateNames</span><span class="op">[</span><span class="va">index</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="va">state.name</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/grep.html" class="external-link">grep</a></span><span class="op">(</span><span class="va">state</span>, <span class="va">state.abb</span><span class="op">)</span><span class="op">]</span></span>
+<span>      <span class="op">}</span></span>
+<span>    <span class="op">}</span></span>
+<span></span>
+<span>    <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Client State'</span> <span class="op">&lt;-</span> <span class="va">stateNames</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="wage-calculations">Wage Calculations<a class="anchor" aria-label="anchor" href="#wage-calculations"></a>
+</h2>
+<p>One of the most important fields in this data set is the wage
+information.</p>
+<p>This data allows us to determine how effective the IVRS program
+is.</p>
+<p>Please read the comments below for more detail on the calculations
+done.</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Change wage at application and closure values to correctly calculate wage change</span></span>
+<span>    <span class="co">#</span></span>
+<span>    <span class="co"># Note: Wage change is computed by the formula (Wage (Closure) - Wage (Application) = Wage Change).</span></span>
+<span>    <span class="co">#</span></span>
+<span>    <span class="co">#       NA's in the wage data indicates that the client was unemployed. </span></span>
+<span>    <span class="co">#       </span></span>
+<span>    <span class="co">#       To make the formula accurate, Wage (Application) NA's  are changed to 0 so as to correctly calculate if there was a wage increase. </span></span>
+<span>    <span class="co">#       (i.e. client A indicates they are unemployed at the start of application [Wage (Application)], and at the end their wage was $15 an hour [Wage (Closure)]. </span></span>
+<span>    <span class="co">#       If unemployed was left at NA then the formula would return NA since any NA value in an equation defaults to equaling NA in R. However since</span></span>
+<span>    <span class="co">#       it is being set to 0, this will correctly compute a $15 increase in wage change.)</span></span>
+<span>    <span class="co">#</span></span>
+<span>    <span class="co">#       Also vice versa, any 0's in Wage (Closure) were changed to NA so that the formula would output NA to indicate that the wage change</span></span>
+<span>    <span class="co">#       resulted in unemployment.</span></span>
+<span>    <span class="co">#</span></span>
+<span></span>
+<span>    </span>
+<span>    <span class="co"># hourly</span></span>
+<span>    <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Hourly Wage (Application)'</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Hourly Wage (Application)'</span><span class="op">)</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fl">0</span></span>
+<span>    <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Hourly Wage (Closure)'</span><span class="op">[</span><span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Hourly Wage (Closure)'</span> <span class="op">==</span> <span class="fl">0</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="cn">NA</span></span>
+<span>    </span>
+<span>    <span class="co">#monthly</span></span>
+<span>    <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Monthly Wage (Application)'</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Monthly Wage (Application)'</span><span class="op">)</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fl">0</span></span>
+<span>    <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Monthly Wage (Closure)'</span><span class="op">[</span><span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Monthly Wage (Closure)'</span> <span class="op">==</span> <span class="fl">0</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="cn">NA</span></span>
+<span>    </span>
+<span>    <span class="co">#annually</span></span>
+<span>    <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Annual Wage (Application)'</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Annual Wage (Application)'</span><span class="op">)</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fl">0</span></span>
+<span>    <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Annual Wage (Closure)'</span><span class="op">[</span><span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Annual Wage (Closure)'</span> <span class="op">==</span> <span class="fl">0</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="cn">NA</span></span>
+<span>    </span>
+<span><span class="co"># Recalculated wage change fields</span></span>
+<span>    <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Hourly Wage Change'</span> <span class="op">&lt;-</span> <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Hourly Wage (Closure)'</span> <span class="op">-</span> <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Hourly Wage (Application)'</span></span>
+<span>    <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Monthly Wage Change'</span> <span class="op">&lt;-</span> <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Monthly Wage (Closure)'</span> <span class="op">-</span> <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Monthly Wage (Application)'</span></span>
+<span>    <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Annual Wage Change'</span> <span class="op">&lt;-</span> <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Annual Wage (Closure)'</span> <span class="op">-</span> <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Annual Wage (Application)'</span></span>
+<span></span>
+<span><span class="co"># Creates new columns for whether there was a wage increase, no change, decrease, or unemployed</span></span>
+<span>    <span class="va">IVRS_merged</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span><span class="va">IVRS_merged</span>, <span class="st">'Hourly Wage Change Category'</span> <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/case_when.html" class="external-link">case_when</a></span><span class="op">(</span></span>
+<span>      <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Hourly Wage Change'</span> <span class="op">&lt;</span> <span class="fl">0</span> <span class="op">~</span> <span class="st">"Decrease"</span>,</span>
+<span>      <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Hourly Wage Change'</span> <span class="op">==</span> <span class="fl">0</span> <span class="op">~</span> <span class="st">"No Change"</span>,</span>
+<span>      <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Hourly Wage Change'</span> <span class="op">&gt;</span> <span class="fl">0</span> <span class="op">~</span> <span class="st">"Increase"</span>,</span>
+<span>                                                                                            <span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Hourly Wage Change'</span><span class="op">)</span> <span class="op">~</span> <span class="st">"Unemployed"</span><span class="op">)</span><span class="op">)</span></span>
+<span>    <span class="va">IVRS_merged</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span><span class="va">IVRS_merged</span>, <span class="st">'Monthly Wage Change Category'</span> <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/case_when.html" class="external-link">case_when</a></span><span class="op">(</span></span>
+<span>      <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Monthly Wage Change'</span> <span class="op">&lt;</span> <span class="fl">0</span> <span class="op">~</span> <span class="st">"Decrease"</span>,</span>
+<span>      <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Monthly Wage Change'</span> <span class="op">==</span> <span class="fl">0</span> <span class="op">~</span> <span class="st">"No Change"</span>,</span>
+<span>      <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Monthly Wage Change'</span> <span class="op">&gt;</span> <span class="fl">0</span> <span class="op">~</span> <span class="st">"Increase"</span>,</span>
+<span>                                                                                            <span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Monthly Wage Change'</span><span class="op">)</span> <span class="op">~</span> <span class="st">"Unemployed"</span><span class="op">)</span><span class="op">)</span></span>
+<span>    <span class="va">IVRS_merged</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span><span class="va">IVRS_merged</span>, <span class="st">'Annual Wage Change Category'</span> <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/case_when.html" class="external-link">case_when</a></span><span class="op">(</span></span>
+<span>      <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Annual Wage Change'</span> <span class="op">&lt;</span> <span class="fl">0</span> <span class="op">~</span> <span class="st">"Decrease"</span>,</span>
+<span>      <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Annual Wage Change'</span> <span class="op">==</span> <span class="fl">0</span> <span class="op">~</span> <span class="st">"No Change"</span>,</span>
+<span>      <span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Annual Wage Change'</span> <span class="op">&gt;</span> <span class="fl">0</span> <span class="op">~</span> <span class="st">"Increase"</span>,</span>
+<span>                                                                                            <span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="va">IVRS_merged</span><span class="op">$</span><span class="st">'Annual Wage Change'</span><span class="op">)</span> <span class="op">~</span> <span class="st">"Unemployed"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="formatting-office-areas">Formatting Office Areas<a class="anchor" aria-label="anchor" href="#formatting-office-areas"></a>
+</h2>
+<p>Office areas are in the format “Office Name (Office Number)” with
+some having an added “(inactive)” if the office area is no longer
+active.</p>
+<p>This code removes the extra info and leaves only the office areas
+name.</p>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># remove numbers from office areas</span></span>
+<span>    <span class="va">IVRS_merged</span><span class="op">$</span><span class="va">`Office Area`</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/grep.html" class="external-link">gsub</a></span><span class="op">(</span><span class="st">"\\s*\\([^\\)]+\\)"</span>,<span class="st">""</span>,<span class="va">IVRS_merged</span><span class="op">$</span><span class="va">`Office Area`</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="writing-cleaned-data-to-file">Writing Cleaned Data to File<a class="anchor" aria-label="anchor" href="#writing-cleaned-data-to-file"></a>
+</h2>
+<p>Lastly the now clean data is written to a csv file for use in
+Tableau.</p>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># write to file</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/r/utils/write.table.html" class="external-link">write.csv</a></span><span class="op">(</span><span class="va">IVRS_merged</span>, <span class="st">"C:/Users/joelm/Documents/GitHub/DHR-Disabilities/Data Exploration/Datasets/IVRS Data/Cleaned_Closed_Iowa_Vocational_Rehabilitation_Cases.csv"</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
+</div>
+  </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
-      </div>
+        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
+    </nav>
+</div>
 
 </div>
 

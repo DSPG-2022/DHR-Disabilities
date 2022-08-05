@@ -25,7 +25,7 @@ Welcome to the Successful Employment for Persons with Disabilities in Iowa proje
 
 The __Dashboard__ section contains all of the finalized visualizations for this project categorized by their respective sections on demographics, employment, services, and expenditures. The __Dashboard Development__ section contains all of the methodology, processes, and review of the data sources that went into creating the visualizations for this project.
 
-The presentation slides can be accessed <a href=./man/figures/PresSlides.pdf>here</a> and the recorded final presentation [here](https://www.youtube.com/watch?v=Jipm57lfEQ0)
+The presentation slides can be accessed <a href=https://github.com/DSPG-2022/DHR-Disabilities/blob/main/man/figures/PresSlides.pdf>here</a> and the recorded final presentation [here](https://www.youtube.com/watch?v=Jipm57lfEQ0)
 
 
 ## Navigation

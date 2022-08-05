@@ -111,9 +111,13 @@ names(DisabledPop)[names(DisabledPop) == "NAME"] <- "County"
 # write.xlsx(DisabledPop, "DisabledPop.xlsx")
 ```
 
-1.6 16-64 with a disability / total with a disability = percent of disabled population in the working age group
+1.6 Testing the reliability of DiabledPop data
 ```{r}
+CV_Total <- ((DisabledPop$moe_Total / 1.645) / DisabledPop$estimate_Total) * 100
 
+DisabledPop$CV_Total <- ifelse(CV_Total > 30, "Low reliability",
+                               ifelse(CV_Total <= 15, "High reliability",
+                                      "Median reliability"))
 ```
 
 2.1 Population of Iowans 18-64 years with disabilities by age groups
@@ -275,6 +279,42 @@ Divisioin <- read.csv("lookup_county_regions.csv")
 TypeDivisioin <- left_join(Type, Divisioin)
 
 write.xlsx(TypeDivisioin, "DisabledType2 with Divisioin.xlsx")
+```
+3.6 Difficulty type for all ages
+```{r}
+DisabledHearing <- c("Under 5 years" = c("B18102_004", "B18102_023"), "5 to 17 years" = c("B18102_007", "B18102_026"), "18 to 34 years" = c("B18102_010", "B18102_029"), "35 to 64 years" = c("B18102_013", "B18102_032"), "65 to 74 years" = c("B18102_016", "B18102_035"), "75 and over" = c("B18102_019", "B18102_038"))
+DisabledVision <- c("Under 5 years" = c("B18103_004", "B18103_023"), "5 to 17 years" = c("B18103_007", "B18103_026"), "18 to 34 years" = c("B18103_010", "B18103_029"), "35 to 64 years" = c("B18103_013", "B18103_032"), "65 to 74 years" = c("B18103_016", "B18103_035"), "75 and over" = c("B18103_019", "B18103_038"))
+DisabledCognitive <- c("5 to 17 years" = c("B18104_004", "B18104_020"), "18 to 34 years" = c("B18104_007", "B18104_023"), "35 to 64 years" = c("B18104_010", "B18104_026"), "65 to 74 years" = c("B18104_013", "B18104_029"), "75 and over" = c("B18104_016", "B18104_032"))
+DisabledAmbulatory <- c("5 to 17 years" = c("B18105_004", "B18105_020"), "18 to 34 years" = c("B18105_007", "B18105_023"), "35 to 64 years" = c("B18105_010", "B18105_026"), "65 to 74 years" = c("B18105_013", "B18105_029"), "75 and over" = c("B18105_016", "B18105_032"))
+DisabledSelfCare <- c("5 to 17 years" = c("B18106_004", "B18106_020"), "18 to 34 years" = c("B18106_007", "B18106_023"), "35 to 64 years" = c("B18106_010", "B18106_026"), "65 to 74 years" = c("B18106_013", "B18106_029"), "75 and over" = c("B18106_016", "B18106_032"))
+DisabledIndependentLiving <- c("18 to 34 years" = c("B18107_007", "B18107_023"), "35 to 64 years" = c("B18107_010", "B18107_026"), "65 to 74 years" = c("B18107_010", "B18107_023"), "75 and over" = c("B18107_013", "B18107_026"))
+
+DisabledType <- get_acs(geography = "county",
+                        variables = c(Hearing = DisabledHearing, Vision = DisabledVision, Cognitive = DisabledCognitive, Ambulatory = DisabledAmbulatory, "Self-care" = DisabledSelfCare, "Independent living" = DisabledIndependentLiving),
+                        year = 2020,
+                        state = "IA")
+
+DisabledType$variable <- gsub("(years|over).*", "\\1", DisabledType$variable)
+
+DisabledType <- DisabledType %>%
+  group_by(NAME, variable) %>%
+  summarise(estimate = sum(estimate),
+            moe = sum(moe))
+
+DisabledType_sum <- aggregate(estimate ~ NAME, data = DisabledType, sum) %>%
+  slice(rep(1:n(), each = 6))
+
+DisabledType_pivot <- DisabledType %>% separate(variable, into = c("Type", "Age"), sep = "\\.") %>%
+  pivot_wider(names_from = Age, values_from = c(estimate, moe)) %>%
+  ungroup() %>%
+  mutate(Total = DisabledType_sum$estimate) %>%
+  mutate(Percentage = rowSums(DisabledType_pivot[3:8], na.rm = TRUE) / DisabledType_sum$estimate * 100)
+
+names(DisabledType_pivot) <- gsub("estimate_", "", names(DisabledType_pivot))
+DisabledType_pivot$NAME <- gsub(" County, Iowa", "", DisabledType_pivot$NAME)
+names(DisabledType_pivot)[names(DisabledType_pivot) == "NAME"] <- "County"
+
+# write.xlsx(DisabledType_pivot, "Difficulty Type for all ages.xlsx")
 ```
 
 4.1 Population of Iowans 18-64 years with disabilities and without disabilities by race and ethnic
