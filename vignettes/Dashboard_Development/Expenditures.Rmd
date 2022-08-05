@@ -81,3 +81,7 @@ Lastly I formatted the table to by removing any formatting done to cells, reset 
 ```{r, echo=FALSE, eval=TRUE}
 knitr::include_graphics("../../man/figures/MHDS_Region_Expenditures_Formatting.jpg")
 ```
+
+## Step 4: Combine Cleaned Data
+
+As the final step, I combined the cleaned CSV file for each region into one CSV file that was used in Tableau.
