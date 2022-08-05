@@ -120,9 +120,8 @@
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1 data-toc-skip>Employment Status</h1>
+      <h1 data-toc-skip>Employment and Labor Force Participation</h1>
             
-            <h4 data-toc-skip class="date">2022-06-17</h4>
       
       
       <div class="hidden name"><code>EmploymentAndLabor.Rmd</code></div>
@@ -131,6 +130,12 @@
 
     
     
+<p>This vignette explains the process done to get the data for Percent
+of Employment, Unemployment and Not in Labor Force Persons With
+Disability and Without for all Counties in the State of Iowa. Followed
+by the data being used in the Services dashboard, that includes the
+OASDI and SSI Dataset — title: “Employment Status” output: html_document
+date: ‘2022-06-17’ —</p>
 <p>Downloading libraries Used To Gather, Clean and Merge Employment
 Data</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
@@ -174,11 +179,14 @@ Status.</p>
 <code class="sourceCode R"><span><span class="va">emp_stat_disability</span> <span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"In the Labor Force,Employed with disability"</span><span class="op">=</span> <span class="st">"C18120_004"</span>, <span class="st">"In the Labor force,unemployed with a disability"</span> <span class="op">=</span> <span class="st">"C18120_007"</span>,  <span class="st">"Not in the Labor force, with a disability"</span> <span class="op">=</span> <span class="st">"C18120_010"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">emp_stat_no_disability</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"In the Labor Force,Employed with no disability"</span><span class="op">=</span> <span class="st">"C18120_005"</span>, <span class="st">"In the Labor force,unemployed with no disability"</span> <span class="op">=</span> <span class="st">"C18120_008"</span>, <span class="st">"Not in the Labor Force, with no disability"</span> <span class="op">=</span> <span class="st">"C18120_011"</span><span class="op">)</span></span></code></pre></div>
+<p>Getting data from ACS about Employment Status for Persons with and
+Without Disability, for all Counties in Iowa, 2020</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">empl_status_disability</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://walker-data.com/tidycensus/reference/get_acs.html" class="external-link">get_acs</a></span><span class="op">(</span></span>
-<span>  geography<span class="op">=</span> <span class="st">"state"</span>,</span>
+<span>  geography<span class="op">=</span> <span class="st">"county"</span>,</span>
 <span>  year <span class="op">=</span> <span class="fl">2020</span>,</span>
 <span>  variables <span class="op">=</span> <span class="va">emp_stat_disability</span>,</span>
+<span>  state <span class="op">=</span> <span class="st">"IA"</span>,</span>
 <span>  output <span class="op">=</span> <span class="st">"wide"</span></span>
 <span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/View.html" class="external-link">View</a></span><span class="op">(</span><span class="va">empl_status_disability</span><span class="op">)</span></span>
@@ -190,26 +198,30 @@ Status.</p>
 <span>  state<span class="op">=</span> <span class="st">"IA"</span>,</span>
 <span>  output<span class="op">=</span> <span class="st">"wide"</span></span>
 <span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/View.html" class="external-link">View</a></span><span class="op">(</span><span class="va">empl_status_no_disability</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#empl_status_no_disability= empl_status_no_disability %&gt;% mutate(sum_of_estimates= sum(estimate),overall_perc= 100* (estimate/sum(estimate))) </span></span>
-<span><span class="co">#View(empl_status_no_disability)</span></span></code></pre></div>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/View.html" class="external-link">View</a></span><span class="op">(</span><span class="va">empl_status_no_disability</span><span class="op">)</span></span></code></pre></div>
+<p>Joing the two datasets i.e. Employment Status for Persons with
+Disability and Employment Status for Persons without Disability</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">#Joining tables</span></span>
-<span><span class="va">all_emp_stat</span><span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html" class="external-link">full_join</a></span><span class="op">(</span><span class="va">empl_status_disability</span>,<span class="va">empl_status_no_disability</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="va">all_emp_stat</span><span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html" class="external-link">full_join</a></span><span class="op">(</span><span class="va">empl_status_disability</span>,<span class="va">empl_status_no_disability</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/View.html" class="external-link">View</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">)</span></span></code></pre></div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="calculating-values">Calculating values<a class="anchor" aria-label="anchor" href="#calculating-values"></a>
+</h2>
+<p>Calculating the Disabled Population Total and Non Disabled Population
+Total for all counties in Iowa, and for the entire state.</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">#Removing MOE</span></span>
-<span><span class="co">#all_emp_stat = subset(all_emp_stat, select = -c(`In the Labor Force,Employed with disabilityM`, `In the Labor force,unemployed with a disabilityM`, `Not in the Labor force, with a disabilityM`, `In the Labor Force,Employed with no disabilityM`, `In the Labor force,unemployed with no disabilityM`, `Not in the Labor Force, with no disabilityM`) )</span></span></code></pre></div>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">#Finding disability and non disability total</span></span>
-<span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">disability_total</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`In the Labor Force,Employed with disabilityE`</span><span class="op">+</span> <span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`Not in the Labor force, with a disabilityE`</span><span class="op">+</span> <span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`In the Labor force,unemployed with a disabilityE`</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">disability_total</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`In the Labor Force,Employed with disabilityE`</span><span class="op">+</span> <span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`Not in the Labor force, with a disabilityE`</span><span class="op">+</span> <span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`In the Labor force,unemployed with a disabilityE`</span><span class="op">)</span></span>
 <span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">no_disability_total</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`In the Labor Force,Employed with no disabilityE`</span><span class="op">+</span> <span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`In the Labor force,unemployed with no disabilityE`</span><span class="op">+</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`Not in the Labor Force, with no disabilityE`</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">#Checking if the estimates are reliable based on MOE disabled</span></span>
-<span></span>
-<span></span>
-<span><span class="va">CV_employed_disabled</span> <span class="op">=</span> <span class="op">(</span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`In the Labor Force,Employed with disabilityM`</span><span class="op">/</span><span class="fl">1.645</span><span class="op">)</span><span class="op">/</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`In the Labor Force,Employed with disabilityE`</span><span class="op">)</span><span class="op">*</span><span class="fl">100</span></span>
+<p>Checking Reliability of estimates based on Margin of Error for
+Employed persosn with Disability. First by Calculating the Confidence
+Interval, then checking - If it is greater than or equal to 30, then it
+has low reliability - If it is betwween 15 and 30, then it has median
+reliability - If it is lower than or equal to 15, then it has high
+reliability</p>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">CV_employed_disabled</span> <span class="op">=</span> <span class="op">(</span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`In the Labor Force,Employed with disabilityM`</span><span class="op">/</span><span class="fl">1.645</span><span class="op">)</span><span class="op">/</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`In the Labor Force,Employed with disabilityE`</span><span class="op">)</span><span class="op">*</span><span class="fl">100</span></span>
 <span></span>
 <span><span class="va">CV_unemployed_disabled</span> <span class="op">=</span> <span class="op">(</span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`In the Labor force,unemployed with a disabilityM`</span><span class="op">/</span><span class="fl">1.645</span><span class="op">)</span><span class="op">/</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`Not in the Labor force, with a disabilityE`</span><span class="op">)</span><span class="op">*</span><span class="fl">100</span></span>
 <span></span>
@@ -225,10 +237,15 @@ Status.</p>
 <span></span>
 <span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">CV_not_in_Labor_force_disabled</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">CV_not_in_Labor_force_disabled</span> <span class="op">&gt;</span> <span class="fl">30</span> , <span class="st">" low reliability"</span>,</span>
 <span>                  <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">CV_not_in_Labor_force_disabled</span> <span class="op">&lt;=</span> <span class="fl">15</span>, <span class="st">"high reliability"</span>,</span>
-<span>                         <span class="st">"median reliability"</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#Checking if the estimates are reliable based on MOE not disabled</span></span>
-<span></span>
+<span>                         <span class="st">"median reliability"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p>Checking Reliability of estimates based on Margin of Error for
+Employed persosn with No Disability. First by Calculating the Confidence
+Interval, then checking - If it is greater than or equal to 30, then it
+has low reliability - If it is betwween 15 and 30, then it has median
+reliability - If it is lower than or equal to 15, then it has high
+reliability</p>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span></span>
 <span><span class="va">CV_employed_not_disabled</span> <span class="op">=</span> <span class="op">(</span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`In the Labor Force,Employed with no disabilityM`</span><span class="op">/</span><span class="fl">1.645</span><span class="op">)</span><span class="op">/</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`In the Labor Force,Employed with no disabilityE`</span><span class="op">)</span><span class="op">*</span><span class="fl">100</span></span>
 <span></span>
 <span><span class="va">CV_unemployed_not_disabled</span> <span class="op">=</span> <span class="op">(</span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`In the Labor force,unemployed with no disabilityM`</span><span class="op">/</span><span class="fl">1.645</span><span class="op">)</span><span class="op">/</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`In the Labor force,unemployed with no disabilityE`</span><span class="op">)</span><span class="op">*</span><span class="fl">100</span></span>
@@ -248,9 +265,11 @@ Status.</p>
 <span>                         <span class="st">"median reliability"</span><span class="op">)</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/View.html" class="external-link">View</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">)</span></span></code></pre></div>
+<p>Calculating the percentage of Employed, Unemployed and Not In Labor
+Force Persons with and Without a Disability, for all Counties im
+Iowa</p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">#Finding percentage gap</span></span>
-<span></span>
+<code class="sourceCode R"><span></span>
 <span><span class="va">all_emp_stat</span> <span class="op">=</span> <span class="va">all_emp_stat</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>percent_in_labor_force_employed_disabled <span class="op">=</span> <span class="fl">100</span> <span class="op">*</span> <span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`In the Labor Force,Employed with disabilityE`</span><span class="op">/</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">disability_total</span><span class="op">)</span>,</span>
 <span>percent_in_labor_force_employed_not_disabled <span class="op">=</span> <span class="fl">100</span> <span class="op">*</span> <span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`In the Labor Force,Employed with no disabilityE`</span><span class="op">/</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">no_disability_total</span><span class="op">)</span>, percent_in_labor_force_unemployed_disabled <span class="op">=</span> <span class="fl">100</span> <span class="op">*</span> <span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`In the Labor force,unemployed with a disabilityE`</span><span class="op">/</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">disability_total</span><span class="op">)</span>,</span>
 <span>percent_in_labor_force_unemployed_not_disabled <span class="op">=</span> <span class="fl">100</span> <span class="op">*</span> <span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">`In the Labor force,unemployed with no disabilityE`</span><span class="op">/</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">no_disability_total</span><span class="op">)</span>, </span>
@@ -260,37 +279,43 @@ Status.</p>
 <span></span>
 <span><span class="va">all_emp_stat</span> <span class="op">=</span> <span class="va">all_emp_stat</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>percent_in_labor_force_employed_gap <span class="op">=</span> <span class="va">percent_in_labor_force_employed_not_disabled</span> <span class="op">-</span> <span class="va">percent_in_labor_force_employed_disabled</span>, percent_in_labor_force_unemployed_gap <span class="op">=</span> <span class="va">percent_in_labor_force_unemployed_not_disabled</span> <span class="op">-</span> <span class="va">percent_in_labor_force_unemployed_disabled</span> , percent_not_in_labor_force_gap <span class="op">=</span>    <span class="va">percent_not_in_labor_force_not_disabled</span> <span class="op">-</span> <span class="va">percent_not_in_labor_force_disabled</span> <span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/View.html" class="external-link">View</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">)</span></span></code></pre></div>
+<p>Comparing the Percent of Employment for persons with No Disability to
+the State Average</p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">#State Avg Employed Not Disabled</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">max</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_in_labor_force_employed_not_disabled</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">max</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_in_labor_force_employed_not_disabled</span><span class="op">)</span></span>
 <span><span class="va">state_avg</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_in_labor_force_employed_not_disabled</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">min</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_in_labor_force_employed_not_disabled</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">compared_to_state_avg_end</span><span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span> <span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_in_labor_force_employed_not_disabled</span> <span class="op">&gt;</span> <span class="va">state_avg</span> , <span class="st">"above average"</span>,</span>
 <span>                  <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_in_labor_force_employed_not_disabled</span> <span class="op">&lt;</span> <span class="va">state_avg</span>, <span class="st">"below average"</span>,</span>
-<span>                         <span class="st">"average"</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span></span>
-<span><span class="co">#State Avg Employed Disabled</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">max</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_in_labor_force_employed_disabled</span><span class="op">)</span></span>
+<span>                         <span class="st">"average"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p>Comparing the Percent of Employment for persons with Disability to
+the State Average - If County percent is greater than 46%, it is above
+state average - If County percent is equal to 46%, it is equal to state
+average - If County percent is lower than 46%, it is below state
+average</p>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">max</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_in_labor_force_employed_disabled</span><span class="op">)</span></span>
 <span><span class="va">state_avg2</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_in_labor_force_employed_disabled</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">min</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_in_labor_force_employed_disabled</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">compared_to_state_avg_ed</span><span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span> <span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_in_labor_force_employed_disabled</span> <span class="op">&gt;</span> <span class="va">state_avg2</span> , <span class="st">"above average"</span>,</span>
 <span>                  <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_in_labor_force_employed_disabled</span> <span class="op">&lt;</span> <span class="va">state_avg2</span>, <span class="st">"below average"</span>,</span>
-<span>                         <span class="st">"average"</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#State Avg Unemployed Disabled</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">max</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_in_labor_force_unemployed_disabled</span><span class="op">)</span></span>
+<span>                         <span class="st">"average"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p>Comparing the Percent of Unemployment for persons with Disability to
+the State Average</p>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">max</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_in_labor_force_unemployed_disabled</span><span class="op">)</span></span>
 <span><span class="va">state_avg3</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_in_labor_force_unemployed_disabled</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">min</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_in_labor_force_unemployed_disabled</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">compared_to_state_avg_ud</span><span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_in_labor_force_unemployed_disabled</span> <span class="op">&gt;</span> <span class="va">state_avg3</span> , <span class="st">"above average"</span>,</span>
 <span>                  <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_in_labor_force_unemployed_disabled</span> <span class="op">&lt;</span> <span class="va">state_avg3</span>, <span class="st">"below average"</span>,</span>
-<span>                         <span class="st">"average"</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#State Avg Not in Lab force disabled</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">max</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_not_in_labor_force_disabled</span><span class="op">)</span></span>
+<span>                         <span class="st">"average"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p>Comparing the Percent Not in Labor Force persons with Disability to
+the State Average</p>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">max</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_not_in_labor_force_disabled</span><span class="op">)</span></span>
 <span><span class="va">state_avg4</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_not_in_labor_force_disabled</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">min</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_not_in_labor_force_disabled</span><span class="op">)</span></span>
 <span></span>
@@ -298,7 +323,9 @@ Status.</p>
 <span>                  <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_not_in_labor_force_disabled</span> <span class="op">&lt;</span> <span class="va">state_avg4</span>, <span class="st">"below average"</span>,</span>
 <span>                         <span class="st">"average"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/View.html" class="external-link">View</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<p>#Cleaning and Formatting</p>
+<p>Re-naming Columns for clear and easy understanding</p>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">colnames</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">)</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span> <span class="op">&lt;-</span><span class="st">"County"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">colnames</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">)</span><span class="op">[</span><span class="fl">3</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="st">"In the Labor Force, Employed with Disability (Estimate)"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">colnames</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">)</span><span class="op">[</span><span class="fl">4</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="st">"In the Labor Force, Employed with Disability (MOE)"</span></span>
@@ -312,46 +339,45 @@ Status.</p>
 <span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">colnames</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">)</span><span class="op">[</span><span class="fl">12</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="st">"In the Labor Force, Unemployed with NO Disability (MOE)"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">colnames</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">)</span><span class="op">[</span><span class="fl">13</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="st">"Not in the Labor Force, with NO Disability (Estimate)"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">colnames</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">)</span><span class="op">[</span><span class="fl">14</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="st">"Not in the Labor Force, with NO Disability (MOE)"</span></span></code></pre></div>
-<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">County</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/grep.html" class="external-link">gsub</a></span><span class="op">(</span><span class="st">"County, Iowa"</span>,<span class="st">""</span>,<span class="fu"><a href="https://rdrr.io/r/base/character.html" class="external-link">as.character</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">County</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">#Joining table to Metropolitan table</span></span>
-<span><span class="va">new_all_emp_stat</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/merge.html" class="external-link">merge</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">all_emp_stat</span>, y <span class="op">=</span> <span class="va">new_table</span>, by <span class="op">=</span> <span class="st">"GEOID"</span>, all.x <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/View.html" class="external-link">View</a></span><span class="op">(</span><span class="va">new_all_emp_stat</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#Joining OASDI table to Metropolitan Table</span></span>
-<span><span class="va">oasdi_metro_stat</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/merge.html" class="external-link">merge</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">oasdi_table</span>, y <span class="op">=</span> <span class="va">new_table</span>, by <span class="op">=</span> <span class="st">"GEOID"</span>, all.x <span class="op">=</span>  <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://tibble.tidyverse.org/reference/view.html" class="external-link">view</a></span><span class="op">(</span><span class="va">oasdi_metro_stat</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">merged_pop_table</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/merge.html" class="external-link">merge</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">all_emp_stat</span>, y <span class="op">=</span> <span class="va">pop_table</span>, by <span class="op">=</span> <span class="st">"GEOID"</span>, all.x <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/View.html" class="external-link">View</a></span><span class="op">(</span><span class="va">merged_pop_table</span><span class="op">)</span></span></code></pre></div>
+<p>Formatting the county names. Example- Changing “Adams County, Iowa”
+to “Adams”</p>
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">#Merging OASDI Table (Number and Amount)</span></span>
-<span><span class="va">merged_oasdi_table</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/merge.html" class="external-link">merge</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">all_emp_stat</span>, y <span class="op">=</span> <span class="va">oasdi_table</span>, by <span class="op">=</span> <span class="st">"GEOID"</span>, all.x <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/View.html" class="external-link">View</a></span><span class="op">(</span><span class="va">merged_oasdi_table</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">merged_oasdi_amount_table</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/merge.html" class="external-link">merge</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">all_emp_stat</span>, y <span class="op">=</span> <span class="va">oasdi_amount_table</span>, by <span class="op">=</span> <span class="st">"GEOID"</span>, all.x <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/View.html" class="external-link">View</a></span><span class="op">(</span><span class="va">merged_oasdi_amount_table</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">County</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/grep.html" class="external-link">gsub</a></span><span class="op">(</span><span class="st">"County, Iowa"</span>,<span class="st">""</span>,<span class="fu"><a href="https://rdrr.io/r/base/character.html" class="external-link">as.character</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">County</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p>#Merging and Loading Datasets</p>
+<p>Merging the Employment Status Table to Counties of Iowa based on -
+Metropolitan - Micropolitan - Non-Metropolitan</p>
 <div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">merged_ssi_table</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/merge.html" class="external-link">merge</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">all_emp_stat</span>, y <span class="op">=</span> <span class="va">ssi_table</span>, by <span class="op">=</span> <span class="st">"GEOID"</span>, all.x <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/View.html" class="external-link">View</a></span><span class="op">(</span><span class="va">merged_ssi_table</span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_in_labor_force_employed_disabled</span><span class="op">)</span></span>
-<span><span class="co">#mean(all_emp_stat$percent_in_labor_force_unemployed_disabled)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">new_all_emp_stat</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/merge.html" class="external-link">merge</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">all_emp_stat</span>, y <span class="op">=</span> <span class="va">new_table</span>, by <span class="op">=</span> <span class="st">"GEOID"</span>, all.x <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/View.html" class="external-link">View</a></span><span class="op">(</span><span class="va">new_all_emp_stat</span><span class="op">)</span></span></code></pre></div>
+<p>Loading the OASDI dataset from SSA Merging the OASDI dataset with
+Counties of Iowa based on - Metropolitan - Micropolitan -
+Non-Metropolitan</p>
 <div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">#Converting into a csv </span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/write.table.html" class="external-link">write.csv</a></span><span class="op">(</span><span class="va">all_emp_stat</span>, <span class="st">"S:/misc/clg/DSPG2022/ProjectA/Sanika-Labor_Force_gaps_county-level.csv"</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/write.table.html" class="external-link">write.csv</a></span><span class="op">(</span><span class="va">new_all_emp_stat</span>, <span class="st">"S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_table_county-level.csv"</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/write.table.html" class="external-link">write.csv</a></span><span class="op">(</span><span class="va">merged_pop_table</span>, <span class="st">"S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_table_pop_county_level.csv"</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="va">oasdi_metro_stat</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/merge.html" class="external-link">merge</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">oasdi_table</span>, y <span class="op">=</span> <span class="va">new_table</span>, by <span class="op">=</span> <span class="st">"GEOID"</span>, all.x <span class="op">=</span>  <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://tibble.tidyverse.org/reference/view.html" class="external-link">view</a></span><span class="op">(</span><span class="va">oasdi_metro_stat</span><span class="op">)</span></span></code></pre></div>
+<p>Merging the OASDI Amount dataset with Employment Status Dataset</p>
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">merged_oasdi_amount_table</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/merge.html" class="external-link">merge</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">all_emp_stat</span>, y <span class="op">=</span> <span class="va">oasdi_amount_table</span>, by <span class="op">=</span> <span class="st">"GEOID"</span>, all.x <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/View.html" class="external-link">View</a></span><span class="op">(</span><span class="va">merged_oasdi_amount_table</span><span class="op">)</span></span></code></pre></div>
+<p>Loading the SSI dataset from SSA Merging the SSI dataset with
+Employment Status Dataset</p>
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">merged_ssi_table</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/merge.html" class="external-link">merge</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">all_emp_stat</span>, y <span class="op">=</span> <span class="va">ssi_table</span>, by <span class="op">=</span> <span class="st">"GEOID"</span>, all.x <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/View.html" class="external-link">View</a></span><span class="op">(</span><span class="va">merged_ssi_table</span><span class="op">)</span></span></code></pre></div>
+<p>Converting all the datasets into csv files, and saving them to the
+Local Directory</p>
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/write.table.html" class="external-link">write.csv</a></span><span class="op">(</span><span class="va">all_emp_stat</span>, <span class="st">"S:/DSPG2022/ProjectA/Sanika-Labor_Force_gaps_county-level.csv"</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/write.table.html" class="external-link">write.csv</a></span><span class="op">(</span><span class="va">new_all_emp_stat</span>, <span class="st">"S:/DSPG2022/ProjectA/Sanika-Merged_table_county-level.csv"</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/write.table.html" class="external-link">write.csv</a></span><span class="op">(</span><span class="va">merged_pop_table</span>, <span class="st">"S:/DSPG2022/ProjectA/Sanika-Merged_table_pop_county_level.csv"</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/write.table.html" class="external-link">write.csv</a></span><span class="op">(</span><span class="va">merged_oasdi_table</span>, <span class="st">"S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_OASDI_table.csv"</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/write.table.html" class="external-link">write.csv</a></span><span class="op">(</span><span class="va">merged_oasdi_table</span>, <span class="st">"S:/DSPG2022/ProjectA/Sanika-Merged_OASDI_table.csv"</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/write.table.html" class="external-link">write.csv</a></span><span class="op">(</span><span class="va">merged_oasdi_amount_table</span>, <span class="st">"S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_OASDI_amount_table.csv"</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/write.table.html" class="external-link">write.csv</a></span><span class="op">(</span><span class="va">merged_oasdi_amount_table</span>, <span class="st">"S:/DSPG2022/ProjectA/Sanika-Merged_OASDI_amount_table.csv"</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/write.table.html" class="external-link">write.csv</a></span><span class="op">(</span><span class="va">merged_ssi_table</span>, <span class="st">"S:/misc/clg/DSPG2022/ProjectA/Sanika-Merged_SSI_table.csv"</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/write.table.html" class="external-link">write.csv</a></span><span class="op">(</span><span class="va">merged_ssi_table</span>, <span class="st">"S:/DSPG2022/ProjectA/Sanika-Merged_SSI_table.csv"</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/write.table.html" class="external-link">write.csv</a></span><span class="op">(</span><span class="va">oasdi_metro_stat</span>, <span class="st">"S:/misc/clg/DSPG2022/ProjectA/Sanika-oasdi_metro_stat.csv"</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
-</div>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/write.table.html" class="external-link">write.csv</a></span><span class="op">(</span><span class="va">oasdi_metro_stat</span>, <span class="st">"S:/DSPG2022/ProjectA/Sanika-oasdi_metro_stat.csv"</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
 </div>
   </div>
 

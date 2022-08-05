@@ -140,6 +140,7 @@ the Mental Health and Disability Services dashboard.</p>
 <p>The first step was downloading all region expenditure PDFs for
 2021.</p>
 <p>PDF Example:</p>
+<p><img src="../../reference/figures/MHDS_Region_Expenditure_PDF_Example.jpg" width="578"></p>
 </div>
 <div class="section level2">
 <h2 id="step-2-pdf-convertion-to-csv">Step 2: PDF Convertion to CSV<a class="anchor" aria-label="anchor" href="#step-2-pdf-convertion-to-csv"></a>
@@ -149,6 +150,7 @@ the Mental Health and Disability Services dashboard.</p>
 import PDF, I found smallpdf.com that has a tool that correctly
 converted the PDFs to CSV files.</p>
 <p>Here is an example of the smallpdf.com csv conversion file:</p>
+<p><img src="../../reference/figures/MHDS_Region_Expenditures_CSV_Conversion_Example.jpg" width="472"></p>
 </div>
 <div class="section level2">
 <h2 id="step-3-manual-cleaning">Step 3: Manual Cleaning<a class="anchor" aria-label="anchor" href="#step-3-manual-cleaning"></a>
@@ -158,14 +160,15 @@ the cleaning of these PDFs in the period of time allotted for working on
 the MHDS expenditure data. The quickest way for me to clean them was
 manually. Here is the process done to each converted CSV file.</p>
 <div class="section level3">
-<h3 id="step-3a-select-entire-table-and-unmerge-merged-cells-">Step 3a: Select entire table and unmerge merged cells.<a class="anchor" aria-label="anchor" href="#step-3a-select-entire-table-and-unmerge-merged-cells-"></a>
+<h3 id="step-3a-select-entire-table-and-unmerge-merged-cells">Step 3a: Select Entire Table and Unmerge Merged Cells<a class="anchor" aria-label="anchor" href="#step-3a-select-entire-table-and-unmerge-merged-cells"></a>
 </h3>
 </div>
 <div class="section level3">
-<h3 id="step-3b-create-four-new-columns-">Step 3b: Create four new columns.<a class="anchor" aria-label="anchor" href="#step-3b-create-four-new-columns-"></a>
+<h3 id="step-3b-create-four-new-columns">Step 3b: Create Four New Columns<a class="anchor" aria-label="anchor" href="#step-3b-create-four-new-columns"></a>
 </h3>
 <p>Columns were created for region, year, category, sub category 1, and
 sub category 2.</p>
+<p><img src="../../reference/figures/MHDS_Region_Expenditures_Add_Columns.jpg" width="648"></p>
 </div>
 <div class="section level3">
 <h3 id="step-3c-population-columns">Step 3c: Population Columns<a class="anchor" aria-label="anchor" href="#step-3c-population-columns"></a>
@@ -174,12 +177,14 @@ sub category 2.</p>
 the dark colored bold lettered rows as the category, the lightly colored
 bold lettered rows as the sub category 1, and lastly the regular rows as
 sub category 2.</p>
+<p><img src="../../reference/figures/MHDS_Region_Expenditures_Fill_Columns.jpg" width="658"></p>
 </div>
 <div class="section level3">
 <h3 id="step-3d-remove-rows-and-columns">Step 3d: Remove Rows and Columns<a class="anchor" aria-label="anchor" href="#step-3d-remove-rows-and-columns"></a>
 </h3>
 <p>Next I removed the un-needed titles and subtotal rows and the
 combined categories column.</p>
+<p><img src="../../reference/figures/MHDS_Region_Expenditures_Remove_Rows_Columns.jpg" width="518"></p>
 </div>
 <div class="section level3">
 <h3 id="step-3e-formatting">Step 3e: Formatting<a class="anchor" aria-label="anchor" href="#step-3e-formatting"></a>
@@ -187,7 +192,14 @@ combined categories column.</p>
 <p>Lastly I formatted the table to by removing any formatting done to
 cells, reset cells widths and lengths, and changed font of all cells to
 Calibri.</p>
+<p><img src="../../reference/figures/MHDS_Region_Expenditures_Formatting.jpg" width="758"></p>
 </div>
+</div>
+<div class="section level2">
+<h2 id="step-4-combine-cleaned-data">Step 4: Combine Cleaned Data<a class="anchor" aria-label="anchor" href="#step-4-combine-cleaned-data"></a>
+</h2>
+<p>As the final step, I combined the cleaned CSV file for each region
+into one CSV file that was used in Tableau.</p>
 </div>
   </div>
 
