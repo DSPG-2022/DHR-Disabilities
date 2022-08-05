@@ -1,8 +1,4 @@
-library(tidyr)
-library(dplyr)
-library(stringr)
-library(zipcodeR)
-library(tibble)
+library(tidyverse)
 
 # load in IVRS adjusted inflation file
 IVRS_data_old <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
