@@ -121,6 +121,8 @@
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Demographics</h1>
+                        <h4 data-toc-skip class="author">Xingrui
+Xue</h4>
             
       
       
@@ -130,18 +132,29 @@
 
     
     
+<p>The following code chucks are utilized for pulling demographic
+information from the ACS database built into the <a href="https://walker-data.com/tidycensus/articles/basic-usage.html" class="external-link">tidycensus</a>
+package. The following code is there to test the reliability of the data
+to provide neat data sources for further calculations and
+visualizations.</p>
+<div class="section level2">
+<h2 id="starting-the-pull">Starting the Pull<a class="anchor" aria-label="anchor" href="#starting-the-pull"></a>
+</h2>
 <div class="section level3">
 <h3 id="loading-libraries-and-variables">Loading libraries and variables<a class="anchor" aria-label="anchor" href="#loading-libraries-and-variables"></a>
 </h3>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://walker-data.com/tidycensus/" class="external-link">tidycensus</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org" class="external-link">tidyverse</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="http://stringr.tidyverse.org" class="external-link">stringr</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ycphs.github.io/openxlsx/index.html" class="external-link">openxlsx</a></span><span class="op">)</span></span></code></pre></div>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="http://stringr.tidyverse.org" class="external-link">stringr</a></span><span class="op">)</span></span></code></pre></div>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">acs5</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://walker-data.com/tidycensus/reference/load_variables.html" class="external-link">load_variables</a></span><span class="op">(</span><span class="fl">2020</span>, <span class="st">"acs5"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://tibble.tidyverse.org/reference/view.html" class="external-link">view</a></span><span class="op">(</span><span class="va">acs5</span><span class="op">)</span></span></code></pre></div>
 </div>
+</div>
+<div class="section level2">
+<h2 id="working-with-pulled-data">Working with Pulled Data<a class="anchor" aria-label="anchor" href="#working-with-pulled-data"></a>
+</h2>
 <div class="section level3">
 <h3 id="population-with-a-disability-by-age-group">Population with a disability by age group<a class="anchor" aria-label="anchor" href="#population-with-a-disability-by-age-group"></a>
 </h3>
@@ -427,11 +440,14 @@ aged 18-64<a class="anchor" aria-label="anchor" href="#reliability-test-for-race
 <span>                                       <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">CV_HispanicLatino_Disabled</span> <span class="op">&lt;=</span> <span class="fl">15</span>, <span class="st">"High reliability"</span>,</span>
 <span>                                              <span class="st">"Median reliability"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 </div>
+</div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
-      </div>
+        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
+    </nav>
+</div>
 
 </div>
 

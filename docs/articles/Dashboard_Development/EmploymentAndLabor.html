@@ -121,6 +121,8 @@
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Employment and Labor Force Participation</h1>
+                        <h4 data-toc-skip class="author">Sanika
+Gokakkar</h4>
             
       
       
@@ -144,7 +146,7 @@ Data</p>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span></code></pre></div>
 <div class="section level2">
-<h2 id="pulling-data">Pulling Data<a class="anchor" aria-label="anchor" href="#pulling-data"></a>
+<h2 id="step-one-pulling-data">Step One: Pulling Data<a class="anchor" aria-label="anchor" href="#step-one-pulling-data"></a>
 </h2>
 <div class="section level3">
 <h3 id="the-sources-from-which-the-data-is-retrieved-include-acs-and-ssa-oasdi-and-ssi-for-2020">The sources from which the Data is retrieved include, ACS, and SSA
@@ -207,7 +209,7 @@ Disability and Employment Status for Persons without Disability</p>
 </div>
 </div>
 <div class="section level2">
-<h2 id="calculating-values">Calculating values<a class="anchor" aria-label="anchor" href="#calculating-values"></a>
+<h2 id="step-two-calculating-values">Step Two: Calculating values<a class="anchor" aria-label="anchor" href="#step-two-calculating-values"></a>
 </h2>
 <p>Calculating the Disabled Population Total and Non Disabled Population
 Total for all counties in Iowa, and for the entire state.</p>
@@ -323,7 +325,10 @@ the State Average</p>
 <span>                  <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">percent_not_in_labor_force_disabled</span> <span class="op">&lt;</span> <span class="va">state_avg4</span>, <span class="st">"below average"</span>,</span>
 <span>                         <span class="st">"average"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/View.html" class="external-link">View</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">)</span></span></code></pre></div>
-<p>#Cleaning and Formatting</p>
+</div>
+<div class="section level2">
+<h2 id="step-three-cleaning-and-formatting">Step Three: Cleaning and Formatting<a class="anchor" aria-label="anchor" href="#step-three-cleaning-and-formatting"></a>
+</h2>
 <p>Re-naming Columns for clear and easy understanding</p>
 <div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">colnames</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">)</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span> <span class="op">&lt;-</span><span class="st">"County"</span></span>
@@ -343,7 +348,10 @@ the State Average</p>
 to “Adams”</p>
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">County</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/grep.html" class="external-link">gsub</a></span><span class="op">(</span><span class="st">"County, Iowa"</span>,<span class="st">""</span>,<span class="fu"><a href="https://rdrr.io/r/base/character.html" class="external-link">as.character</a></span><span class="op">(</span><span class="va">all_emp_stat</span><span class="op">$</span><span class="va">County</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
-<p>#Merging and Loading Datasets</p>
+</div>
+<div class="section level2">
+<h2 id="step-four-merging-and-loading-datasets">Step Four: Merging and Loading Datasets<a class="anchor" aria-label="anchor" href="#step-four-merging-and-loading-datasets"></a>
+</h2>
 <p>Merging the Employment Status Table to Counties of Iowa based on -
 Metropolitan - Micropolitan - Non-Metropolitan</p>
 <div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
@@ -364,6 +372,10 @@ Employment Status Dataset</p>
 <div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">merged_ssi_table</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/merge.html" class="external-link">merge</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">all_emp_stat</span>, y <span class="op">=</span> <span class="va">ssi_table</span>, by <span class="op">=</span> <span class="st">"GEOID"</span>, all.x <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/View.html" class="external-link">View</a></span><span class="op">(</span><span class="va">merged_ssi_table</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="step-five-coverting-files-to-csv">Step Five: Coverting files to csv<a class="anchor" aria-label="anchor" href="#step-five-coverting-files-to-csv"></a>
+</h2>
 <p>Converting all the datasets into csv files, and saving them to the
 Local Directory</p>
 <div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
