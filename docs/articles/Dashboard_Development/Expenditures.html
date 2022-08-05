@@ -121,6 +121,8 @@
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Public Expenditures</h1>
+                        <h4 data-toc-skip class="author">Joel
+Martin</h4>
             
       
       
@@ -130,18 +132,70 @@
 
     
     
-<center>
+<p>This vignette explains the process done to get the data being used in
+the Mental Health and Disability Services dashboard.</p>
+<div class="section level2">
+<h2 id="step-1-pdf-acquisition">Step 1: PDF Acquisition<a class="anchor" aria-label="anchor" href="#step-1-pdf-acquisition"></a>
+</h2>
+<p>The first step was downloading all region expenditure PDFs for
+2021.</p>
+<p>PDF Example:</p>
+</div>
+<div class="section level2">
+<h2 id="step-2-pdf-convertion-to-csv">Step 2: PDF Convertion to CSV<a class="anchor" aria-label="anchor" href="#step-2-pdf-convertion-to-csv"></a>
+</h2>
+<p>The next step was converting the PDFs to a CSV file.</p>
+<p>After going through many different applications including excels
+import PDF, I found smallpdf.com that has a tool that correctly
+converted the PDFs to CSV files.</p>
+<p>Here is an example of the smallpdf.com csv conversion file:</p>
+</div>
+<div class="section level2">
+<h2 id="step-3-manual-cleaning">Step 3: Manual Cleaning<a class="anchor" aria-label="anchor" href="#step-3-manual-cleaning"></a>
+</h2>
+<p>Unfortunately I was unable to come up with a solution to automating
+the cleaning of these PDFs in the period of time allotted for working on
+the MHDS expenditure data. The quickest way for me to clean them was
+manually. Here is the process done to each converted CSV file.</p>
 <div class="section level3">
-<h3 id="under-development">Under Development<a class="anchor" aria-label="anchor" href="#under-development"></a>
+<h3 id="step-3a-select-entire-table-and-unmerge-merged-cells-">Step 3a: Select entire table and unmerge merged cells.<a class="anchor" aria-label="anchor" href="#step-3a-select-entire-table-and-unmerge-merged-cells-"></a>
 </h3>
-
 </div>
-  </center>
+<div class="section level3">
+<h3 id="step-3b-create-four-new-columns-">Step 3b: Create four new columns.<a class="anchor" aria-label="anchor" href="#step-3b-create-four-new-columns-"></a>
+</h3>
+<p>Columns were created for region, year, category, sub category 1, and
+sub category 2.</p>
 </div>
+<div class="section level3">
+<h3 id="step-3c-population-columns">Step 3c: Population Columns<a class="anchor" aria-label="anchor" href="#step-3c-population-columns"></a>
+</h3>
+<p>Next I populated the columns with the respective information. I used
+the dark colored bold lettered rows as the category, the lightly colored
+bold lettered rows as the sub category 1, and lastly the regular rows as
+sub category 2.</p>
+</div>
+<div class="section level3">
+<h3 id="step-3d-remove-rows-and-columns">Step 3d: Remove Rows and Columns<a class="anchor" aria-label="anchor" href="#step-3d-remove-rows-and-columns"></a>
+</h3>
+<p>Next I removed the un-needed titles and subtotal rows and the
+combined categories column.</p>
+</div>
+<div class="section level3">
+<h3 id="step-3e-formatting">Step 3e: Formatting<a class="anchor" aria-label="anchor" href="#step-3e-formatting"></a>
+</h3>
+<p>Lastly I formatted the table to by removing any formatting done to
+cells, reset cells widths and lengths, and changed font of all cells to
+Calibri.</p>
+</div>
+</div>
+  </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
-      </div>
+        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
+    </nav>
+</div>
 
 </div>
 
