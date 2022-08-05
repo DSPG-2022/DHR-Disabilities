@@ -20,6 +20,11 @@ Development** section contains all of the methodology, processes, and
 review of the data sources that went into creating the visualizations
 for this project.
 
+The presentation slides can be accessed
+[here](%22man/figures/Successful%20Employment%20for%20Persons%20with%20Disabilities%20in%20Iowa.pdf%22)
+and the recorded final presentation
+[here](https://www.youtube.com/watch?v=Jipm57lfEQ0)
+
 ## Navigation
 
 -   **Dashboards**

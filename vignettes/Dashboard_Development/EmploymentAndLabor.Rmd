@@ -1,6 +1,8 @@
 ---
 title: "Employment and Labor Force Participation"
-output: rmarkdown::html_vignette
+output: 
+  rmarkdown::html_vignette:
+    toc: true
 vignette: >
   %\VignetteIndexEntry{Employment and Labor Force Participation}
   %\VignetteEngine{knitr::rmarkdown}
