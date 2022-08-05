@@ -15,9 +15,9 @@ knitr::opts_chunk$set(
 )
 ```
 
-## The following code chucks are utilized for pulling demographic information from the ACS database built into (`tidycensus`)[https://walker-data.com/tidycensus/articles/basic-usage.html] and test reliability to provide neat data sources for further calculations and visualizations.
+### The following code chucks are utilized for pulling demographic information from the ACS database built into (`tidycensus`)[https://walker-data.com/tidycensus/articles/basic-usage.html] and test reliability to provide neat data sources for further calculations and visualizations.
 
-### Loading libraries and variables
+#### Loading libraries and variables
 ```{r Loading libraries}
 library(tidycensus)
 library(tidyverse)
@@ -29,7 +29,7 @@ acs5 <- load_variables(2020, "acs5")
 view(acs5)
 ```
 
-### Population with a disability by age group  
+#### Population with a disability by age group  
 ```{r Percent of the Population with a Disability by Age Group}
 Total <- c(Total = "B18101_001")
 DisabledMale <- c("Under 5 years" = "B18101_004", "5 to 17 years" = "B18101_007", "18 to 34 years" = "B18101_010", "35 to 64 years" = "B18101_013", "65 to 74 years" = "B18101_016", "75 years and over" = "B18101_019")
@@ -49,7 +49,7 @@ DisabledPop <- DisabledPop %>%
 DisabledPop$NAME <- gsub(" County, Iowa", "", DisabledPop$NAME)
 names(DisabledPop)[names(DisabledPop) == "NAME"] <- "County"
 ```
-### Reliability test for population with a disability by age group  
+#### Reliability test for population with a disability by age group  
 ```{r Reliability test for population with a disability by age group}
 CV_Under5 <- ((DisabledPop$`moe_Under 5 years` / 1.645) / DisabledPop$`estimate_Under 5 years`) * 100
 CV_5to17 <- ((DisabledPop$`moe_5 to 17 years` / 1.645) / DisabledPop$`estimate_5 to 17 years`) * 100
@@ -78,7 +78,7 @@ DisabledPop$CV_75andOver <- ifelse(CV_75andOver > 30, "Low reliability",
                                        "Median reliability"))
 ```
 
-### Population by difficulty type for all ages  
+#### Population by difficulty type for all ages  
 ```{r Population by Difficulty Type For All Ages}
 DisabledHearing <- c("Under 5 years" = c("B18102_004", "B18102_023"), "5 to 17 years" = c("B18102_007", "B18102_026"), "18 to 34 years" = c("B18102_010", "B18102_029"), "35 to 64 years" = c("B18102_013", "B18102_032"), "65 to 74 years" = c("B18102_016", "B18102_035"), "75 and over" = c("B18102_019", "B18102_038"))
 DisabledVision <- c("Under 5 years" = c("B18103_004", "B18103_023"), "5 to 17 years" = c("B18103_007", "B18103_026"), "18 to 34 years" = c("B18103_010", "B18103_029"), "35 to 64 years" = c("B18103_013", "B18103_032"), "65 to 74 years" = c("B18103_016", "B18103_035"), "75 and over" = c("B18103_019", "B18103_038"))
@@ -115,7 +115,7 @@ names(DisabledType_pivot) <- gsub("estimate_", "", names(DisabledType_pivot))
 DisabledType_pivot$NAME <- gsub(" County, Iowa", "", DisabledType_pivot$NAME)
 names(DisabledType_pivot)[names(DisabledType_pivot) == "NAME"] <- "County"
 ```
-### Reliability test for total population of the difficulty types  
+#### Reliability test for total population of the difficulty types  
 ```{r Reliability test for total population of the difficulty types}
 CV_Total <- ((DisabledType_pivot$moe_total / 1.645) / DisabledType_pivot$total) * 100
 
@@ -124,7 +124,7 @@ DisabledType_pivot$CV_Total <- ifelse(CV_Total > 30, "Low reliability",
                                              "Median reliability"))
 ```
 
-### Disabled population aged 18 to 64 by age group  
+#### Disabled population aged 18 to 64 by age group  
 ```{r The Disabled Population Aged 18 to 64 by Age Group}
 Aged18to34 <- c(Total = c("B18101_009", "B18101_028"), Disabled = c("B18101_010", "B18101_029"))
 Aged35to64 <- c(Total = c("B18101_012", "B18101_031"), Disabled = c("B18101_013", "B18101_032"))
@@ -147,7 +147,7 @@ names(population) <- gsub("estimate_", "", names(population))
 population$NAME <- gsub(" County, Iowa", "", population$NAME)
 names(population)[names(population) == "NAME"] <- "County"
 ```
-### Reliability test for the disabled population aged 18 to 64 by age group
+#### Reliability test for the disabled population aged 18 to 64 by age group
 ```{r Reliability test for the Disabled Population Aged 18 to 64 by Age Group}
 CV_18_to_34_Disabled <- ((population$`moe_18 to 34 years.Disabled` / 1.645) / population$`18 to 34 years.Disabled`) * 100
 CV_35_to_64_Disabled <- ((population$`moe_35 to 64 years.Disabled` / 1.645) / population$`35 to 64 years.Disabled`) * 100
@@ -160,7 +160,7 @@ population$CV_35_to_64_Disabled <- ifelse(CV_35_to_64_Disabled > 30, "Low reliab
                                                  "Median reliability"))
 ```
 
-### Population by age group and difficulty type  
+#### Population by age group and difficulty type  
 ```{r Population by Age Group and Difficulty Type}
 DisabledHearing <- c("18 to 34 years" = c("B18102_010", "B18102_029"), "35 to 64 years" = c("B18102_013", "B18102_032"))
 DisabledVision <- c("18 to 34 years" = c("B18103_010", "B18103_029"), "35 to 64 years" = c("B18103_007", "B18103_032"))
@@ -195,7 +195,7 @@ names(DisabledType_pivot) <- gsub("estimate_", "", names(DisabledType_pivot))
 DisabledType_pivot$NAME <- gsub(" County, Iowa", "", DisabledType_pivot$NAME)
 names(DisabledType_pivot)[names(DisabledType_pivot) == "NAME"] <- "County"
 ```
-### Reliability test for population by age group and difficulty type  
+#### Reliability test for population by age group and difficulty type  
 ```{r Reliability test for Population by Age Group and Difficulty Type}
 CV_Cognitive <- ((DisabledType_pivot$moe_Cognitive / 1.645) / DisabledType_pivot$Cognitive) * 100
 CV_Hearing <- ((DisabledType_pivot$moe_Hearing / 1.645) / DisabledType_pivot$Hearing) * 100
@@ -224,7 +224,7 @@ DisabledType_pivot$CV_Ambulatory <- ifelse(CV_Ambulatory > 30, "Low reliability"
                                               "Median reliability"))
 ```
 
-### Race and ethnicity of the disabled population aged 18-64  
+#### Race and ethnicity of the disabled population aged 18-64  
 ```{r Race and ethnicity of the disabled population aged 18-64}
 White <- c("Total White"= "B18101A_005", "Disabled White" = "B18101A_006")
 Black <- c("Total Black" ="B18101B_005", "Disabled Black" = "B18101B_006")
@@ -255,7 +255,7 @@ names(RaceEthnic) <- gsub("estimate_", "", names(RaceEthnic))
 RaceEthnic$NAME <- gsub(" County, Iowa", "", RaceEthnic$NAME)
 names(RaceEthnic)[names(RaceEthnic) == "NAME"] <- "County"
 ```
-### Reliability test for race and ethnicity of the disabled population aged 18-64  
+#### Reliability test for race and ethnicity of the disabled population aged 18-64  
 ```{r Reliability test for race and ethnicity of the disabled population aged 18-64}
 CV_White_Disabled <- ((RaceEthnic$`moe_Disabled White` / 1.645) / RaceEthnic$`Disabled White`) * 100
 CV_Black_Disabled <- ((RaceEthnic$`moe_Disabled Black` / 1.645) / RaceEthnic$`Disabled Black`) * 100
