@@ -39,7 +39,7 @@ library(ggplot2)
 census_api_key("ab8b0fa7ef0993c579097beb76d0321bce5af443", install = TRUE, overwrite = TRUE)
 ```
 
-# Step1: Pulling Data
+# Step One: Pulling Data
 
 ## The sources from which the Data is retrieved include, ACS, and SSA (OASDI and SSI) for 2020
 
@@ -97,7 +97,7 @@ all_emp_stat= full_join(empl_status_disability,empl_status_no_disability)
 View(all_emp_stat)
 
 ```
-# Step2: Calculating values
+# Step Two: Calculating values
 
 Calculating the Disabled Population Total and Non Disabled Population Total for all counties in Iowa, and for the entire state.
 
@@ -211,7 +211,7 @@ all_emp_stat$compared_to_state_avg_nd = ifelse(all_emp_stat$percent_not_in_labor
                          "average"))
 View(all_emp_stat)
 ```
-# Step3: Cleaning and Formatting
+# Step Three: Cleaning and Formatting
 
 Re-naming Columns for clear and easy understanding
 ```{r}
@@ -234,7 +234,7 @@ Formatting the county names. Example- Changing "Adams County, Iowa" to "Adams"
 ```{r}
 all_emp_stat$County<-gsub("County, Iowa","",as.character(all_emp_stat$County))
 ```
-# Step4: Merging and Loading Datasets
+# Step Four: Merging and Loading Datasets
 
 Merging the Employment Status Table to Counties of Iowa based on
 - Metropolitan
@@ -264,7 +264,7 @@ Merging the SSI dataset with Employment Status Dataset
 merged_ssi_table = merge(x = all_emp_stat, y = ssi_table, by = "GEOID", all.x = TRUE)
 View(merged_ssi_table)
 ```
-# Step5: Coverting files to csv
+# Step Five: Coverting files to csv
 
 Converting all the datasets into csv files, and saving them to the Local Directory
 ```{r}
