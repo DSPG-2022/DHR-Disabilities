@@ -123,11 +123,11 @@ DisabledPop$CV_Total <- ifelse(CV_Total > 30, "Low reliability",
 2.1 Population of Iowans 18-64 years with disabilities by age groups
 ```{r}
 DisabledHearing <- c("18 to 34 years" = c("B18102_010", "B18102_029"), "35 to 64 years" = c("B18102_013", "B18102_032"))
-DisabledVision <- c("18 to 34 years" = c("B18103_010", "B18103_029"), "35 to 64 years" = c("B18103_007", "B18103_032"))
+DisabledVision <- c("18 to 34 years" = c("B18103_010", "B18103_029"), "35 to 64 years" = c("B18103_013", "B18103_032"))
 DisabledCognitive <- c("18 to 34 years" = c("B18104_007", "B18104_023"), "35 to 64 years" = c("B18104_010", "B18104_026"))
 DisabledAmbulatory <- c("18 to 34 years" = c("B18105_007", "B18105_023"), "35 to 64 years" = c("B18105_010", "B18105_026"))
 DisabledSelfCare <- c("18 to 34 years" = c("B18106_007", "B18106_023"), "35 to 64 years" = c("B18106_010", "B18106_026"))
-DisabledIndependentLiving <- c("18 to 34 years" = c("B18107_007", "B18107_023"), "35 to 64 years" = c("B18107_010", "B18107_026"))
+DisabledIndependentLiving <- c("18 to 34 years" = c("B18107_004", "B18107_017"), "35 to 64 years" = c("B18107_007", "B18107_020"))
 
 DisabledType <- get_acs(geography = "county",
                         variables = c(Hearing = DisabledHearing, Vision = DisabledVision, Cognitive = DisabledCognitive, Ambulatory = DisabledAmbulatory, "Self-care" = DisabledSelfCare, "Independent living" = DisabledIndependentLiving),
