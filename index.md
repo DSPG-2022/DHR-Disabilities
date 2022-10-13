@@ -25,6 +25,8 @@ The presentation slides can be accessed
 and the recorded final presentation
 [here](https://www.youtube.com/watch?v=Jipm57lfEQ0)
 
+_**PROJECT UPDATE:**_ Student work has been evaluated and reviewed since the completion of the 2022 DSPG Program. To see cleaned and corrected dashboards visit the [Iowa State University Extension and Outreach Indicators Program](https://indicators.extension.iastate.edu) website. 
+
 ## Navigation
 
 -   **Dashboards**
