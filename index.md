@@ -7,7 +7,7 @@ DSPG 2022
 ## Overview
 
 Welcome to the Successful Employment for Persons with Disabilities in
-Iowa project page! This is the home for all of the dashboards and
+Iowa project page\! This is the home for all of the dashboards and
 documentation that the DSPG 2022 team worked hard to complete. Below you
 can find navigational links which will take you across the different
 sections of this webpage. Alternatively, you can use the top navigation
@@ -25,31 +25,34 @@ The presentation slides can be accessed
 and the recorded final presentation
 [here](https://www.youtube.com/watch?v=Jipm57lfEQ0)
 
-_**PROJECT UPDATE:**_ Student work has been evaluated and reviewed since the completion of the 2022 DSPG Program. To see cleaned and corrected dashboards visit the [Iowa State University Extension and Outreach Indicators Program](https://indicators.extension.iastate.edu) website. 
+***PROJECT UPDATE:*** Student work has been evaluated and reviewed since
+the completion of the 2022 DSPG Program. To see cleaned and corrected
+dashboards visit the [Iowa State University Extension and Outreach
+Indicators Program](https://indicators.extension.iastate.edu) website.
 
 ## Navigation
 
--   **Dashboards**
-    -   [Demographics](https://dspg-2022.github.io/DHR-Disabilities/articles/DemographicDashboard.html)
-    -   [Demographics for Working
+  - **Dashboards**
+      - [Demographics](https://dspg-2022.github.io/DHR-Disabilities/articles/DemographicDashboard.html)
+      - [Demographics for Working
         Age](https://dspg-2022.github.io/DHR-Disabilities/articles/DemographicsWorkingAge.html)
-    -   [Employment and Labor
+      - [Employment and Labor
         Participation](https://dspg-2022.github.io/DHR-Disabilities/articles/EmploymentLaborDashboard.html)
-    -   [Publicly Funded
+      - [Publicly Funded
         Services](https://dspg-2022.github.io/DHR-Disabilities/articles/ServicesDashboard.html)
-    -   [County Expenditures by Service Area and Fiscal
+      - [County Expenditures by Service Area and Fiscal
         Year](https://dspg-2022.github.io/DHR-Disabilities/articles/ExpendituresDashboard.html)
-    -   [Mental Health and Disability
+      - [Mental Health and Disability
         Services](https://dspg-2022.github.io/DHR-Disabilities/articles/MhdsServicesDashboard.html)
--   **Dashboard Development**
-    -   [Data Sources and Literature
+  - **Dashboard Development**
+      - [Data Sources and Literature
         Review](https://dspg-2022.github.io/DHR-Disabilities/articles/Dashboard_Development/DataLiteratureReview.html)
-    -   [Demographic
+      - [Demographic
         Information](https://dspg-2022.github.io/DHR-Disabilities/articles/Dashboard_Development/Demographics.html)
-    -   [Employment and Labor
+      - [Employment and Labor
         Participation](https://dspg-2022.github.io/DHR-Disabilities/articles/Dashboard_Development/EmploymentAndLabor.html)
-    -   [Services](https://dspg-2022.github.io/DHR-Disabilities/articles/Dashboard_Development/Services.html)
-    -   [Expenditures](https://dspg-2022.github.io/DHR-Disabilities/articles/Dashboard_Development/Expenditures.html)
+      - [Services](https://dspg-2022.github.io/DHR-Disabilities/articles/Dashboard_Development/Services.html)
+      - [Expenditures](https://dspg-2022.github.io/DHR-Disabilities/articles/Dashboard_Development/Expenditures.html)
 
 ## Team Members
 
